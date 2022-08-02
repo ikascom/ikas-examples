@@ -3,9 +3,17 @@
     [
       "next/babel",
       {
-        "preset-react": { "throwIfNamespace": false },
+        "preset-react": { "throwIfNamespace": false }
       }
     ]
   ],
-  "plugins": []
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true
+      }
+    ]
+  ]
 }
