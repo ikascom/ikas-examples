@@ -204,16 +204,6 @@
       "translations": {}
     },
     {
-      "id": "28626d46-97f8-45e7-9c25-dcb16d618676",
-      "dir": "start",
-      "displayName": "Start",
-      "description": "",
-      "props": [],
-      "isHeader": false,
-      "isFooter": false,
-      "translations": {}
-    },
-    {
       "id": "8b5d6278-a490-4f0a-8308-00bf888b79b0",
       "dir": "hero-banner",
       "displayName": "Hero Banner",
