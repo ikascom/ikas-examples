@@ -11,6 +11,13 @@ export enum ImageAspectRatio{
 	"_21_9" = "21_9",
 };
 
+export type SocialMedia = { 
+	facebook?: string;
+	instagram?: string;
+	twitter?: string;
+	pinterest?: string;
+};
+
 export type HeroBannerProps = {
 	image: IkasImage;
 	imageAspectRatio: ImageAspectRatio;
@@ -21,5 +28,11 @@ export type HeroBannerProps = {
 
 export type HeaderProps = {
 	logo: IkasImage;
+};
+
+export type FooterProps = {
+	logo: IkasImage;
+	links: IkasNavigationLink[];
+	socialMedia: SocialMedia;
 };
 
