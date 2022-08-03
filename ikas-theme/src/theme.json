@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "4dadb827-6ba5-4a4d-b9db-8ecaad550c66",
+          "id": "e5128203-1dcc-4253-8ad7-c617c12db5d1",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "2e3ec890-0358-4948-bb97-5592f15bb429",
+          "id": "bf5fa0e7-a9df-4fb0-baf6-22cf6a1c0614",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "85e69b1a-a498-43ab-b96a-32dce3c0e7d3",
+          "id": "eba49166-26c2-47b5-bed1-94ffc1e7a833",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "ca2f63aa-4698-4148-867e-0ec31fa4f5bf",
+          "id": "27550868-e55d-46e5-b3e8-5a845671816c",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "13f14712-7ee9-40df-9877-963b97f55a16",
+          "id": "550e49e2-c56a-41b0-99a9-8cfea38ea33e",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "f4cf3fc2-b8e2-436f-9fac-3d9b2a002ff7",
+          "id": "11d2cfcc-1686-4797-a74c-3eeb2570f03c",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "154e9524-36f2-43a9-86f6-8aca379d86a4",
+          "id": "d65ddc14-da65-40fc-a3ca-b7a80ec80b30",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "0dcd7e13-36df-455b-9df3-2fbaae791ec4",
+          "id": "c1a8c378-ccc6-464c-8c57-c1ab51e7f0d9",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "62e3340c-9513-46f0-843e-f6ce5f9899ee",
+          "id": "bc6b315c-b6ea-44ae-95a1-79842f6b0245",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "e7b042eb-12c9-40fc-b582-06085d380ad9",
+          "id": "6b01c573-15af-4010-8374-827eb3b22c10",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "8599ae1f-add4-41fa-a4f0-7bbf1eeb85e6",
+          "id": "a421c633-623d-4c34-9b6d-6c1027758a8e",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "6ea87767-74c4-409d-aa66-27673b5786c6",
+          "id": "d5cbcacd-014a-476e-8f83-4b407e397630",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "59a1c24d-6656-45c1-b245-12c72a3d33b0",
+          "id": "1becb2f2-68a5-4b4a-8e46-6e9316af4842",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "30b3f526-171f-4765-9090-865787d5cb3e",
+          "id": "a7ef0a47-be1f-46ae-80d0-80c3ae2790f6",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "4681fa94-cdae-43ef-9666-3e523647bc38",
+          "id": "4a46f702-9e43-47df-9dda-2ebb6e18d1bf",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "0b8696ce-efc2-43c2-91ef-d7fb143d5779",
+          "id": "ff313fcd-5936-4d32-b34d-8351de3d724a",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "25fc567a-1055-40ad-a2ed-9b8b968e775b",
+          "id": "51a277d3-07d4-4ca2-93d5-e88c9ef9418b",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -286,6 +286,31 @@
         "imageAspectRatio": "3_1",
         "showContent": false
       }
+    },
+    {
+      "id": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
+      "dir": "header",
+      "displayName": "Header",
+      "description": "",
+      "props": [
+        {
+          "id": "6c470897-d079-4023-a0d3-f95ef23bb223",
+          "name": "logo",
+          "displayName": "Logo",
+          "description": "",
+          "type": "IMAGE",
+          "isRequired": true,
+          "sliderData": {},
+          "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
+        }
+      ],
+      "isHeader": true,
+      "isFooter": false,
+      "translations": {},
+      "defaultPropValues": {
+        "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+      }
     }
   ],
   "pages": [
@@ -310,6 +335,13 @@
               "pageType": "INDEX",
               "subLinks": []
             }
+          }
+        },
+        {
+          "id": "e6190153-5bd9-438b-a11c-576c7d449ded",
+          "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
+          "propValues": {
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
           }
         }
       ],
@@ -438,6 +470,11 @@
     {
       "id": "5e0acaa4-c493-4a21-98af-6c2b5d6b31bc",
       "name": "Content",
+      "translations": {}
+    },
+    {
+      "id": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+      "name": "Logo",
       "translations": {}
     }
   ],

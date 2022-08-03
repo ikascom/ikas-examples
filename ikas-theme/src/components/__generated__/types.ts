@@ -19,3 +19,7 @@ export type HeroBannerProps = {
 	link: IkasNavigationLink;
 };
 
+export type HeaderProps = {
+	logo: IkasImage;
+};
+
