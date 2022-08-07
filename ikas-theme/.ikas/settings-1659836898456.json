@@ -7,8 +7,8 @@
     "localizations": [
       {
         "_id": "7d2503d9-6a76-48be-8c37-f5a80bc8f315",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "Türkçe",
         "isDefault": true,
@@ -17,8 +17,8 @@
       },
       {
         "_id": "95eb5147-bd16-42ba-a129-72fe82dcfff6",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "English",
         "isDefault": false,
@@ -31,8 +31,8 @@
     "routings": [
       {
         "_id": "d498e6ee-3ad7-40ea-b5a6-aa3ced5e6958",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "countryCodes": [
           "TR"
@@ -48,8 +48,8 @@
       },
       {
         "_id": "fec78b9f-3e9b-4229-a401-3944331597f2",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "countryCodes": [
           "UM",
@@ -228,8 +228,8 @@
     "themes": [
       {
         "_id": "579249c0-5c5f-438c-8238-a5bb6dcf2e05",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "Jack & Jones",
         "status": 4,
@@ -240,8 +240,8 @@
       },
       {
         "_id": "b3d54d5e-7075-454c-8ea2-7b28a35f3f76",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "Empayır",
         "status": 2,
@@ -252,8 +252,8 @@
       },
       {
         "_id": "283f98fc-d9bb-4b2e-9971-7ad7c2bca5ab",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "jj",
         "status": 4,
@@ -264,8 +264,8 @@
       },
       {
         "_id": "e57ebda3-6f8a-4f5e-b20d-4d6c8784974a",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "WNDR",
         "status": 1,
@@ -276,8 +276,8 @@
       },
       {
         "_id": "f317976b-5aa4-4a63-b06d-4b92db9e57e5",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "PO",
         "status": 2,
@@ -288,8 +288,8 @@
       },
       {
         "_id": "5e206ff5-42c1-4868-ac64-d953c44b554a",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "Ahmet 1st",
         "status": 2,
@@ -300,8 +300,8 @@
       },
       {
         "_id": "7bb87d2e-07ce-4f8d-915f-8429144efa56",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": true,
         "name": "ares",
         "status": 2,
@@ -312,8 +312,8 @@
       },
       {
         "_id": "3ae5ccda-bf8a-4eef-b800-bef4613be97f",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "wunderr",
         "status": 1,
@@ -324,8 +324,8 @@
       },
       {
         "_id": "a1661197-b0db-4652-8d30-a742603dd8e0",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "arees",
         "status": 1,
@@ -336,8 +336,8 @@
       },
       {
         "_id": "56265850-3ef5-4a51-9e97-f09e158b5986",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "mugo-4.0 theme",
         "status": 1,
@@ -348,8 +348,8 @@
       },
       {
         "_id": "94f922b1-76bd-4289-ac46-651449d662ec",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": true,
         "name": "Wunder - Yeni",
         "status": 1,
@@ -360,8 +360,8 @@
       },
       {
         "_id": "890970e7-0776-4e39-86b1-cbbba3915647",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "wunder - yeni",
         "status": 1,
@@ -372,8 +372,8 @@
       },
       {
         "_id": "a1378157-e381-486a-bbe6-cf0631d6ac98",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": true,
         "name": "mugoo",
         "status": 2,
@@ -384,8 +384,8 @@
       },
       {
         "_id": "71a93d3c-1217-41e4-bbd9-359f869811f7",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "mugo",
         "status": 2,
@@ -396,8 +396,8 @@
       },
       {
         "_id": "b3a8715d-12af-4af1-8410-031399b32e25",
-        "updatedAt": "2022-08-03T10:27:10.927Z",
-        "createdAt": "2022-08-03T10:27:10.927Z",
+        "updatedAt": "2022-08-05T11:55:29.041Z",
+        "createdAt": "2022-08-05T11:55:29.041Z",
         "deleted": false,
         "name": "MUGO4",
         "status": 2,
@@ -409,7 +409,7 @@
     ],
     "socialLoginSettings": [],
     "createdAt": "2022-05-31T06:43:58.691Z",
-    "updatedAt": "2022-08-03T10:27:10.927Z",
+    "updatedAt": "2022-08-05T11:55:29.041Z",
     "__v": 27,
     "analytics4Id": null,
     "fbAccessToken": null,
@@ -421,6 +421,7 @@
     ],
     "tiktokPixelId": null,
     "universalAnalyticsId": null,
+    "metaTemplates": [],
     "id": "768d2aa6-db55-476e-a597-b29913658fed"
   },
   "salesChannel": {
@@ -478,6 +479,7 @@
   "customerSettings": {
     "merchantId": "ab86a193-a2f4-4dc8-98e4-886255f8b052",
     "requireEmailValidation": false,
+    "requireCaptchaValidation": true,
     "salesChannelId": "15242b32-a724-47e0-ae19-c89b126a165b",
     "storefrontId": "768d2aa6-db55-476e-a597-b29913658fed"
   },

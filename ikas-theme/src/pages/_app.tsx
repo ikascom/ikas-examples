@@ -6,6 +6,8 @@ import Config from "config.json";
 
 // You can remove this and add your own styles
 import "src/styles/global.css";
+import { ThemeProvider } from "styled-components";
+import { theme } from "src/styles/styled";
 
 IkasStorefrontConfig.init({
   ...Config,
@@ -17,7 +19,11 @@ IkasStorefrontConfig.init({
 const IkasThemeApp: React.FC<AppProps> = (props) => {
   const { Component, pageProps } = props;
 
-  return <Component {...pageProps} />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
 };
 
 export default IkasThemeApp;

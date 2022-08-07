@@ -1,7 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Header = styled.header`
-  background-color: var(--header-background-color);
+  ${({ theme }) => css`
+    color: ${theme.color.headerText};
+    background-color: ${theme.color.headerBg};
+  `}
 `;
 
 export const InnerContainer = styled.div`

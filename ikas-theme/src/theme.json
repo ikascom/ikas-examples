@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "47b44cd7-0e33-4f83-947e-469c4fe6f0fd",
+          "id": "9b00bc93-0b02-4058-9502-0639e4919d59",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "70f3d9b3-ab06-48ac-bdd6-931abd5135ff",
+          "id": "478260d7-fecf-46e8-9143-f9f3e8f72802",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "89b17dc3-3f9d-419a-aaef-6adcee54e9fa",
+          "id": "077fc914-a1d5-4248-b444-9a409c69610a",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "2799dc86-dce4-422b-b088-75b4351a1c23",
+          "id": "b837d601-4196-4603-8cb4-d1a8b20ffd22",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "7a71e9b9-6831-4956-875c-2f10c918e971",
+          "id": "dccc32a9-192a-4bc6-8187-abbbcc9ec7d9",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "4f3309ca-c5b5-4420-9071-25cfaabc473b",
+          "id": "bbc7896d-6677-4d2f-b678-8812712cc4a3",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "d410cfc5-d9f5-4982-9160-f1f62bb7ca8e",
+          "id": "7758c0d9-7a14-4ac6-aa3e-ab3fa47aa713",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "5db4b7bc-afc2-4ee1-b458-de7e9e0f8964",
+          "id": "a6741c54-5589-4fd4-9108-f95da63ac5c5",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "d55af86a-6efa-422b-93b7-0de909dab088",
+          "id": "3290f6ae-aab1-48ad-9f60-8b77843b174b",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "13cd2873-fb59-4bfd-a813-fb9b061a7964",
+          "id": "f3066495-4292-4b4f-a033-44f94ec2cf37",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "75d2d63a-a2a4-4315-a91a-b5776dae52f6",
+          "id": "f64c0815-d373-4609-bd90-9ad991525f0b",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "49fb73ce-18a7-42d5-81cb-82eab48dc519",
+          "id": "57ced334-1bf1-4bc1-a7e5-4ce5e7180e4b",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "9b19703c-837c-49a1-97e6-d70198638b54",
+          "id": "1bd19f49-f863-4174-841f-09324530e2f1",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "949400ff-5321-4ca5-a1f2-0f49220dcfa8",
+          "id": "c5e595f0-4d59-411b-8d90-3735c5c2517e",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "d3a1af9b-8870-4408-b4ec-703e93968e0a",
+          "id": "3532f286-0611-4ab3-9389-4b371afdd2a0",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "5ede85c9-c279-4bdf-a0a7-61e4f0c06838",
+          "id": "e02408e2-3ff5-4d73-aec2-654f13f3b381",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "afc4ec93-22c3-4e3b-bcfb-7a54cd6cb12c",
+          "id": "30181a55-e551-428b-93df-b85f6180275b",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -450,6 +450,36 @@
           }
         ]
       }
+    },
+    {
+      "id": "4fd7e253-29f0-41d7-924f-cbfa1c85c74f",
+      "dir": "product-detail",
+      "displayName": "Product Detail",
+      "description": "",
+      "props": [
+        {
+          "id": "7fd32997-6354-4a6d-9cde-59aa183df41d",
+          "name": "product",
+          "displayName": "Product",
+          "description": "",
+          "type": "PRODUCT_DETAIL",
+          "isRequired": true,
+          "sliderData": {},
+          "groupId": "d89e1f5b-8edb-48af-ade5-e931cb8ccd04",
+          "translations": {}
+        }
+      ],
+      "isHeader": false,
+      "isFooter": false,
+      "translations": {},
+      "defaultPropValues": {
+        "productDetail": {
+          "usePageData": true
+        },
+        "product": {
+          "usePageData": true
+        }
+      }
     }
   ],
   "pages": [
@@ -620,6 +650,151 @@
               "pinterest": "https://pinterest.com/ikas"
             }
           }
+        },
+        {
+          "id": "11e89180-cb43-4950-b62e-1dfcf0e2bac4",
+          "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
+          "propValues": {
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+          }
+        },
+        {
+          "id": "4e9fb013-70dc-4bdf-bf55-97aae4ab7525",
+          "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
+          "propValues": {
+            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "links": [
+              {
+                "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
+                "linkType": "PAGE",
+                "label": "Terms and conditions",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "34ce20a5-2419-45be-b608-9f4b529f7120",
+                    "linkType": "PAGE",
+                    "label": "Privacy policy",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "2023fb0a-52a2-4419-8014-44b69c8d8421",
+                    "linkType": "PAGE",
+                    "label": "User agreement",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "cde63ea4-87c7-4741-9cd1-2dd353daa528",
+                    "linkType": "PAGE",
+                    "label": "Shipping and Returns",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  }
+                ],
+                "level": 0,
+                "isCollapsed": false
+              },
+              {
+                "id": "d1d24bc2-58b8-4b1e-a7ce-d0108eb17b99",
+                "linkType": "PAGE",
+                "label": "Contact us",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "e23dc545-3759-426f-9dfc-79057a464082",
+                    "linkType": "PAGE",
+                    "label": "hello@ikas.com",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "b6f98829-e2a4-4bf1-b209-f3290c8b0f4d",
+                    "linkType": "PAGE",
+                    "label": "Whatsapp no : +90 543 559 4527",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  }
+                ],
+                "level": 0,
+                "isCollapsed": false
+              },
+              {
+                "id": "c4ba3f19-7097-415b-b30a-b23e5d95b5b0",
+                "linkType": "PAGE",
+                "label": "Help",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "b38b38eb-8534-4deb-b095-2bf4e3f484fb",
+                    "linkType": "PAGE",
+                    "label": "Order Tracking",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "fe17d62f-b141-4b1c-bc0e-5c7b3a751a61",
+                    "linkType": "PAGE",
+                    "label": "Easy Refund",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "e2dd0ac7-0bf2-4f8b-a7bd-9db7bf906da4",
+                    "linkType": "PAGE",
+                    "label": "FAQ",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "28bc38ea-3f99-406e-8046-06ddbf4d1704",
+                    "linkType": "PAGE",
+                    "label": "Contact us",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  }
+                ],
+                "level": 0,
+                "isCollapsed": false
+              }
+            ],
+            "socialMedia": {
+              "facebook": "https://facebook.com/ikas",
+              "instagram": " https://instagram.com/ikas",
+              "twitter": "https://twitter.com/ikas",
+              "pinterest": "https://pinterest.com/ikas"
+            }
+          }
         }
       ],
       "slug": null,
@@ -633,7 +808,162 @@
       "id": "aa9daf62-60d3-458b-ad91-e09b069bc63c",
       "name": "",
       "type": "PRODUCT",
-      "components": [],
+      "components": [
+        {
+          "id": "90789577-5c7d-478e-a5c6-b7c2b8e7a010",
+          "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
+          "propValues": {
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+          }
+        },
+        {
+          "id": "b33ef38a-e537-47f5-8253-c2023a3c7655",
+          "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
+          "propValues": {
+            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "links": [
+              {
+                "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
+                "linkType": "PAGE",
+                "label": "Terms and conditions",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "34ce20a5-2419-45be-b608-9f4b529f7120",
+                    "linkType": "PAGE",
+                    "label": "Privacy policy",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "2023fb0a-52a2-4419-8014-44b69c8d8421",
+                    "linkType": "PAGE",
+                    "label": "User agreement",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "cde63ea4-87c7-4741-9cd1-2dd353daa528",
+                    "linkType": "PAGE",
+                    "label": "Shipping and Returns",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  }
+                ],
+                "level": 0,
+                "isCollapsed": false
+              },
+              {
+                "id": "d1d24bc2-58b8-4b1e-a7ce-d0108eb17b99",
+                "linkType": "PAGE",
+                "label": "Contact us",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "e23dc545-3759-426f-9dfc-79057a464082",
+                    "linkType": "PAGE",
+                    "label": "hello@ikas.com",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "b6f98829-e2a4-4bf1-b209-f3290c8b0f4d",
+                    "linkType": "PAGE",
+                    "label": "Whatsapp no : +90 543 559 4527",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  }
+                ],
+                "level": 0,
+                "isCollapsed": false
+              },
+              {
+                "id": "c4ba3f19-7097-415b-b30a-b23e5d95b5b0",
+                "linkType": "PAGE",
+                "label": "Help",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "b38b38eb-8534-4deb-b095-2bf4e3f484fb",
+                    "linkType": "PAGE",
+                    "label": "Order Tracking",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "fe17d62f-b141-4b1c-bc0e-5c7b3a751a61",
+                    "linkType": "PAGE",
+                    "label": "Easy Refund",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "e2dd0ac7-0bf2-4f8b-a7bd-9db7bf906da4",
+                    "linkType": "PAGE",
+                    "label": "FAQ",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  },
+                  {
+                    "id": "28bc38ea-3f99-406e-8046-06ddbf4d1704",
+                    "linkType": "PAGE",
+                    "label": "Contact us",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": [],
+                    "level": 1,
+                    "isCollapsed": true
+                  }
+                ],
+                "level": 0,
+                "isCollapsed": false
+              }
+            ],
+            "socialMedia": {
+              "facebook": "https://facebook.com/ikas",
+              "instagram": " https://instagram.com/ikas",
+              "twitter": "https://twitter.com/ikas",
+              "pinterest": "https://pinterest.com/ikas"
+            }
+          }
+        },
+        {
+          "id": "16bd57b6-5770-44dd-8c32-7bcf17db4554",
+          "componentId": "4fd7e253-29f0-41d7-924f-cbfa1c85c74f",
+          "propValues": {
+            "product": {
+              "usePageData": true
+            }
+          }
+        }
+      ],
       "slug": null,
       "pageTitle": null,
       "description": null,
@@ -693,6 +1023,55 @@
         "color": "#fff9f5",
         "key": "--footer-background-color",
         "translations": {}
+      },
+      {
+        "id": "97ae64b5-375b-4498-b9bf-e88725175574",
+        "displayName": "Primary Text Color",
+        "color": "#22252a",
+        "key": "--primary-text-color",
+        "translations": {}
+      },
+      {
+        "id": "958a0a7e-60e3-4515-96d8-89313bf7c528",
+        "displayName": "Secondary Text Color",
+        "color": "#77777b",
+        "key": "--secondary-text-color",
+        "translations": {}
+      },
+      {
+        "id": "1e778d3c-a943-4fef-9061-a7c1a7b42439",
+        "displayName": "Price Color",
+        "color": "#0b1d69",
+        "key": "--price-color",
+        "translations": {}
+      },
+      {
+        "id": "38e48fa6-70cd-4c29-ae32-c063e38b5f02",
+        "displayName": "Strikethrough Price Color",
+        "color": "#77777b",
+        "key": "--strikethrough-price-color",
+        "translations": {}
+      },
+      {
+        "id": "2cc69d38-cafe-400f-8a82-a213ec8190d7",
+        "displayName": "Button Background color",
+        "color": "#0b1d69",
+        "key": "--button-background-color",
+        "translations": {}
+      },
+      {
+        "id": "2b47a277-a28f-4cc9-9a61-5ddc562807de",
+        "displayName": "Button Text Color",
+        "color": "#ffffff",
+        "key": "--button-color",
+        "translations": {}
+      },
+      {
+        "id": "b2b71c4c-00b0-4baf-b81b-a2fe2142a3ba",
+        "displayName": "Border Color",
+        "color": "#dfe2e6",
+        "key": "--border-color",
+        "translations": {}
       }
     ],
     "favicon": {
@@ -700,8 +1079,27 @@
     },
     "stockPreference": "SHOW_ALL",
     "fontFamily": {
-      "name": null,
-      "variants": null
+      "name": "Bitter",
+      "variants": [
+        "100",
+        "200",
+        "300",
+        "regular",
+        "500",
+        "600",
+        "700",
+        "800",
+        "900",
+        "100italic",
+        "200italic",
+        "300italic",
+        "italic",
+        "500italic",
+        "600italic",
+        "700italic",
+        "800italic",
+        "900italic"
+      ]
     }
   },
   "customData": [
@@ -873,6 +1271,21 @@
     {
       "id": "0b1bf933-70fc-4f70-a412-392795de2aae",
       "name": "Social Media",
+      "translations": {}
+    },
+    {
+      "id": "7a3c6a4b-f85e-40bb-a3c5-260b45b8adb9",
+      "name": "WhatsApp",
+      "translations": {}
+    },
+    {
+      "id": "d89e1f5b-8edb-48af-ade5-e931cb8ccd04",
+      "name": "Product",
+      "translations": {}
+    },
+    {
+      "id": "e438590a-4378-456d-b60f-9d6925b99959",
+      "name": "Social Share",
       "translations": {}
     }
   ],

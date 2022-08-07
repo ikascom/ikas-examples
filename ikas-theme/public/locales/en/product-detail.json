@@ -1,0 +1,13 @@
+{
+  "detail": {
+    "addToCartButton": {
+      "text": "ADD TO CARD"
+    },
+    "description": {
+      "title": "Description"
+    },
+    "share": {
+      "title": "Share:"
+    }
+  }
+}
