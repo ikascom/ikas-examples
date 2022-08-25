@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { Image, useTranslation } from "@ikas/storefront";
+import { IkasBaseStore, Image, useTranslation } from "@ikas/storefront";
 
 import { Container } from "../components/container";
 import { HeaderProps } from "../__generated__/types";
@@ -52,7 +52,9 @@ const SearchInput = (props: HeaderProps) => {
   );
 };
 
-const RightSide = (props: HeaderProps) => {
+const RightSide = observer((props: HeaderProps) => {
+  const store = IkasBaseStore.getInstance();
+  const quantity = store.cartStore.cart?.itemQuantity ?? 0;
   return (
     <S.RightSide>
       <S.FavoriteWrapper>
@@ -62,8 +64,9 @@ const RightSide = (props: HeaderProps) => {
         <AccountSVG />
       </S.AccountWrapper>
       <S.CartWrapper>
+        <S.CartQuantity>{quantity}</S.CartQuantity>
         <CartSVG />
       </S.CartWrapper>
     </S.RightSide>
   );
-};
+});

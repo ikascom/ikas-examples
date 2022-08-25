@@ -1,4 +1,4 @@
-import breakpoints from "src/styles/break-points";
+import breakpoints from "src/styles/breakpoints";
 import styled, { css } from "styled-components";
 
 // import styled from "styled-components";
@@ -68,12 +68,23 @@ export const BoxSelect = styled.select`
 `;
 export const ColorSwatch = styled.button<{
   $isSelected: boolean;
+  $color: string;
 }>`
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-
   padding: 6px;
+
+  ::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: ${({ $color }) => $color};
+    border-radius: 50%;
+    position: relative;
+  }
+
   margin-right: 12px;
   margin-bottom: 12px;
 
@@ -85,8 +96,33 @@ export const ColorSwatch = styled.button<{
     $isSelected &&
     css`
       outline: 1px solid #77777b;
-      outline-offset: 5px;
-      margin-right: 15px;
+      outline-offset: 0px;
+    `};
+`;
+
+export const ImageSwatch = styled.button`
+  margin-right: 12px;
+  margin-bottom: 12px;
+  :disabled {
+    opacity: 50%;
+  }
+`;
+export const ImageSwatchImg = styled.img<{ $isSelected: boolean }>`
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 0px;
+  object-fit: contain;
+
+  :last-child {
+    margin-right: 0;
+  }
+
+  ${({ $isSelected }) =>
+    $isSelected &&
+    css`
+      outline: 1px solid #77777b;
+      outline-offset: 0px;
     `};
 `;
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import breakpoints from "src/styles/break-points";
+import breakpoints from "src/styles/breakpoints";
 
 export const InnerContainer = styled.div`
   position: relative;

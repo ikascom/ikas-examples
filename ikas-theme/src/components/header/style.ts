@@ -4,7 +4,7 @@ export const Header = styled.header`
   ${({ theme }) => css`
     color: ${theme.color.headerText};
     background-color: ${theme.color.headerBg};
-  `}
+  `};
 `;
 
 export const InnerContainer = styled.div`
@@ -31,7 +31,21 @@ export const RightSide = styled.div`
 `;
 export const FavoriteWrapper = styled.button``;
 export const AccountWrapper = styled.button``;
-export const CartWrapper = styled.button``;
+export const CartWrapper = styled.button`
+  position: relative;
+`;
+
+export const CartQuantity = styled.span`
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: ${({ theme }) => theme.fontSize.xs};
+  background-color: ${({ theme }) => theme.color.headerBg};
+  right: -4px;
+  top: -4px;
+  border-radius: 50%;
+  padding: 2px;
+`;
 
 export const SearchInput = styled.input`
   background-color: #fff;

@@ -1,16 +1,46 @@
 import React from "react";
-import { withTheme } from "styled-components";
+
+import LoadingSVG from "src/components/svg/loading";
 
 import * as S from "./style";
 
 interface ButtonProps {
+  anchor?: boolean;
+  type?: JSX.IntrinsicElements["button"]["type"];
   block?: boolean;
+  disabled?: boolean;
+  loading?: boolean;
+  title?: string;
   children: React.ReactNode;
-  theme: any;
+  onClick?: () => void;
 }
 
 function Button(props: ButtonProps) {
-  return <S.Button $block={!!props.block}>{props.children}</S.Button>;
+  if (props.anchor) {
+    <S.AnchorButton title={props.title} onClick={props.onClick}>
+      {props.loading && <Loading />}
+      {props.children}
+    </S.AnchorButton>;
+  }
+
+  return (
+    <S.Button
+      type={props.type}
+      title={props.title}
+      disabled={props.disabled}
+      $block={!!props.block}
+      onClick={props.onClick}
+    >
+      {props.loading && <Loading />}
+      {props.children}
+    </S.Button>
+  );
 }
 
-export default withTheme(Button);
+export default Button;
+
+export const Loading = () => (
+  <S.Loading>
+    <LoadingSVG />
+  </S.Loading>
+);

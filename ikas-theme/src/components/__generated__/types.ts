@@ -34,7 +34,7 @@ export type HeaderProps = {
 export type FooterProps = {
 	logo: IkasImage;
 	links: IkasNavigationLink[];
-	socialMedia: SocialMedia;
+	socialMedia?: SocialMedia;
 };
 
 export type ProductDetailProps = {

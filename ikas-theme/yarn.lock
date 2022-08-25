@@ -283,53 +283,53 @@
     graphql "^15.3.0"
     lodash "^4.17.20"
 
-"@ikas/storefront-api@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.0.0-alpha.63.tgz#80f8ed6a4b8edb65abe8dceddb046e274f936983"
-  integrity sha512-RS6dned9XAxd1Hhwpax16I8hrtSfpxxR0N80V/FJ1NwPpKgTjt8cXPoJYTlzQoluHJZqqRQB3iIlzcbpeZwlTQ==
+"@ikas/storefront-api@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.0.0-alpha.82.tgz#67cde54be39c4d5cdee56fa60403458ccbf9be0d"
+  integrity sha512-NWFF2+Xy/S1Y2Nu7jvGtAsOtmtk9CdrR+kLQO56+dNmzfcgZo2KVIL/Zur5S4915RLLsAIuxe9jrCv8WcM4Y9A==
 
-"@ikas/storefront-assets@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.0.0-alpha.63.tgz#26fc859decd593447dc7397fe4892cea020b1a8c"
-  integrity sha512-qzPW4KnCqqkjizEN7dL0KeNQ2pFazGjPoEBQjYGiVShZ5928ooZ4e8yUag6VFl+spbBnpdpStUZAuF0CVBpXZw==
+"@ikas/storefront-assets@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.0.0-alpha.82.tgz#dff07393316d88ad46357ecc5de5576a3403c983"
+  integrity sha512-913FzLe0YxYmNbRw2yH10LN5jlgyY8mMgiNLV05veoTaOxXxBbP0pD7rerRVTzNSNDUxg6nV4wuD2A3WLp2nXQ==
 
-"@ikas/storefront-cmd@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.0.0-alpha.63.tgz#c98043c51fa5f2e1dc8ea42632c0e1d6d38b55fc"
-  integrity sha512-6jZwDdBj73+fFwzb708NB3PQaKf/7PfNJA+MHcDStB7cPC1prl7Dk6E1IoSvUvDXCbkzb12I2Rc6l9M2Sa0nqg==
+"@ikas/storefront-cmd@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.0.0-alpha.82.tgz#7f00e681df0791edad7dd5c513710948b508a019"
+  integrity sha512-mPxzs7qjPoNUleBBNMxrqVEsxc+maj0OpKSc3YgTYQ6LeGa1x3sEYggv9MUDwEIdcbGvs+tU4Ia1vwATPnJARA==
   dependencies:
     command-line-args "^5.2.0"
     lodash "^4.17.21"
 
-"@ikas/storefront-config@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.0.0-alpha.63.tgz#1d8e4a4daa29f721f5189e25b23bfb6daa8e727c"
-  integrity sha512-zAbw0YYQcSU7wGVw8Gse1oIchQQi5b71JDqb3RDS8toCionFhtMQ32/aawiS504H5VgNg9xdvJ83kc+g4o5EWg==
+"@ikas/storefront-config@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.0.0-alpha.82.tgz#2440c94e2a8f6bbcb7c80776a338ed012b81911e"
+  integrity sha512-ydG38DKh2c+YoSQS/s2tBlHGkTJ8I7/W8oBoomfFYkuPTyZndKaoiaZNNgXM7VEHA42kuUFozbNDJRrsum9PLA==
 
-"@ikas/storefront-model-functions@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.0.0-alpha.63.tgz#36f9aa3fccbf3a27b9961c76ee9e12f7ef0047a2"
-  integrity sha512-dfAl5okYG683XPAqZccMZHFFSK+Q3vttWF8R5abCYU+Kx+wT5cOMN2M0ctcjh6yWIZYuUvqLAiv/vzOR5wVrtQ==
+"@ikas/storefront-model-functions@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.0.0-alpha.82.tgz#deceb68b4a7301260243894384689870c5f99940"
+  integrity sha512-Hu1RVAt+FnCX3ljEPcDad2ZlaGX94YyZgd52Cxsr5GxQ1ukVLviXxvvl4CXR7RfBjhgv/oyzA6IOB/F0gI1gIg==
 
-"@ikas/storefront-models@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.0.0-alpha.63.tgz#a3d4404e49cf7c017391c4a1abf3ffe32528a392"
-  integrity sha512-nFcvUzTiglNv4eDvOa2hm+Tq1n15VTkgFKZddvfqgis3vjNiZ81+YD1YdfpB6jaBSgKJ6GOI7Zi0uX4MLcvpdA==
+"@ikas/storefront-models@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.0.0-alpha.82.tgz#f092effe79f73d2c112124da4b654398da510e5b"
+  integrity sha512-LhZi7w7mnEvZetDfxlxSf2psyFabLbtKzhcEhTz+FBj/ix71f2rkHluZO67f57EZODm5YRkU7YTYNMZY34dPIQ==
 
-"@ikas/storefront-next@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.0.0-alpha.63.tgz#d11854898f5407116020a7e2e8eefd6a1f387b59"
-  integrity sha512-Kic+K7SXDQrTKWQnGSLHsCJVgLRejLAJNmqOBWlO/xgs7KqdAlpdovg3zKPJE+9hctv0tZifO6X9IyeQRCE/Hw==
+"@ikas/storefront-next@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.0.0-alpha.82.tgz#cfab04008b1730d0f886b94e6e9331f5ee87b1f4"
+  integrity sha512-tsaxS9YDJ4w7gjcdlJgUUgAnS2FDBxRENmowFTm+ckVS/o8EmIQZfCUK3DSv3sCxkubBPRaP7kx2HF98lPFOSw==
 
-"@ikas/storefront-providers@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.0.0-alpha.63.tgz#82b0cd8184dbead0c50ba78597b222ac54788b76"
-  integrity sha512-9BD8qP5YBu+HNcD6FUwTcWEm3+K5Xhlu1k/txmk9LZ75VCQ7aOaFPENCyjakMEfBeq3NdutIeZRp6e0ngfb87w==
+"@ikas/storefront-providers@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.0.0-alpha.82.tgz#ef68c2e354e767d5b04de9d68c5b0e6057d86e30"
+  integrity sha512-/xqbbBQuuNEgfU/pJtKItKwv02NG7YP04HFSoEOyR5WUkwicX3+p0JnfC9teswGH8UzAhE40IclaBRoVnxD03A==
 
-"@ikas/storefront@^4.0.0-alpha.63":
-  version "4.0.0-alpha.63"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.0.0-alpha.63.tgz#24bd755d842a151bfa912216cd6168e49ae2c341"
-  integrity sha512-zWO5CEoEe9Cf7Qujx6kYAx/85WeJr+NA/JDrsg6v7QtGO8TNSEI2Vab77PE8ncY5q4nPiVZw3nqOLGdVhEKg7g==
+"@ikas/storefront@^4.0.0-alpha.82":
+  version "4.0.0-alpha.82"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.0.0-alpha.82.tgz#8140d8887db9adf5f20d2156c8d133d07aa2bdb6"
+  integrity sha512-+HbPU6u0EAVvumyhW94yAqdMCSke2xpt2it8lVv1Qfm0dYCFX9MpR+UumEHbqcg197nAAgD7EcKnwQMdy6Pozg==
   dependencies:
     "@stripe/react-stripe-js" "^1.7.2"
     "@stripe/stripe-js" "^1.29.0"

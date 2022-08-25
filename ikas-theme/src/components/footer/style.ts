@@ -1,4 +1,4 @@
-import breakpoints from "src/styles/break-points";
+import breakpoints from "src/styles/breakpoints";
 import styled from "styled-components";
 
 export const Footer = styled.footer`

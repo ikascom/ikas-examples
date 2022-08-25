@@ -1,13 +1,51 @@
 {
   "detail": {
-    "addToCartButton": {
-      "text": "ADD TO CARD"
+    "favorite": {
+      "tooltipText": {
+        "add": "Add product to favorite",
+        "remove": "Remove product from favorites"
+      }
+    },
+    "addToCart": {
+      "text": "ADD TO CARD",
+      "soldOut": "SOLD OUT",
+      "remindOnBackInStock": "Notify me when back in stock",
+      "backInStockReminderSaved": "We will notify you when stock in"
     },
     "description": {
       "title": "Description"
     },
     "share": {
       "title": "Share:"
+    },
+    "variantType": {
+      "selectPlaceholder": "Choose an option"
+    },
+    "productOptions": {
+      "text": {},
+      "textarea": {},
+      "checbox": {},
+      "choice": {},
+      "colorPicker": {},
+      "datePicker": {},
+      "file": {
+        "selectFile": "Select file(s)",
+        "incorrectFiles": "Incorrect Files",
+        "selectedFiles": "Selected Files",
+        "uploadedFiles": "Uploaded Files"
+      },
+      "common": {
+        "settings": {
+          "required": "This field is required",
+          "minMax": "Must be a minimum of {{min}} characters and a maximum of {{max}} characters",
+          "min": "Must be a minimum of {{min}} characters",
+          "max": "Must be a minimum of {{max}} characters",
+          "selectMinMax": "Minimum {{min}}, maximum {{max}} selections should be made",
+          "selectMin": "Minimum {{min}} selections should be made",
+          "selectMax": "Maximum {{max}} selections should be made",
+          "maxFileSizeInfoText": "You can upload files up to 3 MB in size."
+        }
+      }
     }
   }
 }

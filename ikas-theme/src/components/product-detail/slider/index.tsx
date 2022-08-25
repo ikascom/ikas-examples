@@ -5,11 +5,18 @@ import { Image } from "@ikas/storefront";
 import SliderStore from "src/store/slider-store";
 
 import { ProductDetailProps } from "src/components/__generated__/types";
-import breakpoints from "src/styles/break-points";
+import breakpoints from "src/styles/breakpoints";
 
 import * as S from "./style";
 
 function Slider(props: ProductDetailProps) {
+  const sliderStore = SliderStore.getInstance();
+
+  useEffect(() => {
+    sliderStore.activeImageId =
+      props.product.selectedVariant.mainImage?.image?.id;
+  }, [props.product.selectedVariant]);
+
   return (
     <S.SliderWrapper>
       <Thumbnails {...props} />
@@ -28,12 +35,6 @@ const Thumbnails = observer((props: ProductDetailProps) => {
     sliderStore.activeImageId = id;
   };
 
-  useEffect(() => {
-    // set mainImage on initial load
-    sliderStore.activeImageId =
-      props.product.selectedVariant.mainImage?.image?.id;
-  }, []);
-
   return (
     <S.Thumbnails>
       {props.product.selectedVariant.images?.map((image, index) => (
@@ -44,6 +45,7 @@ const Thumbnails = observer((props: ProductDetailProps) => {
           onClick={onClick}
         >
           <Image
+            useBlur
             image={image.image!}
             layout="intrinsic"
             width={96}
