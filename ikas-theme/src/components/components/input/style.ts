@@ -7,7 +7,7 @@ type StyledInputProps = {
 
 export const Input = styled.input<StyledInputProps>`
   width: 100%;
-  height: 42px;
+  height: 52px;
   padding: 0 8px;
 
   background-color: ${({ theme, $status }) => {

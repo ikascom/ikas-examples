@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { IkasBaseStore, Link, useTranslation } from "@ikas/storefront";
+import { Link, useTranslation } from "@ikas/storefront";
 
 import Alert from "src/components/components/alert";
 import Form from "src/components/components/form";
@@ -9,44 +9,45 @@ import Input from "src/components/components/input";
 import { Container } from "src/components/components/container";
 import Button from "src/components/components/button";
 
-import useLogin from "./useLogin";
-
 import * as S from "./style";
+import useRegister from "./useRegister";
+import Row from "../components/grid/row";
+import Col from "../components/grid/col";
 import GoogleCaptcha from "../components/google-captcha";
 
 type Props = {};
 
-export const namespace = "login";
+export const namespace = "register";
 
-function Login(props: Props) {
+function Register(props: Props) {
   const { t } = useTranslation();
-  const login = useLogin();
-  const { formAlert, onFormAlertClose, form } = login;
+  const register = useRegister();
+  const { formAlert, onFormAlertClose, form } = register;
 
   return (
     <Container>
       <S.Wrapper>
         <S.Title>{t(`${namespace}:title`)}</S.Title>
-        <LoginFormAlert
+        <RegisterFormAlert
           formAlert={formAlert}
           onFormAlertClose={onFormAlertClose}
         />
-        <LoginFormComponent {...login} />
+        <RegisterFormComponent {...register} />
         <Footer redirect={form.redirect} />
       </S.Wrapper>
     </Container>
   );
 }
 
-export default observer(Login);
+export default observer(Register);
 
-type LoginFormAlertProps = {
-  formAlert: ReturnType<typeof useLogin>["formAlert"];
-  onFormAlertClose: ReturnType<typeof useLogin>["onFormAlertClose"];
+type RegisterFormAlertProps = {
+  formAlert: ReturnType<typeof useRegister>["formAlert"];
+  onFormAlertClose: ReturnType<typeof useRegister>["onFormAlertClose"];
 };
 
-const LoginFormAlert = observer(
-  ({ formAlert, onFormAlertClose }: LoginFormAlertProps) => {
+const RegisterFormAlert = observer(
+  ({ formAlert, onFormAlertClose }: RegisterFormAlertProps) => {
     if (!formAlert) return null;
     return (
       <Alert
@@ -60,15 +61,42 @@ const LoginFormAlert = observer(
   }
 );
 
-type LoginFormProps = ReturnType<typeof useLogin>;
+type RegisterFormProps = ReturnType<typeof useRegister>;
 
-const LoginFormComponent = observer(
-  ({ status, isPending, form, onFormSubmit }: LoginFormProps) => {
+const RegisterFormComponent = observer(
+  ({ status, isPending, form, onFormSubmit }: RegisterFormProps) => {
     const { t } = useTranslation();
-    const store = IkasBaseStore.getInstance();
 
     return (
       <Form onSubmit={onFormSubmit}>
+        <Row gutter={[24, 0]}>
+          <Col span={12}>
+            <FormItem
+              label={t(`${namespace}:form.firstName`)}
+              help={form.firstNameErrorMessage}
+              status={status.firstName}
+            >
+              <Input
+                status={status.firstName}
+                value={form.firstName}
+                onChange={(event) => form.onFirstNameChange(event.target.value)}
+              />
+            </FormItem>
+          </Col>
+          <Col span={12}>
+            <FormItem
+              label={t(`${namespace}:form.lastName`)}
+              help={form.lastNameErrorMessage}
+              status={status.lastName}
+            >
+              <Input
+                status={status.lastName}
+                value={form.lastName}
+                onChange={(event) => form.onLastNameChange(event.target.value)}
+              />
+            </FormItem>
+          </Col>
+        </Row>
         <FormItem
           label={t(`${namespace}:form.email`)}
           help={form.emailErrorMessage}
@@ -92,7 +120,7 @@ const LoginFormComponent = observer(
             onChange={(event) => form.onPasswordChange(event.target.value)}
           />
         </FormItem>
-        <GoogleCaptcha i18nFileName="login" />
+        <GoogleCaptcha i18nFileName="register" />
         <Button block type="submit" loading={isPending} disabled={isPending}>
           {t(`${namespace}:form.login`)}
         </Button>
@@ -112,9 +140,9 @@ const Footer = ({ redirect }: FooterProps) => {
   return (
     <S.Footer>
       <div>
-        {t(`${namespace}:noAccount`)}{" "}
-        <Link passHref href={`/account/register${redirectHref}`}>
-          <a>{t(`${namespace}:createNewAccount`)}</a>
+        {t(`${namespace}:alreadyHaveAccount`)}{" "}
+        <Link passHref href={`/account/login${redirectHref}`}>
+          <a>{t(`${namespace}:login`)}</a>
         </Link>
       </div>
       <Link passHref href={`/account/forgot-password${redirectHref}`}>

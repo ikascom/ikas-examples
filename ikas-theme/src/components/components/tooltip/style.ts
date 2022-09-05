@@ -14,9 +14,13 @@ export const Tooltip = styled.div<Props>`
   ${({ $noCursor }) => !$noCursor && "cursor: help;"};
 
   :hover > div,
-  :focus > div {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation-name: show-tooltip;
+  :focus-visible > div {
+    ${({ $placement }) => {
+      if ($placement === "left") {
+        return "animation-name: show-tooltip-left;";
+      }
+      return "animation-name: show-tooltip-bottom;";
+    }};
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
@@ -27,22 +31,21 @@ export const Tooltip = styled.div<Props>`
     animation-delay: 150ms;
   }
 
-  @keyframes show-tooltip {
+  @keyframes show-tooltip-left {
     100% {
-      ${({ $placement }) => {
-        if ($placement === "left") {
-          return css`
-            right: 100%;
-            transform: translateY(-50%);
-          `;
-        }
+      top: 50%;
+      transform: translateY(-50%);
+      right: 100%;
+      opacity: 100;
+      visibility: visible;
+    }
+  }
 
-        return css`
-          top: 100%;
-          transform: translateX(-50%);
-        `;
-      }};
-
+  @keyframes show-tooltip-bottom {
+    100% {
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
       opacity: 100;
       visibility: visible;
     }

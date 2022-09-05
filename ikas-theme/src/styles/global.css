@@ -1,11 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
-:root {
-  --header-background-color: #e8f4f9;
-  --footer-background-color: #fff9f5;
-}
-
 html,
 body {
   padding: 0;

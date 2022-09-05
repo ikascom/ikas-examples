@@ -1,0 +1,33 @@
+{
+  "title": "Register",
+  "form": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "password": "Password",
+    "login": "CREATE ACCOUNT"
+  },
+  "formMessage": {
+    "requiredRule": "Please fill this field",
+    "emailRule": "Please enter a valid email",
+    "minRule": "Must be at least 6 characters"
+  },
+  "formAlert": {
+    "successTitle": "Register successful",
+    "successText": "Please wait for the forwarding process...",
+    "emailExistTitle": "Email already exist.",
+    "emailExistText": "Email already exist. Enter different email",
+    "unsuccessTitle": "Register failed.",
+    "unsuccessText": "Check your information and try again",
+    "errorTitle": "Error!",
+    "errorText": "An unexpected error has occurred."
+  },
+
+  "captchaText": "This site is protected by reCAPTCHA and the {{ privacyPolicy }} and {{ termsOfService }} apply.",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfService": "Terms of Service",
+
+  "alreadyHaveAccount": "Already have account?",
+  "login": "Login here",
+  "forgetPassword": "Forget password"
+}

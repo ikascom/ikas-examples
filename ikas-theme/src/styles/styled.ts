@@ -31,6 +31,8 @@ export const theme = {
     inputBackground: "var(--input-background-color)",
     inputText: "var(--input-text)",
 
+    link: "var(--link)",
+
     white: "#FFFFFF",
     black: "#000000",
     red: "#ed2727",

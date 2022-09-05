@@ -6,6 +6,7 @@ import * as S from "./style";
 
 interface ButtonProps {
   anchor?: boolean;
+  href?: string;
   type?: JSX.IntrinsicElements["button"]["type"];
   block?: boolean;
   disabled?: boolean;
@@ -17,10 +18,16 @@ interface ButtonProps {
 
 function Button(props: ButtonProps) {
   if (props.anchor) {
-    <S.AnchorButton title={props.title} onClick={props.onClick}>
-      {props.loading && <Loading />}
-      {props.children}
-    </S.AnchorButton>;
+    return (
+      <S.AnchorButton
+        href={props.href}
+        title={props.title}
+        onClick={props.onClick}
+      >
+        {props.loading && <Loading />}
+        {props.children}
+      </S.AnchorButton>
+    );
   }
 
   return (

@@ -26,7 +26,7 @@ export const Button = styled.button<{ $block?: boolean }>`
   }
 `;
 
-export const AnchorButton = styled.a(Button);
+export const AnchorButton = Button.withComponent("a");
 
 export const Loading = styled.span`
   display: inline-block;

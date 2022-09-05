@@ -16,7 +16,7 @@ export const Modal = styled.div.attrs({
   left: 0;
   padding: 20px;
   overflow: hidden auto;
-  background-color: ${({ theme }) => theme.color.black}50;
+  background-color: ${({ theme }) => theme.color.black}40;
   z-index: ${({ theme }) => theme.zIndex.modal};
 
   display: ${({ $visible }) => ($visible ? "flex" : "none")};
@@ -26,11 +26,13 @@ export const ModalInner = styled.div.attrs({
   "aria-label": "modal-inner",
 })`
   position: relative;
-  padding: 16px;
+  padding: 48px;
   margin: auto;
   width: 100%;
   max-width: 500px;
   background-color: ${({ theme }) => theme.color.white};
+  border-radius: 12px;
+
   // animate?
 `;
 
@@ -38,8 +40,8 @@ export const CloseButton = styled.button.attrs({
   "aria-label": "modal-close",
 })`
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 12px;
+  right: 12px;
   padding: 16px;
 `;
 
