@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+import * as S from "./style";
 
 export type FormAlertType = {
   title?: string;
@@ -12,7 +14,8 @@ type AlertComponentProps = FormAlertType & {
 };
 
 export default function AlertComponent(props: AlertComponentProps) {
-  const [isVisible, setVisibility] = React.useState(true);
+  const [isVisible, setVisibility] = useState(true);
+
   const onClose = () => {
     setVisibility(false);
     props.onClose && props.onClose();
@@ -20,35 +23,10 @@ export default function AlertComponent(props: AlertComponentProps) {
 
   if (!isVisible) return null;
   return (
-    <div
-      className={[
-        "relative w-full p-4 pr-5 mb-6",
-        "border rounded",
-        props.status === "error"
-          ? "bg-red bg-opacity-10 border-red text-red"
-          : "",
-        props.status === "success"
-          ? "bg-green bg-opacity-10 border-green text-green"
-          : "",
-        props.status === "info"
-          ? "bg-primary-button-text border-primary-button-bg text-primary-button-bg"
-          : "",
-      ].join(" ")}
-    >
-      {props.title && (
-        <div className="mb-2 text-base font-medium">{props.title}</div>
-      )}
-      <div className="font-normal">{props.text}</div>
-      {props.closable && (
-        <span
-          className="absolute top-0 right-0 px-2 py-1 cursor-pointer leading-none"
-          tabIndex={0}
-          onClick={onClose}
-          onKeyPress={onClose}
-        >
-          x
-        </span>
-      )}
-    </div>
+    <S.AlertWrapper $status={props.status}>
+      {props.title && <S.AlertTitle>{props.title}</S.AlertTitle>}
+      <S.AlertText>{props.text}</S.AlertText>
+      {props.closable && <S.CloseButton onClick={onClose}>x</S.CloseButton>}
+    </S.AlertWrapper>
   );
 }
