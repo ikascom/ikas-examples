@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "dfc394ec-f936-4d5c-93e7-23a89f01f79c",
+          "id": "6cb58d81-2554-4c85-9b8e-fe9f4095a961",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "35776d26-568c-4708-8563-dcb494a22f00",
+          "id": "2e3cabf9-1837-420e-b0b4-eaabb6076f2d",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "e267ce5b-10ab-4721-80a9-650eb90ef9d8",
+          "id": "3bf08e40-04a5-489a-bbd2-335cd2c471cf",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "e6c01c6c-c538-41e8-a3dc-1a36f3cc7300",
+          "id": "5504a2ea-e121-4de4-8ca9-96ad69684624",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "e9ee17d3-b20d-47d7-88de-259defa02344",
+          "id": "db91a303-960d-44ed-824f-095d604b3fbf",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "7edc7adf-c8d4-4c84-8815-f9672fc07a03",
+          "id": "03cdc199-d557-4442-9528-0b595bc7f757",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "96b5ed49-525a-484a-a7ea-a97da8320afb",
+          "id": "20953071-8835-4f0f-8a11-6d71e599cd44",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "04754a8c-5ce8-496f-a915-bfca38285486",
+          "id": "9509ce13-f8ab-431a-b1dd-32731fda1341",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "aebc049e-3362-43f8-80e0-d23b09638273",
+          "id": "c59045f2-d65b-477d-be69-e3d0d966c1b2",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "ca38787f-b7a9-4e89-b6aa-fb0702f12251",
+          "id": "84f709bd-dd29-4ff5-bfdd-22e538c77046",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "eaa038b2-0280-4927-846d-767fae77d670",
+          "id": "bbdaaa68-f4c8-4a51-9701-4248fa6d503d",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "06b4a3cb-37ed-46c6-b4db-33b1ccbf418e",
+          "id": "41b58746-c70c-476c-94e5-ec2de16db242",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "5f3717fb-8b3d-4b97-a0ce-97367d5adc50",
+          "id": "49af3479-0a00-4093-b459-e284c35a3ac9",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "07436d6e-e333-4c4b-a04b-05225bcd99fb",
+          "id": "9fcf0f0d-13d9-459e-a29f-3ceab5ba4fde",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "21332f32-a10e-4291-8a8f-2be7ea250759",
+          "id": "17b302d0-23d7-436d-a269-fb6684a41794",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "d1cfff6d-f603-49f3-8844-a95b23569e16",
+          "id": "86afb14c-46f4-41d0-bb50-d519634f8e28",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "87fc27e5-6bfe-4c52-8a6a-b98835d77900",
+          "id": "adf49cc5-4a84-4881-ba71-f41a159e1f67",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -292,6 +292,17 @@
           "isRequired": true,
           "sliderData": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
+        },
+        {
+          "id": "766c9ac1-9ecc-4f1a-a406-d26630c07db3",
+          "name": "links",
+          "displayName": "Links",
+          "description": "",
+          "type": "LIST_OF_LINK",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "23f250ee-0016-4ced-896a-6ad6cc5c3edc",
           "translations": {}
         }
       ],
@@ -550,7 +561,108 @@
           "id": "e6190153-5bd9-438b-a11c-576c7d449ded",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -695,7 +807,108 @@
           "id": "11e89180-cb43-4950-b62e-1dfcf0e2bac4",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -840,7 +1053,108 @@
           "id": "c6e833cf-609e-4d7f-8489-a53865147552",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -985,7 +1299,108 @@
           "id": "91701f66-08c6-46e4-baab-d9d387bd62de",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1130,7 +1545,108 @@
           "id": "eb95c871-991c-4ccc-99a6-ccf6fde427cb",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1288,7 +1804,108 @@
           "id": "90789577-5c7d-478e-a5c6-b7c2b8e7a010",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1491,7 +2108,108 @@
           "id": "c6e833cf-609e-4d7f-8489-a53865147552",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1654,7 +2372,108 @@
           "id": "b622a76b-93e0-4007-83a0-4f63bb53083c",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1804,7 +2623,108 @@
           "id": "63bdacb5-a613-4688-9a36-277a3eb7c49b",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -1962,7 +2882,108 @@
           "id": "63bdacb5-a613-4688-9a36-277a3eb7c49b",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -2125,7 +3146,108 @@
           "id": "eb95c871-991c-4ccc-99a6-ccf6fde427cb",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "links": [
+              {
+                "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+                "linkType": "PAGE",
+                "label": "Men",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                    "linkType": "PAGE",
+                    "label": "Suit",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                    "linkType": "PAGE",
+                    "label": "Shirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+                "linkType": "PAGE",
+                "label": "Women",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                    "linkType": "PAGE",
+                    "label": "Clothes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                    "linkType": "PAGE",
+                    "label": "Shoes",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                    "linkType": "PAGE",
+                    "label": "Skirt",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              },
+              {
+                "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+                "linkType": "PAGE",
+                "label": "Unisex",
+                "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                "pageType": "INDEX",
+                "subLinks": [
+                  {
+                    "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                    "linkType": "PAGE",
+                    "label": "Suitcase",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  },
+                  {
+                    "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                    "linkType": "PAGE",
+                    "label": "Bag",
+                    "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                    "pageType": "INDEX",
+                    "subLinks": []
+                  }
+                ]
+              }
+            ]
           }
         },
         {
@@ -2372,6 +3494,41 @@
         "color": "#1a0dab",
         "key": "--link",
         "translations": {}
+      },
+      {
+        "id": "085ccb46-1c7d-47c4-85f7-4fd2e360cc77",
+        "displayName": "Product Discount Badge Background Color",
+        "color": "#0b1d69",
+        "key": "--product-badge-bg",
+        "translations": {}
+      },
+      {
+        "id": "f0fddfd7-78eb-4333-8244-33f1e92c39e8",
+        "displayName": "Product Discount Badge Text Color",
+        "color": "#ffffff",
+        "key": "--product-badge-text",
+        "translations": {}
+      },
+      {
+        "id": "b5366c0a-1c14-42ae-b265-424e4e449a64",
+        "displayName": "Sidenav Background Color",
+        "color": "#ffffff",
+        "key": "--sidenav-bg",
+        "translations": {}
+      },
+      {
+        "id": "a308d0aa-93d3-49aa-97d3-d06cf778a423",
+        "displayName": "Sidenav Text Color",
+        "color": "#000000",
+        "key": "--sidenav-text",
+        "translations": {}
+      },
+      {
+        "id": "36b5672d-8b78-4764-bf11-8c6f6a7b48eb",
+        "displayName": "Header Text Color",
+        "color": "#000000",
+        "key": "--header-text-color",
+        "translations": {}
       }
     ],
     "favicon": {
@@ -2586,6 +3743,11 @@
     {
       "id": "e438590a-4378-456d-b60f-9d6925b99959",
       "name": "Social Share",
+      "translations": {}
+    },
+    {
+      "id": "23f250ee-0016-4ced-896a-6ad6cc5c3edc",
+      "name": "Links",
       "translations": {}
     }
   ],

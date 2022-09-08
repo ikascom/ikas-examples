@@ -1,12 +1,28 @@
-// import { makeAutoObservable } from "mobx";
+import { makeAutoObservable } from "mobx";
 
 export default class UIStore {
-  // You can write your own store here... e.g. below
-  /*
-  cartDrawerVisible = false;
+  private static _instance: UIStore;
+  sidenavVisible = false;
 
   private constructor() {
     makeAutoObservable(this);
   }
-  */
+
+  toggleSidenav = () => {
+    this.sidenavVisible = !this.sidenavVisible;
+  };
+
+  openSidenav = () => {
+    this.sidenavVisible = true;
+  };
+
+  closeSidenav = () => {
+    this.sidenavVisible = false;
+  };
+
+  static getInstance() {
+    if (this._instance) return this._instance;
+    this._instance = new UIStore();
+    return this._instance;
+  }
 }

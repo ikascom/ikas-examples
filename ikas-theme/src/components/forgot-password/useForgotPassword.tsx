@@ -1,12 +1,7 @@
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import {
-  ForgotPasswordForm,
-  IkasBaseStore,
-  useTranslation,
-} from "@ikas/storefront";
+import { useState } from "react";
+import { ForgotPasswordForm, useStore, useTranslation } from "@ikas/storefront";
 
-import { namespace } from ".";
+import { NS } from ".";
 import { FormAlertType } from "../components/alert";
 import { FormItemStatus } from "../components/form/form-item";
 
@@ -15,14 +10,13 @@ type UseForgotPasswordStatus = {
 };
 
 export default function useForgotPassword() {
-  const router = useRouter();
   const { t } = useTranslation();
 
   const [form] = useState(
     new ForgotPasswordForm({
       message: {
-        requiredRule: t(`${namespace}:formMessage.requiredRule`),
-        emailRule: t(`${namespace}:formMessage.emailRule`),
+        requiredRule: t(`${NS}:formMessage.requiredRule`),
+        emailRule: t(`${NS}:formMessage.emailRule`),
       },
     })
   );
@@ -40,14 +34,13 @@ export default function useForgotPassword() {
       const hasError = await form.validateAll();
       if (hasError) return;
 
-      const store = IkasBaseStore.getInstance();
+      const store = useStore();
       const isEmailExist = await store.customerStore.checkEmail(form.email);
-      console.log(isEmailExist);
       if (!isEmailExist) {
         setFormAlert({
           status: "error",
-          title: t(`${namespace}:formAlert.emailNotExistTitle`),
-          text: t(`${namespace}:formAlert.emailNotExistText`),
+          title: t(`${NS}:formAlert.emailNotExistTitle`),
+          text: t(`${NS}:formAlert.emailNotExistText`),
         });
         return;
       }
@@ -57,22 +50,22 @@ export default function useForgotPassword() {
       if (!response.isSuccess) {
         setFormAlert({
           status: "error",
-          title: t(`${namespace}:formAlert.unsuccessTitle`),
-          text: t(`${namespace}:formAlert.unsuccessText`),
+          title: t(`${NS}:formAlert.unsuccessTitle`),
+          text: t(`${NS}:formAlert.unsuccessText`),
         });
         return;
       }
 
       setFormAlert({
         status: "success",
-        title: t(`${namespace}:formAlert.successTitle`),
-        text: t(`${namespace}:formAlert.successText`),
+        title: t(`${NS}:formAlert.successTitle`),
+        text: t(`${NS}:formAlert.successText`),
       });
     } catch {
       setFormAlert({
         status: "error",
-        title: t(`${namespace}:formAlert.errorTitle`),
-        text: t(`${namespace}:formAlert.errorText`),
+        title: t(`${NS}:formAlert.errorTitle`),
+        text: t(`${NS}:formAlert.errorText`),
       });
     } finally {
       setPending(false);

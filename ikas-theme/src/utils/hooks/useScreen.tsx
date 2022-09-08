@@ -5,17 +5,22 @@ import { useScreenResize } from "./useScreenResize";
 export function useScreen() {
   const [width, setWidth] = useState(0);
   const handleResize = useCallback(() => {
-    setWidth(() => window.innerWidth);
+    setWidth(() => innerWidth());
   }, []);
   useScreenResize(handleResize);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    setWidth(innerWidth());
   }, []);
+
+  const innerWidth = () => {
+    if (typeof window === "undefined") return 0;
+    return window.innerWidth;
+  };
 
   return {
     width,
-    isMobile: innerWidth < point.lg,
-    isDesktop: innerWidth >= point.lg,
+    isMobile: innerWidth() < point.lg,
+    isDesktop: innerWidth() >= point.lg,
   };
 }

@@ -1,4 +1,4 @@
-const svg = ({ fill }: { fill: boolean }) => (
+const svg = ({ fill }: { fill?: boolean }) => (
   <svg
     width="32"
     height="32"

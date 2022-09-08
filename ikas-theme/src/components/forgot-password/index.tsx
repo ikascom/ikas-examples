@@ -14,7 +14,7 @@ import useForgotPassword from "./useForgotPassword";
 
 import * as S from "./style";
 
-export const namespace = "forgot-password";
+export const NS = "forgot-password";
 
 type Props = {};
 
@@ -26,7 +26,7 @@ function ForgotPassword(props: Props) {
   return (
     <Container>
       <S.Wrapper>
-        <S.Title>{t(`${namespace}:title`)}</S.Title>
+        <S.Title>{t(`${NS}:title`)}</S.Title>
         <ForgotPasswordFormAlert
           formAlert={formAlert}
           onFormAlertClose={onFormAlertClose}
@@ -69,7 +69,7 @@ const ForgotPasswordFormComponent = observer(
     return (
       <Form onSubmit={onFormSubmit}>
         <FormItem
-          label={t(`${namespace}:form.email`)}
+          label={t(`${NS}:form.email`)}
           help={form.emailErrorMessage}
           status={status.email}
         >
@@ -82,7 +82,7 @@ const ForgotPasswordFormComponent = observer(
 
         <GoogleCaptcha i18nFileName="forgot-password" />
         <Button block type="submit" loading={isPending} disabled={isPending}>
-          {t(`${namespace}:form.submit`)}
+          {t(`${NS}:form.submit`)}
         </Button>
       </Form>
     );
@@ -100,15 +100,15 @@ const Footer = ({ redirect }: FooterProps) => {
   return (
     <S.Footer>
       <div>
-        {t(`${namespace}:noAccount`)}{" "}
+        {t(`${NS}:noAccount`)}{" "}
         <Link passHref href={`/account/register${redirectHref}`}>
-          <a>{t(`${namespace}:createNewAccount`)}</a>
+          <a>{t(`${NS}:createNewAccount`)}</a>
         </Link>
       </div>
       <div>
-        {t(`${namespace}:hasAccount`)}{" "}
+        {t(`${NS}:hasAccount`)}{" "}
         <Link passHref href={`/account/login${redirectHref}`}>
-          <a>{t(`${namespace}:loginHere`)}</a>
+          <a>{t(`${NS}:loginHere`)}</a>
         </Link>
       </div>
     </S.Footer>

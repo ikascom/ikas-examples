@@ -17,7 +17,7 @@ import GoogleCaptcha from "../components/google-captcha";
 
 type Props = {};
 
-export const namespace = "register";
+export const NS = "register";
 
 function Register(props: Props) {
   const { t } = useTranslation();
@@ -27,7 +27,7 @@ function Register(props: Props) {
   return (
     <Container>
       <S.Wrapper>
-        <S.Title>{t(`${namespace}:title`)}</S.Title>
+        <S.Title>{t(`${NS}:title`)}</S.Title>
         <RegisterFormAlert
           formAlert={formAlert}
           onFormAlertClose={onFormAlertClose}
@@ -72,7 +72,7 @@ const RegisterFormComponent = observer(
         <Row gutter={[24, 0]}>
           <Col span={12}>
             <FormItem
-              label={t(`${namespace}:form.firstName`)}
+              label={t(`${NS}:form.firstName`)}
               help={form.firstNameErrorMessage}
               status={status.firstName}
             >
@@ -85,7 +85,7 @@ const RegisterFormComponent = observer(
           </Col>
           <Col span={12}>
             <FormItem
-              label={t(`${namespace}:form.lastName`)}
+              label={t(`${NS}:form.lastName`)}
               help={form.lastNameErrorMessage}
               status={status.lastName}
             >
@@ -98,7 +98,7 @@ const RegisterFormComponent = observer(
           </Col>
         </Row>
         <FormItem
-          label={t(`${namespace}:form.email`)}
+          label={t(`${NS}:form.email`)}
           help={form.emailErrorMessage}
           status={status.email}
         >
@@ -109,7 +109,7 @@ const RegisterFormComponent = observer(
           />
         </FormItem>
         <FormItem
-          label={t(`${namespace}:form.password`)}
+          label={t(`${NS}:form.password`)}
           help={form.passwordErrorMessage}
           status={status.password}
         >
@@ -122,7 +122,7 @@ const RegisterFormComponent = observer(
         </FormItem>
         <GoogleCaptcha i18nFileName="register" />
         <Button block type="submit" loading={isPending} disabled={isPending}>
-          {t(`${namespace}:form.login`)}
+          {t(`${NS}:form.login`)}
         </Button>
       </Form>
     );
@@ -140,13 +140,13 @@ const Footer = ({ redirect }: FooterProps) => {
   return (
     <S.Footer>
       <div>
-        {t(`${namespace}:alreadyHaveAccount`)}{" "}
+        {t(`${NS}:alreadyHaveAccount`)}{" "}
         <Link passHref href={`/account/login${redirectHref}`}>
-          <a>{t(`${namespace}:login`)}</a>
+          <a>{t(`${NS}:login`)}</a>
         </Link>
       </div>
       <Link passHref href={`/account/forgot-password${redirectHref}`}>
-        <a>{t(`${namespace}:forgetPassword`)}</a>
+        <a>{t(`${NS}:forgetPassword`)}</a>
       </Link>
     </S.Footer>
   );

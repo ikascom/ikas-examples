@@ -1,22 +1,21 @@
 import React from "react";
-import { IkasBaseStore, IkasProduct, useTranslation } from "@ikas/storefront";
+import { useRouter } from "next/router";
+import { IkasProduct, useStore, useTranslation } from "@ikas/storefront";
+
 import { NS } from "src/components/product-detail";
 import { useAddToCart } from "src/utils/hooks/useAddToCart";
-import { useRouter } from "next/router";
 
 type Props = {
   product: IkasProduct;
   quantity: number;
 };
 
-// type ButtonState = "disabled" | "backInStockReminder" | "backInStockReminderSaved";
-
 export default function useAddToCartButton({ product, quantity }: Props) {
-  const { t } = useTranslation();
+  const store = useStore();
   const router = useRouter();
+  const { t } = useTranslation();
   const { loading, addToCart } = useAddToCart();
-  const store = IkasBaseStore.getInstance();
-  // const state: ButtonState =
+
   const {
     isBackInStockEnabled,
     isBackInStockReminderSaved,
@@ -41,9 +40,6 @@ export default function useAddToCartButton({ product, quantity }: Props) {
     !hasStock && isBackInStockEnabled && isBackInStockReminderSaved;
 
   const handleAddToCartClick = async () => {
-    console.log(product.isAddToCartEnabled);
-    // store.cartStore.checkoutUrl && router.push(store.cartStore.checkoutUrl);
-    return;
     if (showBackInStockIcon) {
       const customer = store.customerStore.customer;
       if (isBackInStockCustomerLoginRequired && !customer?.id) {

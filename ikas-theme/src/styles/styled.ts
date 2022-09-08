@@ -1,5 +1,8 @@
+export const SIDENAV_WIDTH = 320;
 export const theme = {
   zIndex: {
+    headerNavigationItem: 1,
+    sidenav: 9,
     modal: 10,
   },
   fontSize: {
@@ -18,7 +21,11 @@ export const theme = {
   inputBorderRadius: "12px",
   color: {
     headerBg: "var(--header-background-color)",
-    headerText: "#000",
+    headerText: "var(--header-text-color)",
+
+    sidenavBg: "var(--sidenav-bg)",
+    sidenavText: "var(--sidenav-text)",
+
     footerBg: "var(--footer-background-color)",
     primaryText: "var(--primary-text-color)",
     secondaryText: "var(--secondary-text-color)",
@@ -30,6 +37,9 @@ export const theme = {
     inputBorder: "var(--input-border-color)",
     inputBackground: "var(--input-background-color)",
     inputText: "var(--input-text)",
+
+    productBadgeBg: "var(--product-badge-bg)",
+    productBadgeText: "var(--product-badge-text)",
 
     link: "var(--link)",
 

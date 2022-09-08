@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  IkasBaseStore,
+  useStore,
   GoogleCaptcha as IkasGoogleCaptcha,
   createTranslationInputData,
 } from "@ikas/storefront";
@@ -10,7 +10,7 @@ import { observer } from "mobx-react-lite";
 import * as S from "./style";
 
 function GoogleCaptcha(props: { i18nFileName: string }) {
-  const store = IkasBaseStore.getInstance();
+  const store = useStore();
 
   if (!store.customerStore.isCaptchaRequired) return null;
   return (

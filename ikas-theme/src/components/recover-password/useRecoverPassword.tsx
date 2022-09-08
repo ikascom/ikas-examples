@@ -1,12 +1,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import {
-  IkasBaseStore,
-  RecoverPasswordForm,
-  useTranslation,
-} from "@ikas/storefront";
+import { RecoverPasswordForm, useTranslation } from "@ikas/storefront";
 
-import { namespace } from ".";
+import { NS } from ".";
 import { FormAlertType } from "../components/alert";
 import { FormItemStatus } from "../components/form/form-item";
 
@@ -22,9 +18,9 @@ export default function useRecoverPassword() {
   const [form] = useState(
     new RecoverPasswordForm({
       message: {
-        requiredRule: t(`${namespace}:formMessage.requiredRule`),
-        minRule: t(`${namespace}:formMessage.minRule`),
-        equalsRule: t(`${namespace}:formMessage.equalsRule`),
+        requiredRule: t(`${NS}:formMessage.requiredRule`),
+        minRule: t(`${NS}:formMessage.minRule`),
+        equalsRule: t(`${NS}:formMessage.equalsRule`),
       },
     })
   );
@@ -44,16 +40,16 @@ export default function useRecoverPassword() {
       if (!response.isSuccess) {
         setFormAlert({
           status: "error",
-          title: t(`${namespace}:formAlert.unsuccessTitle`),
-          text: t(`${namespace}:formAlert.unsuccessText`),
+          title: t(`${NS}:formAlert.unsuccessTitle`),
+          text: t(`${NS}:formAlert.unsuccessText`),
         });
         return;
       }
 
       setFormAlert({
         status: "success",
-        title: t(`${namespace}:formAlert.successTitle`),
-        text: t(`${namespace}:formAlert.successText`),
+        title: t(`${NS}:formAlert.successTitle`),
+        text: t(`${NS}:formAlert.successText`),
       });
 
       setTimeout(() => {
@@ -66,8 +62,8 @@ export default function useRecoverPassword() {
     } catch {
       setFormAlert({
         status: "error",
-        title: t(`${namespace}:formAlert.errorTitle`),
-        text: t(`${namespace}:formAlert.errorText`),
+        title: t(`${NS}:formAlert.errorTitle`),
+        text: t(`${NS}:formAlert.errorText`),
       });
     } finally {
       setPending(false);

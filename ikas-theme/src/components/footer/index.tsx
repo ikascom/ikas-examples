@@ -88,10 +88,10 @@ const SocialMediaItem = ({
 export const SocialMedia = ({ socialMedia }: FooterProps) => {
   return (
     <S.SocialMediaList>
-      <SocialMediaItem href={socialMedia.facebook} Icon={FacebookSVG} />
-      <SocialMediaItem href={socialMedia.instagram} Icon={InstagramSVG} />
-      <SocialMediaItem href={socialMedia.twitter} Icon={TwitterSVG} />
-      <SocialMediaItem href={socialMedia.pinterest} Icon={PinterestSVG} />
+      <SocialMediaItem href={socialMedia?.facebook} Icon={FacebookSVG} />
+      <SocialMediaItem href={socialMedia?.instagram} Icon={InstagramSVG} />
+      <SocialMediaItem href={socialMedia?.twitter} Icon={TwitterSVG} />
+      <SocialMediaItem href={socialMedia?.pinterest} Icon={PinterestSVG} />
     </S.SocialMediaList>
   );
 };

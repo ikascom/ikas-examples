@@ -7,8 +7,8 @@ function useScreenResize(callback: () => void) {
     const handleResize = () => callback();
     const debouncedHandleResize = debounce(handleResize, DEBOUNCE_TIME);
 
-    document.addEventListener("resize", debouncedHandleResize);
-    return () => document.removeEventListener("resize", debouncedHandleResize);
+    window.addEventListener("resize", debouncedHandleResize);
+    return () => window.removeEventListener("resize", debouncedHandleResize);
   }, []);
 }
 

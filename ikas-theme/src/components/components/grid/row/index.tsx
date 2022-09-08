@@ -8,12 +8,12 @@ type RowProps = {
    * [horizotanl, vertical]
    * [horizontal+vertical (both)]
    */
-  gutter: [number] | [number, number];
+  gutter?: [number] | [number, number];
   children: React.ReactNode;
 };
 
 function Row(props: RowProps) {
-  const [gutterH = 0, gutterV = 0] = props.gutter;
+  const [gutterH = 0, gutterV = 0] = props.gutter || [0, 0];
   const rowContext = React.useMemo(
     () => ({ gutter: [gutterH, gutterV] as [number, number] }),
     [gutterH, gutterV]

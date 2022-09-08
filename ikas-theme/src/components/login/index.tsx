@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { IkasBaseStore, Link, useTranslation } from "@ikas/storefront";
+import { Link, useTranslation } from "@ikas/storefront";
 
 import Alert from "src/components/components/alert";
 import Form from "src/components/components/form";
@@ -8,15 +8,15 @@ import FormItem from "src/components/components/form/form-item";
 import Input from "src/components/components/input";
 import { Container } from "src/components/components/container";
 import Button from "src/components/components/button";
+import GoogleCaptcha from "src/components/components/google-captcha";
 
 import useLogin from "./useLogin";
 
 import * as S from "./style";
-import GoogleCaptcha from "../components/google-captcha";
 
 type Props = {};
 
-export const namespace = "login";
+export const NS = "login";
 
 function Login(props: Props) {
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ function Login(props: Props) {
   return (
     <Container>
       <S.Wrapper>
-        <S.Title>{t(`${namespace}:title`)}</S.Title>
+        <S.Title>{t(`${NS}:title`)}</S.Title>
         <LoginFormAlert
           formAlert={formAlert}
           onFormAlertClose={onFormAlertClose}
@@ -65,12 +65,11 @@ type LoginFormProps = ReturnType<typeof useLogin>;
 const LoginFormComponent = observer(
   ({ status, isPending, form, onFormSubmit }: LoginFormProps) => {
     const { t } = useTranslation();
-    const store = IkasBaseStore.getInstance();
 
     return (
       <Form onSubmit={onFormSubmit}>
         <FormItem
-          label={t(`${namespace}:form.email`)}
+          label={t(`${NS}:form.email`)}
           help={form.emailErrorMessage}
           status={status.email}
         >
@@ -81,7 +80,7 @@ const LoginFormComponent = observer(
           />
         </FormItem>
         <FormItem
-          label={t(`${namespace}:form.password`)}
+          label={t(`${NS}:form.password`)}
           help={form.passwordErrorMessage}
           status={status.password}
         >
@@ -94,7 +93,7 @@ const LoginFormComponent = observer(
         </FormItem>
         <GoogleCaptcha i18nFileName="login" />
         <Button block type="submit" loading={isPending} disabled={isPending}>
-          {t(`${namespace}:form.login`)}
+          {t(`${NS}:form.login`)}
         </Button>
       </Form>
     );
@@ -112,13 +111,13 @@ const Footer = ({ redirect }: FooterProps) => {
   return (
     <S.Footer>
       <div>
-        {t(`${namespace}:noAccount`)}{" "}
+        {t(`${NS}:noAccount`)}{" "}
         <Link passHref href={`/account/register${redirectHref}`}>
-          <a>{t(`${namespace}:createNewAccount`)}</a>
+          <a>{t(`${NS}:createNewAccount`)}</a>
         </Link>
       </div>
       <Link passHref href={`/account/forgot-password${redirectHref}`}>
-        <a>{t(`${namespace}:forgetPassword`)}</a>
+        <a>{t(`${NS}:forgetPassword`)}</a>
       </Link>
     </S.Footer>
   );

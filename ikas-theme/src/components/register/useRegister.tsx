@@ -1,7 +1,8 @@
-import { IkasBaseStore, RegisterForm, useTranslation } from "@ikas/storefront";
-import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { namespace } from ".";
+import { useRouter } from "next/router";
+import { RegisterForm, useStore, useTranslation } from "@ikas/storefront";
+
+import { NS } from ".";
 import { FormAlertType } from "../components/alert";
 import { FormItemStatus } from "../components/form/form-item";
 
@@ -19,9 +20,9 @@ export default function useRegister() {
   const [form] = useState(
     new RegisterForm({
       message: {
-        requiredRule: t(`${namespace}:formMessage.requiredRule`),
-        emailRule: t(`${namespace}:formMessage.emailRule`),
-        minRule: t(`${namespace}:formMessage.minRule`),
+        requiredRule: t(`${NS}:formMessage.requiredRule`),
+        emailRule: t(`${NS}:formMessage.emailRule`),
+        minRule: t(`${NS}:formMessage.minRule`),
       },
     })
   );
@@ -30,9 +31,8 @@ export default function useRegister() {
   const [formAlert, setFormAlert] = useState<FormAlertType>();
 
   useEffect(() => {
-    const store = IkasBaseStore.getInstance();
+    const store = useStore();
 
-    return;
     if (!store.customerStore.customer?.id) return;
     if (form.redirect) {
       router.push(decodeURIComponent(form.redirect));
@@ -47,13 +47,13 @@ export default function useRegister() {
     try {
       setPending(true);
       setFormAlert(undefined);
-      const store = IkasBaseStore.getInstance();
+      const store = useStore();
       const isEmailExist = await store.customerStore.checkEmail(form.email);
       if (isEmailExist) {
         setFormAlert({
           status: "error",
-          title: t(`${namespace}:formAlert.emailExistTitle`),
-          text: t(`${namespace}:formAlert.emailExistText`),
+          title: t(`${NS}:formAlert.emailExistTitle`),
+          text: t(`${NS}:formAlert.emailExistText`),
         });
         return;
       }
@@ -62,16 +62,16 @@ export default function useRegister() {
       if (!response.isSuccess) {
         setFormAlert({
           status: "error",
-          title: t(`${namespace}:formAlert.unsuccessTitle`),
-          text: t(`${namespace}:formAlert.unsuccessText`),
+          title: t(`${NS}:formAlert.unsuccessTitle`),
+          text: t(`${NS}:formAlert.unsuccessText`),
         });
         return;
       }
 
       setFormAlert({
         status: "success",
-        title: t(`${namespace}:formAlert.successTitle`),
-        text: t(`${namespace}:formAlert.successText`),
+        title: t(`${NS}:formAlert.successTitle`),
+        text: t(`${NS}:formAlert.successText`),
       });
 
       setTimeout(() => {
@@ -84,8 +84,8 @@ export default function useRegister() {
     } catch {
       setFormAlert({
         status: "error",
-        title: t(`${namespace}:formAlert.errorTitle`),
-        text: t(`${namespace}:formAlert.errorText`),
+        title: t(`${NS}:formAlert.errorTitle`),
+        text: t(`${NS}:formAlert.errorText`),
       });
     } finally {
       setPending(false);

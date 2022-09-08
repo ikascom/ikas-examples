@@ -1,4 +1,4 @@
-import { IkasBaseStore, IkasProduct } from "@ikas/storefront";
+import { IkasProduct, useStore } from "@ikas/storefront";
 import { useEffect, useState } from "react";
 
 type Props = {
@@ -6,15 +6,16 @@ type Props = {
 };
 
 export default function useFavorite({ productId }: Props) {
-  const store = IkasBaseStore.getInstance();
-  const [isProductFavorite, setIsProductFavorite] = useState(false);
+  const store = useStore();
   const [pending, setPending] = useState(false);
-
   const [showLoginModal, setLoginModal] = useState(false);
+  const [isProductFavorite, setIsProductFavorite] = useState(false);
 
   useEffect(() => {
     if (store.customerStore.customer) fetchIsProductFavorite();
   }, [store.customerStore.customer]);
+
+  const closeLoginModal = () => setLoginModal(false);
 
   const fetchIsProductFavorite = async () => {
     try {
@@ -48,6 +49,7 @@ export default function useFavorite({ productId }: Props) {
   return {
     pending,
     showLoginModal,
+    closeLoginModal,
     isProductFavorite,
     toggleFavorite,
   };

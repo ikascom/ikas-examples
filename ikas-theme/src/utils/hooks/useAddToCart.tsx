@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { IkasBaseStore, IkasProduct } from "@ikas/storefront";
+import { IkasProduct, useStore } from "@ikas/storefront";
 
 export function useAddToCart() {
   const [loading, setLoading] = useState(false);
 
   const addToCart = async (product: IkasProduct, quantity: number) => {
-    const store = IkasBaseStore.getInstance();
+    const store = useStore();
 
     const item = store.cartStore.cart?.items.find(
       (item) => item.variant.id === product.selectedVariant.id

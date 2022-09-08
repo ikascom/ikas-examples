@@ -14,7 +14,7 @@ import useRecoverPassword from "./useRecoverPassword";
 
 import * as S from "./style";
 
-export const namespace = "recover-password";
+export const NS = "recover-password";
 
 type Props = {};
 
@@ -26,7 +26,7 @@ function RecoverPassword(props: Props) {
   return (
     <Container>
       <S.Wrapper>
-        <S.Title>{t(`${namespace}:title`)}</S.Title>
+        <S.Title>{t(`${NS}:title`)}</S.Title>
         <RecoverPasswordFormAlert
           formAlert={formAlert}
           onFormAlertClose={onFormAlertClose}
@@ -69,7 +69,7 @@ const RecoverPasswordFormComponent = observer(
     return (
       <Form onSubmit={onFormSubmit}>
         <FormItem
-          label={t(`${namespace}:form.password`)}
+          label={t(`${NS}:form.password`)}
           help={form.passwordErrorMessage}
           status={status.password}
         >
@@ -81,7 +81,7 @@ const RecoverPasswordFormComponent = observer(
           />
         </FormItem>
         <FormItem
-          label={t(`${namespace}:form.passwordAgain`)}
+          label={t(`${NS}:form.passwordAgain`)}
           help={form.passwordAgainErrorMessage}
           status={status.passwordAgain}
         >
@@ -95,7 +95,7 @@ const RecoverPasswordFormComponent = observer(
 
         <GoogleCaptcha i18nFileName="recover-password" />
         <Button block type="submit" loading={isPending} disabled={isPending}>
-          {t(`${namespace}:form.submit`)}
+          {t(`${NS}:form.submit`)}
         </Button>
       </Form>
     );
@@ -113,15 +113,15 @@ const Footer = ({ redirect }: FooterProps) => {
   return (
     <S.Footer>
       <div>
-        {t(`${namespace}:noAccount`)}{" "}
+        {t(`${NS}:noAccount`)}{" "}
         <Link passHref href={`/account/register${redirectHref}`}>
-          <a>{t(`${namespace}:createNewAccount`)}</a>
+          <a>{t(`${NS}:createNewAccount`)}</a>
         </Link>
       </div>
       <div>
-        {t(`${namespace}:hasAccount`)}{" "}
+        {t(`${NS}:hasAccount`)}{" "}
         <Link passHref href={`/account/login${redirectHref}`}>
-          <a>{t(`${namespace}:loginHere`)}</a>
+          <a>{t(`${NS}:loginHere`)}</a>
         </Link>
       </div>
     </S.Footer>

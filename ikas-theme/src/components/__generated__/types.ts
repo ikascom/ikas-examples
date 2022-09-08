@@ -29,6 +29,7 @@ export type HeroBannerProps = {
 
 export type HeaderProps = {
 	logo: IkasImage;
+	links?: IkasNavigationLink[];
 };
 
 export type FooterProps = {

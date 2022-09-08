@@ -20,7 +20,55 @@ export const Logo = styled.div`
   position: relative;
   height: 100%;
 `;
+
+export const CenterSide = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+export const Navigation = styled.nav`
+  display: flex;
+  align-items: center;
+  width: 100%;
+`;
+export const NavigationList = styled.ul``;
+export const NavigationListItem = styled.li`
+  position: relative;
+  display: inline-block;
+
+  > a {
+    display: inline-block;
+    padding: 8px 8px;
+  }
+
+  :hover > div,
+  :focus-within > div {
+    display: block;
+  }
+`;
+export const NavigationItemDropdown = styled.div`
+  position: absolute;
+  top: 100%;
+  background-color: ${({ theme }) => theme.color.white};
+  border-radius: 8px;
+  display: none;
+  width: 200px;
+  z-index: ${({ theme }) => theme.zIndex.headerNavigationItem};
+  padding: 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+`;
+export const NavigationItemDropdownList = styled.ul``;
+export const NavigationItemDropdownListItem = styled.li`
+  & > a {
+    display: block;
+    padding: 12px 8px;
+  }
+`;
+
 export const SearchInputWrapper = styled.form`
+  min-width: 200px;
   max-width: 50%;
   flex: 1;
 `;
