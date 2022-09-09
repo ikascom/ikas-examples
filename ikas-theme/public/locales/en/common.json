@@ -1,3 +1,7 @@
 {
-  "buttonLoading": "Loading"
+  "buttonLoading": "Loading",
+  "product": {
+    "discountText": "discount",
+    "discountBadgeSoldOut": "Sold out"
+  }
 }

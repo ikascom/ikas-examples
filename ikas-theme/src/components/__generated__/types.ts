@@ -2,6 +2,9 @@ import {
 	IkasImage,
 	IkasNavigationLink,
 	IkasProduct,
+	IkasBrand,
+	IkasProductList,
+	IkasCategory,
 } from "@ikas/storefront"
 
 export enum ImageAspectRatio{ 
@@ -40,5 +43,19 @@ export type FooterProps = {
 
 export type ProductDetailProps = {
 	product: IkasProduct;
+};
+
+export type PageBrandProps = {
+	brand: IkasBrand;
+	productList: IkasProductList;
+};
+
+export type PageCategoryProps = {
+	category: IkasCategory;
+	productList: IkasProductList;
+};
+
+export type PageSearchProps = {
+	productList: IkasProductList;
 };
 
