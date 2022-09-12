@@ -29,6 +29,12 @@
     },
     "numberRangeListFilters": {
       "priceAndMore": "{{ price }} and more"
+    },
+    "pagination": {
+      "prev": "prev",
+      "previousPage": "Previous page",
+      "next": "next",
+      "nextPage": "Next page"
     }
   }
 }

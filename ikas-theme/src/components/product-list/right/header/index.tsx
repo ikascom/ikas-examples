@@ -25,7 +25,7 @@ export const Header = observer((props: HeaderProps) => {
   const { isMobile } = useScreen();
 
   const totalProductCount = t(`productList.totalProductCount`, {
-    count: productList.count || "0",
+    count: productList.data.length || "0",
   });
 
   if (isMobile) return <MobileHeader {...props} />;
@@ -41,7 +41,7 @@ const MobileHeader = observer(({ productList }: HeaderProps) => {
   const { t } = useTranslation();
   const [activeModal, setModal] = useState<"sort" | "filter" | null>(null);
   const totalProductCount = t(`productList.totalProductCount`, {
-    count: productList.count || "0",
+    count: productList.data.length || "0",
   });
 
   const onModalClose = () => {

@@ -7,6 +7,7 @@ import Product from "./product";
 
 import * as S from "./style";
 import { Header } from "./header";
+import { Pagination } from "../components/pagination";
 
 const Right = observer(({ productList }: ProductListProps) => {
   return (
@@ -17,6 +18,7 @@ const Right = observer(({ productList }: ProductListProps) => {
           <Product key={product.selectedVariant.id} product={product} />
         ))}
       </S.Products>
+      <Pagination productList={productList} />
     </S.Main>
   );
 });
