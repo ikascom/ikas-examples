@@ -37,6 +37,9 @@ export const theme = {
     inputBorder: "var(--input-border-color)",
     inputBackground: "var(--input-background-color)",
     inputText: "var(--input-text)",
+    checkboxBorder: "var(--checkbox-border)",
+    checkboxBg: "var(--checkbox-bg)",
+    checkbox: "var(--checkbox)",
 
     productBadgeBg: "var(--product-badge-bg)",
     productBadgeText: "var(--product-badge-text)",

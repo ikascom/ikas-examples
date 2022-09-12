@@ -4,7 +4,7 @@ import * as S from "./style";
 type Props = {
   checked?: boolean;
   children?: React.ReactNode;
-  onChange: (checked: boolean) => void;
+  onChange?: (checked: boolean) => void;
 };
 
 function Checkbox(props: Props) {
@@ -14,9 +14,11 @@ function Checkbox(props: Props) {
         type="checkbox"
         className="visually-hidden"
         checked={!!props.checked}
-        onChange={(event) => props.onChange(!!event.target.checked)}
+        onChange={(event) =>
+          props.onChange && props.onChange(!!event.target.checked)
+        }
       />
-      <S.CustomCheckboxInnerWrapper>
+      <S.CustomCheckboxInnerWrapper $mr={!!props.children}>
         <S.CustomCheckbox>{!!props.checked && <CheckSVG />}</S.CustomCheckbox>
       </S.CustomCheckboxInnerWrapper>
       {!!props.children && props.children}
@@ -28,17 +30,18 @@ export default Checkbox;
 
 const CheckSVG = () => (
   <svg
-    stroke="currentColor"
-    fill="currentColor"
-    stroke-width="0"
-    viewBox="0 0 12 16"
-    height="18"
-    width="18"
+    width="10"
+    height="8"
+    viewBox="0 0 10 8"
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"
-    ></path>
+      d="M1 4.42857L4.36842 7L9 1"
+      stroke="#22252A"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
   </svg>
 );

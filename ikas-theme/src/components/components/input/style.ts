@@ -1,14 +1,37 @@
 import styled, { css } from "styled-components";
 import { FormItemStatus } from "../form/form-item";
 
+export const InputWrapper = styled.div`
+  position: relative;
+`;
+
+export const Prefix = styled.span`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+  border-right: 1px solid ${({ theme }) => theme.color.inputBorder};
+  padding-right: 4px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
 type StyledInputProps = {
+  $hasPrefix: boolean;
   $status: FormItemStatus;
 };
 
 export const Input = styled.input<StyledInputProps>`
   width: 100%;
   height: 52px;
-  padding: 0 8px;
+
+  ${({ $hasPrefix }) => {
+    if ($hasPrefix) {
+      return `padding: 0 8px 0 30px;`;
+    }
+    return `padding: 0 8px;`;
+  }}
 
   background-color: ${({ theme, $status }) => {
     if ($status === "error") {

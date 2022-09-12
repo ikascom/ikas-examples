@@ -6,20 +6,19 @@ import {
   useTranslation,
 } from "@ikas/storefront";
 
+import Loading from "src/components/svg/loading";
 import ChevronDownSVG from "src/components/svg/chevron-down";
 
 import * as S from "./style";
-import Loading from "src/components/svg/loading";
 
 type Props = {
-  NS: string;
   productList: IkasProductList;
 };
 
 const Sorting: React.FC<Props> = (props: Props) => {
   return (
     <S.Sort>
-      <Label {...props} />
+      <Label />
       <SortSelect {...props} />
     </S.Sort>
   );
@@ -27,7 +26,7 @@ const Sorting: React.FC<Props> = (props: Props) => {
 
 export default observer(Sorting);
 
-const SortSelect = observer(({ productList, NS }: Props) => {
+const SortSelect = observer(({ productList }: Props) => {
   const onSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     if (productList.isLoading) return;
     productList.setSortType(e.target.value as IkasProductListSortType);
@@ -50,7 +49,7 @@ const SortSelect = observer(({ productList, NS }: Props) => {
         onChange={onSelectChange}
       >
         {enabledOptions.map((option) => (
-          <Option key={option.value} NS={NS} option={option} />
+          <Option key={option.value} option={option} />
         ))}
       </S.Select>
       <S.SelectIcon>
@@ -60,21 +59,21 @@ const SortSelect = observer(({ productList, NS }: Props) => {
   );
 });
 
-const Option = observer(({ option, NS }: { option: Option; NS: string }) => {
+const Option = observer(({ option }: { option: Option }) => {
   const { t } = useTranslation();
   return (
     <S.Option value={option.value}>
-      {t(`${NS}:productList.sort.${option.labelKey}`)}
+      {t(`productList.sort.${option.labelKey}`)}
     </S.Option>
   );
 });
 
-const Label = ({ NS }: Props) => {
+const Label = () => {
   const { t } = useTranslation();
 
   return (
     <S.Label htmlFor="product-list-sort-select">
-      {t(`${NS}:productList.sort.label`)}:
+      {t(`productList.sort.label`)}:
     </S.Label>
   );
 };

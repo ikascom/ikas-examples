@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 import useOnClickOutside from "src/utils/hooks/useOnClickOutside";
 import Close from "src/components/svg/close";
@@ -13,25 +13,30 @@ type Props = {
 };
 
 function Modal({ visible, title, children, onClose }: Props) {
-  const modalRef = React.useRef<HTMLDivElement>(null);
-  useOnClickOutside(modalRef, () => visible && onClose && onClose());
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  React.useEffect(() => {
-    if (visible) {
-      document.documentElement.style.overflow = "hidden";
-    } else {
-      document.documentElement.style.overflow = "auto";
-    }
+  useOnClickOutside(modalRef, () => {
+    visible && onClose && onClose();
+  });
+
+  useEffect(() => {
+    document.documentElement.style.overflow = visible ? "hidden" : "auto";
   }, [visible]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       document.documentElement.style.overflow = "auto";
     };
   }, []);
 
   return (
-    <S.Modal $visible={visible} aria-hidden={!visible}>
+    <S.Modal
+      $visible={visible}
+      aria-hidden={!visible}
+      role="dialog"
+      aria-label="modal"
+      aria-modal="true"
+    >
       <S.ModalInner ref={modalRef}>
         <S.CloseButton onClick={onClose}>
           <Close />

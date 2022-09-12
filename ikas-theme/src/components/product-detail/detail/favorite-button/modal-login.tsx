@@ -25,7 +25,10 @@ function LoginRequiredModal({
   return (
     <Modal visible={isModalVisible} title={title} onClose={onClose}>
       <p className="text-text-light mb-8">{text}</p>
-      <Link href={`/account/login?redirect=${decodeURIComponent(redirectUrl)}`}>
+      <Link
+        passHref
+        href={`/account/login?redirect=${decodeURIComponent(redirectUrl)}`}
+      >
         <Button anchor>{loginButtonText}</Button>
       </Link>
       <Link

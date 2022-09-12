@@ -5210,6 +5210,27 @@
         "color": "#000000",
         "key": "--header-text-color",
         "translations": {}
+      },
+      {
+        "id": "23c6d9b7-f2c8-4924-a95f-e0d068fb89a0",
+        "displayName": "Checkbox",
+        "color": "#22252a",
+        "key": "--checkbox",
+        "translations": {}
+      },
+      {
+        "id": "2f2ab09d-6149-4ea3-aeeb-bb7f2dfaf30e",
+        "displayName": "Checkbox Background Color",
+        "color": "#ffffff",
+        "key": "--checkbox-bg",
+        "translations": {}
+      },
+      {
+        "id": "10a07817-e044-44f8-ad20-d51d067f5114",
+        "displayName": "Checkbox Border Color",
+        "color": "#22252a",
+        "key": "--checkbox-border",
+        "translations": {}
       }
     ],
     "favicon": {

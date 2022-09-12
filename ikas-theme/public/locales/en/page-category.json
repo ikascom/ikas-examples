@@ -1,15 +1,1 @@
-{
-  "productList": {
-    "totalProductCount": "{{ count }} Product",
-    "sort": {
-      "label": "Sort by",
-      "featured": "Featured",
-      "increasingPrice": "Increasing Price",
-      "decreasingPrice": "Decreasing Price",
-      "increasingDiscount": "Increasing Discount",
-      "decrasingDiscount": "Decreasing Discount",
-      "firstAdded": "First Added",
-      "lastAdded": "Last Added"
-    }
-  }
-}
+{}

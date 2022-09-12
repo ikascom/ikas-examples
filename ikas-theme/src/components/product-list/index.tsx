@@ -2,6 +2,7 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import { IkasBrand, IkasCategory, IkasProductList } from "@ikas/storefront";
 
+import { useScreen } from "src/utils/hooks/useScreen";
 import { Container } from "src/components/components/container";
 import Left from "./left";
 import Right from "./right";
@@ -17,11 +18,12 @@ export type ProductListProps = {
 };
 
 function ProductList(props: ProductListProps) {
+  const { isMobile } = useScreen();
   return (
     <S.ProductList>
       <Container>
         <S.Wrapper>
-          <Left />
+          {!isMobile && <Left {...props} />}
           <Right {...props} />
         </S.Wrapper>
       </Container>

@@ -1,14 +1,11 @@
+import breakpoints from "src/styles/breakpoints";
 import styled from "styled-components";
 
 type ModalProps = {
   $visible: boolean;
 };
 
-export const Modal = styled.div.attrs({
-  role: "dialog",
-  "aria-label": "modal",
-  "aria-modal": "true",
-})<ModalProps>`
+export const Modal = styled.div<ModalProps>`
   position: fixed;
   top: 0;
   right: 0;
@@ -32,6 +29,10 @@ export const ModalInner = styled.div.attrs({
   max-width: 500px;
   background-color: ${({ theme }) => theme.color.white};
   border-radius: 12px;
+
+  @media screen and (max-width: ${breakpoints.md}) {
+    padding: 48px 24px;
+  }
 
   // animate?
 `;

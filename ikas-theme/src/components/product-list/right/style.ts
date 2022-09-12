@@ -1,7 +1,9 @@
 import breakpoints from "src/styles/breakpoints";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export const Main = styled.main``;
+export const Main = styled.main`
+  width: 100%;
+`;
 
 export const Products = styled.ul`
   display: grid;
@@ -21,20 +23,4 @@ export const Products = styled.ul`
   }
 `;
 
-export const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-
-  @media screen and (max-width: ${breakpoints.sm}) {
-    flex-direction: column;
-  }
-`;
-
-export const TotalProductCount = styled.p`
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-`;
 export const ProductOrderWrapper = styled.div``;

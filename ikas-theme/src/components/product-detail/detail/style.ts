@@ -1,7 +1,5 @@
 import breakpoints from "src/styles/breakpoints";
-import styled, { css } from "styled-components";
-
-// import styled from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -34,11 +32,11 @@ export const SellPrice = styled.span`
   font-size: 20px;
   line-height: 28px;
   text-decoration: line-through;
-  color: ${({ theme }) => theme.color.strikethroughPrice};
+  color: ${({ theme }) => theme.color.sellPrice};
   margin-right: 8px;
 `;
 export const Price = styled.span`
-  color: ${({ theme }) => theme.color.price};
+  color: ${({ theme }) => theme.color.finalPrice};
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
@@ -65,65 +63,6 @@ export const BoxSelect = styled.select`
   border-radius: 12px;
 
   border: 1px solid #dfe2e6;
-`;
-export const ColorSwatch = styled.button<{
-  $isSelected: boolean;
-  $color: string;
-}>`
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  padding: 6px;
-
-  ::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: ${({ $color }) => $color};
-    border-radius: 50%;
-    position: relative;
-  }
-
-  margin-right: 12px;
-  margin-bottom: 12px;
-
-  :last-child {
-    margin-right: 0;
-  }
-
-  ${({ $isSelected }) =>
-    $isSelected &&
-    css`
-      outline: 1px solid #77777b;
-      outline-offset: 0px;
-    `};
-`;
-
-export const ImageSwatch = styled.button`
-  margin-right: 12px;
-  margin-bottom: 12px;
-  :disabled {
-    opacity: 50%;
-  }
-`;
-export const ImageSwatchImg = styled.img<{ $isSelected: boolean }>`
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  padding: 0px;
-  object-fit: contain;
-
-  :last-child {
-    margin-right: 0;
-  }
-
-  ${({ $isSelected }) =>
-    $isSelected &&
-    css`
-      outline: 1px solid #77777b;
-      outline-offset: 0px;
-    `};
 `;
 
 export const DescriptionWrapper = styled.div`

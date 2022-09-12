@@ -3,5 +3,32 @@
   "product": {
     "discountText": "discount",
     "discountBadgeSoldOut": "Sold out"
+  },
+  "productList": {
+    "totalProductCount": "{{ count }} Product",
+    "sort": {
+      "label": "Sort by",
+      "featured": "Featured",
+      "increasingPrice": "Increasing Price",
+      "decreasingPrice": "Decreasing Price",
+      "increasingDiscount": "Increasing Discount",
+      "decrasingDiscount": "Decreasing Discount",
+      "firstAdded": "First Added",
+      "lastAdded": "Last Added"
+    },
+    "filters": "Filters",
+    "header": {
+      "filter": "FILTERS",
+      "sort": "SORT"
+    },
+    "categories": "Categories",
+    "clearFilters": "Clear Filters",
+    "numberRangeFilters": {
+      "from": "From",
+      "to": "To"
+    },
+    "numberRangeListFilters": {
+      "priceAndMore": "{{ price }} and more"
+    }
   }
 }

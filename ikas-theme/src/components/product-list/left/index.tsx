@@ -1,8 +1,21 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
 
-function Left(props: any) {
-  return <div>left</div>;
-}
+import { FiltersMainTitle } from "../components/filters/components/filters-main-title";
+import { Categories } from "../components/categories";
+import { Filters } from "../components/filters/index/index";
 
+import { ProductListProps } from "..";
+
+import * as S from "./style";
+
+function Left(props: ProductListProps) {
+  return (
+    <S.Left>
+      <FiltersMainTitle {...props} />
+      <Categories {...props} />
+      <Filters {...props} />
+    </S.Left>
+  );
+}
 export default observer(Left);

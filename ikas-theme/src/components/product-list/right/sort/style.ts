@@ -1,3 +1,4 @@
+import breakpoints from "src/styles/breakpoints";
 import styled from "styled-components";
 
 export const Sort = styled.div``;
@@ -10,6 +11,10 @@ export const Label = styled.label`
 export const SelectWrapper = styled.div`
   position: relative;
   display: inline-block;
+
+  @media screen and (max-width: ${breakpoints.md}) {
+    display: block;
+  }
 `;
 export const Select = styled.select`
   appearance: none;
@@ -17,6 +22,10 @@ export const Select = styled.select`
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+
+  @media screen and (max-width: ${breakpoints.md}) {
+    width: 100%;
+  }
 `;
 export const Option = styled.option``;
 export const SelectIcon = styled.span`

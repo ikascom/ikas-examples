@@ -3,21 +3,23 @@ import { FormItemStatus } from "../form/form-item/";
 import * as S from "./style";
 
 export type Props = {
+  prefix?: string;
   status?: FormItemStatus;
-} & JSX.IntrinsicElements["input"];
+} & Omit<JSX.IntrinsicElements["input"], "prefix">;
 
 function Input(props: Props) {
-  const { status, ref, ...restProps } = props;
+  const { status, ref, prefix, ...restProps } = props;
 
   return (
-    <>
-      <S.Input $status={status} {...restProps} />
+    <S.InputWrapper>
+      {!!prefix && <S.Prefix>{prefix}</S.Prefix>}
+      <S.Input $hasPrefix={!!prefix} $status={status} {...restProps} />
       {!!restProps.maxLength && typeof restProps.value === "string" && (
         <S.Length>
           {restProps.value?.length || "0"} / {restProps.maxLength}
         </S.Length>
       )}
-    </>
+    </S.InputWrapper>
   );
 }
 

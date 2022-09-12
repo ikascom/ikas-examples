@@ -9,9 +9,10 @@ import {
 } from "@ikas/storefront";
 import { observer } from "mobx-react-lite";
 
-import Select from "src/components/components/select";
-import { ProductDetailProps } from "src/components/__generated__/types";
 import { NS } from "src/components/product-detail";
+import Select from "src/components/components/select";
+import { Swatch } from "src/components/components/swatch";
+import { ProductDetailProps } from "src/components/__generated__/types";
 
 import * as S from "../style";
 
@@ -42,7 +43,7 @@ type VariantTypeProps = {
   onVariantValueChange: (value: IkasVariantValue) => void;
 };
 
-const VariantType = ({ dVT, product, ...props }: VariantTypeProps) => {
+const VariantType = observer(({ dVT, product, ...props }: VariantTypeProps) => {
   const { t } = useTranslation();
 
   const onVariantValueChange = (vVId: string) => {
@@ -87,7 +88,7 @@ const VariantType = ({ dVT, product, ...props }: VariantTypeProps) => {
       />
     </S.VariantType>
   );
-};
+});
 
 type VariantValueType = {
   type: IkasVariantSelectionType;
@@ -95,29 +96,19 @@ type VariantValueType = {
   onVariantValueChange: (vVId: string) => void;
 };
 
-const VariantValue = ({ dVV, type, ...props }: VariantValueType) => {
+const VariantValue = observer(({ dVV, type, ...props }: VariantValueType) => {
   // render also Box type
   const onClick = () => {
     props.onVariantValueChange(dVV.variantValue.id);
   };
 
-  if (dVV.variantValue.thumbnailImage?.id) {
-    return (
-      <S.ImageSwatch title={dVV.variantValue.name} onClick={onClick}>
-        <S.ImageSwatchImg
-          src={dVV.variantValue.thumbnailImage?.thumbnailSrc}
-          $isSelected={dVV.isSelected}
-        />
-      </S.ImageSwatch>
-    );
-  }
-
   return (
-    <S.ColorSwatch
+    <Swatch
       title={dVV.variantValue.name}
-      $isSelected={dVV.isSelected}
-      $color={dVV.variantValue.colorCode || ""}
+      selected={dVV.isSelected}
+      image={dVV.variantValue.thumbnailImage}
+      colorCode={dVV.variantValue.colorCode}
       onClick={onClick}
     />
   );
-};
+});
