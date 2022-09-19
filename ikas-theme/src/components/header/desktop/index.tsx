@@ -19,7 +19,7 @@ function DesktopHeader(props: HeaderProps) {
       <Container>
         <S.InnerContainer>
           <LeftSide {...props} />
-          <CenterSide {...props} />
+          <Center {...props} />
           <RightSide {...props} />
         </S.InnerContainer>
       </Container>
@@ -33,18 +33,18 @@ const LeftSide = (props: HeaderProps) => {
   return (
     <S.LeftSide>
       <S.Logo>
-        <img src={props.logo.src} />
+        <img src={props.logo.thumbnailSrc} />
       </S.Logo>
     </S.LeftSide>
   );
 };
 
-const CenterSide = (props: HeaderProps) => {
+const Center = (props: HeaderProps) => {
   return (
-    <S.CenterSide>
+    <S.Center>
       <Navigation {...props} />
       <SearchInput {...props} />
-    </S.CenterSide>
+    </S.Center>
   );
 };
 

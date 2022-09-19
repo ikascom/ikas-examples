@@ -21,7 +21,7 @@ export const Logo = styled.div`
   height: 100%;
 `;
 
-export const CenterSide = styled.div`
+export const Center = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
