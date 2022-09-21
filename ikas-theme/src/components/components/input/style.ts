@@ -56,6 +56,12 @@ export const Input = styled.input<StyledInputProps>`
       border-radius: ${theme.inputBorderRadius};
     `;
   }};
+
+  :disabled {
+    color: #dadada;
+    background-color: #fafafa;
+    cursor: not-allowed;
+  }
 `;
 
 export const Length = styled.div`

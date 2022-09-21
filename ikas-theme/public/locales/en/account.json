@@ -1,0 +1,30 @@
+{
+  "menu": {
+    "title": "MY ACCOUNT",
+    "accountInfo": "Account Information",
+    "orders": "My Orders",
+    "addresses": "My Addresses",
+    "favoriteProducts": "Favorite Products",
+    "raffles": "Raffles",
+    "logout": "Logout"
+  },
+  "accountInfo": {
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Phone",
+      "email": "Email",
+      "save": "SAVE"
+    },
+    "formMessage": {
+      "requiredRule": "Please fill this field",
+      "phoneRule": "{{ phoneNumber }} is not a valid phone number"
+    },
+    "formAlert": {
+      "successTitle": "Save operation successful",
+      "successText": "Your information has been successfully updated",
+      "unsuccessTitle": "Save operation failed",
+      "unsuccessText": "An unexpected error has occurred."
+    }
+  }
+}

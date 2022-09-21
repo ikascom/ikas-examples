@@ -25,9 +25,11 @@ export type SocialMedia = {
 export type HeroBannerProps = {
 	image: IkasImage;
 	imageAspectRatio: ImageAspectRatio;
-	showContent: boolean;
-	title: string;
+	title?: string;
+	showButton?: boolean;
 	link: IkasNavigationLink;
+	buttonBackgroundColor: string;
+	buttonTextColor: string;
 };
 
 export type HeaderProps = {
