@@ -14,7 +14,7 @@ import { ProductOptions } from "./product-options";
 import * as S from "./style";
 import { SocialShare } from "./social-share";
 
-function ProductDetail(props: ProductDetailProps) {
+function Detail(props: ProductDetailProps) {
   return (
     <S.Wrapper>
       <Title {...props} />
@@ -29,4 +29,4 @@ function ProductDetail(props: ProductDetailProps) {
   );
 }
 
-export default observer(ProductDetail);
+export default observer(Detail);
