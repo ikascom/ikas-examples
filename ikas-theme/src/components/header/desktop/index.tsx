@@ -32,9 +32,11 @@ export default observer(DesktopHeader);
 const LeftSide = (props: HeaderProps) => {
   return (
     <S.LeftSide>
-      <S.Logo>
-        <img src={props.logo.thumbnailSrc} />
-      </S.Logo>
+      <Link href="/">
+        <S.Logo>
+          <img src={props.logo.src} />
+        </S.Logo>
+      </Link>
     </S.LeftSide>
   );
 };
@@ -98,9 +100,11 @@ const RightSide = observer((props: HeaderProps) => {
       <S.FavoriteWrapper>
         <FavoriteSVG />
       </S.FavoriteWrapper>
-      <S.AccountWrapper>
-        <AccountSVG />
-      </S.AccountWrapper>
+      <Link href="/account" passHref>
+        <S.AccountWrapper as="a">
+          <AccountSVG />
+        </S.AccountWrapper>
+      </Link>
       <S.CartWrapper>
         <S.CartQuantity>{quantity}</S.CartQuantity>
         <CartSVG />
