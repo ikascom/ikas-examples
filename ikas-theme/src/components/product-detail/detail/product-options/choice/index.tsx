@@ -8,13 +8,9 @@ import {
 } from "@ikas/storefront";
 
 import OptionTitle from "../common/option-title";
-import {
-  ColorSwatch,
-  ImageSwatch,
-  ImageSwatchImg,
-} from "src/components/product-detail/detail/style";
 import FormItem from "src/components/components/form/form-item";
 import Select from "src/components/components/select";
+import { Swatch } from "src/components/components/swatch";
 
 import { formattedOptionPrice } from "../common/option-price";
 import { optionSettingsText } from "../common/option-settings-text";
@@ -182,23 +178,13 @@ const OptionSwatch = observer(({ option }: OptionProps) => {
           }
         };
 
-        if (opt.thumbnailImageId) {
-          return (
-            <ImageSwatch key={opt.id} title={opt.value} onClick={onClick}>
-              <ImageSwatchImg
-                src={opt.thumbnailImage?.thumbnailSrc}
-                $isSelected={selected}
-              />
-            </ImageSwatch>
-          );
-        }
-
         return (
-          <ColorSwatch
-            key={opt.id}
+          <Swatch
+            key={index}
             title={opt.value}
-            $isSelected={selected}
-            $color={opt.colorCode || ""}
+            selected={selected}
+            colorCode={opt.colorCode}
+            image={opt.thumbnailImage}
             onClick={onClick}
           />
         );
