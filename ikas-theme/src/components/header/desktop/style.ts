@@ -16,7 +16,7 @@ export const InnerContainer = styled.div`
 `;
 
 export const LeftSide = styled.div``;
-export const Logo = styled.div`
+export const Logo = styled.figure`
   position: relative;
   height: 100%;
 `;
