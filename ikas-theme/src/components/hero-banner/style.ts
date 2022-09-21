@@ -11,14 +11,19 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   flex-direction: column;
+`;
+
+export const ContentInner = styled.div`
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
 `;
 
 export const Title = styled.h1`
   color: #fff;
   font-size: 2rem;
+  margin-bottom: 8px;
 
   @media (min-width: ${breakpoints.md}) {
     font-size: 3.2rem;
@@ -27,9 +32,11 @@ export const Title = styled.h1`
 
 export const Anchor = styled.a`
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.75rem;
   text-decoration: underline;
+  display: inline-block;
+  padding: 4px 16px;
   @media (min-width: ${breakpoints.md}) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;

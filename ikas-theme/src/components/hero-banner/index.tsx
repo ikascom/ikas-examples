@@ -9,47 +9,102 @@ import breakpoints from "src/styles/breakpoints";
 
 import * as S from "./style";
 
-export const imageSizes = `(max-width: 320px) 300px, (max-width: 450px) 400px, (max-width: ${breakpoints.sm}) ${breakpoints.sm}, (max-width: ${breakpoints.md}) ${breakpoints.md}, (max-width: ${breakpoints.lg}) ${breakpoints.lg}, (max-width: ${breakpoints.xl}) ${breakpoints.xl}, (max-width: ${breakpoints.xxl}) ${breakpoints.xxl}, ${breakpoints.xxl}`;
+export const imageSizes = `(max-width: ${breakpoints.xxl}) 100vw, ${breakpoints.xxl}`;
 
-// function formatImageAspectRatio(
-//   imageAspectRatio: HeroBannerProps["imageAspectRatio"]
-// ) {
-//   const width = imageAspectRatio.split("_")[0]; // 3
-//   const height = imageAspectRatio.split("_")[1]; // 1
+function formatImageAspectRatio(
+  imageAspectRatio: HeroBannerProps["imageAspectRatio"]
+) {
+  const width = imageAspectRatio.split("_")[0];
+  const height = imageAspectRatio.split("_")[1];
 
-//   return { width, height };
-// }
+  return { width, height };
+}
 
-function HeroBanner({ image, link, title, showContent }: HeroBannerProps) {
-  // also you can take aspect ratio from prop.
-  // const { width, height } = formatImageAspectRatio(imageAspectRatio);
+function HeroBanner({
+  image,
+  link,
+  title,
+  imageAspectRatio,
+  buttonBackgroundColor,
+  buttonTextColor,
+  showButton,
+}: HeroBannerProps) {
+  const isContentVisible =
+    (showButton && !!link?.label && !!link?.href) || !!title;
+  const contentProps = {
+    title,
+    showButton,
+    link,
+    buttonTextColor,
+    buttonBackgroundColor,
+  };
 
   return (
     <Container>
       <S.InnerContainer>
-        <Image
-          image={image}
-          layout="responsive"
-          // aspect ratio
-          width={3}
-          height={1}
-          useBlur={true}
-          sizes={imageSizes}
-          objectFit="cover"
-          alt=""
-        />
-
-        {!!showContent && (
-          <S.Content>
-            <S.Title>{title}</S.Title>
-            <Link passHref href={link.href}>
-              <S.Anchor>{link.label}</S.Anchor>
-            </Link>
-          </S.Content>
-        )}
+        <RenderImage image={image} imageAspectRatio={imageAspectRatio} />
+        {isContentVisible && <RenderContent {...contentProps} />}
       </S.InnerContainer>
     </Container>
   );
 }
 
 export default observer(HeroBanner);
+
+type RenderImageProps = Pick<HeroBannerProps, "image" | "imageAspectRatio">;
+
+const RenderImage = observer(
+  ({ image, imageAspectRatio }: RenderImageProps) => {
+    const { width, height } = formatImageAspectRatio(imageAspectRatio);
+
+    return (
+      <Image
+        image={image}
+        layout="responsive"
+        width={width}
+        height={height}
+        useBlur={true}
+        sizes={imageSizes}
+        objectFit="cover"
+        alt=""
+      />
+    );
+  }
+);
+
+type RenderContentProps = Pick<
+  HeroBannerProps,
+  "showButton" | "link" | "title" | "buttonTextColor" | "buttonBackgroundColor"
+>;
+
+const RenderContent = observer(
+  ({
+    showButton,
+    title,
+    link,
+    buttonBackgroundColor,
+    buttonTextColor,
+  }: RenderContentProps) => {
+    const isButtonVisible = !!showButton && !!link?.href && !!link?.label;
+
+    return (
+      <S.Content>
+        <S.ContentInner>
+          {title && <S.Title>{title}</S.Title>}
+          {isButtonVisible && (
+            <Link passHref href={link.href}>
+              <S.Anchor
+                style={{
+                  backgroundColor: buttonBackgroundColor,
+                  color: buttonTextColor,
+                }}
+              >
+                {link.label}
+              </S.Anchor>
+            </Link>
+          )}
+        </S.ContentInner>
+      </S.Content>
+    );
+  }
+);
