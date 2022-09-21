@@ -7,7 +7,7 @@
       }
     },
     "addToCart": {
-      "text": "ADD TO CARD",
+      "text": "ADD TO CART",
       "soldOut": "SOLD OUT",
       "remindOnBackInStock": "Notify me when back in stock",
       "backInStockReminderSaved": "We will notify you when stock in"
