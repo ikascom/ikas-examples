@@ -21,7 +21,7 @@ export default function useAddToCartButton({ product, quantity }: Props) {
     isBackInStockReminderSaved,
     isBackInStockCustomerLoginRequired,
   } = product.selectedVariant;
-  const hasStock = product.hasStock;
+  const hasStock = product.selectedVariant.hasStock;
   const disabled = hasStock
     ? !product.isAddToCartEnabled || loading
     : !isBackInStockEnabled || loading;
