@@ -122,12 +122,9 @@ const RenderList = observer(({ store }: { store: IkasBaseStore }) => {
         </S.ListItem>
       ))}
       <S.ListItem>
-        <Link
-          href="/account/login"
-          onClick={() => store.customerStore.logout()}
-        >
+        <button onClick={() => store.customerStore.logout()}>
           {t(`${NS}:menu.logout`)}
-        </Link>
+        </button>
       </S.ListItem>
     </S.List>
   );

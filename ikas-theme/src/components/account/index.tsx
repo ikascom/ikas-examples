@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { observer } from "mobx-react-lite";
-import { IkasBaseStore, IkasThemeJsonPageType } from "@ikas/storefront";
+import { IkasThemeJsonPageType, useStore } from "@ikas/storefront";
 
 import { Container } from "../components/container";
 import { Menu } from "./components/menu";
@@ -14,8 +14,8 @@ export const NS = "account";
 const AccountPage = observer(() => {
   const [hasCustomer, setHasCustomer] = useState(false);
   const router = useRouter();
+  const store = useStore();
 
-  const store = IkasBaseStore.getInstance();
   const isAccount = store.currentPageType === IkasThemeJsonPageType.ACCOUNT;
   const isAddresses = store.currentPageType === IkasThemeJsonPageType.ADDRESSES;
   const isOrders = store.currentPageType === IkasThemeJsonPageType.ORDERS;
@@ -28,14 +28,14 @@ const AccountPage = observer(() => {
     store.customerStore.waitUntilInitialized().then(() => {
       if (!store.customerStore.customer) {
         router.push("/account/login");
+        setHasCustomer(false);
       } else {
         setHasCustomer(true);
       }
     });
-  }, []);
+  }, [store.customerStore.customer]);
 
   if (!hasCustomer) return null;
-
   return (
     <Container>
       <S.InnerWrapper>
