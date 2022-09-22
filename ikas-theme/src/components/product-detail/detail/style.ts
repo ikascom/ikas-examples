@@ -42,7 +42,7 @@ export const Price = styled.span`
   line-height: 28px;
 `;
 
-export const VariantValuesWrapper = styled.div``;
+export const VariantsWrapper = styled.div``;
 
 export const VariantTypeName = styled.div`
   font-style: normal;

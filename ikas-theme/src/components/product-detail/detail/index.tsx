@@ -6,7 +6,7 @@ import { ProductDetailProps } from "src/components/__generated__/types";
 import { Title } from "./title";
 import { FavoriteButton } from "./favorite-button";
 import { Price } from "./price";
-import { VariantValues } from "./variant-values";
+import { Variants } from "./variants";
 import { AddToCart } from "./add-to-cart";
 import { Description } from "./description";
 import { ProductOptions } from "./product-options";
@@ -20,7 +20,7 @@ function Detail(props: ProductDetailProps) {
       <Title {...props} />
       <FavoriteButton {...props} />
       <Price {...props} />
-      <VariantValues {...props} />
+      <Variants {...props} />
       <ProductOptions {...props} />
       <AddToCart {...props} />
       <Description {...props} />

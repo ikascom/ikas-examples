@@ -16,17 +16,17 @@ import { ProductDetailProps } from "src/components/__generated__/types";
 
 import * as S from "../style";
 
-export const VariantValues = observer(({ product }: ProductDetailProps) => {
+export const Variants = observer(({ product }: ProductDetailProps) => {
   return (
-    <S.VariantValuesWrapper>
+    <S.VariantsWrapper>
       {product.displayedVariantTypes.map((dVT) => (
         <VariantType key={dVT.variantType.id} product={product} dVT={dVT} />
       ))}
-    </S.VariantValuesWrapper>
+    </S.VariantsWrapper>
   );
 });
 
-VariantValues.displayName = "VariantValues";
+Variants.displayName = "Variants";
 
 type VariantTypeProps = {
   product: IkasProduct;
@@ -37,7 +37,7 @@ const VariantType = observer(({ dVT, product }: VariantTypeProps) => {
   return (
     <S.VariantType>
       <S.VariantTypeName>{dVT.variantType.name}</S.VariantTypeName>
-      <VariantValue dVT={dVT} product={product} />
+      <VariantValues dVT={dVT} product={product} />
     </S.VariantType>
   );
 });
@@ -47,7 +47,7 @@ type VariantValueType = {
   dVT: IkasDisplayedVariantType;
 };
 
-const VariantValue = observer(({ dVT, product }: VariantValueType) => {
+const VariantValues = observer(({ dVT, product }: VariantValueType) => {
   const onVariantValueChange = (dVV: IkasDisplayedVariantValue) => {
     product.selectVariantValue(dVV.variantValue);
   };
