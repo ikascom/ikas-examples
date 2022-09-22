@@ -3,22 +3,13 @@ import { observer } from "mobx-react-lite";
 import { Image, Link } from "@ikas/storefront";
 
 import { HeroBannerProps } from "../__generated__/types";
+import formatImageAspectRatio from "src/utils/formatImageAspectRatio";
 import { Container } from "../components/container";
-
 import breakpoints from "src/styles/breakpoints";
 
 import * as S from "./style";
 
 export const imageSizes = `(max-width: ${breakpoints.xxl}) 100vw, ${breakpoints.xxl}`;
-
-function formatImageAspectRatio(
-  imageAspectRatio: HeroBannerProps["imageAspectRatio"]
-) {
-  const width = imageAspectRatio.split("_")[0];
-  const height = imageAspectRatio.split("_")[1];
-
-  return { width, height };
-}
 
 function HeroBanner({
   image,

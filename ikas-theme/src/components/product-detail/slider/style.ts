@@ -15,7 +15,7 @@ export const SliderWrapper = styled.div`
 export const Thumbnails = styled.div`
   order: 1;
   display: flex;
-  min-width: 100px;
+  width: 100px;
   gap: 10px;
 
   @media (min-width: ${breakpoints.lg}) {
@@ -28,6 +28,8 @@ export const Thumbnails = styled.div`
 
 export const Thumbnail = styled.button<{ $selected: boolean }>`
   display: flex;
+
+  width: 100px;
 
   border-width: 1px;
   border-style: solid;

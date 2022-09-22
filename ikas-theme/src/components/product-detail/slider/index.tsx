@@ -1,57 +1,69 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import { Image } from "@ikas/storefront";
 
-import SliderStore from "src/store/slider-store";
-
 import { ProductDetailProps } from "src/components/__generated__/types";
-import breakpoints from "src/styles/breakpoints";
+import breakpoints, { point } from "src/styles/breakpoints";
+import formatImageAspectRatio from "src/utils/formatImageAspectRatio";
 
 import * as S from "./style";
 
+type ActiveImageIdType = string | null;
+type ActiveImage = ReturnType<typeof useActiveImage>;
+
+function useActiveImage() {
+  const [id, set] = useState<ActiveImageIdType>(null);
+  return { id, set };
+}
+
 function Slider(props: ProductDetailProps) {
-  const sliderStore = SliderStore.getInstance();
+  const activeImage = useActiveImage();
 
   useEffect(() => {
-    sliderStore.activeImageId =
-      props.product.selectedVariant.mainImage?.image?.id;
+    const mainImageId = props.product.selectedVariant.mainImage?.image?.id;
+    mainImageId && activeImage.set(mainImageId);
   }, [props.product.selectedVariant]);
 
   return (
     <S.SliderWrapper>
-      <Thumbnails {...props} />
-      <MainImage {...props} />
+      <Thumbnails activeImage={activeImage} {...props} />
+      <MainImage activeImage={activeImage} {...props} />
     </S.SliderWrapper>
   );
 }
 
 export default observer(Slider);
 
-const Thumbnails = observer((props: ProductDetailProps) => {
-  const sliderStore = SliderStore.getInstance();
+type ThumbnailsProps = {
+  activeImage: ActiveImage;
+} & ProductDetailProps;
+
+const Thumbnails = observer((props: ThumbnailsProps) => {
+  const { activeImage, product } = props;
+  const { width, height } = formatImageAspectRatio(props.imageAspectRatio);
+
   const onClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     const id = event.currentTarget.dataset.id;
-    if (!id) return;
-    sliderStore.activeImageId = id;
+    id && activeImage.set(id);
   };
 
   return (
     <S.Thumbnails>
-      {props.product.selectedVariant.images?.map((image, index) => (
+      {product.selectedVariant.images?.map((image, index) => (
         <S.Thumbnail
           key={index}
           data-id={image.image?.id}
-          $selected={sliderStore.activeImageId === image.image?.id}
+          $selected={activeImage.id === image.image?.id}
           onClick={onClick}
         >
           <Image
             useBlur
             image={image.image!}
-            layout="intrinsic"
-            width={96}
-            height={113}
+            layout="responsive"
+            width={width}
+            height={height}
             objectFit="contain"
-            sizes={`(min-width: ${breakpoints.sm}) ${breakpoints.sm}, (min-width: ${breakpoints.md}) ${breakpoints.md}, (min-width: ${breakpoints.lg}) calc(${breakpoints.lg} / 2), (min-width: ${breakpoints.xl}) calc(${breakpoints.xl} / 2), (min-width: ${breakpoints.xxl}) calc(${breakpoints.xxl} / 2), 100vw`}
+            sizes="100px"
           />
         </S.Thumbnail>
       ))}
@@ -59,10 +71,16 @@ const Thumbnails = observer((props: ProductDetailProps) => {
   );
 });
 
-const MainImage = observer((props: ProductDetailProps) => {
-  const sliderStore = SliderStore.getInstance();
-  const image = props.product.selectedVariant.images?.find(
-    (image) => image.imageId === sliderStore.activeImageId
+type MainImageProps = {
+  activeImage: ActiveImage;
+} & ProductDetailProps;
+
+const MainImage = observer((props: MainImageProps) => {
+  const { product, activeImage } = props;
+  const { width, height } = formatImageAspectRatio(props.imageAspectRatio);
+
+  const image = product.selectedVariant.images?.find(
+    (image) => image.imageId === activeImage.id
   )?.image;
 
   if (!image) return null;
@@ -72,10 +90,10 @@ const MainImage = observer((props: ProductDetailProps) => {
         useBlur
         image={image}
         layout="responsive"
-        width={960}
-        height={1130}
+        width={width}
+        height={height}
         objectFit="contain"
-        sizes={`(min-width: ${breakpoints.sm}) ${breakpoints.sm}, (min-width: ${breakpoints.md}) ${breakpoints.md}, (min-width: ${breakpoints.lg}) calc(${breakpoints.lg} / 2), (min-width: ${breakpoints.xl}) calc(${breakpoints.xl} / 2), (min-width: ${breakpoints.xxl}) calc(${breakpoints.xxl} / 2), 100vw`}
+        sizes={`(max-width: ${breakpoints.lg}) 100vw, ${point.xxl / 2}px`}
       />
     </S.MainImage>
   );

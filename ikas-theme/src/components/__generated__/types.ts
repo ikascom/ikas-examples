@@ -45,6 +45,7 @@ export type FooterProps = {
 
 export type ProductDetailProps = {
 	product: IkasProduct;
+	imageAspectRatio: ImageAspectRatio;
 };
 
 export type PageBrandProps = {

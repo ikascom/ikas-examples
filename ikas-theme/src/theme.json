@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "87fd1c4a-22d7-441c-9703-7be80c29aff4",
+          "id": "ae0d50e7-5c14-4313-b3bf-073446c1d84c",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "196e67f7-6c05-46ca-b5fc-bc613cfda5e5",
+          "id": "1309c1d7-f24a-45fb-b6ec-f3c0d530037d",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "6496825f-43bf-419f-9866-1318ef65c479",
+          "id": "8a42e437-2ab5-415d-9ac1-956c733d51dd",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "d8bcc0f0-8837-43a1-988f-36f1126a8bba",
+          "id": "573731f1-806d-41b8-987d-f56fd5de54c7",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "54fcca34-7496-4daa-88a9-04f33a1a9718",
+          "id": "944e3d4b-4568-4a85-9ea1-22824662f9f3",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "e727f0c8-db7f-47c5-baf4-57634cc614b3",
+          "id": "6f39c613-f1b3-41f3-a37c-f564d1c08d9d",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "52c96124-b394-4342-a2f2-e6f838fdde37",
+          "id": "fd8bdd4f-0008-4847-8689-5f256325db14",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "cd11f268-9327-41f3-b1b0-ba3634409506",
+          "id": "44c05c04-6dc3-4b86-89a8-3a689cf7106e",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "69ebf0ed-2766-431a-9f7b-54dfed65a499",
+          "id": "5a9cc26c-b684-4902-9dbc-8a3c98db8665",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "7b819ed0-9f2e-4a8c-97de-6d77a104ff30",
+          "id": "894957e9-4c55-4c81-8036-6453a58110e5",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "a31ef504-7e44-4309-8f53-fc2bafca612d",
+          "id": "9ee666ce-6635-4c2c-93dd-9c8bdd60563b",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "426ac200-b0aa-493e-8ab6-132d980727b3",
+          "id": "e9286500-4439-4f62-8357-82d43a14b032",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "43d2e0cd-48c4-4696-b3bd-c1ccad388b2d",
+          "id": "228e39f7-3ca1-433e-bb9b-1d1be10e605d",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "3848a862-44f2-47a4-948a-aa17300a475a",
+          "id": "f0457d32-335f-4c66-ba7e-43568e949571",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "6649c80b-6886-42c0-8a87-0ebdd44c3987",
+          "id": "eb62801b-62ea-4221-a265-fa552fe1a216",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "4f70d0c9-9c90-49b4-812d-dbe06a1183e9",
+          "id": "255e524d-4677-48a0-9d73-1b8cf45fd672",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "878017b7-4105-4b49-9d3d-6be1fb00747c",
+          "id": "30fad721-f3c6-4521-a8f7-7bf91828ffd9",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -501,6 +501,18 @@
           "sliderData": {},
           "groupId": "d89e1f5b-8edb-48af-ade5-e931cb8ccd04",
           "translations": {}
+        },
+        {
+          "id": "1818e62e-8a02-4e39-a67c-9470bb5d819b",
+          "name": "imageAspectRatio",
+          "displayName": "Image Aspect Ratio",
+          "description": "",
+          "type": "CUSTOM",
+          "isRequired": true,
+          "customDataId": "9016510f-ff18-4938-b928-e3ead886291a",
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
         }
       ],
       "isHeader": false,
@@ -512,7 +524,8 @@
         },
         "product": {
           "usePageData": true
-        }
+        },
+        "imageAspectRatio": "1_1"
       }
     },
     {
@@ -2700,7 +2713,8 @@
           "propValues": {
             "product": {
               "usePageData": true
-            }
+            },
+            "imageAspectRatio": "1_1"
           }
         }
       ],

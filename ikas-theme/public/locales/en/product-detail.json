@@ -4,6 +4,12 @@
       "tooltipText": {
         "add": "Add product to favorite",
         "remove": "Remove product from favorites"
+      },
+      "loginModal": {
+        "title": "Login Required",
+        "text": "You need to log in to your account for this operation.\nPlease click the button below to log in. (After logging in, you will be redirected to this page)",
+        "loginButtonText": "LOGIN",
+        "noAccountText": "Not have an account?"
       }
     },
     "addToCart": {
