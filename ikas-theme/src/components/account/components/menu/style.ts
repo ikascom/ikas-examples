@@ -43,7 +43,7 @@ type ListItemProps = {
   $selected?: boolean;
 };
 export const ListItem = styled.li<ListItemProps>`
-  a {
+  & > * {
     display: block;
     font-size: 20px;
     line-height: 32px;
