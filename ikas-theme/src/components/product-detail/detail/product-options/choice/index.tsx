@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useMemo } from "react";
 import { observer } from "mobx-react-lite";
 import {
   IkasProduct,
@@ -48,7 +48,11 @@ const ProductOptionChoice: React.FC<Props> = ({
       />
       <FormItem status={formStatus} help={hasFormError ? tooltipText : ""}>
         {option.selectSettings?.type === IkasProductOptionSelectType.SELECT && (
-          <OptionSelect option={option} product={product} />
+          <OptionSelect
+            option={option}
+            hasFormError={hasFormError}
+            product={product}
+          />
         )}
         {option.selectSettings?.type === IkasProductOptionSelectType.BOX && (
           <OptionBox option={option} product={product} />
@@ -68,63 +72,69 @@ type OptionProps = {
   product: IkasProduct;
 };
 
-const OptionSelect = observer(({ option, product }: OptionProps) => {
-  if (!option.selectSettings) return null;
+type OptionSelectProps = {
+  hasFormError: boolean;
+} & OptionProps;
 
-  const selectOptions = React.useMemo(() => {
-    const data = option.selectSettings
-      ? option.selectSettings.values.map((optionSelect) => {
-          const price = formattedOptionPrice(option.price, product);
-          return {
-            value: optionSelect.id,
-            label: `${optionSelect.value}${price ? ` ${price}` : ""}`,
-          };
-        })
-      : [];
-    return data;
-  }, [option, product]);
+const OptionSelect = observer(
+  ({ hasFormError, option, product }: OptionSelectProps) => {
+    if (!option.selectSettings) return null;
 
-  const onChange = (newValue: string) => {
-    const isArray = Array.isArray(newValue);
+    const selectOptions = useMemo(() => {
+      const data = option.selectSettings
+        ? option.selectSettings.values.map((optionSelect) => {
+            const price = formattedOptionPrice(option.price, product);
+            return {
+              value: optionSelect.id,
+              label: `${optionSelect.value}${price ? ` ${price}` : ""}`,
+            };
+          })
+        : [];
+      return data;
+    }, [option, product]);
 
-    if (
-      isArray &&
-      option.selectSettings?.maxSelect &&
-      newValue.length > option.selectSettings.maxSelect
-    )
-      return;
+    const onChange = (newValue: string) => {
+      const isArray = Array.isArray(newValue);
 
-    if (isArray) {
-      option.values = newValue.map((val) => val.value);
-    } else {
-      if (newValue) {
-        option.values = [newValue];
+      if (
+        isArray &&
+        option.selectSettings?.maxSelect &&
+        newValue.length > option.selectSettings.maxSelect
+      )
+        return;
+
+      if (isArray) {
+        option.values = newValue.map((val) => val.value);
+      } else {
+        if (newValue) {
+          option.values = [newValue];
+        }
       }
-    }
-  };
+    };
 
-  const selectedOptionValues = React.useMemo(() => {
-    return selectOptions.filter(
-      (sO) => option.values.findIndex((v) => v === sO.value) !== -1
+    const selectedOptionValues = useMemo(() => {
+      return selectOptions.filter(
+        (sO) => option.values.findIndex((v) => v === sO.value) !== -1
+      );
+    }, [option.values]);
+    const isNoMaxLimit = option.selectSettings?.maxSelect === null;
+    const multiple = isNoMaxLimit
+      ? true
+      : (option.selectSettings.minSelect || 0) > 1 ||
+        (option.selectSettings.maxSelect || 0) > 2;
+
+    return (
+      <Select
+        placeholder=""
+        status={hasFormError ? "error" : undefined}
+        value={selectedOptionValues.map((option) => option.value)}
+        multiple={multiple}
+        onChange={onChange}
+        options={selectOptions}
+      />
     );
-  }, [option.values]);
-  const isNoMaxLimit = option.selectSettings?.maxSelect === null;
-  const multiple = isNoMaxLimit
-    ? true
-    : (option.selectSettings.minSelect || 0) > 1 ||
-      (option.selectSettings.maxSelect || 0) > 2;
-
-  return (
-    <Select
-      placeholder=""
-      status={!option.hasValidValues ? "error" : undefined}
-      value={selectedOptionValues.map((option) => option.value)}
-      multiple={multiple}
-      onChange={onChange}
-      options={selectOptions}
-    />
-  );
-});
+  }
+);
 
 const OptionBox = observer(({ option, product }: OptionProps) => {
   if (!option.selectSettings) return null;

@@ -4,6 +4,7 @@ import { IkasProduct, useStore, useTranslation } from "@ikas/storefront";
 
 import { NS } from "src/components/product-detail";
 import { useAddToCart } from "src/utils/hooks/useAddToCart";
+import { ProductOptionsStore } from "src/components/product-detail/detail/product-options";
 
 type Props = {
   product: IkasProduct;
@@ -22,9 +23,7 @@ export default function useAddToCartButton({ product, quantity }: Props) {
     isBackInStockCustomerLoginRequired,
   } = product.selectedVariant;
   const hasStock = product.selectedVariant.hasStock;
-  const disabled = hasStock
-    ? !product.isAddToCartEnabled || loading
-    : !isBackInStockEnabled || loading;
+  const disabled = hasStock ? loading : !isBackInStockEnabled || loading;
 
   const buttonText = hasStock
     ? t(`${NS}:detail.addToCart.text`)
@@ -40,6 +39,11 @@ export default function useAddToCartButton({ product, quantity }: Props) {
     !hasStock && isBackInStockEnabled && isBackInStockReminderSaved;
 
   const handleAddToCartClick = async () => {
+    if (!product.isAddToCartEnabled) {
+      ProductOptionsStore.getInstance().showOptionError = true;
+      return;
+    }
+
     if (showBackInStockIcon) {
       const customer = store.customerStore.customer;
       if (isBackInStockCustomerLoginRequired && !customer?.id) {

@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
+import { makeAutoObservable } from "mobx";
 import {
   IkasProduct,
   IkasProductOption,
@@ -19,10 +20,7 @@ import { NS } from "src/components/product-detail";
 
 export const ProductOptions = observer((props: ProductDetailProps) => {
   if (!props.product.productOptionSet) return null;
-
-  // may be you want to show errors after addToButton click?
-  // then add logic to here
-  const showOptionError = true;
+  const showOptionError = ProductOptionsStore.getInstance().showOptionError;
 
   return (
     <div aria-label="product-options">
@@ -58,7 +56,7 @@ const ProductOption: React.FC<Props> = observer(
       showOptionError: boolean;
     }> | null>(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
       switch (option.type) {
         case IkasProductOptionType.TEXT:
           setOption(ProductOptionText);
@@ -108,3 +106,18 @@ const ProductOption: React.FC<Props> = observer(
     );
   }
 );
+
+export class ProductOptionsStore {
+  private static _instance: ProductOptionsStore;
+  showOptionError = false;
+
+  private constructor() {
+    makeAutoObservable(this);
+  }
+
+  static getInstance() {
+    if (this._instance) return this._instance;
+    this._instance = new ProductOptionsStore();
+    return this._instance;
+  }
+}
