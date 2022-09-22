@@ -8,13 +8,15 @@ type Option = {
   label: string;
 };
 
+export type SelectOnChangeParamType = Option["value"];
+
 type Props = {
   value?: JSX.IntrinsicElements["select"]["value"];
   placeholder?: string;
   status?: FormItemStatus;
   options: Option[];
   multiple?: JSX.IntrinsicElements["select"]["multiple"];
-  onChange?: (value: Option["value"]) => void;
+  onChange?: (value: SelectOnChangeParamType) => void;
 };
 
 function Select(props: Props) {

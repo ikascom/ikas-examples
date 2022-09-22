@@ -3,33 +3,24 @@ import {
   IkasDisplayedVariantType,
   IkasDisplayedVariantValue,
   IkasProduct,
-  IkasVariantSelectionType,
-  IkasVariantValue,
   useTranslation,
 } from "@ikas/storefront";
 import { observer } from "mobx-react-lite";
 
 import { NS } from "src/components/product-detail";
-import Select from "src/components/components/select";
+import Select, {
+  SelectOnChangeParamType,
+} from "src/components/components/select";
 import { Swatch } from "src/components/components/swatch";
 import { ProductDetailProps } from "src/components/__generated__/types";
 
 import * as S from "../style";
 
-export const VariantValues = observer((props: ProductDetailProps) => {
-  const onVariantSelect = (value: IkasVariantValue) => {
-    props.product.selectVariantValue(value);
-  };
-
+export const VariantValues = observer(({ product }: ProductDetailProps) => {
   return (
     <S.VariantValuesWrapper>
-      {props.product.displayedVariantTypes.map((dVT) => (
-        <VariantType
-          key={dVT.variantType.id}
-          product={props.product}
-          dVT={dVT}
-          onVariantValueChange={onVariantSelect}
-        />
+      {product.displayedVariantTypes.map((dVT) => (
+        <VariantType key={dVT.variantType.id} product={product} dVT={dVT} />
       ))}
     </S.VariantValuesWrapper>
   );
@@ -40,75 +31,101 @@ VariantValues.displayName = "VariantValues";
 type VariantTypeProps = {
   product: IkasProduct;
   dVT: IkasDisplayedVariantType;
-  onVariantValueChange: (value: IkasVariantValue) => void;
 };
 
-const VariantType = observer(({ dVT, product, ...props }: VariantTypeProps) => {
-  const { t } = useTranslation();
-
-  const onVariantValueChange = (vVId: string) => {
-    const variantValue = dVT.displayedVariantValues.find(
-      (dVV) => dVV.variantValue.id === vVId
-    )?.variantValue;
-    if (variantValue) props.onVariantValueChange(variantValue);
-  };
-
-  if (dVT.variantType.isColorSelection) {
-    return (
-      <S.VariantType>
-        <S.VariantTypeName>{dVT.variantType.name}</S.VariantTypeName>
-        {dVT.displayedVariantValues.map((dVV) => (
-          <VariantValue
-            key={dVV.variantValue.id}
-            type={dVT.variantType.selectionType}
-            dVV={dVV}
-            onVariantValueChange={onVariantValueChange}
-          />
-        ))}
-      </S.VariantType>
-    );
-  }
-
-  const selectOptions = dVT.displayedVariantValues.map((dVV) => ({
-    value: dVV.variantValue.id,
-    label: dVV.variantValue.name,
-  }));
-  const selectValue = product.selectedVariantValues.find(
-    (sVV) => sVV.variantTypeId === dVT.variantType.id
-  )?.id;
-
+const VariantType = observer(({ dVT, product }: VariantTypeProps) => {
   return (
     <S.VariantType>
       <S.VariantTypeName>{dVT.variantType.name}</S.VariantTypeName>
-      <Select
-        placeholder={t(`${NS}:detail.variantType.selectPlaceholder`)}
-        options={selectOptions}
-        value={selectValue}
-        onChange={onVariantValueChange}
-      />
+      <VariantValue dVT={dVT} product={product} />
     </S.VariantType>
   );
 });
 
 type VariantValueType = {
-  type: IkasVariantSelectionType;
-  dVV: IkasDisplayedVariantValue;
-  onVariantValueChange: (vVId: string) => void;
+  product: IkasProduct;
+  dVT: IkasDisplayedVariantType;
 };
 
-const VariantValue = observer(({ dVV, type, ...props }: VariantValueType) => {
-  // render also Box type
-  const onClick = () => {
-    props.onVariantValueChange(dVV.variantValue.id);
+const VariantValue = observer(({ dVT, product }: VariantValueType) => {
+  const onVariantValueChange = (dVV: IkasDisplayedVariantValue) => {
+    product.selectVariantValue(dVV.variantValue);
   };
 
+  if (dVT.variantType.isColorSelection) {
+    return (
+      <SwatchVariantValue
+        dVT={dVT}
+        onVariantValueChange={onVariantValueChange}
+      />
+    );
+  }
   return (
-    <Swatch
-      title={dVV.variantValue.name}
-      selected={dVV.isSelected}
-      image={dVV.variantValue.thumbnailImage}
-      colorCode={dVV.variantValue.colorCode}
-      onClick={onClick}
+    <SelectVariantValue
+      product={product}
+      dVT={dVT}
+      onVariantValueChange={onVariantValueChange}
     />
   );
 });
+
+type SelectVariantValueProps = {
+  product: IkasProduct;
+  dVT: IkasDisplayedVariantType;
+  onVariantValueChange: (dVV: IkasDisplayedVariantValue) => void;
+};
+
+const SelectVariantValue = observer(
+  ({ dVT, product, onVariantValueChange }: SelectVariantValueProps) => {
+    const { t } = useTranslation();
+
+    const selectOptions = dVT.displayedVariantValues.map((dVV) => ({
+      value: dVV.variantValue.id,
+      label: dVV.variantValue.name,
+    }));
+
+    const selectValue = product.selectedVariantValues.find(
+      (sVV) => sVV.variantTypeId === dVT.variantType.id
+    )?.id;
+
+    const onChange = (value: SelectOnChangeParamType) => {
+      const dVV = dVT.displayedVariantValues.find(
+        (dVV) => dVV.variantValue.id === value
+      );
+      dVV && onVariantValueChange(dVV);
+    };
+
+    return (
+      <Select
+        placeholder={t(`${NS}:detail.variantType.selectPlaceholder`)}
+        options={selectOptions}
+        value={selectValue}
+        onChange={onChange}
+      />
+    );
+  }
+);
+
+type SwatchVariantValueProps = {
+  dVT: IkasDisplayedVariantType;
+  onVariantValueChange: (dVV: IkasDisplayedVariantValue) => void;
+};
+
+const SwatchVariantValue = observer(
+  ({ dVT, onVariantValueChange }: SwatchVariantValueProps) => {
+    return (
+      <>
+        {dVT.displayedVariantValues.map((dVV) => (
+          <Swatch
+            key={dVV.variantValue.id}
+            title={dVV.variantValue.name}
+            selected={dVV.isSelected}
+            image={dVV.variantValue.thumbnailImage}
+            colorCode={dVV.variantValue.colorCode}
+            onClick={() => onVariantValueChange(dVV)}
+          />
+        ))}
+      </>
+    );
+  }
+);
