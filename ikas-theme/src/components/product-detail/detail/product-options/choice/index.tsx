@@ -9,7 +9,9 @@ import {
 
 import OptionTitle from "../common/option-title";
 import FormItem from "src/components/components/form/form-item";
-import Select from "src/components/components/select";
+import Select, {
+  SelectOnChangeParamType,
+} from "src/components/components/select";
 import { Swatch } from "src/components/components/swatch";
 
 import { formattedOptionPrice } from "../common/option-price";
@@ -93,7 +95,7 @@ const OptionSelect = observer(
       return data;
     }, [option, product]);
 
-    const onChange = (newValue: string) => {
+    const onChange = (newValue: SelectOnChangeParamType) => {
       const isArray = Array.isArray(newValue);
 
       if (
@@ -104,7 +106,7 @@ const OptionSelect = observer(
         return;
 
       if (isArray) {
-        option.values = newValue.map((val) => val.value);
+        option.values = newValue;
       } else {
         if (newValue) {
           option.values = [newValue];

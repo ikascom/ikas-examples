@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.span`
-  display: inline-block;
+  display: block;
 `;
 
 export const TextWrapper = styled.span`

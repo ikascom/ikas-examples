@@ -1,5 +1,7 @@
 import React from "react";
+
 import { FormItemStatus } from "../form/form-item";
+import MultipleSelect from "./multiple-select";
 
 import * as S from "./style";
 
@@ -8,15 +10,19 @@ type Option = {
   label: string;
 };
 
-export type SelectOnChangeParamType = Option["value"];
+export type SingleSelectOnChangeParamType = Option["value"];
+export type MultipleSelectOnChangeParamType = Option["value"][];
+export type SelectOnChangeParamType =
+  | SingleSelectOnChangeParamType
+  | MultipleSelectOnChangeParamType;
 
-type Props = {
+export type Props = {
+  multiple: JSX.IntrinsicElements["select"]["multiple"];
   value?: JSX.IntrinsicElements["select"]["value"];
-  placeholder?: string;
   status?: FormItemStatus;
+  placeholder?: string;
   options: Option[];
-  multiple?: JSX.IntrinsicElements["select"]["multiple"];
-  onChange?: (value: SelectOnChangeParamType) => void;
+  onChange: (value: SelectOnChangeParamType) => void;
 };
 
 function Select(props: Props) {
@@ -26,13 +32,22 @@ function Select(props: Props) {
     props.onChange && props.onChange(event.target.value);
   };
 
+  if (props.multiple) {
+    if (!Array.isArray(props.value))
+      throw Error("MultipleSelect Value must Array");
+    return (
+      <MultipleSelect
+        placeholder={props.placeholder}
+        options={props.options}
+        status={props.status}
+        value={props.value}
+        onChange={props.onChange}
+      />
+    );
+  }
+
   return (
-    <S.Select
-      multiple={!!props.multiple}
-      $status={props.status}
-      value={props.value}
-      onChange={onChange}
-    >
+    <S.Select $status={props.status} value={props.value} onChange={onChange}>
       {!!placeholder && (
         <option disabled hidden>
           {placeholder}
