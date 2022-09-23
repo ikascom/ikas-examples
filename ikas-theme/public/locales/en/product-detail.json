@@ -16,7 +16,31 @@
       "text": "ADD TO CART",
       "soldOut": "SOLD OUT",
       "remindOnBackInStock": "Notify me when back in stock",
-      "backInStockReminderSaved": "We will notify you when stock in"
+      "backInStockReminderSaved": "We will notify you when stock in",
+      "loginModal": {
+        "title": "Notify When In Stock",
+        "text": "You need to log in to your account so that we can notify you when it is in stock.\nPlease click the button below to log in. (After logging in, you will be redirected to this page again)",
+        "loginButtonText": "LOGIN",
+        "noAccountText": "Not have an account?"
+      },
+      "backInStockModal": {
+        "title": "Back in stock notify",
+        "text": "We need your e-mail address to let us know when it is in stock. Please write your e-mail address.",
+        "form": {
+          "email": "Email",
+          "submit": "Submit",
+          "validation": {
+            "emailRule": "Please enter a valid email address"
+          }
+        },
+        "alert": {
+          "errorTitle": "Error!",
+          "errorText": "We couldn't retrieve your email record. Check your information or try again later.",
+          "alreadySavedText": "Notify already created for this email address",
+          "successTitle": "Notify successfuly created.",
+          "successText": "We will be notify you when product in stock"
+        }
+      }
     },
     "description": {
       "title": "Description"

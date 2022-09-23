@@ -3,14 +3,14 @@ import { IkasProduct } from "@ikas/storefront";
 import { observer } from "mobx-react-lite";
 
 import Button from "src/components/components/button";
-import { ProductDetailProps } from "src/components/__generated__/types";
-
+import { BackInStock } from "./back-in-stock";
 import useAddToCartButton from "./hooks/useAddToCartButton";
-
-import * as S from "./style";
+import { ProductDetailProps } from "src/components/__generated__/types";
 
 import BellSVG from "./svg/bs-bell";
 import BellFillSVG from "./svg/bs-bell-fill";
+
+import * as S from "./style";
 
 export const AddToCart = observer((props: ProductDetailProps) => {
   const [quantity, setQuantity] = useState(1);
@@ -19,6 +19,7 @@ export const AddToCart = observer((props: ProductDetailProps) => {
     <S.Wrapper>
       <QuantityButton quantity={quantity} setQuantity={setQuantity} />
       <AddToCartButton product={props.product} quantity={quantity} />
+      <BackInStock product={props.product} />
     </S.Wrapper>
   );
 });
@@ -35,10 +36,10 @@ const AddToCartButton = observer(
     const {
       loading,
       buttonText,
+      buttonState,
       disabled,
-      showBackInStockIcon,
-      showBackInStockReminderSavedIcon,
-      handleAddToCartClick,
+      isBackInStockReminderSaved,
+      onButtonClick,
     } = useAddToCartButton({
       product,
       quantity,
@@ -47,19 +48,16 @@ const AddToCartButton = observer(
     return (
       <Button
         block
+        stopPropagation
         loading={loading}
         disabled={disabled}
-        onClick={handleAddToCartClick}
+        onClick={onButtonClick}
       >
         {buttonText}
-        {showBackInStockIcon && (
+        {buttonState === "backInStock" && (
           <S.Icon>
-            <BellSVG />
-          </S.Icon>
-        )}
-        {showBackInStockReminderSavedIcon && (
-          <S.Icon>
-            <BellFillSVG />
+            {isBackInStockReminderSaved && <BellFillSVG />}
+            {!isBackInStockReminderSaved && <BellSVG />}
           </S.Icon>
         )}
       </Button>

@@ -1,10 +1,12 @@
 import React from "react";
-import { useRouter } from "next/router";
-import { IkasProduct, useStore, useTranslation } from "@ikas/storefront";
+import { IkasProduct, useTranslation } from "@ikas/storefront";
 
-import { NS } from "src/components/product-detail";
+import useBackInStock from "./useBackInStock";
 import { useAddToCart } from "src/utils/hooks/useAddToCart";
 import { ProductOptionsStore } from "src/components/product-detail/detail/product-options";
+import { useBackInStockStore } from "../back-in-stock/backInStockStore";
+
+import { NS } from "src/components/product-detail";
 
 type Props = {
   product: IkasProduct;
@@ -12,18 +14,22 @@ type Props = {
 };
 
 export default function useAddToCartButton({ product, quantity }: Props) {
-  const store = useStore();
-  const router = useRouter();
   const { t } = useTranslation();
-  const { loading, addToCart } = useAddToCart();
-
+  const backInStockStore = useBackInStockStore();
+  const { loading: addToCartLoading, addToCart } = useAddToCart();
   const {
     isBackInStockEnabled,
     isBackInStockReminderSaved,
-    isBackInStockCustomerLoginRequired,
-  } = product.selectedVariant;
+    handleBackInStockClick,
+  } = useBackInStock({ product });
+
   const hasStock = product.selectedVariant.hasStock;
-  const disabled = hasStock ? loading : !isBackInStockEnabled || loading;
+  const loading = addToCartLoading || backInStockStore.pending;
+  const disabled = hasStock
+    ? addToCartLoading
+    : !isBackInStockEnabled ||
+      isBackInStockReminderSaved ||
+      backInStockStore.pending;
 
   const buttonText = hasStock
     ? t(`${NS}:detail.addToCart.text`)
@@ -33,34 +39,29 @@ export default function useAddToCartButton({ product, quantity }: Props) {
       : t(`${NS}:detail.addToCart.remindOnBackInStock`)
     : t(`${NS}:detail.addToCart.soldOut`);
 
-  const showBackInStockIcon =
-    !hasStock && isBackInStockEnabled && !isBackInStockReminderSaved;
-  const showBackInStockReminderSavedIcon =
-    !hasStock && isBackInStockEnabled && isBackInStockReminderSaved;
+  const buttonState: "addToCart" | "backInStock" =
+    isBackInStockEnabled && !hasStock ? "backInStock" : "addToCart";
 
   const handleAddToCartClick = async () => {
     if (!product.isAddToCartEnabled) {
       ProductOptionsStore.getInstance().showOptionError = true;
       return;
     }
-
-    if (showBackInStockIcon) {
-      const customer = store.customerStore.customer;
-      if (isBackInStockCustomerLoginRequired && !customer?.id) {
-        router.push("/account/login?redirect=");
-      }
-    }
-
     addToCart(product, quantity);
   };
+
+  const onButtonClick =
+    buttonState === "backInStock"
+      ? handleBackInStockClick
+      : handleAddToCartClick;
 
   return {
     loading,
     hasStock,
-    buttonText,
+    isBackInStockReminderSaved,
     disabled,
-    showBackInStockIcon,
-    showBackInStockReminderSavedIcon,
-    handleAddToCartClick,
+    buttonState,
+    buttonText,
+    onButtonClick,
   };
 }

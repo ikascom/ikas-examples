@@ -7,7 +7,7 @@ import Tooltip from "src/components/components/tooltip";
 import { ProductDetailProps } from "src/components/__generated__/types";
 import { Loading } from "src/components/components/button";
 import { NS } from "src/components/product-detail";
-import ModalLoginRequired from "./modal-login-required";
+import ModalLoginRequired from "../components/modal-login-required";
 
 import FavoriteSVG from "src/components/svg/favorite";
 

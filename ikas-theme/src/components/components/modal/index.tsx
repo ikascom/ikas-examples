@@ -21,14 +21,12 @@ function Modal({ visible, title, children, onClose }: Props) {
 
   useEffect(() => {
     document.documentElement.style.overflow = visible ? "hidden" : "auto";
-  }, [visible]);
-
-  useEffect(() => {
     return () => {
       document.documentElement.style.overflow = "auto";
     };
-  }, []);
+  }, [visible]);
 
+  if (!visible) return null;
   return (
     <S.Modal
       $visible={visible}
