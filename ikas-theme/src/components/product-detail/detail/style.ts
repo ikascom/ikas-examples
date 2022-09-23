@@ -89,6 +89,7 @@ export const Description = styled.div`
 `;
 
 export const SocialShareWrapper = styled.div`
+  margin-top: 20px;
   margin-bottom: 20px;
 
   @media (min-width: ${breakpoints.md}) {

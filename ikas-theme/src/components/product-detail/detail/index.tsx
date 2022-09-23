@@ -10,9 +10,9 @@ import { Variants } from "./variants";
 import { AddToCart } from "./add-to-cart";
 import { Description } from "./description";
 import { ProductOptions } from "./product-options";
+import { SocialShare } from "./social-share";
 
 import * as S from "./style";
-import { SocialShare } from "./social-share";
 
 function Detail(props: ProductDetailProps) {
   return (

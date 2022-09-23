@@ -1,8 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
+import { IkasProductList, useTranslation } from "@ikas/storefront";
 
 import * as S from "./style";
-import { IkasProductList, useTranslation } from "@ikas/storefront";
 
 type Props = {
   productList: IkasProductList;
