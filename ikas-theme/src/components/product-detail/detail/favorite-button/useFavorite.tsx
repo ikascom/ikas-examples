@@ -27,7 +27,8 @@ export default function useFavorite({ productId }: Props) {
     }
   };
 
-  const toggleFavorite = async () => {
+  const toggleFavorite = async (event: React.MouseEvent<HTMLButtonElement>) => {
+    event.stopPropagation();
     if (!store.customerStore.customer) {
       setLoginModal(true);
       return;
