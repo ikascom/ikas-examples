@@ -15,7 +15,8 @@ import PinterestSVG from "src/components/svg/pinterest";
 import IkasSVG from "src/components/svg/ikas";
 
 import * as S from "./style";
-import { useTranslation } from "@ikas/storefront";
+import { useStore, useTranslation } from "@ikas/storefront";
+import Select, { SelectOnChangeParamType } from "../components/select";
 
 const NS = "footer"; // Namespace for translation (i18n);
 
@@ -24,6 +25,7 @@ function Footer(props: FooterProps) {
     <S.Footer>
       <Container>
         <LogoAndLinksArea {...props} />
+        <LanguageSelect />
         <SocialMediaAndPaymentArea {...props} />
         <S.Divider />
         <CopyrightAndPoweredByArea {...props} />
@@ -49,6 +51,34 @@ const CopyrightAndPoweredByArea = (props: FooterProps) => {
     </S.CopyrightWrapper>
   );
 };
+
+const LanguageSelect = observer(() => {
+  const store = useStore();
+  const { t } = useTranslation();
+
+  const value = store.languageOptions?.find((lO) => lO.isSelected);
+  const onChange = (value: SelectOnChangeParamType) => {
+    const language = store.languageOptions?.find((l) => l.id === value);
+    language && store.setLanguage(language);
+  };
+
+  if (!(store.languageOptions.length > 0)) return null;
+  return (
+    <S.LanguageSelect>
+      <S.LanguageSelectText>
+        {t(`${NS}:selectYourLanguage`)}
+      </S.LanguageSelectText>
+      <Select
+        value={value?.id}
+        options={store.languageOptions.map((lO) => ({
+          value: lO.id,
+          label: lO.language,
+        }))}
+        onChange={onChange}
+      />
+    </S.LanguageSelect>
+  );
+});
 
 const LogoAndLinksArea = (props: FooterProps) => {
   return (

@@ -135,3 +135,22 @@ export const PoweredByLogo = styled.span`
   display: inline-block;
   vertical-align: middle;
 `;
+
+export const LanguageSelect = styled.div`
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: ${breakpoints.md}) {
+    text-align: left;
+    margin-left: auto;
+    margin-right: unset;
+  }
+`;
+
+export const LanguageSelectText = styled.p`
+  margin-bottom: 8px;
+`;
