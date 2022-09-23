@@ -10,6 +10,7 @@ export const Select = styled.select<StyledSelectProps>`
   height: 42px;
   padding: 12px 32px 12px 16px;
 
+  color: #000;
   background-color: ${({ theme, $status }) => {
     if ($status === "error") {
       return theme.color.red + "25";

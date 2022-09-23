@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "ae0d50e7-5c14-4313-b3bf-073446c1d84c",
+          "id": "f4b77f18-9d3c-4309-9e2d-49f6e7bc7981",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "1309c1d7-f24a-45fb-b6ec-f3c0d530037d",
+          "id": "898c1288-73d6-4c8f-80fb-6f61c1c51653",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "8a42e437-2ab5-415d-9ac1-956c733d51dd",
+          "id": "cea6eae9-4429-4449-9698-a7c405aee08b",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "573731f1-806d-41b8-987d-f56fd5de54c7",
+          "id": "37e1f50c-56e1-4aa9-acdc-40d576b45da5",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "944e3d4b-4568-4a85-9ea1-22824662f9f3",
+          "id": "20a9c851-0432-40d2-9cec-70ce5367379f",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "6f39c613-f1b3-41f3-a37c-f564d1c08d9d",
+          "id": "65423501-d26b-4d11-ae4c-76b6fea29307",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "fd8bdd4f-0008-4847-8689-5f256325db14",
+          "id": "b161ffc5-c871-45f1-8abf-f8956b925884",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "44c05c04-6dc3-4b86-89a8-3a689cf7106e",
+          "id": "028edac4-8c0e-4352-b1a9-d750daa67d23",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "5a9cc26c-b684-4902-9dbc-8a3c98db8665",
+          "id": "50fbeb91-410a-4728-b65a-cafa65f133bd",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "894957e9-4c55-4c81-8036-6453a58110e5",
+          "id": "ab7049d1-70c2-43d8-a8a0-8a7b1aab3e77",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "9ee666ce-6635-4c2c-93dd-9c8bdd60563b",
+          "id": "301bae1b-dfab-48c9-beaf-3c9ce7f1061a",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "e9286500-4439-4f62-8357-82d43a14b032",
+          "id": "4ff1438a-809e-45ed-b699-b08ed26325e9",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "228e39f7-3ca1-433e-bb9b-1d1be10e605d",
+          "id": "072f6e4d-66b3-48a6-9d60-5c0b15eb2392",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "f0457d32-335f-4c66-ba7e-43568e949571",
+          "id": "91cd68e7-f09a-4934-bd2b-707e8f0e651c",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "eb62801b-62ea-4221-a265-fa552fe1a216",
+          "id": "301ed887-3d29-42b5-ab1c-519bdcade398",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "255e524d-4677-48a0-9d73-1b8cf45fd672",
+          "id": "84022a35-d6eb-4c7b-a1a8-1e347c241524",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "30fad721-f3c6-4521-a8f7-7bf91828ffd9",
+          "id": "1540c1a8-1e54-4cd3-b45f-6b34051d29c9",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -327,13 +327,44 @@
           "sliderData": {},
           "groupId": "23f250ee-0016-4ced-896a-6ad6cc5c3edc",
           "translations": {}
+        },
+        {
+          "id": "a7fd1fbb-9797-4651-91c9-83f16a5d5529",
+          "name": "showLocalization",
+          "displayName": "Show Localization",
+          "description": "",
+          "type": "BOOLEAN",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "dd9bc787-912f-4f75-beba-d1d57551500c",
+          "translations": {}
+        },
+        {
+          "id": "11eac07e-7c8f-43c9-be75-2fe716e16d8b",
+          "name": "localization",
+          "displayName": "Localization",
+          "description": "",
+          "type": "CUSTOM",
+          "isRequired": true,
+          "customDataId": "499f75b4-f6e6-40b0-9d28-2dd8944fac7c",
+          "requiredPropId": "a7fd1fbb-9797-4651-91c9-83f16a5d5529",
+          "sliderData": {},
+          "groupId": "dd9bc787-912f-4f75-beba-d1d57551500c",
+          "translations": {}
         }
       ],
       "isHeader": true,
       "isFooter": false,
       "translations": {},
       "defaultPropValues": {
-        "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b"
+        "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+        "showLocalization": true,
+        "localization": {
+          "text": "Select Your Region",
+          "backgroundColor": "#444444ff",
+          "color": "#ffffffff",
+          "buttonText": "OK"
+        }
       }
     },
     {
@@ -831,7 +862,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -1077,7 +1115,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -1323,7 +1368,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -1569,7 +1621,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -1815,7 +1874,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -2061,7 +2127,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -2307,7 +2380,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -2566,7 +2646,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -2871,7 +2958,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -3135,7 +3229,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -3386,7 +3487,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -3645,7 +3753,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -3909,7 +4024,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -4173,7 +4295,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -4435,7 +4564,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -4681,7 +4817,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -4940,7 +5083,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -5202,7 +5352,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -5461,7 +5618,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -5733,7 +5897,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -5984,7 +6155,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -6243,7 +6421,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -6494,7 +6679,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -6753,7 +6945,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -7004,7 +7203,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -7263,7 +7469,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -7514,7 +7727,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -7773,7 +7993,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -8024,7 +8251,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -8283,7 +8517,14 @@
                   }
                 ]
               }
-            ]
+            ],
+            "showLocalization": true,
+            "localization": {
+              "text": "Select Your Region",
+              "backgroundColor": "#444444ff",
+              "color": "#f5f5f5ff",
+              "buttonText": "OK"
+            }
           }
         },
         {
@@ -8739,6 +8980,82 @@
       "groupId": "",
       "isRoot": true,
       "level": 0
+    },
+    {
+      "id": "499f75b4-f6e6-40b0-9d28-2dd8944fac7c",
+      "name": "Localization",
+      "typescriptName": "Localization",
+      "description": null,
+      "translations": {},
+      "type": "OBJECT",
+      "isRequired": true,
+      "key": null,
+      "nestedData": [
+        {
+          "id": "317b597f-5ac6-433d-87a1-bc6ad01c1dbe",
+          "name": "Text",
+          "typescriptName": null,
+          "description": null,
+          "translations": {},
+          "type": "TEXT",
+          "isRequired": true,
+          "key": "text",
+          "nestedData": null,
+          "sliderData": {},
+          "groupId": "",
+          "isRoot": false,
+          "level": 1
+        },
+        {
+          "id": "0bcc6c8c-5794-40e6-8708-cbe2968ff08c",
+          "name": "Button Text",
+          "typescriptName": null,
+          "description": null,
+          "translations": {},
+          "type": "TEXT",
+          "isRequired": true,
+          "key": "buttonText",
+          "nestedData": null,
+          "sliderData": {},
+          "groupId": "",
+          "isRoot": false,
+          "level": 1
+        },
+        {
+          "id": "71b9afa2-c8da-4458-a2d2-0b2fdbce04bf",
+          "name": "Background Color",
+          "typescriptName": null,
+          "description": null,
+          "translations": {},
+          "type": "COLOR",
+          "isRequired": true,
+          "key": "backgroundColor",
+          "nestedData": null,
+          "sliderData": {},
+          "groupId": "",
+          "isRoot": false,
+          "level": 1
+        },
+        {
+          "id": "5eef7576-c297-429a-b7e8-b2659b068aba",
+          "name": "Text Color",
+          "typescriptName": null,
+          "description": null,
+          "translations": {},
+          "type": "COLOR",
+          "isRequired": true,
+          "key": "color",
+          "nestedData": null,
+          "sliderData": {},
+          "groupId": "",
+          "isRoot": false,
+          "level": 1
+        }
+      ],
+      "sliderData": {},
+      "groupId": "",
+      "isRoot": true,
+      "level": 0
     }
   ],
   "groups": [
@@ -8805,6 +9122,11 @@
     {
       "id": "23f250ee-0016-4ced-896a-6ad6cc5c3edc",
       "name": "Links",
+      "translations": {}
+    },
+    {
+      "id": "dd9bc787-912f-4f75-beba-d1d57551500c",
+      "name": "Localization",
       "translations": {}
     }
   ],

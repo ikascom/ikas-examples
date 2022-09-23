@@ -22,6 +22,13 @@ export type SocialMedia = {
 	pinterest?: string;
 };
 
+export type Localization = { 
+	text: string;
+	buttonText: string;
+	backgroundColor: string;
+	color: string;
+};
+
 export type HeroBannerProps = {
 	image: IkasImage;
 	imageAspectRatio: ImageAspectRatio;
@@ -35,6 +42,8 @@ export type HeroBannerProps = {
 export type HeaderProps = {
 	logo: IkasImage;
 	links?: IkasNavigationLink[];
+	showLocalization?: boolean;
+	localization: Localization;
 };
 
 export type FooterProps = {

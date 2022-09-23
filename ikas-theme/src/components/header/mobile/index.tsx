@@ -13,6 +13,7 @@ import { HeaderProps } from "src/components/__generated__/types";
 import FavoriteSVG from "src/components/svg/favorite";
 import AccountSVG from "src/components/svg/account";
 import CartSVG from "src/components/svg/cart";
+import LocalizationBar from "../components/localization-bar";
 
 import IOMenuSVG from "./svg/io-menu";
 import IOCloseSVG from "./svg/io-close";
@@ -23,14 +24,17 @@ import { NS } from "..";
 
 function MobileHeader(props: HeaderProps) {
   return (
-    <S.Header>
-      <S.Row>
-        <LeftSide {...props} />
-        <RightSide {...props} />
-      </S.Row>
-      <SearchInput {...props} />
-      <Sidenav {...props} />
-    </S.Header>
+    <>
+      {props.showLocalization && <LocalizationBar {...props.localization} />}
+      <S.Header>
+        <S.Row>
+          <LeftSide {...props} />
+          <RightSide {...props} />
+        </S.Row>
+        <SearchInput {...props} />
+        <Sidenav {...props} />
+      </S.Header>
+    </>
   );
 }
 

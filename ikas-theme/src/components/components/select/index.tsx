@@ -17,7 +17,8 @@ export type SelectOnChangeParamType =
   | MultipleSelectOnChangeParamType;
 
 export type Props = {
-  multiple: JSX.IntrinsicElements["select"]["multiple"];
+  name?: string;
+  multiple?: JSX.IntrinsicElements["select"]["multiple"];
   value?: JSX.IntrinsicElements["select"]["value"];
   status?: FormItemStatus;
   placeholder?: string;
@@ -47,7 +48,12 @@ function Select(props: Props) {
   }
 
   return (
-    <S.Select $status={props.status} value={props.value} onChange={onChange}>
+    <S.Select
+      $status={props.status}
+      name={props.name}
+      value={props.value}
+      onChange={onChange}
+    >
       {!!placeholder && (
         <option disabled hidden>
           {placeholder}

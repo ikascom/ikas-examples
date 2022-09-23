@@ -8,6 +8,7 @@ import { HeaderProps } from "src/components/__generated__/types";
 import FavoriteSVG from "src/components/svg/favorite";
 import AccountSVG from "src/components/svg/account";
 import CartSVG from "src/components/svg/cart";
+import LocalizationBar from "../components/localization-bar";
 
 import { NS } from "../";
 
@@ -15,15 +16,18 @@ import * as S from "./style";
 
 function DesktopHeader(props: HeaderProps) {
   return (
-    <S.Header>
-      <Container>
-        <S.InnerContainer>
-          <LeftSide {...props} />
-          <Center {...props} />
-          <RightSide {...props} />
-        </S.InnerContainer>
-      </Container>
-    </S.Header>
+    <>
+      {props.showLocalization && <LocalizationBar {...props.localization} />}
+      <S.Header>
+        <Container>
+          <S.InnerContainer>
+            <LeftSide {...props} />
+            <Center {...props} />
+            <RightSide {...props} />
+          </S.InnerContainer>
+        </Container>
+      </S.Header>
+    </>
   );
 }
 
