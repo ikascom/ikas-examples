@@ -24,7 +24,7 @@ type StyledInputProps = {
 
 export const Input = styled.input<StyledInputProps>`
   width: 100%;
-  height: 52px;
+  height: 42px;
 
   ${({ $hasPrefix }) => {
     if ($hasPrefix) {

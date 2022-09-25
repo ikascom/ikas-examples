@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { RowContext } from "../row";
 
 import * as S from "./style";
@@ -9,7 +9,7 @@ type ColumnProps = {
 };
 
 function Column(props: ColumnProps) {
-  const { gutter } = React.useContext(RowContext);
+  const { gutter } = useContext(RowContext);
   return (
     <S.Columm $gutter={gutter} $span={props.span}>
       {props.children}

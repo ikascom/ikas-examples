@@ -26,5 +26,33 @@
       "unsuccessTitle": "Save operation failed",
       "unsuccessText": "An unexpected error has occurred."
     }
+  },
+  "address": {
+    "createAddress": "Create Address",
+    "editAddress": "Edit Address",
+    "myAddresses": "My Addresses",
+    "addNewAddress": "Add new address",
+    "noAddressPlaceholder": "You do not have a registered address. Please create an address below.",
+    "form": {
+      "title": "Address Title",
+      "titlePlaceholder": "home, work etc...",
+      "firstName": "Name",
+      "lastName": "Surname",
+      "addressLine1": "Address",
+      "addressLine2": "Apartment",
+      "postalCode": "Zip code",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "district": "District",
+      "phone": "Phone",
+      "phonePlaceholder": "example: +905551112233"
+    },
+    "email": "Email",
+    "save": "Save",
+    "delete": "Delete",
+    "deleteConfirm": "Do you really want to delete this address?",
+    "requiredRule": "Required",
+    "phoneRule": "{{ phoneNumber }} is not a valid phone number"
   }
 }

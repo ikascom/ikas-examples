@@ -8,7 +8,7 @@ export const InnerWrapper = styled.section`
   margin-top: 40px;
   margin-bottom: 80px;
 
-  @media screen and (max-width: ${breakpoints.md}) {
+  @media screen and (max-width: ${breakpoints.lg}) {
     flex-direction: column;
     gap: 0;
   }

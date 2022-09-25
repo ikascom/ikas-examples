@@ -1,7 +1,8 @@
+import { ValidationStatus } from "@ikas/storefront";
 import React from "react";
 import * as S from "./style";
 
-export type FormItemStatus = "error" | "success" | "idle" | undefined;
+export type FormItemStatus = ValidationStatus | "idle" | undefined;
 
 type Props = {
   label?: string;

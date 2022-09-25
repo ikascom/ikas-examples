@@ -9,6 +9,7 @@ import {
 } from "@ikas/storefront";
 
 import { useScreen } from "src/utils/hooks/useScreen";
+import CloseSVG from "src/components/svg/close";
 import { NS } from "../..";
 
 import * as S from "./style";
@@ -42,72 +43,83 @@ const menu = [
 ];
 
 export const Menu = observer(() => {
-  const { t } = useTranslation();
   const store = useStore();
   const { isMobile } = useScreen();
-
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
-  const isListVisible = (isMobile && isMobileMenuVisible) || !isMobile;
 
   const onMenuButtonClick = () => setMobileMenuVisible((prev) => !prev);
 
+  const isListVisible = (isMobile && isMobileMenuVisible) || !isMobile;
+
   return (
-    <S.Wrapper>
-      <RenderTitle
-        isMobile={isMobile}
-        store={store}
-        onMenuButtonClick={onMenuButtonClick}
-      />
-      {isListVisible && <RenderList store={store} />}
-    </S.Wrapper>
+    <>
+      {isMobile && isListVisible && <S.MobileOverlay />}
+      {isMobile && (
+        <FixedMenuToggleButton
+          active={isListVisible}
+          onMenuButtonClick={onMenuButtonClick}
+        />
+      )}
+      {isListVisible && (
+        <S.Wrapper>
+          {isMobile && <MobileTitle store={store} />}
+          {isListVisible && <List store={store} />}
+        </S.Wrapper>
+      )}
+    </>
   );
 });
 
-type RenderTitleProps = {
-  isMobile: boolean;
-  store: IkasBaseStore;
+const FixedMenuToggleButton = ({
+  active,
+  onMenuButtonClick,
+}: {
+  active: boolean;
   onMenuButtonClick: () => void;
+}) => {
+  return (
+    <S.ToggleButton title="Toggle Navigation Menu" onClick={onMenuButtonClick}>
+      {active && <CloseSVG />}
+      {!active && (
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 20 20"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      )}
+    </S.ToggleButton>
+  );
 };
 
-const RenderTitle = observer(
-  ({ isMobile, store, onMenuButtonClick }: RenderTitleProps) => {
-    const { t } = useTranslation();
-    const title = isMobile
-      ? t(
-          `${NS}:menu.${
-            menu.find((item) => item.pageType === store.currentPageType)
-              ?.i18nKey
-          }`
-        )
-      : t(`${NS}:menu.title`);
-    return (
-      <S.TitleWrapper>
-        <S.Title>{title}</S.Title>
-        {isMobile && (
-          <S.ToggleButton onClick={onMenuButtonClick}>
-            <svg
-              stroke="currentColor"
-              fill="currentColor"
-              stroke-width="0"
-              viewBox="0 0 20 20"
-              height="1em"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </S.ToggleButton>
-        )}
-      </S.TitleWrapper>
-    );
-  }
-);
+type MobileTitleProps = {
+  store: IkasBaseStore;
+};
 
-const RenderList = observer(({ store }: { store: IkasBaseStore }) => {
+const MobileTitle = observer(({ store }: MobileTitleProps) => {
+  const { t } = useTranslation();
+  const currentPage = menu.find(
+    (item) => item.pageType === store.currentPageType
+  )?.i18nKey;
+  const title = t(`${NS}:menu.${currentPage}`);
+
+  return (
+    <S.TitleWrapper>
+      <S.Title>{title}</S.Title>
+    </S.TitleWrapper>
+  );
+});
+
+const List = observer(({ store }: { store: IkasBaseStore }) => {
   const { t } = useTranslation();
   return (
     <S.List>

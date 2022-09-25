@@ -1,15 +1,39 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { ButtonSize } from ".";
 
-export const Button = styled.button<{ $block?: boolean }>`
+type ButtonProps = { $block?: boolean; $size: ButtonSize };
+
+export const Button = styled.button<ButtonProps>`
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
   background-color: ${({ theme }) => theme.color.buttonBg};
   color: ${({ theme }) => theme.color.button};
   display: flex;
   align-items: center;
   justify-content: center;
+
+  ${({ $size }) => {
+    if ($size === "small") {
+      return css`
+        font-size: 12px;
+        line-height: 16px;
+      `;
+    }
+
+    if ($size === "middle") {
+      return css`
+        font-size: 16px;
+        line-height: 28px;
+      `;
+    }
+
+    if ($size === "large") {
+      return css`
+        font-size: 18px;
+        line-height: 30px;
+      `;
+    }
+  }}
 
   ${({ $block }) => $block && `width: 100%;`};
 

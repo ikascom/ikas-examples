@@ -4,7 +4,12 @@ import LoadingSVG from "src/components/svg/loading";
 
 import * as S from "./style";
 
+export type ButtonSize = "large" | "middle" | "small";
 interface ButtonProps {
+  /**
+   * Default middle
+   */
+  size?: ButtonSize;
   stopPropagation?: boolean;
   anchor?: boolean;
   href?: string;
@@ -29,7 +34,12 @@ function Button(props: ButtonProps) {
 
   if (props.anchor) {
     return (
-      <S.AnchorButton href={props.href} title={props.title} onClick={onClick}>
+      <S.AnchorButton
+        $size={props.size || "middle"}
+        href={props.href}
+        title={props.title}
+        onClick={onClick}
+      >
         {props.loading && <Loading />}
         {props.children}
       </S.AnchorButton>
@@ -42,6 +52,7 @@ function Button(props: ButtonProps) {
       title={props.title}
       disabled={props.disabled}
       $block={!!props.block}
+      $size={props.size || "middle"}
       onClick={onClick}
     >
       {props.loading && <Loading />}

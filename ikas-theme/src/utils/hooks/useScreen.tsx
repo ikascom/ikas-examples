@@ -20,6 +20,7 @@ export function useScreen() {
 
   return {
     width,
+    isSmall: width < point.sm,
     isMobile: width < point.lg,
     isDesktop: width >= point.lg,
   };

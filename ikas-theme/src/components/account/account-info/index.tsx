@@ -7,6 +7,7 @@ import Form from "src/components/components/form";
 import FormItem from "src/components/components/form/form-item";
 import Input from "src/components/components/input";
 import Button from "src/components/components/button";
+import Header from "../components/header";
 
 import useAccountInfo from "./useAccountInfo";
 
@@ -18,9 +19,9 @@ export const AccountInfo = observer(() => {
     useAccountInfo();
 
   if (!accountInfoForm) return null;
-
   return (
     <div>
+      <Header title={t(`${NS}:menu.accountInfo`)} />
       {formAlert && (
         <Alert
           closable

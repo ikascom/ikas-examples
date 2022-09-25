@@ -1,5 +1,5 @@
+import React, { createContext, useMemo } from "react";
 import type { Context } from "react";
-import React, { createContext } from "react";
 
 import * as S from "./style";
 
@@ -17,7 +17,7 @@ function Row(props: RowProps) {
     ? props.gutter || [0, 0]
     : [props.gutter || 0, props.gutter || 0];
   const [gutterH = 0, gutterV = 0] = gutter;
-  const rowContext = React.useMemo(
+  const rowContext = useMemo(
     () => ({ gutter: [gutterH, gutterV] as [number, number] }),
     [gutterH, gutterV]
   );
