@@ -4,8 +4,11 @@ import { observer } from "mobx-react-lite";
 
 import { Container } from "../components/container";
 import { Menu } from "./components/menu";
-import { AccountInfo } from "./account-info";
+
 import Address from "./address";
+import AccountInfo from "./account-info";
+import FavoriteProducts from "./favorite-products";
+
 import useAccount from "./useAccount";
 
 import * as S from "./style";
@@ -30,15 +33,10 @@ const AccountPage = observer(() => {
         <S.Main>
           {isAccount && <AccountInfo />}
           {isAddresses && <Address />}
+          {isFavoriteProducts && <FavoriteProducts />}
           {/* {isOrders && <Orders store={store} namespace={namespace} />}
         {isOrderDetail && <OrderDetail store={store} namespace={namespace} />}
-        {isFavoriteProducts && (
-          <FavoriteProducts
-            isMobile={isMobile}
-            namespace={namespace}
-            store={store}
-          />
-        )} */}
+         */}
         </S.Main>
       </S.InnerWrapper>
     </Container>

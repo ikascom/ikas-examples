@@ -54,5 +54,11 @@
     "deleteConfirm": "Do you really want to delete this address?",
     "requiredRule": "Required",
     "phoneRule": "{{ phoneNumber }} is not a valid phone number"
+  },
+  "favoriteProducts": {
+    "title": "My Favorites",
+    "noFavoriteProduct": "There is no product you like",
+    "browseProduct": "Browse products",
+    "loading": "Loading..."
   }
 }

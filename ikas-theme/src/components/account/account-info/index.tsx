@@ -13,7 +13,7 @@ import useAccountInfo from "./useAccountInfo";
 
 import { NS } from "../index";
 
-export const AccountInfo = observer(() => {
+const AccountInfo = () => {
   const { t } = useTranslation();
   const { pending, formAlert, status, accountInfoForm, onSubmit } =
     useAccountInfo();
@@ -79,4 +79,6 @@ export const AccountInfo = observer(() => {
       </Form>
     </div>
   );
-});
+};
+
+export default observer(AccountInfo);
