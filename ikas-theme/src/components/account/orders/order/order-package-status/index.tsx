@@ -2,8 +2,6 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import { IkasOrderPackageStatus, useTranslation } from "@ikas/storefront";
 
-import { NS } from "src/components/account";
-
 import * as S from "./style";
 
 type OrderPackageStatusProps = {
@@ -15,7 +13,7 @@ const OrderPackageStatusComponent = (props: OrderPackageStatusProps) => {
     text: string;
     color: "black" | "green" | "red";
   } = {
-    text: getOrderPackageStatusText(props.status, NS),
+    text: getOrderPackageStatusText(props.status),
     color: "black",
   };
 
@@ -43,64 +41,57 @@ const OrderPackageStatusComponent = (props: OrderPackageStatusProps) => {
 
 export default observer(OrderPackageStatusComponent);
 
-export function getOrderPackageStatusText(
-  status: IkasOrderPackageStatus,
-  namespace: string
-) {
+export function getOrderPackageStatusText(status: IkasOrderPackageStatus) {
   const { t } = useTranslation();
 
   // orderPackageStatus i18n Text helper
-  const oPS = (key: string) =>
-    t(`${namespace}:orders.orderPackageStatus.${key}`);
-  // refundProcessStatus i18n Text helper
-  const rPS = (key: string) =>
-    t(`${namespace}:orders.refundProcessStatus.${key}`);
+  const text = (key: string) => t(`orderPackageStatus.${key}`);
 
   switch (status) {
     case IkasOrderPackageStatus.UNFULFILLED:
-      return oPS(`unfulfilled`);
+      return text(`unfulfilled`);
 
     case IkasOrderPackageStatus.READY_FOR_SHIPMENT:
-      return oPS(`readyForShipment`);
+      return text(`readyForShipment`);
 
     case IkasOrderPackageStatus.PARTIALLY_FULFILLED:
-      return oPS(`partiallyFulfilled`);
+      return text(`partiallyFulfilled`);
 
     case IkasOrderPackageStatus.FULFILLED:
-      return oPS(`fulfilled`);
+      return text(`fulfilled`);
 
     case IkasOrderPackageStatus.DELIVERED:
-      return oPS(`delivered`);
+      return text(`delivered`);
 
     case IkasOrderPackageStatus.PARTIALLY_DELIVERED:
-      return oPS(`partiallyDelivered`);
+      return text(`partiallyDelivered`);
 
     case IkasOrderPackageStatus.UNABLE_TO_DELIVER:
-      return oPS(`unableToDeliver`);
+      return text(`unableToDeliver`);
 
     case IkasOrderPackageStatus.CANCELLED:
-      return oPS(`cancelled`);
+      return text(`cancelled`);
 
     case IkasOrderPackageStatus.PARTIALLY_CANCELLED:
-      return oPS(`partiallyCancelled`);
+      return text(`partiallyCancelled`);
 
     case IkasOrderPackageStatus.CANCEL_REJECTED:
-      return oPS(`cancelRejected`);
+      return text(`cancelRejected`);
 
     case IkasOrderPackageStatus.REFUNDED:
-      return rPS(`refunded`);
+      return text(`refunded`);
 
     case IkasOrderPackageStatus.PARTIALLY_REFUNDED:
-      return rPS(`partiallyRefunded`);
+      return text(`partiallyRefunded`);
 
     case IkasOrderPackageStatus.REFUND_REQUEST_ACCEPTED:
-      return rPS(`refundRequestAccepted`);
+      return text(`refundRequestAccepted`);
 
     case IkasOrderPackageStatus.REFUND_REJECTED:
-      return rPS(`refundRejected`);
+      return text(`refundRejected`);
 
     case IkasOrderPackageStatus.REFUND_REQUESTED:
-      return rPS(`refundRequested`);
+      return text(`refundRequested`);
 
     default:
       return "";

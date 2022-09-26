@@ -1,5 +1,15 @@
-import breakpoints from "src/styles/breakpoints";
 import styled from "styled-components";
+
+import breakpoints from "src/styles/breakpoints";
+
+export const DesktopTitle = styled.h1`
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 48px;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid ${({ theme }) => theme.color.black};
+`;
 
 export const MobileOverlay = styled.div`
   position: fixed;

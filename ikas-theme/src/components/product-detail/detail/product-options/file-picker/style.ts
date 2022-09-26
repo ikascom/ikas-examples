@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { FilesType } from ".";
 
 export const UploadButtonWrapper = styled.div`
   position: relative;

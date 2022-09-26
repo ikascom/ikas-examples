@@ -43,6 +43,7 @@ const menu = [
 ];
 
 export const Menu = observer(() => {
+  const { t } = useTranslation();
   const store = useStore();
   const { isMobile } = useScreen();
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -62,6 +63,9 @@ export const Menu = observer(() => {
       )}
       {isListVisible && (
         <S.Wrapper>
+          {!isMobile && (
+            <S.DesktopTitle>{t(`${NS}:menu.title`)}</S.DesktopTitle>
+          )}
           {isMobile && <MobileTitle store={store} />}
           {isListVisible && <List store={store} />}
         </S.Wrapper>

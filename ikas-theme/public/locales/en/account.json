@@ -67,29 +67,7 @@
     "orderedAt": "Ordered at {{ orderDate }}",
     "xNumberedOrder": "Order no {{ orderNumber }}",
     "xProduct": "{{productQuantity}} product",
-    "showOrderDetail": "Show Order Detail",
-    "orderPackageStatus": {
-      "status": "Status",
-      "unfulfilled": "Order Created",
-      "readyForShipment": "Order Ready to Ship",
-      "fulfilled": "Order Sent",
-      "partiallyFulfilled": "Order Partially Sent",
-      "delivered": "Order Delivered",
-      "partiallyDelivered": "Order Partially Delivered",
-      "unableToDeliver": "Order Not Delivered",
-      "cancelled": "Order Canceled",
-      "partiallyCancelled": "Order Partially Canceled",
-      "cancelRejected": "Order Cancellation Request Denied",
-      "cancelRequested": "Order Cancellation Requested"
-    },
-
-    "refundProcessStatus": {
-      "refunded": "Refunded",
-      "partiallyRefunded": "Partially refunded",
-      "refundRequestAccepted": "Refund Request Approved",
-      "refundRejected": "Refund Request Refused",
-      "refundRequested": "Refund Requested"
-    }
+    "showOrderDetail": "Show Order Detail"
   },
   "loading": "Loading..."
 }

@@ -7,6 +7,7 @@ type StyledSelectProps = {
 
 export const Select = styled.select<StyledSelectProps>`
   width: 100%;
+  min-width: 68px;
   height: 42px;
   padding: 12px 32px 12px 16px;
 

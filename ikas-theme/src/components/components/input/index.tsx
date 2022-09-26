@@ -7,7 +7,7 @@ export type Props = {
   status?: FormItemStatus;
 } & Omit<JSX.IntrinsicElements["input"], "prefix">;
 
-function Input(props: Props) {
+const Input = (props: Props) => {
   const { status, ref, prefix, ...restProps } = props;
 
   return (
@@ -21,7 +21,7 @@ function Input(props: Props) {
       )}
     </S.InputWrapper>
   );
-}
+};
 
 export default Input;
 
@@ -29,11 +29,11 @@ type DatePickerProps = {
   status: FormItemStatus;
 } & JSX.IntrinsicElements["input"];
 
-export function DatePicker({
+export const DatePicker = ({
   ref,
   status,
   type,
   ...restProps
-}: DatePickerProps) {
+}: DatePickerProps) => {
   return <S.DatePicker $status={status} type="date" {...restProps} />;
-}
+};

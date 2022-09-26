@@ -19,6 +19,9 @@ export const Prefix = styled.span`
 
 type StyledInputProps = {
   $hasPrefix: boolean;
+} & StatusProps;
+
+type StatusProps = {
   $status: FormItemStatus;
 };
 
@@ -73,7 +76,7 @@ export const Length = styled.div`
   `}
 `;
 
-export const DatePicker = styled.input<StyledInputProps>`
+export const DatePicker = styled.input<StatusProps>`
   padding: 0 8px;
   font-size: ${({ theme }) => theme.fontSize.sm};
   border-radius: ${({ theme }) => theme.inputBorderRadius};

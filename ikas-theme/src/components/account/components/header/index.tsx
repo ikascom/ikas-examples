@@ -3,7 +3,7 @@ import * as S from "./style";
 
 type HeaderProps = {
   title: string;
-  rightChild?: React.ReactChild;
+  rightChild?: React.ReactNode;
 };
 
 const Header: React.FC<HeaderProps> = ({ title, rightChild }) => {

@@ -36,5 +36,73 @@
       "next": "next",
       "nextPage": "Next page"
     }
+  },
+  "orderDetail": {
+    "loading": "Loading...",
+    "orderDetail": "Order Detail",
+    "xNumberedOrder": "Order no {{ orderNumber }}",
+    "orderedAt": "Ordered at {{ orderDate }}",
+    "refundRequest": "Create Refund Request",
+    "refundRequestDisabled": "There is no refundable product",
+    "refundStatus": {
+      "refundApproved": "Refund request approved",
+      "refunded": "Refunded",
+      "cancelRefunded": "Refund canceled",
+      "requestRefunded": "Refund request sent"
+    },
+    "undelivered": "Undelivered",
+    "delivered": "Delivered",
+    "refunds": "Refunds",
+    "cancelled": "Cancelled",
+    "deliveryAddress": "Delivery Address",
+    "billingInfo": "Billing Information",
+    "summary": "Summary",
+    "orderAmount": "Order Amount",
+    "cargo": "Cargo",
+    "estimatedTax": "Estimated Tax",
+    "interest": "Interest",
+    "total": "Total",
+    "payment": "Payment",
+    "refund": {
+      "backButton": "Back to detail",
+      "refundSuccess": "İade Talebiniz Oluşturuldu",
+      "refundButtonNoItem": "Select Product for refund",
+      "refundButton": "REFUND {{ quantity }} PRODUCT",
+      "selectRefundItem": "Please select the products you want to refund",
+      "selectRefundQuantity": "The number of products you want to refund"
+    }
+  },
+  "orderPackageStatus": {
+    "status": "Status",
+    "unfulfilled": "Order Created",
+    "readyForShipment": "Order Ready to Ship",
+    "fulfilled": "Order Sent",
+    "partiallyFulfilled": "Order Partially Sent",
+    "delivered": "Order Delivered",
+    "partiallyDelivered": "Order Partially Delivered",
+    "unableToDeliver": "Order Not Delivered",
+    "cancelled": "Order Canceled",
+    "partiallyCancelled": "Order Partially Canceled",
+    "cancelRejected": "Order Cancellation Request Denied",
+    "cancelRequested": "Order Cancellation Requested",
+    "refunded": "Refunded",
+    "partiallyRefunded": "Partially refunded",
+    "refundRequestAccepted": "Refund Request Approved",
+    "refundRejected": "Refund Request Refused",
+    "refundRequested": "Refund Requested"
+  },
+  "orderTransactions": {
+    "paymentMethod": {
+      "APP_PAYMENT": "App Payment",
+      "BUY_ONLINE_PAY_AT_STORE": "Buy Online Pay at Store",
+      "CASH": "Cash",
+      "CASH_ON_DELIVERY": "Cash on Delivery",
+      "CREDIT_CARD": "Credit Card",
+      "CREDIT_CARD_ON_DELIVERY": "Credit Card on Delivery",
+      "GIFT_CARD": "Gift Card",
+      "MONEY_ORDER": "Money Order",
+      "OTHER": "Other",
+      "WALLET": "Wallet"
+    }
   }
 }

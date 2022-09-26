@@ -1,5 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
+import { useRouter } from "next/router";
 import { useStore, useTranslation, Link } from "@ikas/storefront";
 
 import { Container } from "src/components/components/container";
@@ -98,6 +99,7 @@ const SearchInput = (props: HeaderProps) => {
 
 const RightSide = observer((props: HeaderProps) => {
   const store = useStore();
+  const router = useRouter();
   const quantity = store.cartStore.cart?.itemQuantity ?? 0;
   return (
     <S.RightSide>
@@ -109,7 +111,12 @@ const RightSide = observer((props: HeaderProps) => {
           <AccountSVG />
         </S.AccountWrapper>
       </Link>
-      <S.CartWrapper>
+      <S.CartWrapper
+        onClick={() => {
+          store.cartStore.checkoutUrl &&
+            router.push(store.cartStore.checkoutUrl);
+        }}
+      >
         <S.CartQuantity>{quantity}</S.CartQuantity>
         <CartSVG />
       </S.CartWrapper>

@@ -26,9 +26,9 @@ export const AlertWrapper = styled.div<AlertProps>`
 
     if ($status === "info") {
       return css`
-        background-color: #ff980030;
-        border-color: #ff9800;
-        color: #ff9800;
+        background-color: ${({ theme }) => theme.color.orange}30;
+        border-color: ${({ theme }) => theme.color.orange};
+        color: ${({ theme }) => theme.color.orange};
       `;
     }
 

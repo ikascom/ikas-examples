@@ -7,4 +7,5 @@ type Props = {
 export const Text = styled.div<Props>`
   margin-bottom: 10px;
   color: ${({ theme, $color }) => theme.color[$color]};
+  font-weight: 700;
 `;

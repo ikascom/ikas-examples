@@ -1,11 +1,10 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import { IkasProduct, IkasProductOption } from "@ikas/storefront";
 
 import OptionTitle from "../common/option-title";
 import FormItem from "src/components/components/form/form-item";
 import { formattedOptionPrice } from "../common/option-price";
-import { useEffect } from "react";
 
 type Props = {
   showOptionError: boolean;
@@ -13,8 +12,8 @@ type Props = {
   product: IkasProduct;
 };
 
-const ProductOptionColorPicker: React.FC<Props> = ({ option, product }) => {
-  const [value, setValue] = React.useState<string>("#000000");
+const ProductOptionColorPicker = ({ option, product }: Props) => {
+  const [value, setValue] = useState<string>("#000000");
 
   useEffect(() => {
     option.values = ["#000000"];

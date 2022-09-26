@@ -50,6 +50,8 @@ export const theme = {
     black: "#000000",
     red: "#ed2727",
     green: "#52c41a",
+    blue: "#2563eb",
+    orange: "#ff9800",
   },
 };
 
