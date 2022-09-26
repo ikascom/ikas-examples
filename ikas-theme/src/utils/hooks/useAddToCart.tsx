@@ -7,9 +7,11 @@ export function useAddToCart() {
   const addToCart = async (product: IkasProduct, quantity: number) => {
     const store = useStore();
 
-    const item = store.cartStore.cart?.items.find(
-      (item) => item.variant.id === product.selectedVariant.id
+    const item = store.cartStore.findExistingItem(
+      product.selectedVariant,
+      product
     );
+
     setLoading(true);
     if (item) {
       await store.cartStore.changeItemQuantity(item, item.quantity + quantity);
