@@ -1,3 +1,4 @@
+import { Link } from "@ikas/storefront";
 import React from "react";
 
 import LoadingSVG from "src/components/svg/loading";
@@ -32,17 +33,18 @@ function Button(props: ButtonProps) {
     props.onClick && props.onClick(event);
   };
 
-  if (props.anchor) {
+  if (props.anchor && props.href) {
     return (
-      <S.AnchorButton
-        $size={props.size || "middle"}
-        href={props.href}
-        title={props.title}
-        onClick={onClick}
-      >
-        {props.loading && <Loading />}
-        {props.children}
-      </S.AnchorButton>
+      <Link passHref href={props.href}>
+        <S.AnchorButton
+          $size={props.size || "middle"}
+          title={props.title}
+          onClick={onClick}
+        >
+          {props.loading && <Loading />}
+          {props.children}
+        </S.AnchorButton>
+      </Link>
     );
   }
 

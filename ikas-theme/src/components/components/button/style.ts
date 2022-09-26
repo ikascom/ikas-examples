@@ -8,7 +8,7 @@ export const Button = styled.button<ButtonProps>`
   font-weight: 500;
   background-color: ${({ theme }) => theme.color.buttonBg};
   color: ${({ theme }) => theme.color.button};
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
