@@ -8,6 +8,7 @@ import { Menu } from "./components/menu";
 import Address from "./address";
 import AccountInfo from "./account-info";
 import FavoriteProducts from "./favorite-products";
+import Orders from "./orders";
 
 import useAccount from "./useAccount";
 
@@ -34,7 +35,8 @@ const AccountPage = observer(() => {
           {isAccount && <AccountInfo />}
           {isAddresses && <Address />}
           {isFavoriteProducts && <FavoriteProducts />}
-          {/* {isOrders && <Orders store={store} namespace={namespace} />}
+          {isOrders && <Orders />}
+          {/* 
         {isOrderDetail && <OrderDetail store={store} namespace={namespace} />}
          */}
         </S.Main>

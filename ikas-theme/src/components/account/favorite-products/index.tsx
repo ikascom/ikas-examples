@@ -11,6 +11,7 @@ import {
 import Product from "src/components/product-list/right/product";
 import Header from "src/components/account/components/header";
 import Tooltip from "src/components/components/tooltip";
+import Loading from "src/components/account/components/loading";
 import useFavoriteProducts from "./useFavoriteProducts";
 
 import FavoriteSVG from "src/components/svg/favorite";
@@ -20,8 +21,8 @@ import { NS } from "src/components/account";
 import * as S from "./style";
 
 const FavoriteProducts = () => {
-  const { t } = useTranslation();
   const store = useStore();
+  const { t } = useTranslation();
   const { products, isPending, getFavoriteProducts } = useFavoriteProducts();
 
   const headerTitle =
@@ -30,9 +31,7 @@ const FavoriteProducts = () => {
   return (
     <div>
       <Header title={headerTitle} />
-      {isPending && (
-        <S.Loading>{t(`${NS}:favoriteProducts.loading`)}</S.Loading>
-      )}
+      {isPending && <Loading>{t(`${NS}:loading`)}</Loading>}
       {!isPending && products.length === 0 && <NoProducts />}
       {!isPending && !!products.length && (
         <Products

@@ -34,14 +34,6 @@ export const NoProductsTitle = styled.h3`
   margin-bottom: 16px;
 `;
 
-export const Loading = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  height: 300px;
-`;
-
 export const ProductWrapper = styled.li`
   position: relative;
 `;
