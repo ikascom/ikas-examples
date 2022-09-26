@@ -24,7 +24,7 @@ const Orders = () => {
       {isPending && <Loading>{t(`${NS}:loading`)}</Loading>}
       {!isPending && !!orders.length && (
         <S.Orders>
-          {orders.map((order: any) => (
+          {orders.map((order) => (
             <Order key={order.id} order={order} />
           ))}
         </S.Orders>

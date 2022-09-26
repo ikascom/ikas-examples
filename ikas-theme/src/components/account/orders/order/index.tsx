@@ -35,7 +35,9 @@ const Order = ({ order }: Props) => {
   return (
     <S.Order>
       <S.Picture>
-        {order.orderLineItems[0].variant.mainImage?.id ? (
+        {!order.orderLineItems[0].variant.mainImage?.id ? (
+          <PlaceholderSVG />
+        ) : (
           <Image
             useBlur
             image={order.orderLineItems[0].variant.mainImage}
@@ -46,8 +48,6 @@ const Order = ({ order }: Props) => {
             objectFit="contain"
             sizes="250px"
           />
-        ) : (
-          <PlaceholderSVG />
         )}
       </S.Picture>
       <S.Content>

@@ -7,14 +7,14 @@ export default function useOrders() {
   const [orders, setOrders] = useState<IkasOrder[]>([]);
 
   useEffect(() => {
+    const getOrders = async () => {
+      const result = (await store.customerStore.getOrders()) || [];
+      setOrders(result);
+      setPending(false);
+    };
+
     getOrders();
   }, []);
-
-  const getOrders = async () => {
-    const result = (await store.customerStore.getOrders()) || [];
-    setOrders(result);
-    setPending(false);
-  };
 
   return {
     isPending,
