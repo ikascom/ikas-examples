@@ -33,8 +33,8 @@ function HeroBanner({
   return (
     <Container>
       <S.InnerContainer>
-        <RenderImage image={image} imageAspectRatio={imageAspectRatio} />
-        {isContentVisible && <RenderContent {...contentProps} />}
+        <HeroBannerImage image={image} imageAspectRatio={imageAspectRatio} />
+        {isContentVisible && <HeroBannerContent {...contentProps} />}
       </S.InnerContainer>
     </Container>
   );
@@ -42,10 +42,10 @@ function HeroBanner({
 
 export default observer(HeroBanner);
 
-type RenderImageProps = Pick<HeroBannerProps, "image" | "imageAspectRatio">;
+type HeroBannerImageProps = Pick<HeroBannerProps, "image" | "imageAspectRatio">;
 
-const RenderImage = observer(
-  ({ image, imageAspectRatio }: RenderImageProps) => {
+const HeroBannerImage = observer(
+  ({ image, imageAspectRatio }: HeroBannerImageProps) => {
     const { width, height } = formatImageAspectRatio(imageAspectRatio);
 
     return (
@@ -63,19 +63,19 @@ const RenderImage = observer(
   }
 );
 
-type RenderContentProps = Pick<
+type HeroBannerContentProps = Pick<
   HeroBannerProps,
   "showButton" | "link" | "title" | "buttonTextColor" | "buttonBackgroundColor"
 >;
 
-const RenderContent = observer(
+const HeroBannerContent = observer(
   ({
     showButton,
     title,
     link,
     buttonBackgroundColor,
     buttonTextColor,
-  }: RenderContentProps) => {
+  }: HeroBannerContentProps) => {
     const isButtonVisible = !!showButton && !!link?.href && !!link?.label;
 
     return (
