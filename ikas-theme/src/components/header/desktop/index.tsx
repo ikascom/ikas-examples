@@ -130,15 +130,12 @@ const RightSide = observer((props: HeaderProps) => {
           <AccountSVG />
         </S.AccountWrapper>
       </Link>
-      <S.CartWrapper
-        onClick={() => {
-          store.cartStore.checkoutUrl &&
-            router.push(store.cartStore.checkoutUrl);
-        }}
-      >
-        <S.CartQuantity>{quantity}</S.CartQuantity>
-        <CartSVG />
-      </S.CartWrapper>
+      <Link passHref href="/cart">
+        <S.CartWrapper as="a">
+          <S.CartQuantity>{quantity}</S.CartQuantity>
+          <CartSVG />
+        </S.CartWrapper>
+      </Link>
     </S.RightSide>
   );
 });
