@@ -14,6 +14,7 @@ import FavoriteSVG from "src/components/svg/favorite";
 import AccountSVG from "src/components/svg/account";
 import CartSVG from "src/components/svg/cart";
 import LocalizationBar from "../components/localization-bar";
+import { SearchInput } from "src/components/header/desktop";
 
 import IOMenuSVG from "./svg/io-menu";
 import IOCloseSVG from "./svg/io-close";
@@ -116,34 +117,6 @@ const NavigationListItem = ({ link }: { link: IkasNavigationLink }) => {
         </S.NavigationItemDropdown>
       )}
     </S.NavigationListItem>
-  );
-};
-
-const SearchInput = (props: HeaderProps) => {
-  const { t } = useTranslation();
-
-  return (
-    <S.SearchInputWrapper>
-      <svg
-        width="18"
-        height="18"
-        viewBox="0 0 18 18"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M11.256 2.77075C13.5917 5.12126 13.5798 8.92023 11.2293 11.256C8.87874 13.5917 5.07977 13.5798 2.74401 11.2293C0.408262 8.87874 0.420231 5.07977 2.77075 2.74401C5.12126 0.408263 8.92023 0.420231 11.256 2.77075ZM12.2781 11.5985C14.6724 8.85601 14.5712 4.68827 11.9653 2.06587C9.24027 -0.676398 4.80814 -0.690361 2.06587 2.03468C-0.676398 4.75973 -0.690361 9.19186 2.03468 11.9341C4.64184 14.5578 8.81159 14.684 11.569 12.3036L16.6474 17.3545L17.3526 16.6455L12.2781 11.5985Z"
-          fill="#77777B"
-        />
-      </svg>
-
-      <S.SearchInput
-        type="search"
-        placeholder={t(`${NS}:searchInput.placeholder`)}
-      />
-    </S.SearchInputWrapper>
   );
 };
 

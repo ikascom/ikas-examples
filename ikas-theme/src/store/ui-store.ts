@@ -3,6 +3,7 @@ import { makeAutoObservable } from "mobx";
 export default class UIStore {
   private static _instance: UIStore;
   sidenavVisible = false;
+  searchKeyword = "";
 
   private constructor() {
     makeAutoObservable(this);

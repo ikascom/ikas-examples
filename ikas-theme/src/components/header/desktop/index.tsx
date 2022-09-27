@@ -10,6 +10,7 @@ import FavoriteSVG from "src/components/svg/favorite";
 import AccountSVG from "src/components/svg/account";
 import CartSVG from "src/components/svg/cart";
 import LocalizationBar from "../components/localization-bar";
+import UIStore from "src/store/ui-store";
 
 import { NS } from "../";
 
@@ -37,10 +38,12 @@ export default observer(DesktopHeader);
 const LeftSide = (props: HeaderProps) => {
   return (
     <S.LeftSide>
-      <Link href="/">
-        <S.Logo>
-          <img src={props.logo.src} />
-        </S.Logo>
+      <Link passHref href="/">
+        <a>
+          <S.Logo>
+            <img src={props.logo.src} />
+          </S.Logo>
+        </a>
       </Link>
     </S.LeftSide>
   );
@@ -84,18 +87,34 @@ const Navigation = (props: HeaderProps) => {
   );
 };
 
-const SearchInput = (props: HeaderProps) => {
+export const SearchInput = observer((props: HeaderProps) => {
   const { t } = useTranslation();
+  const uiStore = UIStore.getInstance();
+  const router = useRouter();
+
+  const onKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      router.push(`/search?s=${uiStore.searchKeyword}`);
+    }
+  };
+
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    uiStore.searchKeyword = event.target.value;
+  };
 
   return (
     <S.SearchInputWrapper>
       <S.SearchInput
         type="search"
+        value={uiStore.searchKeyword}
         placeholder={t(`${NS}:searchInput.placeholder`)}
+        onKeyPress={onKeyPress}
+        onChange={onChange}
       />
     </S.SearchInputWrapper>
   );
-};
+});
 
 const RightSide = observer((props: HeaderProps) => {
   const store = useStore();

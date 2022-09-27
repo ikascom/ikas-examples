@@ -94,33 +94,6 @@ export const CartQuantity = styled.span`
   padding: 2px;
 `;
 
-export const SearchInputWrapper = styled.form`
-  position: relative;
-  width: 100%;
-
-  svg {
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-`;
-
-export const SearchInput = styled.input`
-  background-color: #fff;
-  padding: 14px 16px;
-  padding-left: 48px;
-  border: none;
-  border-radius: 12px;
-  width: 100%;
-
-  ::placeholder {
-    color: #77777b;
-  }
-`;
-
 export const Navigation = styled.nav`
   display: flex;
   align-items: center;

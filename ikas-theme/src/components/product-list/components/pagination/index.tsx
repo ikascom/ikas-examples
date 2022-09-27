@@ -31,6 +31,7 @@ export const Pagination = observer(({ productList }: Props) => {
     getPage(productList.page + 1);
   };
 
+  if (!productList.count) return null;
   return (
     <S.Pagination>
       <S.PrevButton

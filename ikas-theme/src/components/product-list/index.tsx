@@ -4,6 +4,7 @@ import { IkasBrand, IkasCategory, IkasProductList } from "@ikas/storefront";
 
 import { useScreen } from "src/utils/hooks/useScreen";
 import { Container } from "src/components/components/container";
+import useProductList from "./useProductList";
 import Left from "./left";
 import Right from "./right";
 
@@ -19,6 +20,8 @@ export type ProductListProps = {
 
 function ProductList(props: ProductListProps) {
   const { isMobile } = useScreen();
+  useProductList(props.productList);
+
   return (
     <S.ProductList>
       <Container>
