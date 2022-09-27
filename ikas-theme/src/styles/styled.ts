@@ -2,6 +2,8 @@ export const SIDENAV_WIDTH = 320;
 export const theme = {
   zIndex: {
     headerNavigationItem: 1,
+    accountMobileMenu: 2,
+    accountMobileToggleMenuButton: 3,
     sidenav: 9,
     modal: 10,
   },

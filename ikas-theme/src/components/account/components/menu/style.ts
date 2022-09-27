@@ -18,7 +18,7 @@ export const MobileOverlay = styled.div`
   bottom: 0;
   left: 0;
   background-color: #00000090;
-  z-index: 1;
+  z-index: ${({ theme }) => theme.zIndex.accountMobileMenu};
 `;
 
 export const Wrapper = styled.nav`
@@ -30,11 +30,10 @@ export const Wrapper = styled.nav`
     left: 0;
     right: 0;
     background: #fff;
-    z-index: 1;
+    z-index: ${({ theme }) => theme.zIndex.accountMobileMenu};
     bottom: 0;
     top: unset;
     overflow: auto;
-    z-index: 1;
     max-height: 100vh;
   }
 `;
@@ -56,7 +55,7 @@ export const ToggleButton = styled.button`
   color: ${({ theme }) => theme.color.button};
   border-radius: 50%;
   font-size: 24px;
-  z-index: 2;
+  z-index: ${({ theme }) => theme.zIndex.accountMobileToggleMenuButton};
 
   height: 50px;
   width: 50px;
@@ -67,7 +66,7 @@ export const ToggleButton = styled.button`
 
 export const Title = styled.h1`
   font-weight: 300;
-  font-size: 28px;
+  font-size: 100%;
   line-height: 48px;
   padding: 0 10px;
 `;

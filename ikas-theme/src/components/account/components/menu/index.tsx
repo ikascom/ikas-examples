@@ -113,8 +113,11 @@ const MobileTitle = observer(({ store }: MobileTitleProps) => {
   const { t } = useTranslation();
   const currentPage = menu.find(
     (item) => item.pageType === store.currentPageType
-  )?.i18nKey;
-  const title = t(`${NS}:menu.${currentPage}`);
+  );
+  const title =
+    store.currentPageType === IkasThemeJsonPageType.ORDER_DETAIL
+      ? t(`${NS}:menu.orderDetail`)
+      : t(`${NS}:menu.${currentPage?.i18nKey}`);
 
   return (
     <S.TitleWrapper>
