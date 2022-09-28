@@ -1,16 +1,44 @@
 import styled, { css } from "styled-components";
-import { ButtonSize } from ".";
+import { ButtonSize, ButtonType } from ".";
 
-type ButtonProps = { $block?: boolean; $size: ButtonSize };
+type ButtonProps = {
+  $block?: boolean;
+  $size: ButtonSize;
+  $buttonType: ButtonType;
+};
 
 export const Button = styled.button<ButtonProps>`
   text-align: center;
   font-weight: 500;
-  background-color: ${({ theme }) => theme.color.buttonBg};
-  color: ${({ theme }) => theme.color.button};
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  ${({ $buttonType, theme }) => {
+    if ($buttonType === "primary") {
+      return css`
+        color: ${theme.color.button};
+        background-color: ${theme.color.buttonBg};
+        border: 1px solid ${theme.color.buttonBg};
+      `;
+    }
+
+    return css`
+      color: ${theme.color.secondaryButton};
+      background-color: ${theme.color.secondaryButtonBg};
+      border: 1px solid ${theme.color.secondaryButton};
+      transition-property: color, background-color, border;
+      transition-timing-function: ease-in-out;
+      transition-duration: 300ms;
+
+      :hover,
+      :focus {
+        color: ${theme.color.secondaryButtonBg};
+        background-color: ${theme.color.secondaryButton};
+        border: 1px solid ${theme.color.secondaryButtonBg};
+      }
+    `;
+  }}
 
   ${({ $size }) => {
     if ($size === "small") {
@@ -40,7 +68,8 @@ export const Button = styled.button<ButtonProps>`
   padding: 10px 24px;
   border-radius: 12px;
 
-  :hover {
+  :hover,
+  :focus {
     opacity: 0.9;
   }
 

@@ -6,11 +6,11 @@ import LoadingSVG from "src/components/svg/loading";
 import * as S from "./style";
 
 export type ButtonSize = "large" | "middle" | "small";
+export type ButtonType = "primary" | "default";
+
 interface ButtonProps {
-  /**
-   * Default middle
-   */
-  size?: ButtonSize;
+  buttonType?: ButtonType /** * Default default */;
+  size?: ButtonSize /** * Default middle */;
   stopPropagation?: boolean;
   anchor?: boolean;
   href?: string;
@@ -38,7 +38,9 @@ function Button(props: ButtonProps) {
       <Link passHref href={props.href}>
         <S.AnchorButton
           $size={props.size || "middle"}
+          $buttonType={props.buttonType || "primary"}
           title={props.title}
+          $block={!!props.block}
           onClick={onClick}
         >
           {props.loading && <Loading />}
@@ -51,6 +53,7 @@ function Button(props: ButtonProps) {
   return (
     <S.Button
       type={props.type}
+      $buttonType={props.buttonType || "primary"}
       title={props.title}
       disabled={props.disabled}
       $block={!!props.block}

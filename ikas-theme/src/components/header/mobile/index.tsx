@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react-lite";
-import {
-  IkasNavigationLink,
-  Link,
-  useStore,
-  useTranslation,
-} from "@ikas/storefront";
+import { IkasNavigationLink, Link, useStore } from "@ikas/storefront";
 
 import UIStore from "src/store/ui-store";
 
@@ -15,13 +10,12 @@ import AccountSVG from "src/components/svg/account";
 import CartSVG from "src/components/svg/cart";
 import LocalizationBar from "../components/localization-bar";
 import { SearchInput } from "src/components/header/desktop";
+import MaxQuantityPerCartModal from "src/components/components/modal-max-quantity-per-cart";
 
 import IOMenuSVG from "./svg/io-menu";
 import IOCloseSVG from "./svg/io-close";
 
 import * as S from "./style";
-
-import { NS } from "..";
 
 function MobileHeader(props: HeaderProps) {
   return (
@@ -35,6 +29,7 @@ function MobileHeader(props: HeaderProps) {
         <SearchInput {...props} />
         <Sidenav {...props} />
       </S.Header>
+      <MaxQuantityPerCartModal />
     </>
   );
 }
@@ -48,9 +43,13 @@ const LeftSide = observer((props: HeaderProps) => {
       <S.SidenavButton onClick={uiStore.toggleSidenav}>
         <IOMenuSVG />
       </S.SidenavButton>
-      <S.Logo>
-        <img src={props.logo.src} />
-      </S.Logo>
+      <Link passHref href="/">
+        <a>
+          <S.Logo>
+            <img src={props.logo.src} />
+          </S.Logo>
+        </a>
+      </Link>
     </S.LeftSide>
   );
 });
@@ -125,16 +124,22 @@ const RightSide = observer((props: HeaderProps) => {
   const quantity = store.cartStore.cart?.itemQuantity ?? 0;
   return (
     <S.RightSide>
-      <S.FavoriteWrapper>
-        <FavoriteSVG />
-      </S.FavoriteWrapper>
-      <S.AccountWrapper>
-        <AccountSVG />
-      </S.AccountWrapper>
-      <S.CartWrapper>
-        <S.CartQuantity>{quantity}</S.CartQuantity>
-        <CartSVG />
-      </S.CartWrapper>
+      <Link href="/account/favorite-products" passHref>
+        <S.FavoriteWrapper as="a">
+          <FavoriteSVG />
+        </S.FavoriteWrapper>
+      </Link>
+      <Link href="/account" passHref>
+        <S.AccountWrapper as="a">
+          <AccountSVG />
+        </S.AccountWrapper>
+      </Link>
+      <Link href="/cart" passHref>
+        <S.CartWrapper as="a">
+          <S.CartQuantity>{quantity}</S.CartQuantity>
+          <CartSVG />
+        </S.CartWrapper>
+      </Link>
     </S.RightSide>
   );
 });

@@ -33,8 +33,12 @@ export const theme = {
     secondaryText: "var(--secondary-text-color)",
     finalPrice: "var(--price-color)",
     sellPrice: "var(--strikethrough-price-color)",
-    buttonBg: "var(--button-background-color)",
+
     button: "var(--button-color)",
+    buttonBg: "var(--button-background-color)",
+    secondaryButton: "var(--secondary-button-color)",
+    secondaryButtonBg: "var(--secondary-button-background-color)",
+
     border: "var(--border-color)",
     inputBorder: "var(--input-border-color)",
     inputBackground: "var(--input-background-color)",

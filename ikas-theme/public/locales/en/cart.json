@@ -1,0 +1,19 @@
+{
+  "title": "Sepetim",
+  "header": {
+    "product": "Product",
+    "quantity": "Quantity",
+    "amount": "Amount"
+  },
+  "summary": {
+    "title": "Cart Summary",
+    "total": "Total: ",
+    "info": "Shipping, tax and coupon codes will be calculated at the payment step.",
+    "continueShopping": "CONTINUE SHOPPING",
+    "checkout": "BUY NOW"
+  },
+  "emptyCart": {
+    "text": "YOUR BASKET IS EMPTY",
+    "button": "START SHOPPING NOW"
+  }
+}

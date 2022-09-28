@@ -17,7 +17,7 @@ export const AddToCart = observer((props: ProductDetailProps) => {
 
   return (
     <S.Wrapper>
-      <QuantityButton quantity={quantity} setQuantity={setQuantity} />
+      <QuantityButton quantity={quantity} onChange={setQuantity} />
       <AddToCartButton product={props.product} quantity={quantity} />
       <BackInStock product={props.product} />
     </S.Wrapper>
@@ -66,18 +66,23 @@ const AddToCartButton = observer(
 );
 
 type QuantityButtonProps = {
+  isFullWidth?: boolean;
   quantity: number;
-  setQuantity: React.Dispatch<React.SetStateAction<number>>;
+  onChange: (value: number) => void;
 };
 
-const QuantityButton = ({ quantity, setQuantity }: QuantityButtonProps) => {
+export const QuantityButton = ({
+  isFullWidth = true,
+  quantity,
+  onChange,
+}: QuantityButtonProps) => {
   const handleDecrease = () => {
     if (!(quantity > 1)) return;
-    setQuantity(quantity - 1);
+    onChange(quantity - 1);
   };
 
   const handleIncrease = () => {
-    setQuantity(quantity + 1);
+    onChange(quantity + 1);
   };
 
   return (
@@ -85,7 +90,7 @@ const QuantityButton = ({ quantity, setQuantity }: QuantityButtonProps) => {
       <S.DecreaseButton onClick={handleDecrease}>
         <MinusSVG />
       </S.DecreaseButton>
-      <S.Quantity>{quantity}</S.Quantity>
+      <S.Quantity $isFullWidth={isFullWidth}>{quantity}</S.Quantity>
       <S.IncreaseButton onClick={handleIncrease}>
         <PlusSVG />
       </S.IncreaseButton>

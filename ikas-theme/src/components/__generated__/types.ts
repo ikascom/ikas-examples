@@ -71,3 +71,7 @@ export type PageSearchProps = {
 	productList: IkasProductList;
 };
 
+export type CartProps = {
+	summaryText?: string;
+};
+

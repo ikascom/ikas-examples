@@ -7,9 +7,9 @@ export const Wrapper = styled.div`
 
 export const QuantityButtonWrapper = styled.div`
   position: relative;
+  display: inline-block;
   border-radius: 12px;
   height: 48px;
-  min-width: 100px;
   flex-shrink: 0;
 
   overflow: hidden;
@@ -41,10 +41,15 @@ export const QuantityButton = styled.button`
 `;
 
 export const DecreaseButton = styled(QuantityButton)``;
-export const Quantity = styled.span`
+export const Quantity = styled.span<{ $isFullWidth: boolean }>`
   display: inline-block;
   text-align: center;
-  width: calc(100% - ${QUANTITY_BUTTON_WIDTH * 2}px);
+  ${({ $isFullWidth }) =>
+    $isFullWidth &&
+    css`
+      width: calc(100% - ${QUANTITY_BUTTON_WIDTH * 2}px);
+    `}
+  padding: 0 10px;
 `;
 export const IncreaseButton = styled(QuantityButton)``;
 

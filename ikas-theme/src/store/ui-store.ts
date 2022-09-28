@@ -4,6 +4,13 @@ export default class UIStore {
   private static _instance: UIStore;
   sidenavVisible = false;
   searchKeyword = "";
+  maxQuantityPerCartProductErrorModal: {
+    visible: boolean;
+    productName: string;
+  } = {
+    visible: false,
+    productName: "",
+  };
 
   private constructor() {
     makeAutoObservable(this);

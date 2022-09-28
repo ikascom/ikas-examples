@@ -1,5 +1,9 @@
 {
   "buttonLoading": "Loading",
+  "maxQuantityPerCartModal": {
+    "title": "MAX QUANTITY PER CART LIMIT REACHED",
+    "text": "{{ productName }} max quantity can be added to the cart."
+  },
   "product": {
     "discountText": "discount",
     "discountBadgeSoldOut": "Sold out"

@@ -11,6 +11,7 @@ import AccountSVG from "src/components/svg/account";
 import CartSVG from "src/components/svg/cart";
 import LocalizationBar from "../components/localization-bar";
 import UIStore from "src/store/ui-store";
+import MaxQuantityPerCartModal from "src/components/components/modal-max-quantity-per-cart";
 
 import { NS } from "../";
 
@@ -29,6 +30,7 @@ function DesktopHeader(props: HeaderProps) {
           </S.InnerContainer>
         </Container>
       </S.Header>
+      <MaxQuantityPerCartModal />
     </>
   );
 }
@@ -122,9 +124,11 @@ const RightSide = observer((props: HeaderProps) => {
   const quantity = store.cartStore.cart?.itemQuantity ?? 0;
   return (
     <S.RightSide>
-      <S.FavoriteWrapper>
-        <FavoriteSVG />
-      </S.FavoriteWrapper>
+      <Link href="/account/favorite-products" passHref>
+        <S.FavoriteWrapper>
+          <FavoriteSVG />
+        </S.FavoriteWrapper>
+      </Link>
       <Link href="/account" passHref>
         <S.AccountWrapper as="a">
           <AccountSVG />

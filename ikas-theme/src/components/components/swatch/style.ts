@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const ColorSwatch = styled.button<{
   $isSelected: boolean;
   $color: string;
+  $noMargin?: boolean;
 }>`
   width: 32px;
   height: 32px;
@@ -20,8 +21,12 @@ export const ColorSwatch = styled.button<{
     box-shadow: 0px 0px 2px #000;
   }
 
-  margin-right: 12px;
-  margin-bottom: 12px;
+  ${({ $noMargin }) =>
+    !$noMargin &&
+    css`
+      margin-right: 12px;
+      margin-bottom: 12px;
+    `};
 
   :last-child {
     margin-right: 0;
