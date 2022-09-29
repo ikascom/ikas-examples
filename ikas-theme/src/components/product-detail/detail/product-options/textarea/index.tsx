@@ -53,7 +53,7 @@ const ProductOptionTextArea = ({
         <Textarea
           required={!option.isOptional}
           status={formStatus}
-          value={option.values[0]}
+          value={option.values.length ? option.values[0] : ""}
           minLength={option.textSettings?.min || undefined}
           maxLength={option.textSettings?.max || undefined}
           onChange={handleChange}

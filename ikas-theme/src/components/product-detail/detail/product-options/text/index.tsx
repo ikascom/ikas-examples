@@ -52,7 +52,7 @@ const ProductOptionText = ({
       >
         <Input
           required={!option.isOptional}
-          value={option.values[0]}
+          value={option.values.length ? option.values[0] : ""}
           status={formStatus}
           minLength={option.textSettings?.min || undefined}
           maxLength={option.textSettings?.max || undefined}
