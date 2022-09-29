@@ -44,7 +44,7 @@ export const Button = styled.button<ButtonProps>`
     if ($size === "small") {
       return css`
         font-size: 12px;
-        line-height: 16px;
+        line-height: 20px;
       `;
     }
 

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { FormItemStatus } from ".";
 
 type StyledStatusProp = {
@@ -6,8 +6,14 @@ type StyledStatusProp = {
 };
 
 export const FORM_ITEM_MARGIN_BOTTOM = 20;
-export const FormItemWrapper = styled.fieldset`
-  margin-bottom: ${FORM_ITEM_MARGIN_BOTTOM}px;
+export const FormItemWrapper = styled.fieldset<{
+  $noMargin: boolean;
+}>`
+  ${({ $noMargin }) =>
+    !$noMargin &&
+    css`
+      margin-bottom: ${FORM_ITEM_MARGIN_BOTTOM}px;
+    `};
 `;
 export const LabelChildrenWrapper = styled.div`
   display: block;

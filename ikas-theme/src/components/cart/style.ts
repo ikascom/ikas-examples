@@ -97,6 +97,17 @@ export const SummaryBoxInner = styled.div``;
 export const SummaryBoxText = styled.div`
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  color: ${({ theme }) => theme.color.secondaryText};
+`;
+export const TotalFinalPrice = styled(SummaryBoxText)`
+  border-top: 1px solid ${({ theme }) => theme.color.border};
+  padding-top: 8px;
+  color: ${({ theme }) => theme.color.primaryText};
+  font-weight: 500;
+  margin-top: 8px;
 `;
 
 export const SummaryButtonWrapper = styled.div`
@@ -122,4 +133,28 @@ export const SummaryFreeShippingText = styled.div`
   }
 `;
 
-export const SummaryBoxInfo = styled.div``;
+export const Coupon = styled.div`
+  margin-top: 20px;
+`;
+
+export const REMOVE_COUPON_BUTTON_WIDTH = 30;
+export const RemoveCouponButton = styled.button`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: ${({ theme }) => theme.color.red};
+  width: ${REMOVE_COUPON_BUTTON_WIDTH}px;
+  height: calc(100% - 2px);
+  right: 1px;
+  :hover,
+  :focus {
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.red};
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: ${({ theme }) => theme.inputBorderRadius};
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+`;

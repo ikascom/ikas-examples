@@ -8,6 +8,7 @@ type RowProps = {
    * [horizotanl, vertical]
    * [horizontal+vertical (both)]
    */
+  align?: React.CSSProperties["alignItems"];
   gutter?: number | [number] | [number, number];
   children: React.ReactNode;
 };
@@ -24,7 +25,9 @@ function Row(props: RowProps) {
 
   return (
     <RowContext.Provider value={rowContext}>
-      <S.Row $gutter={gutter}>{props.children}</S.Row>
+      <S.Row $align={props.align || "flex-start"} $gutter={gutter}>
+        {props.children}
+      </S.Row>
     </RowContext.Provider>
   );
 }
