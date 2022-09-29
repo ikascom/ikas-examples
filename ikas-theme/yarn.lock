@@ -282,57 +282,57 @@
     graphql "^15.3.0"
     lodash "^4.17.20"
 
-"@ikas/storefront-api@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.1.10.tgz#79ae7d9481a83b6f9dcd5b2d57ef2c4228255359"
-  integrity sha512-KmYuIppQ4KnFMFpru0VNY4CA1hf2a3afLsYYidnsoVuJgIZkLlTOfwtJKWRbtNNvr69lJOU8GBGoSzVv8qhmBw==
+"@ikas/storefront-api@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.1.12.tgz#bc174138e13d7d2dc55343a421f42f7fdc54020a"
+  integrity sha512-xcDCMedyhjHcAX5eMko0feDV7UsWNckSO/Y9IhmANiUBSSe27oYRwyf3GUYlCenWNLcojOiMOhXvWCz+WCgESg==
 
-"@ikas/storefront-assets@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.1.10.tgz#5bfa1b4e1ce0e804aab9cef657fb10e9457f9f62"
-  integrity sha512-Jzg/NZmecRq7Uc0SX7ln/1MnwXazW1AjKtoZTybWdIyfKLRu8Rg/7uCppEe/KM4aGx0Jb9bM2AgptAzlzFHdaQ==
+"@ikas/storefront-assets@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.1.12.tgz#817f055af3c7748523b9814e288400e3ff0f78c6"
+  integrity sha512-63RXDLfJVjrz0icGkgRVTDt+6dZaDgRS4Y5oJmbFaoeMmXZpmiXzFzlq9ysC/HwLy0kBqjtflWUprF+w6bdV4Q==
 
-"@ikas/storefront-cmd@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.1.10.tgz#ea984feffbcbf6ac95e0f0e0d9f02d73c284477c"
-  integrity sha512-1FBIEZ3MT2avF90e4x2YLyQR2uo4ZpE398Azpg1I9hjEJACFySQxokPl9c4n68V/llTXGQAuEdir+rqnIiexhA==
+"@ikas/storefront-cmd@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.1.12.tgz#db351d8db9b2d36811c07ad25cdee5287f2c2d92"
+  integrity sha512-uJrvvDyYlX/eDOCdyinUq869ytErxm6pWwL3VQ/1SL4fAzLkTAUVKy0ZgcOfe4o5OUSnwSSxyYy3HI49T/MLMA==
   dependencies:
     command-line-args "^5.2.0"
 
-"@ikas/storefront-config@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.1.10.tgz#8644915d30953b705e18e274cf2d0c219afb180d"
-  integrity sha512-3Pd/R5+VdcODJ3c8NlKtp5mMSY7/WSHwxkPtAle0o8PyDJCOOBpci23xFWNbWyIwOWgNhCqcZGDb7N8ux3u0Gw==
+"@ikas/storefront-config@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.1.12.tgz#94c584ac5f02ad942a16e411917c33495a03bb8a"
+  integrity sha512-V0y6RWP02dBV4FXroCfqKg80Lbq+cGUkoKtW1NQizRJLEjBjNFGgmmbaZDZgYAkSze4SOVT2O7v4m8dZG7ssaA==
 
-"@ikas/storefront-model-functions@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.1.10.tgz#e6d056a45c5aca255313825bbc5c2e420ee759b1"
-  integrity sha512-4WSubQHFYQL4ahbL6rMpRWkl8j2sHAl0V9wcCBdjNwVW2Ht/UNsC2U6RrUoMAxawnSNhVq432d0Bw37/t7mbug==
+"@ikas/storefront-model-functions@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.1.12.tgz#396519c6b6290a2428159a3795cc729129694390"
+  integrity sha512-wDJt4U0g7SfFpuqQ4zpxR+KgyjK+IowERED1GS1n/CpJhaPRjNqWQtQl1j9Smpw/xzbOkUX+640Xzp+7bkvCXw==
 
-"@ikas/storefront-models@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.1.10.tgz#b0a122d2bf8bf93e8ce31a5c7e2a1718eb7aedc5"
-  integrity sha512-XSt96bvdZdcB0gcP/ZTJccWsiDpYjEAydtkuj5pw1tPZplJvXrBXqNeuwoIKIzUOmhc8rGeUB5AhoSVi1Cy5Wg==
+"@ikas/storefront-models@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.1.12.tgz#373fb17330809374b530c3b954d858cf5745fc58"
+  integrity sha512-WawqTe1l4xprS7SWC3tCepCeYaCbwLgxBjXmDXpr1rRlDzGT3esblfQtFI98mYT9mTdY99jOg2qFHvyJ/EN5Pg==
 
-"@ikas/storefront-next@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.1.10.tgz#e5d4aeca7f65a8853ef1af71d8eb9278f1e1dca3"
-  integrity sha512-mdLpuMe4LI5fDKEquGACr8G/q+HxX3TO/OmLG4suFNEwqstGrXiMsDODOJIhdUN53rQSixp5wiSMh9SZDzqh8A==
+"@ikas/storefront-next@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.1.12.tgz#dd01abbada441770eec80dd2b42924063a9d9291"
+  integrity sha512-4SPxrBb7gfZaPzeQlHrg55Zf4IrNKfc0QUJJ6uELLn78gQYe0JWDkVIY6zBINSsnPvIcPy7FswdVV8NwXnIF2A==
 
-"@ikas/storefront-peer-deps@^4.1.0":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.1.10.tgz#c2597da60bd9cc3a2cc92970b33ae3baea972044"
-  integrity sha512-d32FfDeuo/uxjsvL6ofNP1M1WBA3zwbpJn/a01ccT3QtgIxmj13p8pspFFBOK0y1kGkSmRyNkA7QQddEjaVjKQ==
+"@ikas/storefront-peer-deps@^4.0.0":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.1.12.tgz#785c6ee6918690b626948fa1a9c265acee4ce43a"
+  integrity sha512-KF0NcRbOPHCRpX8AAWM6gwCkuf1DgQs25gQVPdnNlRVG8HVXD3qhb7NY7y8n7gYYBV9PL6n9xH5lya3UoBPvnA==
   dependencies:
     "@ikas/fe-api-client" "^1.0.16"
-    "@ikas/storefront-api" "^4.1.10"
-    "@ikas/storefront-assets" "^4.1.10"
-    "@ikas/storefront-cmd" "^4.1.10"
-    "@ikas/storefront-config" "^4.1.10"
-    "@ikas/storefront-model-functions" "^4.1.10"
-    "@ikas/storefront-models" "^4.1.10"
-    "@ikas/storefront-next" "^4.1.10"
-    "@ikas/storefront-providers" "^4.1.10"
+    "@ikas/storefront-api" "^4.1.12"
+    "@ikas/storefront-assets" "^4.1.12"
+    "@ikas/storefront-cmd" "^4.1.12"
+    "@ikas/storefront-config" "^4.1.12"
+    "@ikas/storefront-model-functions" "^4.1.12"
+    "@ikas/storefront-models" "^4.1.12"
+    "@ikas/storefront-next" "^4.1.12"
+    "@ikas/storefront-providers" "^4.1.12"
     "@stripe/react-stripe-js" "^1.10.0"
     "@stripe/stripe-js" "^1.29.0"
     "@types/archiver" "^5.1.0"
@@ -370,15 +370,15 @@
     ts-essentials "^7.0.1"
     typescript "^4.5.2"
 
-"@ikas/storefront-providers@^4.1.10":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.1.10.tgz#4a4fa3023cbd62d1fbd332df81a62fefddf0976e"
-  integrity sha512-IHF+JLBPlnPeG7hDm+n8ExtTDKce8RM4LlztorWZ5omTBXmI6b1il8C+8lSjiK5mo2g4RDOsX62fMmb/fDiciw==
+"@ikas/storefront-providers@^4.1.12":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.1.12.tgz#1164dcb15e5921ed4a7a97a43796933dc6301bc4"
+  integrity sha512-ipTVNZyh5no98v6CLJy3S/criSSsZEjTaUtGA40aIDgTub9v8fj+kKswhWznPWsFWai1Bpd5rwZVihJCgjnyxg==
 
-"@ikas/storefront@^4.1.0":
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.1.10.tgz#189f01bed025c48a3ac3a66f75af62a94b47fdfe"
-  integrity sha512-JIM2DJwSfP+LF72do7TLv7stgwepJBjcM6m4Re8dyC/2i2WSwrAmqmC486iKxVn+rLszE9P3oU+oPEXJBt2xBQ==
+"@ikas/storefront@^4.0.0":
+  version "4.1.12"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.1.12.tgz#997b669488e7d610531665104a0fbe0efa812f01"
+  integrity sha512-Aqt5SMTNCrUky42XIzAR27hwWuT8simZXd9vfpFGexeuE6Jg02DD9wd+hLuIgaUncQ1lShwbwHS0szqjjs7RLQ==
 
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.2"
@@ -595,9 +595,9 @@
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
 "@types/lodash@^4.14.176":
-  version "4.14.185"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.185.tgz#c9843f5a40703a8f5edfd53358a58ae729816908"
-  integrity sha512-evMDG1bC4rgQg4ku9tKpuMh5iBNEwNa3tf9zRHdP1qlv+1WUg44xat4IxCE14gIpZRGUUWAx2VhItCZc25NfMA==
+  version "4.14.186"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.186.tgz#862e5514dd7bd66ada6c70ee5fce844b06c8ee97"
+  integrity sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==
 
 "@types/minimatch@*":
   version "5.1.2"
@@ -694,9 +694,9 @@
     tsutils "^3.17.1"
 
 "@whatwg-node/fetch@^0.4.0":
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.5.tgz#786fb15f1c4b8588904521ad7272fde83738ac51"
-  integrity sha512-goWqxQ/+8pAbbOjdnE4f2BwQXZ9OPR8BE8ZOWP8PIhoTo+6tI1yDouMd1f6OltS6t5cF8bx3HJ/ii6ETg3F1lg==
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.6.tgz#d846026687db76565ce8c2a56641e0fc5eb470eb"
+  integrity sha512-DyeD0lN4Bk2Pdd/n4iT7g3rt4ZvvwSq+Yl2eF/Ku+odw1nVS7foww5JlAlwaJA4ZEGiZYT5oDagltX52UWKaXg==
   dependencies:
     "@peculiar/webcrypto" "^1.4.0"
     abort-controller "^3.0.0"
@@ -704,7 +704,7 @@
     form-data-encoder "^1.7.1"
     formdata-node "^4.3.1"
     node-fetch "^2.6.7"
-    undici "^5.8.0"
+    undici "^5.10.0"
     web-streams-polyfill "^3.2.0"
 
 abort-controller@^3.0.0:
@@ -1017,9 +1017,9 @@ camelize@^1.0.0:
   integrity sha512-W2lPwkBkMZwFlPCXhIlYgxu+7gC/NUlCtdK652DAJ1JdgV0sTrvuPFshNPrFa1TY2JOkLhgdeEBplB4ezEa+xg==
 
 caniuse-lite@^1.0.30001332, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001407:
-  version "1.0.30001412"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001412.tgz#30f67d55a865da43e0aeec003f073ea8764d5d7c"
-  integrity sha512-+TeEIee1gS5bYOiuf+PS/kp2mrXic37Hl66VY6EAfxasIk5fELTktK2oOezYed12H8w7jt3s512PpulQidPjwA==
+  version "1.0.30001414"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001414.tgz#5f1715e506e71860b4b07c50060ea6462217611e"
+  integrity sha512-t55jfSaWjCdocnFdKQoO+d2ct9C59UZg4dY3OnUlSZ447r8pUtIKdp0hpAzrGFultmTC+Us+KpKi4GZl/LXlFg==
 
 chalk@^2.0.0, chalk@^2.1.0:
   version "2.4.2"
@@ -1319,9 +1319,9 @@ dset@^3.1.2:
   integrity sha512-g/M9sqy3oHe477Ar4voQxWtaPIFw1jTdKZuomOjhCcBx9nHUNn0pu6NopuFFrTh/TRZIKEj+76vLWFu9BNKk+Q==
 
 electron-to-chromium@^1.4.251:
-  version "1.4.264"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.264.tgz#2f68a062c38b7a04bf57f3e6954b868672fbdcd3"
-  integrity sha512-AZ6ZRkucHOQT8wke50MktxtmcWZr67kE17X/nAXFf62NIdMdgY6xfsaJD5Szoy84lnkuPWH+4tTNE3s2+bPCiw==
+  version "1.4.268"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.268.tgz#5a902075f0209a628837e508a66d40ace04d54ab"
+  integrity sha512-PO90Bv++vEzdln+eA9qLg1IRnh0rKETus6QkTzcFm5P3Wg3EQBZud5dcnzkpYXuIKWBjKe5CO8zjz02cicvn1g==
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
@@ -3411,9 +3411,9 @@ type-fest@^0.8.1:
   integrity sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==
 
 typescript@^4.5.2:
-  version "4.8.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
-  integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
+  version "4.8.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
+  integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
 
 typical@^4.0.0:
   version "4.0.0"
@@ -3430,7 +3430,7 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-undici@^5.8.0:
+undici@^5.10.0:
   version "5.10.0"
   resolved "https://registry.yarnpkg.com/undici/-/undici-5.10.0.tgz#dd9391087a90ccfbd007568db458674232ebf014"
   integrity sha512-c8HsD3IbwmjjbLvoZuRI26TZic+TSEe8FPMLLOkN1AfYRhdjnKBU6yL+IwcSCbdZiX4e5t0lfMDLDCqj4Sq70g==
