@@ -67,6 +67,9 @@
     "interest": "Interest",
     "total": "Total",
     "payment": "Payment",
+    "orderLineItem": {
+      "quantityTitle": "{{ quantity }} item"
+    },
     "refund": {
       "backButton": "Back to detail",
       "refundSuccess": "İade Talebiniz Oluşturuldu",

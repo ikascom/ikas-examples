@@ -15,11 +15,19 @@ type OrderLineItemComponentProps = {
   refundProcess?: boolean;
 };
 
-const OrderLineItem = (props: OrderLineItemComponentProps) => {
+const OrderLineItem = ({
+  orderLineItem,
+  refundProcess,
+}: OrderLineItemComponentProps) => {
+  const { t } = useTranslation();
+  const quantityTitle = t("orderDetail.orderLineItem.quantityTitle", {
+    quantity: orderLineItem.quantity,
+  });
+
   return (
     <S.Wrapper>
       <S.Picture>
-        {!props.orderLineItem.variant.mainImage?.id ? (
+        {!orderLineItem.variant.mainImage?.id ? (
           <PlaceholderSVG />
         ) : (
           <Image
@@ -27,7 +35,7 @@ const OrderLineItem = (props: OrderLineItemComponentProps) => {
             objectFit="contain"
             width={1}
             height={1}
-            image={props.orderLineItem.variant.mainImage}
+            image={orderLineItem.variant.mainImage}
             sizes="150px"
             alt=""
           />
@@ -35,26 +43,24 @@ const OrderLineItem = (props: OrderLineItemComponentProps) => {
       </S.Picture>
       <S.Content>
         <S.VariantName>
-          {props.orderLineItem.variant.name}
-          <S.Quantity title={`${props.orderLineItem.quantity} adet`}>
+          {orderLineItem.variant.name}
+          <S.Quantity title={quantityTitle}>
             {" x "}
-            {props.orderLineItem.quantity}
+            {orderLineItem.quantity}
           </S.Quantity>
         </S.VariantName>
 
         <div>
-          {props.orderLineItem.variant.variantValues?.map((vV) => (
+          {orderLineItem.variant.variantValues?.map((vV) => (
             <S.VariantType key={vV.variantTypeId + vV.variantValueId}>
               {vV.variantValueName} {vV.variantTypeName}
             </S.VariantType>
           ))}
         </div>
-        <S.Price>{props.orderLineItem.formattedFinalPrice}</S.Price>
-        <OrderLineItemRefundStatus
-          orderLineItemStatus={props.orderLineItem.status}
-        />
-        {props.refundProcess && (
-          <RefundQuantitySelect orderLineItem={props.orderLineItem} />
+        <S.Price>{orderLineItem.formattedFinalPrice}</S.Price>
+        <OrderLineItemRefundStatus orderLineItemStatus={orderLineItem.status} />
+        {refundProcess && (
+          <RefundQuantitySelect orderLineItem={orderLineItem} />
         )}
       </S.Content>
     </S.Wrapper>
