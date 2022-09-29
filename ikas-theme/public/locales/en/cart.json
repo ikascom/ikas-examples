@@ -13,7 +13,7 @@
     "checkout": "BUY NOW"
   },
   "emptyCart": {
-    "text": "YOUR BASKET IS EMPTY",
+    "text": "YOUR CART IS EMPTY",
     "button": "START SHOPPING NOW"
   }
 }
