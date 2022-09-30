@@ -2,9 +2,7 @@ import React from "react";
 import {
   IkasOrderTransaction,
   useTranslation,
-  IkasPaymentMethod,
   IkasPaymentMethodType,
-  formatCurrency,
 } from "@ikas/storefront";
 
 import * as S from "./style";
@@ -27,14 +25,7 @@ const Payment = ({ orderTransactions }: Props) => {
             <div key={oT.id}>
               <S.OrderTransaction>
                 {paymentMethodText}
-                <div>
-                  {/**TODO use formattedAmount  */}
-                  {formatCurrency(
-                    oT.amount || 0,
-                    oT.currencyCode!,
-                    oT.currencySymbol!
-                  )}
-                </div>
+                <div>{oT.formattedAmount}</div>
               </S.OrderTransaction>
               {oT.paymentMethod === IkasPaymentMethodType.CREDIT_CARD && (
                 <div>

@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import {
-  IkasBaseStore,
   IkasOrder,
   IkasOrderPackageFullfillStatus,
-  IkasOrderPackageStatus,
-  IkasOrderStatus,
   IkasOrderTransaction,
   IkasTransactionStatus,
   IkasTransactionType,

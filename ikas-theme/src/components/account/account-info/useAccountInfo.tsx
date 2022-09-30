@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import {
-  IkasBaseStore,
   AccountInfoForm,
   IkasCustomer,
   useTranslation,
+  useStore,
 } from "@ikas/storefront";
 
 import { FormAlertType } from "src/components/components/alert";
@@ -19,7 +19,7 @@ type StatusType = {
 export default function useAccountInfo() {
   const { t } = useTranslation();
   const [pending, setPending] = useState(false);
-  const store = IkasBaseStore.getInstance();
+  const store = useStore();
 
   const [formAlert, setFormAlert] = useState<FormAlertType>();
   const [accountInfoForm, setAccountInfoForm] = useState<AccountInfoForm>();
