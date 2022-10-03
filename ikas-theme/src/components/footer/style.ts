@@ -136,6 +136,17 @@ export const PoweredByLogo = styled.span`
   vertical-align: middle;
 `;
 
+export const EmailSubscriptionAndLanguage = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media screen and (max-width: ${breakpoints.sm}) {
+    flex-direction: column;
+  }
+`;
+
 export const LanguageSelect = styled.div`
   width: 100%;
   max-width: 200px;

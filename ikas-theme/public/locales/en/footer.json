@@ -1,4 +1,18 @@
 {
   "copyrightText": "© 2021 Handmadesoap",
-  "selectYourLanguage": "Select Your Language"
+  "selectYourLanguage": "Select Your Language",
+  "emailSubscription": {
+    "title": "Sign up and don't miss new products.",
+    "form": {
+      "email": "Email",
+      "button": "REGISTER"
+    },
+    "responseStatus": {
+      "success": "You have been registered for the newsletter.",
+      "error": "Something went wrong. Please try again later."
+    }
+  },
+  "captchaText": "This site is protected by reCAPTCHA and the {{ privacyPolicy }} and {{ termsOfService }} apply.",
+  "privacyPolicy": "Privacy Policy",
+  "termsOfService": "Terms of Service"
 }

@@ -1,9 +1,12 @@
 import React from "react";
-import { observer } from "mobx-react-lite";
 import Link from "next/link";
+import { observer } from "mobx-react-lite";
+import { useStore, useTranslation } from "@ikas/storefront";
 
-import { Container } from "../components/container";
 import { FooterProps } from "../__generated__/types";
+import { Container } from "../components/container";
+import Select, { SelectOnChangeParamType } from "../components/select";
+import EmailSubscription from "./email-subscription";
 
 import VisaSVG from "src/components/svg/visa";
 import MaestroSVG from "src/components/svg/maestro";
@@ -15,28 +18,35 @@ import PinterestSVG from "src/components/svg/pinterest";
 import IkasSVG from "src/components/svg/ikas";
 
 import * as S from "./style";
-import { useStore, useTranslation } from "@ikas/storefront";
-import Select, { SelectOnChangeParamType } from "../components/select";
 
-const NS = "footer"; // Namespace for translation (i18n);
+export const NS = "footer"; // Namespace for translation (i18n);
 
-function Footer(props: FooterProps) {
+const Footer = (props: FooterProps) => {
   return (
     <S.Footer>
       <Container>
         <LogoAndLinksArea {...props} />
-        <LanguageSelect />
+        <EmailSubscriptionAndLanguageSelect />
         <SocialMediaAndPaymentArea {...props} />
         <S.Divider />
-        <CopyrightAndPoweredByArea {...props} />
+        <CopyrightAndPoweredByArea />
       </Container>
     </S.Footer>
   );
-}
+};
 
 export default observer(Footer);
 
-const CopyrightAndPoweredByArea = (props: FooterProps) => {
+const EmailSubscriptionAndLanguageSelect = observer(() => {
+  return (
+    <S.EmailSubscriptionAndLanguage>
+      <EmailSubscription />
+      <LanguageSelect />
+    </S.EmailSubscriptionAndLanguage>
+  );
+});
+
+const CopyrightAndPoweredByArea = () => {
   const { t } = useTranslation();
 
   return (
@@ -80,23 +90,23 @@ const LanguageSelect = observer(() => {
   );
 });
 
-const LogoAndLinksArea = (props: FooterProps) => {
+const LogoAndLinksArea = observer((props: FooterProps) => {
   return (
     <S.LogoLinksArea>
       <Logo {...props} />
       <Links {...props} />
     </S.LogoLinksArea>
   );
-};
+});
 
-const SocialMediaAndPaymentArea = (props: FooterProps) => {
+const SocialMediaAndPaymentArea = observer((props: FooterProps) => {
   return (
     <S.SocialMediaAndPaymentArea>
       <SocialMedia {...props} />
       <PaymentOptions />
     </S.SocialMediaAndPaymentArea>
   );
-};
+});
 
 const SocialMediaItem = ({
   href,
@@ -115,7 +125,7 @@ const SocialMediaItem = ({
   );
 };
 
-export const SocialMedia = ({ socialMedia }: FooterProps) => {
+export const SocialMedia = observer(({ socialMedia }: FooterProps) => {
   return (
     <S.SocialMediaList>
       <SocialMediaItem href={socialMedia?.facebook} Icon={FacebookSVG} />
@@ -124,7 +134,7 @@ export const SocialMedia = ({ socialMedia }: FooterProps) => {
       <SocialMediaItem href={socialMedia?.pinterest} Icon={PinterestSVG} />
     </S.SocialMediaList>
   );
-};
+});
 
 export const PaymentOptions = () => {
   return (
@@ -150,7 +160,7 @@ const Logo = (props: FooterProps) => {
   );
 };
 
-const Links = (props: FooterProps) => {
+const Links = observer((props: FooterProps) => {
   return (
     <S.LinksWrapper>
       {props.links.map((link, index) => (
@@ -169,4 +179,4 @@ const Links = (props: FooterProps) => {
       ))}
     </S.LinksWrapper>
   );
-};
+});
