@@ -73,7 +73,7 @@ export const DescriptionWrapper = styled.div`
   margin-top: 32px;
   margin-bottom: 20px;
 `;
-export const DescriptionTitle = styled.h4`
+export const DescriptionTitle = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 18px;

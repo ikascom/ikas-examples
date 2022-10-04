@@ -11,6 +11,7 @@ import { AddToCart } from "./add-to-cart";
 import { Description } from "./description";
 import { ProductOptions } from "./product-options";
 import { SocialShare } from "./social-share";
+import { ProductAttributes } from "./product-attributes";
 
 import * as S from "./style";
 
@@ -23,6 +24,7 @@ function Detail(props: ProductDetailProps) {
       <Variants {...props} />
       <ProductOptions {...props} />
       <AddToCart {...props} />
+      <ProductAttributes {...props} />
       <Description {...props} />
       <SocialShare {...props} />
     </S.Wrapper>

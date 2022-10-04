@@ -171,10 +171,10 @@
     tslib "^2.4.0"
     value-or-promise "1.0.11"
 
-"@graphql-tools/delegate@9.0.6":
-  version "9.0.6"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-9.0.6.tgz#734c188520bd10952517319a165bcf46cad5a35f"
-  integrity sha512-HMA7rcJLQA3dJwWRG2271mRCdh0SLaK5+FPg+F7JIa3aF5fRdN4pVHNDaAjQeyKOQ2afjgjO5FvOyJwv/ve7Bg==
+"@graphql-tools/delegate@9.0.8":
+  version "9.0.8"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/delegate/-/delegate-9.0.8.tgz#aa792f419a041de0c6341eaecf9694cf6f16f76f"
+  integrity sha512-h+Uce0Np0eKj7wILOvlffRQ9jEQ4KelNXfqG8A2w+2sO2P6CbKsR7bJ4ch9lcUdCBbZ4Wg6L/K+1C4NRFfzbNw==
   dependencies:
     "@graphql-tools/batch-execute" "8.5.6"
     "@graphql-tools/schema" "9.0.4"
@@ -232,14 +232,14 @@
     value-or-promise "1.0.11"
 
 "@graphql-tools/url-loader@^7.5.2":
-  version "7.16.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-7.16.2.tgz#4b4d9db94262aa405bca0f4b9ccd381012a9de12"
-  integrity sha512-ZVG3kDEJ88zLfqYtVmI36RUzaP/0bPBcJfBH8whMYL620tE6kizEQsON8iKsxcU1bWB5D7m9ZVFqW4eZ5EqVWw==
+  version "7.16.4"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/url-loader/-/url-loader-7.16.4.tgz#d27787ef9f35fe71b456c067c3a1759b1ecd76a8"
+  integrity sha512-7yGrJJNcqVQIplCyVLk7tW2mAgYyZ06FRmCBnzw3B61+aIjFavrm6YlnKkhdqYSYyFmIbVcigdP3vkoYIu23TA==
   dependencies:
     "@ardatan/sync-fetch" "0.0.1"
-    "@graphql-tools/delegate" "9.0.6"
+    "@graphql-tools/delegate" "9.0.8"
     "@graphql-tools/utils" "8.12.0"
-    "@graphql-tools/wrap" "9.2.1"
+    "@graphql-tools/wrap" "9.2.3"
     "@types/ws" "^8.0.0"
     "@whatwg-node/fetch" "^0.4.0"
     dset "^3.1.2"
@@ -258,12 +258,12 @@
   dependencies:
     tslib "^2.4.0"
 
-"@graphql-tools/wrap@9.2.1":
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.2.1.tgz#bc6558d31125b20acf1f4640eaa45b145a1c7a90"
-  integrity sha512-W8bzJijTZDNi8e1oM2AMG89CtvfTYaJ9lCe0dYMN+a+OPMhRfgR9+eO7ALcUa9y4MTu+YEDVjUq0ZboaSvesyA==
+"@graphql-tools/wrap@9.2.3":
+  version "9.2.3"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/wrap/-/wrap-9.2.3.tgz#70f7602aed9781fbc860cea64a918636599883be"
+  integrity sha512-aiLjcAuUwcvA1mF25c7KFDPXEdQDpo6bTDyAMCSlFXpF4T01hoxLERmfmbRmsmy/dP80ZB31a+t70aspVdqZSA==
   dependencies:
-    "@graphql-tools/delegate" "9.0.6"
+    "@graphql-tools/delegate" "9.0.8"
     "@graphql-tools/schema" "9.0.4"
     "@graphql-tools/utils" "8.12.0"
     tslib "^2.4.0"
@@ -282,57 +282,57 @@
     graphql "^15.3.0"
     lodash "^4.17.20"
 
-"@ikas/storefront-api@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.1.12.tgz#bc174138e13d7d2dc55343a421f42f7fdc54020a"
-  integrity sha512-xcDCMedyhjHcAX5eMko0feDV7UsWNckSO/Y9IhmANiUBSSe27oYRwyf3GUYlCenWNLcojOiMOhXvWCz+WCgESg==
+"@ikas/storefront-api@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.1.13.tgz#8d0bca6ab528292e4d816059e924fbf9563a0630"
+  integrity sha512-gpeY2D68n7zSoWkZo84F5o7vlDVX61yEFtXMcYjVdJVXn6KqE0JoqVqCW2uYTyuIvz6lonf82GEMcESWfJgxuw==
 
-"@ikas/storefront-assets@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.1.12.tgz#817f055af3c7748523b9814e288400e3ff0f78c6"
-  integrity sha512-63RXDLfJVjrz0icGkgRVTDt+6dZaDgRS4Y5oJmbFaoeMmXZpmiXzFzlq9ysC/HwLy0kBqjtflWUprF+w6bdV4Q==
+"@ikas/storefront-assets@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.1.13.tgz#058fb1b70be5bee0766265a2d59434c800d7ec0c"
+  integrity sha512-6cMf4ICBbKw/HY5pIligQ4PdAOrlCXJNqBXMCoBRr1T9giypjfkcG4JRG5yCn1xe9e5LJdSaVsMnj/mYkJSbbA==
 
-"@ikas/storefront-cmd@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.1.12.tgz#db351d8db9b2d36811c07ad25cdee5287f2c2d92"
-  integrity sha512-uJrvvDyYlX/eDOCdyinUq869ytErxm6pWwL3VQ/1SL4fAzLkTAUVKy0ZgcOfe4o5OUSnwSSxyYy3HI49T/MLMA==
+"@ikas/storefront-cmd@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.1.13.tgz#42effe6954350bc29d5539407855aedabbd6f36f"
+  integrity sha512-zGtqEIVVeXeNE60Dvr87AQW23SSnPl+Kmr7wfVkYKofiY1dMXl9AY9Dkhe3w9BRv9ISfsGX3pQvVYDQf0HLhcw==
   dependencies:
     command-line-args "^5.2.0"
 
-"@ikas/storefront-config@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.1.12.tgz#94c584ac5f02ad942a16e411917c33495a03bb8a"
-  integrity sha512-V0y6RWP02dBV4FXroCfqKg80Lbq+cGUkoKtW1NQizRJLEjBjNFGgmmbaZDZgYAkSze4SOVT2O7v4m8dZG7ssaA==
+"@ikas/storefront-config@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.1.13.tgz#e5107fe766bbaab20c663199ea354f2b21e533d1"
+  integrity sha512-u/a/k8aVV0/eKF+gdyPZNbqopQ7Mbt8I/Hza0fzv5dhjMNvDVIZS4HBVHHANg+COtC31GRUd+yFTKSHGkFzrbw==
 
-"@ikas/storefront-model-functions@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.1.12.tgz#396519c6b6290a2428159a3795cc729129694390"
-  integrity sha512-wDJt4U0g7SfFpuqQ4zpxR+KgyjK+IowERED1GS1n/CpJhaPRjNqWQtQl1j9Smpw/xzbOkUX+640Xzp+7bkvCXw==
+"@ikas/storefront-model-functions@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.1.13.tgz#078897bfba54a38b9afbe2e3864a5d8a79d894d3"
+  integrity sha512-ea0ogyUNbTo/doPll0Q78X9s6QO0gOs65bX8+g1e3wRdj/8t6evXEZ6z6VHxTdtI9XWQhcmJPhaOmZvcf+htZA==
 
-"@ikas/storefront-models@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.1.12.tgz#373fb17330809374b530c3b954d858cf5745fc58"
-  integrity sha512-WawqTe1l4xprS7SWC3tCepCeYaCbwLgxBjXmDXpr1rRlDzGT3esblfQtFI98mYT9mTdY99jOg2qFHvyJ/EN5Pg==
+"@ikas/storefront-models@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.1.13.tgz#448a7c9f21069e16a05920c9c8ba5bdd261fb365"
+  integrity sha512-XgQgdcEaeKeNoQwa0kAZ8FFTsh4tXgPNh6a1drpyphvebMl65TRxjUy/k2tU+Od2+AoUQteLeG+VOp23CteOEQ==
 
-"@ikas/storefront-next@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.1.12.tgz#dd01abbada441770eec80dd2b42924063a9d9291"
-  integrity sha512-4SPxrBb7gfZaPzeQlHrg55Zf4IrNKfc0QUJJ6uELLn78gQYe0JWDkVIY6zBINSsnPvIcPy7FswdVV8NwXnIF2A==
+"@ikas/storefront-next@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.1.13.tgz#dd415ce970df662b022979bbb255cdce0ef19362"
+  integrity sha512-UcS2yc9To1ZRFsD5vqkoooBxj+U0rnjjeWSlVNq/WbSHTAImr0hBOzpMxp6fh4+RmJCpNt6RbmTz+TkvaM0oyw==
 
 "@ikas/storefront-peer-deps@^4.0.0":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.1.12.tgz#785c6ee6918690b626948fa1a9c265acee4ce43a"
-  integrity sha512-KF0NcRbOPHCRpX8AAWM6gwCkuf1DgQs25gQVPdnNlRVG8HVXD3qhb7NY7y8n7gYYBV9PL6n9xH5lya3UoBPvnA==
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.1.13.tgz#858099044349547c1e7ba5e83f1db218764b88e2"
+  integrity sha512-a/QHfqQiuXFpO4HOXfzKUjwz4iQyLUMKOmdpZRt8ofN36sPGe90MdKUjR+V7T0ovzt3pxP6aAGMhTIdmSBT9Yw==
   dependencies:
     "@ikas/fe-api-client" "^1.0.16"
-    "@ikas/storefront-api" "^4.1.12"
-    "@ikas/storefront-assets" "^4.1.12"
-    "@ikas/storefront-cmd" "^4.1.12"
-    "@ikas/storefront-config" "^4.1.12"
-    "@ikas/storefront-model-functions" "^4.1.12"
-    "@ikas/storefront-models" "^4.1.12"
-    "@ikas/storefront-next" "^4.1.12"
-    "@ikas/storefront-providers" "^4.1.12"
+    "@ikas/storefront-api" "^4.1.13"
+    "@ikas/storefront-assets" "^4.1.13"
+    "@ikas/storefront-cmd" "^4.1.13"
+    "@ikas/storefront-config" "^4.1.13"
+    "@ikas/storefront-model-functions" "^4.1.13"
+    "@ikas/storefront-models" "^4.1.13"
+    "@ikas/storefront-next" "^4.1.13"
+    "@ikas/storefront-providers" "^4.1.13"
     "@stripe/react-stripe-js" "^1.10.0"
     "@stripe/stripe-js" "^1.29.0"
     "@types/archiver" "^5.1.0"
@@ -370,15 +370,15 @@
     ts-essentials "^7.0.1"
     typescript "^4.5.2"
 
-"@ikas/storefront-providers@^4.1.12":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.1.12.tgz#1164dcb15e5921ed4a7a97a43796933dc6301bc4"
-  integrity sha512-ipTVNZyh5no98v6CLJy3S/criSSsZEjTaUtGA40aIDgTub9v8fj+kKswhWznPWsFWai1Bpd5rwZVihJCgjnyxg==
+"@ikas/storefront-providers@^4.1.13":
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.1.13.tgz#b6fe5d5516ae299cfb04bbb58fe1852fcccd2d1d"
+  integrity sha512-dO8zif+0COUCsHDUjjWP8Pi6wBFotlr8w3aSwXKCcqI9Pa8vriinCOmfNFApTW7mux3pgp6RdVs14tACnDItJg==
 
 "@ikas/storefront@^4.0.0":
-  version "4.1.12"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.1.12.tgz#997b669488e7d610531665104a0fbe0efa812f01"
-  integrity sha512-Aqt5SMTNCrUky42XIzAR27hwWuT8simZXd9vfpFGexeuE6Jg02DD9wd+hLuIgaUncQ1lShwbwHS0szqjjs7RLQ==
+  version "4.1.13"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.1.13.tgz#9a301a0e2536fffa2190dea9b4b061a8e645d89c"
+  integrity sha512-wBwQHoRt8F+iQfWvETfNauR+IDyRBj7gLlE5/RwwogdJhqbTW4+zkmOykmVseKtxRJVDtSAPKNjgr9L7c25bLw==
 
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.2"
@@ -605,9 +605,9 @@
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
 "@types/node@*":
-  version "18.7.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.23.tgz#75c580983846181ebe5f4abc40fe9dfb2d65665f"
-  integrity sha512-DWNcCHolDq0ZKGizjx2DZjR/PqsYwAcYUJmfMWqtVU2MBMG5Mo+xFZrhGId5r/O5HOuMPyQEcM6KUBp5lBZZBg==
+  version "18.8.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.0.tgz#b8ee8d83a99470c0661bd899417fcd77060682fe"
+  integrity sha512-u+h43R6U8xXDt2vzUaVP3VwjjLyOJk6uEciZS8OSyziUQGOwmk+l+4drxcsDboHXwyTaqS1INebghmWMRxq3LA==
 
 "@types/node@^14.14.6":
   version "14.18.31"
@@ -694,9 +694,9 @@
     tsutils "^3.17.1"
 
 "@whatwg-node/fetch@^0.4.0":
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.6.tgz#d846026687db76565ce8c2a56641e0fc5eb470eb"
-  integrity sha512-DyeD0lN4Bk2Pdd/n4iT7g3rt4ZvvwSq+Yl2eF/Ku+odw1nVS7foww5JlAlwaJA4ZEGiZYT5oDagltX52UWKaXg==
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.4.7.tgz#4cbcda3ba93d5ae15ab823aae5869eae4a0cb14b"
+  integrity sha512-+oKDMGtmUJ7H37VDL5U2Vdk+ZxsIypZxO2q6y42ytu6W3PL6OIIUYZGliNqQgWtCdtxOZ9WPQvbIAuiLpnLlUw==
   dependencies:
     "@peculiar/webcrypto" "^1.4.0"
     abort-controller "^3.0.0"
@@ -1145,9 +1145,9 @@ contains-path@^0.1.0:
   integrity sha512-OKZnPGeMQy2RPaUIBPFFd71iNf4791H12MCRuVQDnzGRwCYNYmTDy5pdafo2SLAcEMKzTOQnLWG4QdcjeJUMEg==
 
 core-js-pure@^3.25.1:
-  version "3.25.3"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.25.3.tgz#66ac5bfa5754b47fdfd14f3841c5ed21c46db608"
-  integrity sha512-T/7qvgv70MEvRkZ8p6BasLZmOVYKzOaWNBEHAU8FmveCJkl4nko2quqPQOmy6AJIp5MBanhz9no3A94NoRb0XA==
+  version "3.25.4"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.25.4.tgz#e8642cef4f4246a4e7c15280f5e3926118fff84b"
+  integrity sha512-qRbgm0ADrsNTU66UcW47YMJjXm+ShhUP2gkoEoAShT2BHO3cb5gGqLtmWpjnM6Wx9h5hMSF4uZ+jEV/8+4KCsw==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -1319,9 +1319,9 @@ dset@^3.1.2:
   integrity sha512-g/M9sqy3oHe477Ar4voQxWtaPIFw1jTdKZuomOjhCcBx9nHUNn0pu6NopuFFrTh/TRZIKEj+76vLWFu9BNKk+Q==
 
 electron-to-chromium@^1.4.251:
-  version "1.4.268"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.268.tgz#5a902075f0209a628837e508a66d40ace04d54ab"
-  integrity sha512-PO90Bv++vEzdln+eA9qLg1IRnh0rKETus6QkTzcFm5P3Wg3EQBZud5dcnzkpYXuIKWBjKe5CO8zjz02cicvn1g==
+  version "1.4.270"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.270.tgz#2c6ea409b45cdb5c3e0cb2c08cf6c0ba7e0f2c26"
+  integrity sha512-KNhIzgLiJmDDC444dj9vEOpZEgsV96ult9Iff98Vanumn+ShJHd5se8aX6KeVxdc0YQeqdrezBZv89rleDbvSg==
 
 emoji-regex@^7.0.1, emoji-regex@^7.0.2:
   version "7.0.3"
