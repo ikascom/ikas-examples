@@ -15,20 +15,24 @@ export const SliderWrapper = styled.div`
 export const Thumbnails = styled.div`
   order: 1;
   display: flex;
-  width: 100px;
+  flex-wrap: nowrap;
+  overflow: auto;
+  width: 100%;
   gap: 10px;
 
   @media (min-width: ${breakpoints.lg}) {
     position: absolute;
     display: block;
+    width: 100px;
     height: 100%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 `;
 
 export const Thumbnail = styled.button<{ $selected: boolean }>`
-  display: flex;
-
+  display: block;
+  flex-shrink: 0;
   width: 100px;
 
   border-width: 1px;
