@@ -2,12 +2,11 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 
 import { ProductListProps } from "..";
-
 import Product from "./product";
+import { Header } from "./header";
+import Pagination from "./pagination";
 
 import * as S from "./style";
-import { Header } from "./header";
-import { Pagination } from "../components/pagination";
 
 const Right = observer(({ productList }: ProductListProps) => {
   return (

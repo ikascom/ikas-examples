@@ -5,6 +5,8 @@ import {
 	IkasBrand,
 	IkasProductList,
 	IkasCategory,
+	IkasBlogList,
+	IkasBlog,
 } from "@ikas/storefront"
 
 export enum ImageAspectRatio{ 
@@ -73,5 +75,30 @@ export type PageSearchProps = {
 
 export type CartProps = {
 	summaryText?: string;
+};
+
+export type PageBlogsProps = {
+	title?: string;
+	blogList: IkasBlogList;
+	showAuthor?: boolean;
+	showDescription?: boolean;
+	showCategory?: boolean;
+	showPublishedDate?: boolean;
+	imageAspectRatio: ImageAspectRatio;
+};
+
+export type PageBlogProps = {
+	blog: IkasBlog;
+	showImage?: boolean;
+	imageAspectRatio: ImageAspectRatio;
+};
+
+export type PageBlogCategoryProps = {
+	blogList: IkasBlogList;
+	showAuthor?: boolean;
+	showDescription?: boolean;
+	showCategory?: boolean;
+	showPublishedDate?: boolean;
+	imageAspectRatio: ImageAspectRatio;
 };
 

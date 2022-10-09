@@ -33,13 +33,13 @@
     },
     "numberRangeListFilters": {
       "priceAndMore": "{{ price }} and more"
-    },
-    "pagination": {
-      "prev": "prev",
-      "previousPage": "Previous page",
-      "next": "next",
-      "nextPage": "Next page"
     }
+  },
+  "pagination": {
+    "prev": "prev",
+    "previousPage": "Previous page",
+    "next": "next",
+    "nextPage": "Next page"
   },
   "orderDetail": {
     "loading": "Loading...",
@@ -110,6 +110,11 @@
       "MONEY_ORDER": "Money Order",
       "OTHER": "Other",
       "WALLET": "Wallet"
+    }
+  },
+  "pageBlogs": {
+    "blogCard": {
+      "detailLinkText": "Read Now ->"
     }
   }
 }
