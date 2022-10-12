@@ -9,16 +9,19 @@ import Input from "src/components/components/input";
 import { Container } from "src/components/components/container";
 import Button from "src/components/components/button";
 import GoogleCaptcha from "src/components/components/google-captcha";
+import SocialLoginButton from "src/components/components/button/social-login";
 
 import useLogin from "./useLogin";
+import useSocialLogin from "src/utils/hooks/useSocialLogin";
+
+import FacebookSVG from "src/components/svg/social-login/facebook";
+import GoogleSVG from "src/components/svg/social-login/google";
 
 import * as S from "./style";
 
-type Props = {};
-
 export const NS = "login";
 
-function Login(props: Props) {
+const Login = () => {
   const { t } = useTranslation();
   const login = useLogin();
   const { formAlert, onFormAlertClose, form } = login;
@@ -36,7 +39,7 @@ function Login(props: Props) {
       </S.Wrapper>
     </Container>
   );
-}
+};
 
 export default observer(Login);
 
@@ -63,8 +66,24 @@ const LoginFormAlert = observer(
 type LoginFormProps = ReturnType<typeof useLogin>;
 
 const LoginFormComponent = observer(
-  ({ status, isPending, form, onFormSubmit }: LoginFormProps) => {
+  ({ status, isPending, form, setFormAlert, onFormSubmit }: LoginFormProps) => {
     const { t } = useTranslation();
+    const { onSocialLogin } = useSocialLogin({
+      onStatusSuccess: () => {
+        setFormAlert({
+          status: "success",
+          title: t(`${NS}:formAlert.successTitle`),
+          text: t(`${NS}:formAlert.successText`),
+        });
+      },
+      onStatusFail: (error?: string | null) => {
+        setFormAlert({
+          status: "error",
+          title: t(`${NS}:formAlert.unsuccessTitle`),
+          text: error || t(`${NS}:formAlert.errorText`),
+        });
+      },
+    });
 
     return (
       <Form onSubmit={onFormSubmit}>
@@ -95,6 +114,28 @@ const LoginFormComponent = observer(
         <Button block type="submit" loading={isPending} disabled={isPending}>
           {t(`${NS}:form.login`)}
         </Button>
+        <S.SocialLoginWrapper>
+          <SocialLoginButton
+            color="#fff"
+            bgColor="#3a5a98"
+            borderColor="#3a5a98"
+            lineColor="#000"
+            text="Facebook"
+            subText={t(`${NS}:form.loginWith`)}
+            icon={<FacebookSVG />}
+            onClick={() => onSocialLogin("facebook")}
+          />
+          <SocialLoginButton
+            color="#000"
+            bgColor="#fff"
+            borderColor="#ddd"
+            lineColor="#ddd"
+            text="Google"
+            subText={t(`${NS}:form.loginWith`)}
+            icon={<GoogleSVG />}
+            onClick={() => onSocialLogin("google")}
+          />
+        </S.SocialLoginWrapper>
       </Form>
     );
   }

@@ -3,7 +3,8 @@
   "form": {
     "email": "Email",
     "password": "Password",
-    "login": "Login"
+    "login": "Login",
+    "loginWith": "Login with"
   },
   "formMessage": {
     "requiredRule": "Please fill this field",

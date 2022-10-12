@@ -7,6 +7,12 @@ type ButtonProps = {
   $buttonType: ButtonType;
 };
 
+export const ButtonSizes: Record<ButtonSize, number> = {
+  small: 38,
+  middle: 45,
+  large: 52,
+};
+
 export const Button = styled.button<ButtonProps>`
   text-align: center;
   font-weight: 500;
@@ -45,6 +51,8 @@ export const Button = styled.button<ButtonProps>`
       return css`
         font-size: 12px;
         line-height: 20px;
+        height: ${ButtonSizes.small}px;
+        padding: 0 14px;
       `;
     }
 
@@ -52,6 +60,8 @@ export const Button = styled.button<ButtonProps>`
       return css`
         font-size: 16px;
         line-height: 28px;
+        height: ${ButtonSizes.middle}px;
+        padding: 0 24px;
       `;
     }
 
@@ -59,13 +69,13 @@ export const Button = styled.button<ButtonProps>`
       return css`
         font-size: 18px;
         line-height: 30px;
+        height: ${ButtonSizes.large}px;
+        padding: 0 30px;
       `;
     }
   }}
 
   ${({ $block }) => $block && `width: 100%;`};
-
-  padding: 10px 24px;
   border-radius: 12px;
 
   :hover,

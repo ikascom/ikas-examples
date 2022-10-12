@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FORM_ITEM_MARGIN_BOTTOM } from "../components/form/form-item/style";
 
 export const Wrapper = styled.div`
   margin: auto;
@@ -27,4 +28,11 @@ export const Footer = styled.footer`
       text-decoration: underline;
     }
   }
+`;
+
+export const SocialLoginWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: ${FORM_ITEM_MARGIN_BOTTOM}px;
 `;

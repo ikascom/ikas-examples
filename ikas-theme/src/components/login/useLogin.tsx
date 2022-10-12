@@ -95,6 +95,7 @@ export default function useLogin() {
     form,
     onFormSubmit,
     formAlert,
+    setFormAlert,
     onFormAlertClose,
   };
 }

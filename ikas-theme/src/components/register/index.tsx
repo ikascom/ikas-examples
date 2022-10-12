@@ -9,17 +9,21 @@ import Input from "src/components/components/input";
 import { Container } from "src/components/components/container";
 import Button from "src/components/components/button";
 
-import * as S from "./style";
 import useRegister from "./useRegister";
+import useSocialLogin from "src/utils/hooks/useSocialLogin";
 import Row from "../components/grid/row";
 import Col from "../components/grid/col";
 import GoogleCaptcha from "../components/google-captcha";
+import SocialLoginButton from "src/components/components/button/social-login";
 
-type Props = {};
+import FacebookSVG from "src/components/svg/social-login/facebook";
+import GoogleSVG from "src/components/svg/social-login/google";
+
+import * as S from "./style";
 
 export const NS = "register";
 
-function Register(props: Props) {
+const Register = () => {
   const { t } = useTranslation();
   const register = useRegister();
   const { formAlert, onFormAlertClose, form } = register;
@@ -37,7 +41,7 @@ function Register(props: Props) {
       </S.Wrapper>
     </Container>
   );
-}
+};
 
 export default observer(Register);
 
@@ -64,11 +68,55 @@ const RegisterFormAlert = observer(
 type RegisterFormProps = ReturnType<typeof useRegister>;
 
 const RegisterFormComponent = observer(
-  ({ status, isPending, form, onFormSubmit }: RegisterFormProps) => {
+  ({
+    status,
+    isPending,
+    form,
+    setFormAlert,
+    onFormSubmit,
+  }: RegisterFormProps) => {
     const { t } = useTranslation();
+    const { onSocialLogin } = useSocialLogin({
+      onStatusSuccess: () => {
+        setFormAlert({
+          status: "success",
+          title: t(`${NS}:formAlert.successTitle`),
+          text: t(`${NS}:formAlert.successText`),
+        });
+      },
+      onStatusFail: (error?: string | null) => {
+        setFormAlert({
+          status: "error",
+          title: t(`${NS}:formAlert.unsuccessTitle`),
+          text: error || t(`${NS}:formAlert.errorText`),
+        });
+      },
+    });
 
     return (
       <Form onSubmit={onFormSubmit}>
+        <S.SocialLoginWrapper>
+          <SocialLoginButton
+            color="#fff"
+            bgColor="#3a5a98"
+            borderColor="#3a5a98"
+            lineColor="#000"
+            text="Facebook"
+            subText={t(`${NS}:form.registerWith`)}
+            icon={<FacebookSVG />}
+            onClick={() => onSocialLogin("facebook")}
+          />
+          <SocialLoginButton
+            color="#000"
+            bgColor="#fff"
+            borderColor="#ddd"
+            lineColor="#ddd"
+            text="Google"
+            subText={t(`${NS}:form.registerWith`)}
+            icon={<GoogleSVG />}
+            onClick={() => onSocialLogin("google")}
+          />
+        </S.SocialLoginWrapper>
         <Row gutter={[24, 0]}>
           <Col span={12}>
             <FormItem
@@ -122,7 +170,7 @@ const RegisterFormComponent = observer(
         </FormItem>
         <GoogleCaptcha i18nFileName="register" />
         <Button block type="submit" loading={isPending} disabled={isPending}>
-          {t(`${NS}:form.login`)}
+          {t(`${NS}:form.register`)}
         </Button>
       </Form>
     );

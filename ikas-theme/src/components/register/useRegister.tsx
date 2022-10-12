@@ -109,6 +109,7 @@ export default function useRegister() {
     form,
     onFormSubmit,
     formAlert,
+    setFormAlert,
     onFormAlertClose,
   };
 }

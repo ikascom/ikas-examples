@@ -5,7 +5,8 @@
     "lastName": "Last name",
     "email": "Email",
     "password": "Password",
-    "login": "CREATE ACCOUNT"
+    "register": "CREATE ACCOUNT",
+    "registerWith": "Register with"
   },
   "formMessage": {
     "requiredRule": "Please fill this field",
