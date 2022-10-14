@@ -1,6 +1,7 @@
 import {
 	IkasImage,
 	IkasNavigationLink,
+	IkasSlider,
 	IkasProduct,
 	IkasBrand,
 	IkasProductList,
@@ -46,6 +47,11 @@ export type HeaderProps = {
 	links?: IkasNavigationLink[];
 	showLocalization?: boolean;
 	localization: Localization;
+	logoMaxWidth: IkasSlider;
+	logoMaxHeight: IkasSlider;
+	isLogoSizeDifferentOnMobile?: boolean;
+	mobileLogoMaxWidth: IkasSlider;
+	mobileLogoMaxHeight: IkasSlider;
 };
 
 export type FooterProps = {

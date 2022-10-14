@@ -1,3 +1,4 @@
+import { HeaderProps } from "src/components/__generated__/types";
 import breakpoints from "src/styles/breakpoints";
 import styled, { css } from "styled-components";
 
@@ -17,9 +18,21 @@ export const InnerContainer = styled.div`
 `;
 
 export const LeftSide = styled.div``;
-export const Logo = styled.figure`
+
+export const LogoWrapper = styled.figure`
   position: relative;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Logo = styled.img`
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const Center = styled.div`

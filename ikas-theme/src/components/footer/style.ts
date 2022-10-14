@@ -72,9 +72,12 @@ export const LogoWrapper = styled.div`
   position: relative;
   margin: auto;
   margin-bottom: 20px;
+  max-width: 200px;
+  max-height: 200px;
 
   img {
     margin: auto;
+    object-fit: contain;
   }
 
   @media (min-width: ${breakpoints.md}) {

@@ -17,7 +17,7 @@ import IOCloseSVG from "./svg/io-close";
 
 import * as S from "./style";
 
-function MobileHeader(props: HeaderProps) {
+const MobileHeader = (props: HeaderProps) => {
   return (
     <>
       {props.showLocalization && <LocalizationBar {...props.localization} />}
@@ -32,12 +32,23 @@ function MobileHeader(props: HeaderProps) {
       <MaxQuantityPerCartModal />
     </>
   );
-}
+};
 
 export default observer(MobileHeader);
 
 const LeftSide = observer((props: HeaderProps) => {
   const uiStore = UIStore.getInstance();
+  const { logo, isLogoSizeDifferentOnMobile } = props;
+
+  const height = (
+    isLogoSizeDifferentOnMobile
+      ? props.mobileLogoMaxHeight
+      : props.logoMaxHeight
+  ).value;
+  const maxWidth = (
+    isLogoSizeDifferentOnMobile ? props.mobileLogoMaxWidth : props.logoMaxWidth
+  ).value;
+
   return (
     <S.LeftSide>
       <S.SidenavButton onClick={uiStore.toggleSidenav}>
@@ -45,9 +56,9 @@ const LeftSide = observer((props: HeaderProps) => {
       </S.SidenavButton>
       <Link passHref href="/">
         <a>
-          <S.Logo>
-            <img src={props.logo.src} />
-          </S.Logo>
+          <S.LogoWrapper style={{ height, maxWidth }}>
+            <S.Logo style={{ height }} src={logo.src} />
+          </S.LogoWrapper>
         </a>
       </Link>
     </S.LeftSide>

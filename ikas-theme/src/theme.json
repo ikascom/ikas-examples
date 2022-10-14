@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "c937d240-a1fb-4be6-8d03-1ed8c1b5adff",
+          "id": "c63e3302-e118-4231-8042-1bd66a33fc0c",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "035e4af8-430f-4a12-a67b-d7ce2c3644b7",
+          "id": "135fe8be-7fa8-4e61-8826-5d6a91c17612",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "073e1391-b2ce-4064-9e96-ae50fb564024",
+          "id": "4a979f9a-e6eb-4a35-8ca0-a587ded3e906",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "e0ce9e08-fdf2-4087-9eb1-6bee7e19d8ad",
+          "id": "29fe67f3-34ad-4dee-b701-bb40ca66859f",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "044a0571-f7b2-4ab1-8b39-cad047d79bb0",
+          "id": "ecf55893-6dd1-4f08-b0a4-18a6d9aa14ff",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "8e1cfc57-ac0d-4597-a577-8a621507b02f",
+          "id": "3a7758c0-6659-4cea-903e-9bfabe986802",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "5746c056-675e-4899-bad0-e4e22d792416",
+          "id": "c9221b4d-40c8-4ac8-8d22-a9c86bdfd04f",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "633f7561-cd4c-4526-a645-60afb6f2f943",
+          "id": "6cfbc8d1-97ea-4722-806f-4dc5589d9291",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "ae97a60a-7d5b-4db0-b3cf-951fb06758aa",
+          "id": "0251cbd2-c46e-4c68-b114-31c8fc4ec991",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "21751a7c-5272-4641-ace6-bc5f97d84656",
+          "id": "a6565a29-1fad-4d19-a263-028fd5d9c603",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "75d8df89-eaeb-47a8-994e-e5825ec77706",
+          "id": "7711e4eb-7d7b-4b81-aa76-bf5199f830b8",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "14a9addd-e3ca-4938-918a-d0a30a8effef",
+          "id": "7129ef3f-3af6-4e97-ba24-d4569e26efab",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "c0ab5377-bf5d-4aa3-8b04-286f0f448a48",
+          "id": "d6840e56-c981-499b-8927-f82bab439372",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "9cdf6792-5436-414c-819b-1f5eb32e288c",
+          "id": "83b730aa-cfad-4325-becb-3001dd6ffbaa",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "be3fa102-94a3-498c-bc96-36654e4cc93a",
+          "id": "11fa3208-3632-488f-9a4b-4ffbc15f323e",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "2697d550-6d53-4331-9af6-146895450915",
+          "id": "b57fd147-d9be-48e1-affd-3d77164d4b05",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "0909e698-0262-4e29-b533-a3ef2e66b90e",
+          "id": "a8cd5fad-08c8-4a4a-b57c-38da10e4d19b",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -353,12 +353,212 @@
           "sliderData": {},
           "groupId": "dd9bc787-912f-4f75-beba-d1d57551500c",
           "translations": {}
+        },
+        {
+          "id": "5769823c-2c85-4265-920f-9b3409c53b91",
+          "name": "logoMaxWidth",
+          "displayName": "Logo Max Width",
+          "description": "Maximum Width should between 150~250px",
+          "type": "SLIDER",
+          "isRequired": true,
+          "sliderData": {
+            "min": 150,
+            "max": 250,
+            "interval": 1,
+            "unit": "px"
+          },
+          "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
+        },
+        {
+          "id": "1fcbbe63-98a0-45ae-be18-d615cf368f77",
+          "name": "logoMaxHeight",
+          "displayName": "Logo Max Height",
+          "description": "Maximum height should between 40~100px",
+          "type": "SLIDER",
+          "isRequired": true,
+          "sliderData": {
+            "min": 40,
+            "max": 100,
+            "interval": 1,
+            "unit": "px"
+          },
+          "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
+        },
+        {
+          "id": "d141aea4-8818-4f03-82ab-09c7e7897d86",
+          "name": "isLogoSizeDifferentOnMobile",
+          "displayName": "Enter Different Size For Mobile?",
+          "description": "",
+          "type": "BOOLEAN",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
+        },
+        {
+          "id": "2fdfd01e-5227-4ead-815c-b51c4442bec0",
+          "name": "mobileLogoMaxWidth",
+          "displayName": "Mobile Logo Max Width",
+          "description": "Maximum Width should between 150~250px",
+          "type": "SLIDER",
+          "isRequired": true,
+          "requiredPropId": "d141aea4-8818-4f03-82ab-09c7e7897d86",
+          "sliderData": {
+            "min": 150,
+            "max": 250,
+            "interval": 1,
+            "unit": "px"
+          },
+          "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
+        },
+        {
+          "id": "7532bb3a-89b6-45bb-bbb3-0dc973dcc05d",
+          "name": "mobileLogoMaxHeight",
+          "displayName": "Mobile Logo Max Height",
+          "description": "",
+          "type": "SLIDER",
+          "isRequired": true,
+          "requiredPropId": "d141aea4-8818-4f03-82ab-09c7e7897d86",
+          "sliderData": {
+            "min": 40,
+            "max": 100,
+            "interval": 1,
+            "unit": "px"
+          },
+          "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
+          "translations": {}
         }
       ],
       "isHeader": true,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {},
+      "defaultPropValuesTranslations": {
+        "en": {
+          "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+          "links": [
+            {
+              "id": "e28a8771-e228-4d9a-9b59-735464e67174",
+              "linkType": "PAGE",
+              "label": "Men",
+              "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+              "pageType": "INDEX",
+              "subLinks": [
+                {
+                  "id": "12b2b78b-0f4e-4d49-ae3c-a75a7abdf1c8",
+                  "linkType": "PAGE",
+                  "label": "Clothes",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                {
+                  "id": "1407217c-14a5-4c4e-9193-9098ec1d36ee",
+                  "linkType": "PAGE",
+                  "label": "Shoes",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                {
+                  "id": "551ee5fc-4c4a-4fa7-be69-f8524be85be0",
+                  "linkType": "PAGE",
+                  "label": "Suit",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                {
+                  "id": "ebc5fc4a-7464-49b2-9299-e05b818c1dbc",
+                  "linkType": "PAGE",
+                  "label": "Shirt",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                }
+              ]
+            },
+            {
+              "id": "6bb30f0a-0792-4b8e-8340-2950724f20bc",
+              "linkType": "PAGE",
+              "label": "Women",
+              "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+              "pageType": "INDEX",
+              "subLinks": [
+                {
+                  "id": "ca18d1d6-423c-40a3-bb93-e409134fada6",
+                  "linkType": "PAGE",
+                  "label": "Clothes",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                {
+                  "id": "1e25467e-0ef7-41f6-ae12-08ee675e3ac1",
+                  "linkType": "PAGE",
+                  "label": "Shoes",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                {
+                  "id": "f6068097-44b3-486f-9e75-eb9a95218210",
+                  "linkType": "PAGE",
+                  "label": "Skirt",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                }
+              ]
+            },
+            {
+              "id": "9143b04e-da76-4ac3-889b-3250f9aa02b4",
+              "linkType": "PAGE",
+              "label": "Unisex",
+              "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+              "pageType": "INDEX",
+              "subLinks": [
+                {
+                  "id": "69edd0b6-87d0-4214-8eff-aafb6323f92b",
+                  "linkType": "PAGE",
+                  "label": "Suitcase",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                {
+                  "id": "0a01d84a-01b3-4830-bc8c-152f807c888b",
+                  "linkType": "PAGE",
+                  "label": "Bag",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                }
+              ]
+            }
+          ],
+          "showLocalization": true,
+          "localization": {
+            "text": "Select Your Region",
+            "backgroundColor": "#444444ff",
+            "color": "#ffffffff",
+            "buttonText": "OK"
+          },
+          "logoMaxWidth": {
+            "value": 150,
+            "unit": "px"
+          },
+          "logoMaxHeight": {
+            "value": 40,
+            "unit": "px"
+          },
+          "isLogoSizeDifferentOnMobile": false,
+          "mobileLogoMaxWidth": null,
+          "mobileLogoMaxHeight": null
+        }
+      },
       "defaultPropValues": {
         "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
         "showLocalization": true,
@@ -367,7 +567,16 @@
           "backgroundColor": "#444444ff",
           "color": "#ffffffff",
           "buttonText": "OK"
-        }
+        },
+        "logoMaxWidth": {
+          "value": 150,
+          "unit": "px"
+        },
+        "logoMaxHeight": {
+          "value": 40,
+          "unit": "px"
+        },
+        "isLogoSizeDifferentOnMobile": false
       }
     },
     {
@@ -1051,7 +1260,7 @@
           "id": "9639c247-b894-400c-8f2e-5ea604712f0e",
           "componentId": "8b5d6278-a490-4f0a-8308-00bf888b79b0",
           "propValues": {
-            "image": "theme-images/b1c1a400-8d58-4610-8373-baa32c5059b1",
+            "image": "theme-images/f39d5f3e-0424-483b-968c-3a714842b340",
             "imageAspectRatio": "3_1",
             "title": "Super hero",
             "showButton": true,
@@ -1071,7 +1280,7 @@
           "id": "e6190153-5bd9-438b-a11c-576c7d449ded",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -1179,6 +1388,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -1186,7 +1412,7 @@
           "id": "e72c58ab-f4bd-47cb-b0fe-1032d47e217e",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -1324,7 +1550,7 @@
           "id": "11e89180-cb43-4950-b62e-1dfcf0e2bac4",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -1432,6 +1658,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -1439,7 +1682,7 @@
           "id": "4e9fb013-70dc-4bdf-bf55-97aae4ab7525",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -1577,7 +1820,7 @@
           "id": "c6e833cf-609e-4d7f-8489-a53865147552",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -1685,6 +1928,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -1692,7 +1952,7 @@
           "id": "273ff869-75b4-4f36-b9bd-5ecb73bca022",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -1830,7 +2090,7 @@
           "id": "91701f66-08c6-46e4-baab-d9d387bd62de",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -1938,6 +2198,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -1945,7 +2222,7 @@
           "id": "ed87b0d0-e65c-4d95-8e9c-890a1e05a7c3",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -2083,7 +2360,7 @@
           "id": "eb95c871-991c-4ccc-99a6-ccf6fde427cb",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -2191,6 +2468,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -2198,7 +2492,7 @@
           "id": "ef09b686-83d1-4a89-8e77-9087d805f048",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -2336,7 +2630,7 @@
           "id": "09dbc864-877d-460d-b7ce-db492ec70da0",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -2444,6 +2738,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -2451,7 +2762,7 @@
           "id": "7c5bba65-5e38-493a-ab2f-71128c03ee28",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -2589,7 +2900,7 @@
           "id": "02b8c7ac-092c-4a46-ae0a-fa24eb36fccf",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -2697,6 +3008,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -2704,7 +3032,7 @@
           "id": "cad2630b-3966-4437-8448-3f76a1ee40ae",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -2842,7 +3170,7 @@
           "id": "d10c4e3f-805a-42d1-b801-1928059c4997",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -2950,6 +3278,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -2957,7 +3302,7 @@
           "id": "c0ad147a-7c24-4f67-853f-3f0391f4d6eb",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -3095,7 +3440,7 @@
           "id": "b158fee3-ee16-4004-90df-5668876c1fb3",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -3203,6 +3548,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -3210,7 +3572,7 @@
           "id": "1296fdf5-a663-4c48-bae9-7509d2160dc2",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -3348,7 +3710,7 @@
           "id": "b12b1df4-b4a9-4026-a7fb-af7a0d2835b8",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -3456,6 +3818,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -3463,7 +3842,7 @@
           "id": "49877cd9-130d-4c56-846f-52c48977c06c",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -3614,7 +3993,7 @@
           "id": "90789577-5c7d-478e-a5c6-b7c2b8e7a010",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -3722,6 +4101,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -3729,7 +4125,7 @@
           "id": "b33ef38a-e537-47f5-8253-c2023a3c7655",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -3926,7 +4322,7 @@
           "id": "c6e833cf-609e-4d7f-8489-a53865147552",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -4034,6 +4430,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -4041,7 +4454,7 @@
           "id": "273ff869-75b4-4f36-b9bd-5ecb73bca022",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -4197,7 +4610,7 @@
           "id": "b622a76b-93e0-4007-83a0-4f63bb53083c",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -4305,6 +4718,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -4312,7 +4742,7 @@
           "id": "2236dd37-5609-4efb-b61d-d3f34dac5b54",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -4455,7 +4885,7 @@
           "id": "63bdacb5-a613-4688-9a36-277a3eb7c49b",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -4563,6 +4993,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -4570,7 +5017,7 @@
           "id": "29de3f14-890f-436e-957d-2f8d04140d33",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -4721,7 +5168,7 @@
           "id": "63bdacb5-a613-4688-9a36-277a3eb7c49b",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -4829,6 +5276,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -4836,7 +5300,7 @@
           "id": "29de3f14-890f-436e-957d-2f8d04140d33",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -4992,7 +5456,7 @@
           "id": "eb95c871-991c-4ccc-99a6-ccf6fde427cb",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -5100,6 +5564,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -5107,7 +5588,7 @@
           "id": "ef09b686-83d1-4a89-8e77-9087d805f048",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -5263,7 +5744,7 @@
           "id": "09dbc864-877d-460d-b7ce-db492ec70da0",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -5371,6 +5852,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -5378,7 +5876,7 @@
           "id": "7c5bba65-5e38-493a-ab2f-71128c03ee28",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -5532,7 +6030,7 @@
           "id": "2f92377f-d9b6-42e7-8123-96be732604ef",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -5640,6 +6138,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -5647,7 +6162,7 @@
           "id": "a2f248d8-9f0f-4228-9c85-cba14be6e732",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -5785,7 +6300,7 @@
           "id": "ec7a2d7f-cdf6-44bd-8ebd-f4e0b7de9695",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -5893,6 +6408,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -5900,7 +6432,7 @@
           "id": "2542bbe0-d0be-481b-a6d4-d4b355392e98",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -6051,7 +6583,7 @@
           "id": "2f92377f-d9b6-42e7-8123-96be732604ef",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -6159,6 +6691,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -6166,7 +6715,7 @@
           "id": "a2f248d8-9f0f-4228-9c85-cba14be6e732",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -6320,7 +6869,7 @@
           "id": "2a828bca-d4cd-4d79-9170-8ac550432be1",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -6428,6 +6977,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -6435,7 +7001,7 @@
           "id": "e8d9ec4d-8f08-4e00-9ee9-953d4c87a155",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -6586,7 +7152,7 @@
           "id": "2a828bca-d4cd-4d79-9170-8ac550432be1",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -6694,6 +7260,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -6701,7 +7284,7 @@
           "id": "e8d9ec4d-8f08-4e00-9ee9-953d4c87a155",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -6852,7 +7435,7 @@
           "id": "18f8dc8f-7e6d-40f8-b8d9-6949adfeb8ba",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -6960,6 +7543,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -6967,7 +7567,7 @@
           "id": "24156cb4-7d47-4100-843d-194df41cf5e6",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -7118,7 +7718,7 @@
           "id": "ec7a2d7f-cdf6-44bd-8ebd-f4e0b7de9695",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -7226,6 +7826,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -7233,7 +7850,7 @@
           "id": "2542bbe0-d0be-481b-a6d4-d4b355392e98",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -7376,7 +7993,7 @@
           "id": "e3ae0221-fd1b-44ce-8001-33bdbc7725c3",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -7484,6 +8101,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -7491,7 +8125,7 @@
           "id": "0b6046cc-42b4-40cd-b34e-f210cc83381f",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -7642,7 +8276,7 @@
           "id": "e3ae0221-fd1b-44ce-8001-33bdbc7725c3",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -7750,6 +8384,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -7757,7 +8408,7 @@
           "id": "0b6046cc-42b4-40cd-b34e-f210cc83381f",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -7900,7 +8551,7 @@
           "id": "68b95d0d-37fe-4ab1-8057-4899fede490b",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -8008,6 +8659,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -8015,7 +8683,7 @@
           "id": "d883a9be-9180-44e5-9b1e-2e1db2758623",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -8166,7 +8834,7 @@
           "id": "68b95d0d-37fe-4ab1-8057-4899fede490b",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -8274,6 +8942,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -8281,7 +8966,7 @@
           "id": "d883a9be-9180-44e5-9b1e-2e1db2758623",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -8424,7 +9109,7 @@
           "id": "dea8d244-0305-4fb9-b8ac-23c8b283c910",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -8532,6 +9217,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -8539,7 +9241,7 @@
           "id": "f68d3264-89ff-43b0-84d6-0b545d4732fc",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -8690,7 +9392,7 @@
           "id": "dea8d244-0305-4fb9-b8ac-23c8b283c910",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -8798,6 +9500,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -8805,7 +9524,7 @@
           "id": "f68d3264-89ff-43b0-84d6-0b545d4732fc",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -8948,7 +9667,7 @@
           "id": "c1dc52a1-3af3-4ac0-9fc3-18b892845fa4",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -9056,6 +9775,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -9063,7 +9799,7 @@
           "id": "41378159-9370-44d3-bcfd-bf225713c2c4",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -9214,7 +9950,7 @@
           "id": "c1dc52a1-3af3-4ac0-9fc3-18b892845fa4",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -9322,6 +10058,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -9329,7 +10082,7 @@
           "id": "41378159-9370-44d3-bcfd-bf225713c2c4",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -9472,7 +10225,7 @@
           "id": "1e5a2048-4850-427f-8abc-6537c828e3a7",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -9580,6 +10333,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -9587,7 +10357,7 @@
           "id": "8349d26f-240c-4f20-b3ae-a18ba24e4eaf",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -9738,7 +10508,7 @@
           "id": "02b8c7ac-092c-4a46-ae0a-fa24eb36fccf",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -9846,6 +10616,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -9853,7 +10640,7 @@
           "id": "cad2630b-3966-4437-8448-3f76a1ee40ae",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -10009,7 +10796,7 @@
           "id": "18f8dc8f-7e6d-40f8-b8d9-6949adfeb8ba",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -10117,6 +10904,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -10124,7 +10928,7 @@
           "id": "24156cb4-7d47-4100-843d-194df41cf5e6",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -10282,7 +11086,7 @@
           "id": "d10c4e3f-805a-42d1-b801-1928059c4997",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -10390,6 +11194,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -10397,7 +11218,7 @@
           "id": "c0ad147a-7c24-4f67-853f-3f0391f4d6eb",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -10553,7 +11374,7 @@
           "id": "b158fee3-ee16-4004-90df-5668876c1fb3",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -10661,6 +11482,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -10668,7 +11506,7 @@
           "id": "1296fdf5-a663-4c48-bae9-7509d2160dc2",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -10824,7 +11662,7 @@
           "id": "9e52970d-c11b-45a9-addf-75d8fe2933ef",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -10932,6 +11770,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -10939,7 +11794,7 @@
           "id": "ff3985cb-75ec-4f70-bf6c-df2ffc546cfb",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -11090,7 +11945,7 @@
           "id": "b12b1df4-b4a9-4026-a7fb-af7a0d2835b8",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -11198,6 +12053,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -11205,7 +12077,7 @@
           "id": "49877cd9-130d-4c56-846f-52c48977c06c",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",
@@ -11367,7 +12239,7 @@
           "id": "9e52970d-c11b-45a9-addf-75d8fe2933ef",
           "componentId": "ae2074dc-577e-40a1-a9aa-6104aaacdb40",
           "propValues": {
-            "logo": "theme-images/e3df449d-e3fb-48b8-b032-1d1746eda30b",
+            "logo": "theme-images/8200af86-3ede-482e-98c7-4f3d3132430c",
             "links": [
               {
                 "id": "e28a8771-e228-4d9a-9b59-735464e67174",
@@ -11475,6 +12347,23 @@
               "backgroundColor": "#444444ff",
               "color": "#f5f5f5ff",
               "buttonText": "OK"
+            },
+            "logoMaxWidth": {
+              "value": 200,
+              "unit": "px"
+            },
+            "logoMaxHeight": {
+              "value": 64,
+              "unit": "px"
+            },
+            "isLogoSizeDifferentOnMobile": true,
+            "mobileLogoMaxWidth": {
+              "value": 156,
+              "unit": "px"
+            },
+            "mobileLogoMaxHeight": {
+              "value": 46,
+              "unit": "px"
             }
           }
         },
@@ -11482,7 +12371,7 @@
           "id": "ff3985cb-75ec-4f70-bf6c-df2ffc546cfb",
           "componentId": "a1ea193f-50da-48a3-baa7-5fa8b9ec5b41",
           "propValues": {
-            "logo": "theme-images/ceef76d7-f3da-4228-834d-fa88b26b0e5a",
+            "logo": "theme-images/45cda183-2511-4076-bb83-284170385a64",
             "links": [
               {
                 "id": "6ab99680-0d7b-47b9-9823-e83273807dbf",

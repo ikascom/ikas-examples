@@ -66,9 +66,20 @@ export const Sidenav = styled.div<SidenavProps>`
   }};
 `;
 
-export const Logo = styled.div`
+export const LogoWrapper = styled.figure`
   position: relative;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Logo = styled.img`
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const RightSide = styled.div`

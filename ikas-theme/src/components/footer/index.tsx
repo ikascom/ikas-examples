@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { observer } from "mobx-react-lite";
-import { useStore, useTranslation } from "@ikas/storefront";
+import { Image, useStore, useTranslation } from "@ikas/storefront";
 
 import { FooterProps } from "../__generated__/types";
 import { Container } from "../components/container";
@@ -155,7 +155,13 @@ export const PaymentOptions = () => {
 const Logo = (props: FooterProps) => {
   return (
     <S.LogoWrapper>
-      <img src={props.logo.src} loading="lazy" />
+      <Image
+        image={props.logo}
+        layout="intrinsic"
+        width={150}
+        height={150}
+        sizes="200px"
+      />
     </S.LogoWrapper>
   );
 };

@@ -17,7 +17,7 @@ import { NS } from "../";
 
 import * as S from "./style";
 
-function DesktopHeader(props: HeaderProps) {
+const DesktopHeader = (props: HeaderProps) => {
   return (
     <>
       {props.showLocalization && <LocalizationBar {...props.localization} />}
@@ -33,18 +33,24 @@ function DesktopHeader(props: HeaderProps) {
       <MaxQuantityPerCartModal />
     </>
   );
-}
+};
 
 export default observer(DesktopHeader);
 
 const LeftSide = (props: HeaderProps) => {
+  const { logo, logoMaxHeight, logoMaxWidth } = props;
   return (
     <S.LeftSide>
       <Link passHref href="/">
         <a>
-          <S.Logo>
-            <img src={props.logo.src} />
-          </S.Logo>
+          <S.LogoWrapper
+            style={{
+              height: logoMaxHeight.value,
+              maxWidth: logoMaxWidth.value,
+            }}
+          >
+            <S.Logo style={{ height: logoMaxHeight.value }} src={logo.src} />
+          </S.LogoWrapper>
         </a>
       </Link>
     </S.LeftSide>
@@ -120,12 +126,11 @@ export const SearchInput = observer((props: HeaderProps) => {
 
 const RightSide = observer((props: HeaderProps) => {
   const store = useStore();
-  const router = useRouter();
   const quantity = store.cartStore.cart?.itemQuantity ?? 0;
   return (
     <S.RightSide>
       <Link href="/account/favorite-products" passHref>
-        <S.FavoriteWrapper>
+        <S.FavoriteWrapper as="a">
           <FavoriteSVG />
         </S.FavoriteWrapper>
       </Link>
