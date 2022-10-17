@@ -28,7 +28,7 @@
   "privacyPolicy": "Privacy Policy",
   "termsOfService": "Terms of Service",
 
-  "alreadyHaveAccount": "Already have account?",
+  "alreadyHaveAccount": "Already have an account?",
   "login": "Login here",
-  "forgetPassword": "Forget password"
+  "forgotPassword": "Forgot password"
 }

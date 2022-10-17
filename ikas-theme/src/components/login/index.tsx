@@ -158,7 +158,7 @@ const Footer = ({ redirect }: FooterProps) => {
         </Link>
       </div>
       <Link passHref href={`/account/forgot-password${redirectHref}`}>
-        <a>{t(`${NS}:forgetPassword`)}</a>
+        <a>{t(`${NS}:forgotPassword`)}</a>
       </Link>
     </S.Footer>
   );
