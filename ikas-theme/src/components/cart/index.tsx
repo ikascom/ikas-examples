@@ -290,9 +290,9 @@ export const RemoveCouponSVG = () => (
   <svg
     stroke="currentColor"
     fill="none"
-    stroke-width="2"
+    strokeWidth="2"
     viewBox="0 0 24 24"
-    stroke-linecap="round"
+    strokeLinecap="round"
     stroke-linejoin="round"
     height="1em"
     width="1em"

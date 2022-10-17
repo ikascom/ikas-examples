@@ -43,8 +43,8 @@ const CheckSVG = () => (
     <path
       d="M1 4.42857L4.36842 7L9 1"
       stroke="#22252A"
-      stroke-width="1.5"
-      stroke-linecap="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       stroke-linejoin="round"
     />
   </svg>
