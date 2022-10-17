@@ -3,7 +3,7 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 
 import { Container } from "../components/container";
-import { Menu } from "./components/menu";
+import Menu from "./components/menu";
 
 import Address from "./address";
 import AccountInfo from "./account-info";
@@ -17,7 +17,7 @@ import * as S from "./style";
 
 export const NS = "account";
 
-const AccountPage = observer(() => {
+const AccountPage = () => {
   const {
     hasCustomer,
     isAccount,
@@ -42,6 +42,6 @@ const AccountPage = observer(() => {
       </S.InnerWrapper>
     </Container>
   );
-});
+};
 
-export default AccountPage;
+export default observer(AccountPage);

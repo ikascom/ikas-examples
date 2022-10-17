@@ -6,7 +6,7 @@ type Props = {
   status: FormItemStatus;
 } & JSX.IntrinsicElements["textarea"];
 
-function Textarea(props: Props) {
+const Textarea = (props: Props) => {
   const { status, ref, ...restProps } = props;
 
   return (
@@ -19,6 +19,6 @@ function Textarea(props: Props) {
       )}
     </>
   );
-}
+};
 
 export default Textarea;

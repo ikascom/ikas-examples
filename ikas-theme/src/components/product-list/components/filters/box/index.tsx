@@ -36,7 +36,7 @@ type BoxFilterProps = {
   onClick: (value: IkasApplicableProductFilterValue) => void;
 };
 
-const BoxFilter = observer(({ value, onClick }: BoxFilterProps) => {
+const BoxFilter = ({ value, onClick }: BoxFilterProps) => {
   return (
     <S.Box
       $disabled={value.resultCount === 0}
@@ -46,6 +46,6 @@ const BoxFilter = observer(({ value, onClick }: BoxFilterProps) => {
       {value.name}
     </S.Box>
   );
-});
+};
 
-export default BoxFilter;
+export default observer(BoxFilter);

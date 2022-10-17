@@ -13,7 +13,7 @@ type AlertComponentProps = FormAlertType & {
   onClose?: () => void;
 };
 
-export default function AlertComponent(props: AlertComponentProps) {
+const AlertComponent = (props: AlertComponentProps) => {
   const [isVisible, setVisibility] = useState(true);
 
   const onClose = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -30,4 +30,6 @@ export default function AlertComponent(props: AlertComponentProps) {
       {props.closable && <S.CloseButton onClick={onClose}>x</S.CloseButton>}
     </S.AlertWrapper>
   );
-}
+};
+
+export default AlertComponent;

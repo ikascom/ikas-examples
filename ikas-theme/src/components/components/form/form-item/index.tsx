@@ -14,7 +14,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-function FormItem(props: Props) {
+const FormItem = (props: Props) => {
   return (
     <S.FormItemWrapper
       style={props.style}
@@ -28,6 +28,6 @@ function FormItem(props: Props) {
       {!!props.help && <S.Help $status={props.status}>{props.help}</S.Help>}
     </S.FormItemWrapper>
   );
-}
+};
 
 export default FormItem;

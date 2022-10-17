@@ -16,7 +16,7 @@ function useActiveImage() {
   return { id, set };
 }
 
-function Slider(props: ProductDetailProps) {
+const Slider = (props: ProductDetailProps) => {
   const activeImage = useActiveImage();
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function Slider(props: ProductDetailProps) {
       <MainImage activeImage={activeImage} {...props} />
     </S.SliderWrapper>
   );
-}
+};
 
 export default observer(Slider);
 

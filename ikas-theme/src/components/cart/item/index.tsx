@@ -29,7 +29,7 @@ import {
   RemoveColumn,
 } from "../style";
 
-const Item = observer(({ item }: { item: IkasOrderLineItem }) => {
+const Item = ({ item }: { item: IkasOrderLineItem }) => {
   const store = useStore();
 
   return (
@@ -40,9 +40,9 @@ const Item = observer(({ item }: { item: IkasOrderLineItem }) => {
       <ItemRemoveColumn item={item} store={store} />
     </S.Item>
   );
-});
+};
 
-export default Item;
+export default observer(Item);
 
 const ItemProductColumn = observer(
   ({ item, store }: { item: IkasOrderLineItem; store: IkasBaseStore }) => {

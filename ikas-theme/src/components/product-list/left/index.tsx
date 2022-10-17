@@ -9,7 +9,7 @@ import { ProductListProps } from "..";
 
 import * as S from "./style";
 
-function Left(props: ProductListProps) {
+const Left = (props: ProductListProps) => {
   return (
     <S.Left>
       <FiltersMainTitle {...props} />
@@ -17,5 +17,5 @@ function Left(props: ProductListProps) {
       <Filters {...props} />
     </S.Left>
   );
-}
+};
 export default observer(Left);

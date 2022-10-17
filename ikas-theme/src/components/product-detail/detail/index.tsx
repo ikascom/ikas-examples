@@ -15,7 +15,7 @@ import { ProductAttributes } from "./product-attributes";
 
 import * as S from "./style";
 
-function Detail(props: ProductDetailProps) {
+const Detail = (props: ProductDetailProps) => {
   return (
     <S.Wrapper>
       <Title {...props} />
@@ -29,6 +29,6 @@ function Detail(props: ProductDetailProps) {
       <SocialShare {...props} />
     </S.Wrapper>
   );
-}
+};
 
 export default observer(Detail);

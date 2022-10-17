@@ -6,7 +6,7 @@ import { PageCategoryProps } from "../__generated__/types";
 
 const NS = "page-category";
 
-function PageCategory(props: PageCategoryProps) {
+const PageCategory = (props: PageCategoryProps) => {
   return (
     <ProductList
       NS={NS}
@@ -15,6 +15,6 @@ function PageCategory(props: PageCategoryProps) {
       source="category"
     />
   );
-}
+};
 
 export default observer(PageCategory);

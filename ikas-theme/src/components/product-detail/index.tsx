@@ -10,7 +10,7 @@ import * as S from "./style";
 
 export const NS = "product-detail"; // for translation (i18n)
 
-function ProductDetail(props: ProductDetailProps) {
+const ProductDetail = (props: ProductDetailProps) => {
   return (
     <S.ProductDetail>
       <Container>
@@ -21,6 +21,6 @@ function ProductDetail(props: ProductDetailProps) {
       </Container>
     </S.ProductDetail>
   );
-}
+};
 
 export default observer(ProductDetail);

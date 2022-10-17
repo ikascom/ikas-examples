@@ -22,59 +22,53 @@ type Props = {
   onClose: () => void;
 };
 
-const ModalBackInStock = observer(
-  ({ isModalVisible, product, onClose }: Props) => {
-    const { t } = useTranslation();
-    const {
-      pending,
-      model,
-      formAlert,
-      status,
-      validator,
-      onFormAlertClose,
-      onSubmit,
-    } = useModalBackInStock({ product });
-    const SUB_NS = `${NS}:detail.addToCart.backInStockModal`;
-    const i18nText = (key: string) => t(`${SUB_NS}.${key}`);
+const ModalBackInStock = ({ isModalVisible, product, onClose }: Props) => {
+  const { t } = useTranslation();
+  const {
+    pending,
+    model,
+    formAlert,
+    status,
+    validator,
+    onFormAlertClose,
+    onSubmit,
+  } = useModalBackInStock({ product });
+  const SUB_NS = `${NS}:detail.addToCart.backInStockModal`;
+  const i18nText = (key: string) => t(`${SUB_NS}.${key}`);
 
-    return (
-      <Modal
-        visible={isModalVisible}
-        title={i18nText("title")}
-        onClose={onClose}
-      >
-        <S.Text>{i18nText("text")}</S.Text>
-        {formAlert && (
-          <AlertComponent
-            closable
-            status={formAlert.status}
-            text={formAlert.text}
-            title={formAlert.title}
-            onClose={onFormAlertClose}
-          />
-        )}
-        {!formAlert && (
-          <Form onSubmit={onSubmit}>
-            <FormItem
-              help={validator.results.email.errorMessage}
+  return (
+    <Modal visible={isModalVisible} title={i18nText("title")} onClose={onClose}>
+      <S.Text>{i18nText("text")}</S.Text>
+      {formAlert && (
+        <AlertComponent
+          closable
+          status={formAlert.status}
+          text={formAlert.text}
+          title={formAlert.title}
+          onClose={onFormAlertClose}
+        />
+      )}
+      {!formAlert && (
+        <Form onSubmit={onSubmit}>
+          <FormItem
+            help={validator.results.email.errorMessage}
+            status={status.email}
+          >
+            <Input
+              type="text"
+              placeholder={i18nText("form.email")}
+              value={model.email}
               status={status.email}
-            >
-              <Input
-                type="text"
-                placeholder={i18nText("form.email")}
-                value={model.email}
-                status={status.email}
-                onChange={(event) => (model.email = event.target.value)}
-              />
-            </FormItem>
-            <Button block loading={pending} disabled={pending}>
-              {i18nText("form.submit")}
-            </Button>
-          </Form>
-        )}
-      </Modal>
-    );
-  }
-);
+              onChange={(event) => (model.email = event.target.value)}
+            />
+          </FormItem>
+          <Button block loading={pending} disabled={pending}>
+            {i18nText("form.submit")}
+          </Button>
+        </Form>
+      )}
+    </Modal>
+  );
+};
 
-export default ModalBackInStock;
+export default observer(ModalBackInStock);

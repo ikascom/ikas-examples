@@ -9,7 +9,7 @@ import useLocalization from "./useLocalization";
 
 import * as S from "./style";
 
-const LocalizationBar = observer((props: Localization) => {
+const LocalizationBar = (props: Localization) => {
   const {
     showLocaleBar,
     selectedLocalization,
@@ -51,6 +51,6 @@ const LocalizationBar = observer((props: Localization) => {
       </Container>
     </S.LocaleBar>
   );
-});
+};
 
-export default LocalizationBar;
+export default observer(LocalizationBar);

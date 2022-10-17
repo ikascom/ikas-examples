@@ -16,9 +16,7 @@ import * as S from "./style";
 
 export const NS = "recover-password";
 
-type Props = {};
-
-function RecoverPassword(props: Props) {
+const RecoverPassword = () => {
   const { t } = useTranslation();
   const recoverPassword = useRecoverPassword();
   const { formAlert, onFormAlertClose, form } = recoverPassword;
@@ -36,7 +34,7 @@ function RecoverPassword(props: Props) {
       </S.Wrapper>
     </Container>
   );
-}
+};
 
 export default observer(RecoverPassword);
 

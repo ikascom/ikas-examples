@@ -7,7 +7,7 @@ import Button from "src/components/components/button";
 
 import * as S from "./style";
 
-function LoginRequiredModal({
+const LoginRequiredModal = ({
   isModalVisible,
   title,
   text,
@@ -23,7 +23,7 @@ function LoginRequiredModal({
   noAccountText: string;
   redirectUrl: string;
   onClose: () => void;
-}) {
+}) => {
   return (
     <Modal visible={isModalVisible} title={title} onClose={onClose}>
       <S.Text>{text}</S.Text>
@@ -44,6 +44,6 @@ function LoginRequiredModal({
       </S.Register>
     </Modal>
   );
-}
+};
 
 export default observer(LoginRequiredModal);

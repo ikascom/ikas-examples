@@ -8,7 +8,7 @@ type Props = {
   productList: IkasProductList;
 };
 
-const ProductListPagination = observer(({ productList }: Props) => {
+const ProductListPagination = ({ productList }: Props) => {
   const getPage = async (page: number) => {
     if (productList.isLoading) return;
     await productList.getPage(page);
@@ -26,6 +26,6 @@ const ProductListPagination = observer(({ productList }: Props) => {
       getPage={getPage}
     />
   );
-});
+};
 
-export default ProductListPagination;
+export default observer(ProductListPagination);

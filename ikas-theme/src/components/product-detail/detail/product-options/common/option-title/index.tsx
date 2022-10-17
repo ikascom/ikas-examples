@@ -10,13 +10,13 @@ type Props = {
   tooltipText?: string;
 };
 
-function OptionTitle({
+const OptionTitle = ({
   name,
   price,
   isOptional,
   hasError = false,
   tooltipText,
-}: Props) {
+}: Props) => {
   return (
     <S.Title $hasError={hasError}>
       <S.Name>
@@ -32,6 +32,6 @@ function OptionTitle({
       )}
     </S.Title>
   );
-}
+};
 
 export default OptionTitle;

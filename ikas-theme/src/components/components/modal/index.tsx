@@ -12,7 +12,7 @@ type Props = {
   onClose?: () => void;
 };
 
-function Modal({ visible, title, children, onClose }: Props) {
+const Modal = ({ visible, title, children, onClose }: Props) => {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useOnClickOutside(modalRef, () => {
@@ -46,6 +46,6 @@ function Modal({ visible, title, children, onClose }: Props) {
       </S.ModalInner>
     </S.Modal>
   );
-}
+};
 
 export default Modal;

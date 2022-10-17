@@ -42,7 +42,7 @@ const menu = [
   },
 ];
 
-export const Menu = observer(() => {
+const Menu = () => {
   const { t } = useTranslation();
   const store = useStore();
   const { isMobile } = useScreen();
@@ -72,7 +72,9 @@ export const Menu = observer(() => {
       )}
     </>
   );
-});
+};
+
+export default observer(Menu);
 
 const FixedMenuToggleButton = ({
   active,

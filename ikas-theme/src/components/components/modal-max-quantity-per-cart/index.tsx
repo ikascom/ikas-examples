@@ -4,7 +4,7 @@ import UIStore from "src/store/ui-store";
 import Modal from "../modal";
 import { useTranslation } from "@ikas/storefront";
 
-const MaxQuantityPerCartModal = observer(() => {
+const MaxQuantityPerCartModal = () => {
   const uiStore = UIStore.getInstance();
   const { t } = useTranslation();
   const onClose = () => {
@@ -26,6 +26,6 @@ const MaxQuantityPerCartModal = observer(() => {
       </p>
     </Modal>
   );
-});
+};
 
-export default MaxQuantityPerCartModal;
+export default observer(MaxQuantityPerCartModal);

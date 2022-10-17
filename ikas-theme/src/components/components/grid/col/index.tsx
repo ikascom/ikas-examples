@@ -8,13 +8,13 @@ type ColumnProps = {
   children: React.ReactNode;
 };
 
-function Column(props: ColumnProps) {
+const Column = (props: ColumnProps) => {
   const { gutter } = useContext(RowContext);
   return (
     <S.Columm $gutter={gutter} $span={props.span}>
       {props.children}
     </S.Columm>
   );
-}
+};
 
 export default Column;

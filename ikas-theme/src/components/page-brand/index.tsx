@@ -6,7 +6,7 @@ import { PageBrandProps } from "../__generated__/types";
 
 const NS = "page-brand";
 
-function PageBrand(props: PageBrandProps) {
+const PageBrand = (props: PageBrandProps) => {
   return (
     <ProductList
       NS={NS}
@@ -15,6 +15,6 @@ function PageBrand(props: PageBrandProps) {
       source="brand"
     />
   );
-}
+};
 
 export default observer(PageBrand);

@@ -28,7 +28,7 @@ export type Props = {
   onChange: (value: SelectOnChangeParamType) => void;
 };
 
-function Select(props: Props) {
+const Select = (props: Props) => {
   const { placeholder, options } = props;
 
   const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -75,6 +75,6 @@ function Select(props: Props) {
       ))}
     </S.Select>
   );
-}
+};
 
 export default Select;

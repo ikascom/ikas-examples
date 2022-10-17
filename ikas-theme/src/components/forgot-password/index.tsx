@@ -18,7 +18,7 @@ export const NS = "forgot-password";
 
 type Props = {};
 
-function ForgotPassword(props: Props) {
+const ForgotPassword = (props: Props) => {
   const { t } = useTranslation();
   const forgotPassword = useForgotPassword();
   const { formAlert, onFormAlertClose, form } = forgotPassword;
@@ -36,7 +36,7 @@ function ForgotPassword(props: Props) {
       </S.Wrapper>
     </Container>
   );
-}
+};
 
 export default observer(ForgotPassword);
 

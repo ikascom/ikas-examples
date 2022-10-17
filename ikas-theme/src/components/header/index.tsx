@@ -9,11 +9,11 @@ import MobileHeader from "./mobile";
 
 export const NS = "header"; // for translations (i18n)
 
-function Header(props: HeaderProps) {
+const Header = (props: HeaderProps) => {
   const { isMobile } = useScreen();
 
   if (isMobile) return <MobileHeader {...props} />;
   return <DesktopHeader {...props} />;
-}
+};
 
 export default observer(Header);

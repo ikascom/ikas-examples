@@ -8,7 +8,7 @@ import Pagination from "./pagination";
 
 import * as S from "./style";
 
-const Right = observer(({ productList }: ProductListProps) => {
+const Right = ({ productList }: ProductListProps) => {
   return (
     <S.Main>
       <Header productList={productList} />
@@ -20,6 +20,6 @@ const Right = observer(({ productList }: ProductListProps) => {
       <Pagination productList={productList} />
     </S.Main>
   );
-});
+};
 
-export default Right;
+export default observer(Right);

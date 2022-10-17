@@ -8,7 +8,7 @@ type Props = {
   product: IkasProduct;
 };
 
-function Product(props: Props) {
+const Product = (props: Props) => {
   const { t } = useTranslation();
   const { product } = props;
 
@@ -30,7 +30,7 @@ function Product(props: Props) {
       </Link>
     </S.Wrapper>
   );
-}
+};
 
 export default observer(Product);
 

@@ -11,7 +11,7 @@ import * as S from "./style";
 
 export const imageSizes = `(max-width: ${breakpoints.xxl}) 100vw, ${breakpoints.xxl}`;
 
-function HeroBanner({
+const HeroBanner = ({
   image,
   link,
   title,
@@ -19,7 +19,7 @@ function HeroBanner({
   buttonBackgroundColor,
   buttonTextColor,
   showButton,
-}: HeroBannerProps) {
+}: HeroBannerProps) => {
   const isContentVisible =
     (showButton && !!link?.label && !!link?.href) || !!title;
   const contentProps = {
@@ -38,7 +38,7 @@ function HeroBanner({
       </S.InnerContainer>
     </Container>
   );
-}
+};
 
 export default observer(HeroBanner);
 

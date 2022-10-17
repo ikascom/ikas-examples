@@ -13,7 +13,7 @@ type RowProps = {
   children: React.ReactNode;
 };
 
-function Row(props: RowProps) {
+const Row = (props: RowProps) => {
   const gutter: [number, number] | [number] = Array.isArray(props.gutter)
     ? props.gutter || [0, 0]
     : [props.gutter || 0, props.gutter || 0];
@@ -30,7 +30,7 @@ function Row(props: RowProps) {
       </S.Row>
     </RowContext.Provider>
   );
-}
+};
 
 export default Row;
 

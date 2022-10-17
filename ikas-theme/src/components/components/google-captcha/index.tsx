@@ -9,7 +9,7 @@ import { observer } from "mobx-react-lite";
 
 import * as S from "./style";
 
-function GoogleCaptcha(props: { i18nFileName: string }) {
+const GoogleCaptcha = (props: { i18nFileName: string }) => {
   const store = useStore();
 
   if (!store.customerStore.isCaptchaRequired) return null;
@@ -19,7 +19,7 @@ function GoogleCaptcha(props: { i18nFileName: string }) {
       <GoogleCaptchaText i18nFileName={props.i18nFileName} />
     </>
   );
-}
+};
 
 export default observer(GoogleCaptcha);
 

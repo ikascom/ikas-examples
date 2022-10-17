@@ -30,7 +30,7 @@ type ListFilterProps = {
   onClick: (value: IkasApplicableProductFilterValue) => void;
 };
 
-const ListFilter = observer(({ value, onClick }: ListFilterProps) => {
+const ListFilter = ({ value, onClick }: ListFilterProps) => {
   return (
     <FilterCheckbox
       checked={value.isSelected}
@@ -39,6 +39,6 @@ const ListFilter = observer(({ value, onClick }: ListFilterProps) => {
       resultCount={value.resultCount ?? 0}
     />
   );
-});
+};
 
-export default ListFilter;
+export default observer(ListFilter);
