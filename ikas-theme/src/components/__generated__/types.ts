@@ -65,6 +65,13 @@ export type ProductDetailProps = {
 	imageAspectRatio: ImageAspectRatio;
 };
 
+export type RegisterProps = {
+	showMarketingEmailCheckbox?: boolean;
+	marketingEmailCheckboxText: string;
+	isMarketingEmailRequired?: boolean;
+	marketingEmailDefaultChecked?: boolean;
+};
+
 export type PageBrandProps = {
 	brand: IkasBrand;
 	productList: IkasProductList;

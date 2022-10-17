@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import { Link, useTranslation } from "@ikas/storefront";
 
@@ -8,24 +8,27 @@ import FormItem from "src/components/components/form/form-item";
 import Input from "src/components/components/input";
 import { Container } from "src/components/components/container";
 import Button from "src/components/components/button";
+import SocialLoginButton from "src/components/components/button/social-login";
+import Checkbox from "src/components/components/checkbox";
+import Row from "src/components/components/grid/row";
+import Col from "src/components/components/grid/col";
+import GoogleCaptcha from "src/components/components/google-captcha";
 
 import useRegister from "./useRegister";
-import useSocialLogin from "src/utils/hooks/useSocialLogin";
-import Row from "../components/grid/row";
-import Col from "../components/grid/col";
-import GoogleCaptcha from "../components/google-captcha";
-import SocialLoginButton from "src/components/components/button/social-login";
 
 import FacebookSVG from "src/components/svg/social-login/facebook";
 import GoogleSVG from "src/components/svg/social-login/google";
 
+import { RegisterProps } from "../__generated__/types";
+
 import * as S from "./style";
+import useRegisterForm from "./useRegisterForm";
 
 export const NS = "register";
 
-const Register = () => {
+const Register = (props: RegisterProps) => {
   const { t } = useTranslation();
-  const register = useRegister();
+  const register = useRegister(props);
   const { formAlert, onFormAlertClose, form } = register;
 
   return (
@@ -36,7 +39,7 @@ const Register = () => {
           formAlert={formAlert}
           onFormAlertClose={onFormAlertClose}
         />
-        <RegisterFormComponent {...register} />
+        <RegisterFormComponent {...props} {...register} />
         <Footer redirect={form.redirect} />
       </S.Wrapper>
     </Container>
@@ -65,117 +68,116 @@ const RegisterFormAlert = observer(
   }
 );
 
-type RegisterFormProps = ReturnType<typeof useRegister>;
+export type RegisterFormProps = RegisterProps & ReturnType<typeof useRegister>;
 
-const RegisterFormComponent = observer(
-  ({
-    status,
-    isPending,
-    form,
-    setFormAlert,
-    onFormSubmit,
-  }: RegisterFormProps) => {
-    const { t } = useTranslation();
-    const { onSocialLogin } = useSocialLogin({
-      onStatusSuccess: () => {
-        setFormAlert({
-          status: "success",
-          title: t(`${NS}:formAlert.successTitle`),
-          text: t(`${NS}:formAlert.successText`),
-        });
-      },
-      onStatusFail: (error?: string | null) => {
-        setFormAlert({
-          status: "error",
-          title: t(`${NS}:formAlert.unsuccessTitle`),
-          text: error || t(`${NS}:formAlert.errorText`),
-        });
-      },
-    });
+const RegisterFormComponent = observer((props: RegisterFormProps) => {
+  const { t } = useTranslation();
+  const { status, isPending, form, onFormSubmit } = props;
+  const {
+    marketingEmailFormItemHelp,
+    marketingEmailFormItemStatus,
+    onSocialLogin,
+    onMarketingEmailCheckboxChange,
+  } = useRegisterForm(props);
 
-    return (
-      <Form onSubmit={onFormSubmit}>
-        <S.SocialLoginWrapper>
-          <SocialLoginButton
-            color="#fff"
-            bgColor="#3a5a98"
-            borderColor="#3a5a98"
-            lineColor="#000"
-            text="Facebook"
-            subText={t(`${NS}:form.registerWith`)}
-            icon={<FacebookSVG />}
-            onClick={() => onSocialLogin("facebook")}
-          />
-          <SocialLoginButton
-            color="#000"
-            bgColor="#fff"
-            borderColor="#ddd"
-            lineColor="#ddd"
-            text="Google"
-            subText={t(`${NS}:form.registerWith`)}
-            icon={<GoogleSVG />}
-            onClick={() => onSocialLogin("google")}
-          />
-        </S.SocialLoginWrapper>
-        <Row gutter={[24, 0]}>
-          <Col span={12}>
-            <FormItem
-              label={t(`${NS}:form.firstName`)}
-              help={form.firstNameErrorMessage}
+  return (
+    <Form onSubmit={onFormSubmit}>
+      <S.SocialLoginWrapper>
+        <SocialLoginButton
+          color="#fff"
+          bgColor="#3a5a98"
+          borderColor="#3a5a98"
+          lineColor="#000"
+          text="Facebook"
+          subText={t(`${NS}:form.registerWith`)}
+          icon={<FacebookSVG />}
+          onClick={() => onSocialLogin("facebook")}
+        />
+        <SocialLoginButton
+          color="#000"
+          bgColor="#fff"
+          borderColor="#ddd"
+          lineColor="#ddd"
+          text="Google"
+          subText={t(`${NS}:form.registerWith`)}
+          icon={<GoogleSVG />}
+          onClick={() => onSocialLogin("google")}
+        />
+      </S.SocialLoginWrapper>
+      <Row gutter={[24, 0]}>
+        <Col span={12}>
+          <FormItem
+            label={t(`${NS}:form.firstName`)}
+            help={form.firstNameErrorMessage}
+            status={status.firstName}
+          >
+            <Input
               status={status.firstName}
-            >
-              <Input
-                status={status.firstName}
-                value={form.firstName}
-                onChange={(event) => form.onFirstNameChange(event.target.value)}
-              />
-            </FormItem>
-          </Col>
-          <Col span={12}>
-            <FormItem
-              label={t(`${NS}:form.lastName`)}
-              help={form.lastNameErrorMessage}
+              value={form.firstName}
+              onChange={(event) => form.onFirstNameChange(event.target.value)}
+            />
+          </FormItem>
+        </Col>
+        <Col span={12}>
+          <FormItem
+            label={t(`${NS}:form.lastName`)}
+            help={form.lastNameErrorMessage}
+            status={status.lastName}
+          >
+            <Input
               status={status.lastName}
-            >
-              <Input
-                status={status.lastName}
-                value={form.lastName}
-                onChange={(event) => form.onLastNameChange(event.target.value)}
-              />
-            </FormItem>
-          </Col>
-        </Row>
-        <FormItem
-          label={t(`${NS}:form.email`)}
-          help={form.emailErrorMessage}
+              value={form.lastName}
+              onChange={(event) => form.onLastNameChange(event.target.value)}
+            />
+          </FormItem>
+        </Col>
+      </Row>
+      <FormItem
+        label={t(`${NS}:form.email`)}
+        help={form.emailErrorMessage}
+        status={status.email}
+      >
+        <Input
           status={status.email}
-        >
-          <Input
-            status={status.email}
-            value={form.email}
-            onChange={(event) => form.onEmailChange(event.target.value)}
-          />
-        </FormItem>
-        <FormItem
-          label={t(`${NS}:form.password`)}
-          help={form.passwordErrorMessage}
+          value={form.email}
+          onChange={(event) => form.onEmailChange(event.target.value)}
+        />
+      </FormItem>
+      <FormItem
+        label={t(`${NS}:form.password`)}
+        help={form.passwordErrorMessage}
+        status={status.password}
+      >
+        <Input
+          type="password"
           status={status.password}
-        >
-          <Input
-            type="password"
-            status={status.password}
-            value={form.password}
-            onChange={(event) => form.onPasswordChange(event.target.value)}
-          />
-        </FormItem>
-        <GoogleCaptcha i18nFileName="register" />
+          value={form.password}
+          onChange={(event) => form.onPasswordChange(event.target.value)}
+        />
+      </FormItem>
+      <GoogleCaptcha i18nFileName="register" />
+      <FormItem>
         <Button block type="submit" loading={isPending} disabled={isPending}>
           {t(`${NS}:form.register`)}
         </Button>
-      </Form>
-    );
-  }
-);
+      </FormItem>
+      {!!props.showMarketingEmailCheckbox && (
+        <FormItem
+          status={marketingEmailFormItemStatus}
+          help={marketingEmailFormItemHelp}
+        >
+          <Checkbox
+            status={marketingEmailFormItemStatus}
+            checked={form.isMarketingAccepted}
+            onChange={onMarketingEmailCheckboxChange}
+          >
+            {props.marketingEmailCheckboxText}
+          </Checkbox>
+        </FormItem>
+      )}
+    </Form>
+  );
+});
 
 type FooterProps = {
   redirect?: string | null;

@@ -12,7 +12,7 @@
       "description": "",
       "props": [
         {
-          "id": "c63e3302-e118-4231-8042-1bd66a33fc0c",
+          "id": "b22ef221-5248-4c65-832f-b7055e6384b2",
           "name": "showTax",
           "displayName": "",
           "description": "",
@@ -23,7 +23,7 @@
           "translations": {}
         },
         {
-          "id": "135fe8be-7fa8-4e61-8826-5d6a91c17612",
+          "id": "bd6727b8-59e0-4545-abb2-39dd636754e1",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
@@ -34,7 +34,7 @@
           "translations": {}
         },
         {
-          "id": "4a979f9a-e6eb-4a35-8ca0-a587ded3e906",
+          "id": "61a74bed-b3a3-49dd-9675-c20a63bee55d",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
@@ -45,7 +45,7 @@
           "translations": {}
         },
         {
-          "id": "29fe67f3-34ad-4dee-b701-bb40ca66859f",
+          "id": "5543bde0-1b2e-4225-88a9-b38e839b6bd2",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
@@ -56,7 +56,7 @@
           "translations": {}
         },
         {
-          "id": "ecf55893-6dd1-4f08-b0a4-18a6d9aa14ff",
+          "id": "3370ed7a-f04f-4817-ae7a-ea2add200433",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
@@ -67,7 +67,7 @@
           "translations": {}
         },
         {
-          "id": "3a7758c0-6659-4cea-903e-9bfabe986802",
+          "id": "bcdd87cd-da9b-456a-98f8-5c8c040d0f71",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
@@ -78,7 +78,7 @@
           "translations": {}
         },
         {
-          "id": "c9221b4d-40c8-4ac8-8d22-a9c86bdfd04f",
+          "id": "f43b1f6e-3c2e-453f-969e-60270f93bee3",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
@@ -89,7 +89,7 @@
           "translations": {}
         },
         {
-          "id": "6cfbc8d1-97ea-4722-806f-4dc5589d9291",
+          "id": "4543916f-e3d5-4e06-ba16-6bd8318bde58",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
@@ -100,7 +100,7 @@
           "translations": {}
         },
         {
-          "id": "0251cbd2-c46e-4c68-b114-31c8fc4ec991",
+          "id": "9dbb05d6-6618-4990-92c6-f7dc81c1732e",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
@@ -111,7 +111,7 @@
           "translations": {}
         },
         {
-          "id": "a6565a29-1fad-4d19-a263-028fd5d9c603",
+          "id": "bfc9c026-a520-4531-a434-469ebc5c1025",
           "name": "borderColor",
           "displayName": "",
           "description": "",
@@ -122,7 +122,7 @@
           "translations": {}
         },
         {
-          "id": "7711e4eb-7d7b-4b81-aa76-bf5199f830b8",
+          "id": "0bea5b8b-2f38-46b8-beea-178841e4394e",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
@@ -133,7 +133,7 @@
           "translations": {}
         },
         {
-          "id": "7129ef3f-3af6-4e97-ba24-d4569e26efab",
+          "id": "8c64fd1f-e2d9-47bf-b91e-6c44b7160fd0",
           "name": "errorColor",
           "displayName": "",
           "description": "",
@@ -144,7 +144,7 @@
           "translations": {}
         },
         {
-          "id": "d6840e56-c981-499b-8927-f82bab439372",
+          "id": "321e30f7-57a9-4665-be07-6938800d4426",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
@@ -155,7 +155,7 @@
           "translations": {}
         },
         {
-          "id": "83b730aa-cfad-4325-becb-3001dd6ffbaa",
+          "id": "c23a253c-294f-4afc-a702-e563609d219d",
           "name": "warningColor",
           "displayName": "",
           "description": "",
@@ -166,7 +166,7 @@
           "translations": {}
         },
         {
-          "id": "11fa3208-3632-488f-9a4b-4ffbc15f323e",
+          "id": "b3b7a50e-af80-4d30-a304-cc23e47f512e",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
@@ -177,7 +177,7 @@
           "translations": {}
         },
         {
-          "id": "b57fd147-d9be-48e1-affd-3d77164d4b05",
+          "id": "b0937228-1d25-423a-b0ef-4e63212d0c5f",
           "name": "successColor",
           "displayName": "",
           "description": "",
@@ -188,7 +188,7 @@
           "translations": {}
         },
         {
-          "id": "a8cd5fad-08c8-4a4a-b57c-38da10e4d19b",
+          "id": "a9d4df60-e5b4-46d6-9625-29efdf6c71ad",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
@@ -789,11 +789,62 @@
       "dir": "register",
       "displayName": "Register",
       "description": "",
-      "props": [],
+      "props": [
+        {
+          "id": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "name": "showMarketingEmailCheckbox",
+          "displayName": "Show Marketing Email Checkbox?",
+          "description": "The customer selects the marketing emails preference.",
+          "type": "BOOLEAN",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
+          "translations": {}
+        },
+        {
+          "id": "c3c36a93-00f6-4969-9570-c04b587604a5",
+          "name": "marketingEmailCheckboxText",
+          "displayName": "Marketing Email Text",
+          "description": "",
+          "type": "TEXT",
+          "isRequired": true,
+          "requiredPropId": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "sliderData": {},
+          "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
+          "translations": {}
+        },
+        {
+          "id": "9cc31938-848c-4646-9a4b-229022e436c1",
+          "name": "isMarketingEmailRequired",
+          "displayName": "Is marketing email required?",
+          "description": "",
+          "type": "BOOLEAN",
+          "isRequired": false,
+          "requiredPropId": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "sliderData": {},
+          "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
+          "translations": {}
+        },
+        {
+          "id": "fa95ce69-43cb-4900-b4f1-a5851dfc772e",
+          "name": "marketingEmailDefaultChecked",
+          "displayName": "Is Marketing Email Checkbox Default Checked?",
+          "description": "",
+          "type": "BOOLEAN",
+          "isRequired": false,
+          "requiredPropId": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "sliderData": {},
+          "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
+          "translations": {}
+        }
+      ],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": {
+        "showMarketingEmailCheckbox": false
+      }
     },
     {
       "id": "b382e9ea-6d5f-4e16-91de-1c5ba47bec02",
@@ -4879,7 +4930,12 @@
         {
           "id": "dea0b1b3-e154-4230-9ef4-3a1df07eff75",
           "componentId": "2b6b4787-34f6-482e-a7ba-ba1401644295",
-          "propValues": {}
+          "propValues": {
+            "showMarketingEmailCheckbox": true,
+            "marketingEmailCheckboxText": "I accept to receive marketing emails",
+            "isMarketingEmailRequired": true,
+            "marketingEmailDefaultChecked": true
+          }
         },
         {
           "id": "63bdacb5-a613-4688-9a36-277a3eb7c49b",
@@ -12998,6 +13054,11 @@
     {
       "id": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
       "name": "Blog card",
+      "translations": {}
+    },
+    {
+      "id": "579279ca-1202-4dac-9e54-5ef321f3829e",
+      "name": "Marketing Email",
       "translations": {}
     }
   ],

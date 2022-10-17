@@ -1,9 +1,20 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { FormItemStatus } from "../form/form-item";
 
-export const Wrapper = styled.label`
+type WrapperProps = {
+  $status: FormItemStatus;
+};
+
+export const Wrapper = styled.label<WrapperProps>`
   position: relative;
   display: flex;
   align-items: center;
+
+  ${({ $status, theme }) =>
+    $status === "error" &&
+    css`
+      color: ${theme.color.red};
+    `};
 `;
 
 export const CustomCheckboxInnerWrapper = styled.span<{ $mr: boolean }>`
@@ -13,7 +24,11 @@ export const CustomCheckboxInnerWrapper = styled.span<{ $mr: boolean }>`
   ${({ $mr }) => $mr && `margin-right: 8px;`}
 `;
 
-export const CustomCheckbox = styled.span`
+type CustomCheckboxProps = {
+  $status: FormItemStatus;
+};
+
+export const CustomCheckbox = styled.span<CustomCheckboxProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,6 +38,14 @@ export const CustomCheckbox = styled.span`
   color: ${({ theme }) => theme.color.checkbox};
   border: 1px solid ${({ theme }) => theme.color.checkboxBorder};
   background-color: ${({ theme }) => theme.color.checkboxBg};
+
+  ${({ $status, theme }) =>
+    $status === "error" &&
+    css`
+      color: ${theme.color.red};
+      border-color: ${theme.color.red};
+    `};
+
   border-radius: 2px;
   cursor: pointer;
 `;

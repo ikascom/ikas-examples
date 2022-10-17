@@ -1,15 +1,17 @@
 import React from "react";
+import { FormItemStatus } from "../form/form-item";
 import * as S from "./style";
 
 type Props = {
   checked?: boolean;
+  status?: FormItemStatus;
   children?: React.ReactNode;
   onChange?: (checked: boolean) => void;
 };
 
-function Checkbox(props: Props) {
+const Checkbox = (props: Props) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper $status={props.status}>
       <S.HiddenCheckbox
         type="checkbox"
         className="visually-hidden"
@@ -19,12 +21,14 @@ function Checkbox(props: Props) {
         }
       />
       <S.CustomCheckboxInnerWrapper $mr={!!props.children}>
-        <S.CustomCheckbox>{!!props.checked && <CheckSVG />}</S.CustomCheckbox>
+        <S.CustomCheckbox $status={props.status}>
+          {!!props.checked && <CheckSVG />}
+        </S.CustomCheckbox>
       </S.CustomCheckboxInnerWrapper>
       {!!props.children && props.children}
     </S.Wrapper>
   );
-}
+};
 
 export default Checkbox;
 

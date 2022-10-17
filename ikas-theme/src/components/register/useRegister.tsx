@@ -5,6 +5,7 @@ import { RegisterForm, useStore, useTranslation } from "@ikas/storefront";
 import { NS } from ".";
 import { FormAlertType } from "../components/alert";
 import { FormItemStatus } from "../components/form/form-item";
+import { RegisterProps } from "../__generated__/types";
 
 type UseRegisterStatus = {
   firstName: FormItemStatus;
@@ -13,9 +14,10 @@ type UseRegisterStatus = {
   password: FormItemStatus;
 };
 
-export default function useRegister() {
+export default function useRegister(props: RegisterProps) {
   const router = useRouter();
   const { t } = useTranslation();
+  const [isFormSubmitted, setFormSubmitted] = useState(false);
 
   const [form] = useState(
     new RegisterForm({
@@ -43,6 +45,11 @@ export default function useRegister() {
 
   const onFormSubmit = async () => {
     if (isPending) return;
+    setFormSubmitted(true);
+    if (props.isMarketingEmailRequired && !form.isMarketingAccepted) {
+      await form.validateAll();
+      return;
+    }
 
     try {
       setPending(true);
@@ -81,6 +88,7 @@ export default function useRegister() {
           router.push("/account");
         }
       }, 1000);
+      setFormSubmitted(false);
     } catch {
       setFormAlert({
         status: "error",
@@ -105,6 +113,7 @@ export default function useRegister() {
 
   return {
     isPending,
+    isFormSubmitted,
     status,
     form,
     onFormSubmit,
