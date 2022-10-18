@@ -26,11 +26,6 @@ const menu = [
     href: "/account/favorite-products",
   },
   {
-    i18nKey: "raffles",
-    pageType: IkasThemeJsonPageType.RAFFLE_ACCOUNT,
-    href: "/account/raffles",
-  },
-  {
     i18nKey: "orders",
     pageType: IkasThemeJsonPageType.ORDERS,
     href: "/account/orders",

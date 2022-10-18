@@ -57,7 +57,10 @@ const Address = () => {
     <div>
       <Header title={headerTitle} rightChild={headerRightChild} />
       {!hasAddress && (
-        <AlertComponent status="info" text={t(`${NS}:noAddressPlaceholder`)} />
+        <AlertComponent
+          status="info"
+          text={t(`${NS}:address.noAddressPlaceholder`)}
+        />
       )}
       <S.AddressBoxes $visible={!isAddressFormVisible}>
         {store.customerStore.customer?.addresses?.map((address, index) => (
