@@ -58,7 +58,7 @@ const Select = (props: Props) => {
       value={props.value}
       onChange={onChange}
     >
-      <option disabled defaultChecked></option>
+      <option defaultChecked />
       {!!placeholder && (
         <option disabled defaultChecked>
           {placeholder}

@@ -28,7 +28,7 @@ export const Row = styled.div<RowProps>`
     return css`
       margin-left: ${horizontal / 2}px;
       margin-right: ${horizontal / 2}px;
-      row-gap: ${vertical}px;
+      /* row-gap: ${vertical}px; */
     `;
   }}
 `;

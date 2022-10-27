@@ -282,57 +282,57 @@
     graphql "^15.3.0"
     lodash "^4.17.20"
 
-"@ikas/storefront-api@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.1.13.tgz#8d0bca6ab528292e4d816059e924fbf9563a0630"
-  integrity sha512-gpeY2D68n7zSoWkZo84F5o7vlDVX61yEFtXMcYjVdJVXn6KqE0JoqVqCW2uYTyuIvz6lonf82GEMcESWfJgxuw==
+"@ikas/storefront-api@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.2.2.tgz#825d65b60ff83a79bc6afdc1b9fbcd96b93241ed"
+  integrity sha512-lulYQhhhsf6lDht1rcG1n2WzSB7G6efRy6urek3eJntZ/rW4wT+XHjMtKVF46L0PAXaj7bKcGTET2HDcAfYdwQ==
 
-"@ikas/storefront-assets@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.1.13.tgz#058fb1b70be5bee0766265a2d59434c800d7ec0c"
-  integrity sha512-6cMf4ICBbKw/HY5pIligQ4PdAOrlCXJNqBXMCoBRr1T9giypjfkcG4JRG5yCn1xe9e5LJdSaVsMnj/mYkJSbbA==
+"@ikas/storefront-assets@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.2.2.tgz#ba2d98e1dcbb563306ff307ef512d3dacc5d0e0b"
+  integrity sha512-PVLbTPHWDN3mZX69LEbZJ2gUGioMbzoCOaxyA+3iDEet519kvViYT3xh5Jcs7i0DPREDYvndOyJCvjNoaN8iYg==
 
-"@ikas/storefront-cmd@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.1.13.tgz#42effe6954350bc29d5539407855aedabbd6f36f"
-  integrity sha512-zGtqEIVVeXeNE60Dvr87AQW23SSnPl+Kmr7wfVkYKofiY1dMXl9AY9Dkhe3w9BRv9ISfsGX3pQvVYDQf0HLhcw==
+"@ikas/storefront-cmd@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.2.2.tgz#956b53f01be5f90431597a915db437e7a69acf14"
+  integrity sha512-IfgOuBPeF6B+WVLtDkvx9w+cpNdy2/JjNqEHCdUw2dAMY/ejFui9qj/z63TWkYBt3ravD8wSoxLIBLgDjzADlQ==
   dependencies:
     command-line-args "^5.2.0"
 
-"@ikas/storefront-config@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.1.13.tgz#e5107fe766bbaab20c663199ea354f2b21e533d1"
-  integrity sha512-u/a/k8aVV0/eKF+gdyPZNbqopQ7Mbt8I/Hza0fzv5dhjMNvDVIZS4HBVHHANg+COtC31GRUd+yFTKSHGkFzrbw==
+"@ikas/storefront-config@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.2.2.tgz#1322c08e5f6c81485bf70b5db111a3f7a33597a7"
+  integrity sha512-qRbqcWG8WnxY5jU5wcxWqeZuhbinUukOLjEO7O2nMscScJxmPHKZhhBfSNAyJBhgLppK/rOU52Hf4OR+ME9c5g==
 
-"@ikas/storefront-model-functions@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.1.13.tgz#078897bfba54a38b9afbe2e3864a5d8a79d894d3"
-  integrity sha512-ea0ogyUNbTo/doPll0Q78X9s6QO0gOs65bX8+g1e3wRdj/8t6evXEZ6z6VHxTdtI9XWQhcmJPhaOmZvcf+htZA==
+"@ikas/storefront-model-functions@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.2.2.tgz#bec0e283cb10e46fa602fe2336db2ffe978cc363"
+  integrity sha512-x2rzHLAIW/1qeflXpIqrjFIf8GPMzwROwZyu6Ru59lEcH6vhLTgjOfoJo3rlndq1fG7dtLuOKaejDNX4+anw8A==
 
-"@ikas/storefront-models@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.1.13.tgz#448a7c9f21069e16a05920c9c8ba5bdd261fb365"
-  integrity sha512-XgQgdcEaeKeNoQwa0kAZ8FFTsh4tXgPNh6a1drpyphvebMl65TRxjUy/k2tU+Od2+AoUQteLeG+VOp23CteOEQ==
+"@ikas/storefront-models@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.2.2.tgz#d119e14676ee12985e667b2479aeb7b79464d299"
+  integrity sha512-HZbatve4SrATnrEiw0Wv2lMcIltdp13PAs52mq119FVYSIt4Ej35Sb4///iQY31lx0JTMeReRIgT6GtmJ1vHSA==
 
-"@ikas/storefront-next@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.1.13.tgz#dd415ce970df662b022979bbb255cdce0ef19362"
-  integrity sha512-UcS2yc9To1ZRFsD5vqkoooBxj+U0rnjjeWSlVNq/WbSHTAImr0hBOzpMxp6fh4+RmJCpNt6RbmTz+TkvaM0oyw==
+"@ikas/storefront-next@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.2.2.tgz#32aacfb8bae8e3839f8951cdb44606dde23eca65"
+  integrity sha512-VGtuLGXop7jSboPJXz/gPSaZhDhGn8KPPfDRR9Vr1QI4u3dMp7WvcVM7xrsy9gMZymheyRmiWa+7F6e8lNw/Gg==
 
 "@ikas/storefront-peer-deps@^4.0.0":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.1.13.tgz#858099044349547c1e7ba5e83f1db218764b88e2"
-  integrity sha512-a/QHfqQiuXFpO4HOXfzKUjwz4iQyLUMKOmdpZRt8ofN36sPGe90MdKUjR+V7T0ovzt3pxP6aAGMhTIdmSBT9Yw==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.2.2.tgz#a63ea0316ac79ff29ced10b2759028f203ed9b5f"
+  integrity sha512-r7gxQgtPM2aCNwhFuPmQW1wWJNZXFqp7LGxKd/7gV9OYSRmd+xqWjFh42D9bVCd4dFreQi8K3ol+5Gx55g+azA==
   dependencies:
     "@ikas/fe-api-client" "^1.0.16"
-    "@ikas/storefront-api" "^4.1.13"
-    "@ikas/storefront-assets" "^4.1.13"
-    "@ikas/storefront-cmd" "^4.1.13"
-    "@ikas/storefront-config" "^4.1.13"
-    "@ikas/storefront-model-functions" "^4.1.13"
-    "@ikas/storefront-models" "^4.1.13"
-    "@ikas/storefront-next" "^4.1.13"
-    "@ikas/storefront-providers" "^4.1.13"
+    "@ikas/storefront-api" "^4.2.2"
+    "@ikas/storefront-assets" "^4.2.2"
+    "@ikas/storefront-cmd" "^4.2.2"
+    "@ikas/storefront-config" "^4.2.2"
+    "@ikas/storefront-model-functions" "^4.2.2"
+    "@ikas/storefront-models" "^4.2.2"
+    "@ikas/storefront-next" "^4.2.2"
+    "@ikas/storefront-providers" "^4.2.2"
     "@stripe/react-stripe-js" "^1.10.0"
     "@stripe/stripe-js" "^1.29.0"
     "@types/archiver" "^5.1.0"
@@ -370,15 +370,15 @@
     ts-essentials "^7.0.1"
     typescript "^4.5.2"
 
-"@ikas/storefront-providers@^4.1.13":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.1.13.tgz#b6fe5d5516ae299cfb04bbb58fe1852fcccd2d1d"
-  integrity sha512-dO8zif+0COUCsHDUjjWP8Pi6wBFotlr8w3aSwXKCcqI9Pa8vriinCOmfNFApTW7mux3pgp6RdVs14tACnDItJg==
+"@ikas/storefront-providers@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.2.2.tgz#69096be4dfd1954ec128153cdc9ef28cbe978b2b"
+  integrity sha512-zBnVttlgrNjc2+W1tfZclfCB7QJsTVG3wGetlVT4yGbR0L+z9dDY20sj8YV0B6UWS5nzqHOrY1ghtj4aM6wYsw==
 
 "@ikas/storefront@^4.0.0":
-  version "4.1.13"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.1.13.tgz#9a301a0e2536fffa2190dea9b4b061a8e645d89c"
-  integrity sha512-wBwQHoRt8F+iQfWvETfNauR+IDyRBj7gLlE5/RwwogdJhqbTW4+zkmOykmVseKtxRJVDtSAPKNjgr9L7c25bLw==
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.2.2.tgz#a29ba85d29b0a15a2c520b244d6256d34ecb877f"
+  integrity sha512-tcSOzIh3GBKuyblWJIirtI0FLmlJfv4W4HzOAEL+VjduvBna1SfEG55Jx0mbuiXwfnvnGEWtuJmz/LtMJhrxYQ==
 
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.2"
