@@ -82,7 +82,8 @@
   "orderPackageStatus": {
     "status": "Status",
     "unfulfilled": "Order Created",
-    "readyForShipment": "Order Ready to Ship",
+    "readyForShipment": "Order Ready for Shippping",
+    "readyForPickUp": "Order Ready for Pick Up",
     "fulfilled": "Order Sent",
     "partiallyFulfilled": "Order Partially Sent",
     "delivered": "Order Delivered",

@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { useRouter } from "next/router";
 import {
   IkasOrder,
-  IkasOrderPackageFullfillStatus,
   IkasOrderTransaction,
   IkasTransactionStatus,
   IkasTransactionType,
-  IkasOrderLineItemStatus,
   useStore,
 } from "@ikas/storefront";
 import getMonthName from "src/utils/getMonthName";
@@ -20,7 +18,7 @@ function useOrderDetail() {
   const [orderTransactions, setOrderTransactions] =
     useState<IkasOrderTransaction[]>();
 
-  const getOrderTransactions = async (orderId: string) => {
+  const getOrderTransactions = useCallback(async (orderId: string) => {
     const responseOrderTransactions =
       await store.customerStore.getOrderTransactions({
         orderId,
@@ -36,9 +34,9 @@ function useOrderDetail() {
       );
       setOrderTransactions(filteredOT);
     }
-  };
+  }, []);
 
-  const getOrders = async () => {
+  const getOrder = useCallback(async () => {
     const id: any = router.query.id;
     if (!id) return;
 
@@ -48,9 +46,9 @@ function useOrderDetail() {
     setOrder(order);
     await getOrderTransactions(order.id);
     setPending(false);
-  };
+  }, []);
 
-  const orderedAt = React.useMemo(() => {
+  const orderedAt = useMemo(() => {
     if (!order) return "";
     const orderDate = new Date(order.orderedAt || "");
     const date = orderDate.getDate();
@@ -60,40 +58,13 @@ function useOrderDetail() {
     return `${date} ${month} ${year}`;
   }, [order]);
 
-  /**
-   * Not deleted order packages
-   */
-  const orderPackages = order?.orderPackages?.filter(
-    (orderPackage) =>
-      !orderPackage.deleted &&
-      ![
-        IkasOrderPackageFullfillStatus.REFUNDED,
-        IkasOrderPackageFullfillStatus.REFUND_REQUESTED,
-        IkasOrderPackageFullfillStatus.REFUND_REQUEST_ACCEPTED,
-        IkasOrderPackageFullfillStatus.REFUND_REJECTED,
-      ].includes(orderPackage.orderPackageFulfillStatus as any)
-  );
-
-  const unfullfilledItems = order?.unfullfilledItems.filter(
-    (item) =>
-      !item.deleted && item.status === IkasOrderLineItemStatus.UNFULFILLED
-  );
-
-  const cancelledItems = order?.orderLineItems.filter(
-    (item) =>
-      !item.deleted &&
-      (item.status === IkasOrderLineItemStatus.CANCELLED ||
-        item.status === IkasOrderLineItemStatus.CANCEL_REJECTED ||
-        item.status === IkasOrderLineItemStatus.CANCEL_REQUESTED)
-  );
-
   useEffect(() => {
     const id: any = router.query.id;
     if (!id) {
       router.replace("/account/orders");
       return;
     }
-    getOrders();
+    getOrder();
   }, [router]);
 
   return {
@@ -101,11 +72,8 @@ function useOrderDetail() {
     isRefundProcess,
     orderedAt,
     order,
-    orderPackages,
-    unfullfilledItems,
-    cancelledItems,
     orderTransactions,
-    getOrders,
+    getOrder,
     toggleRefundProcess,
   };
 }

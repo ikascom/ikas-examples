@@ -10,12 +10,7 @@ import Payment from "./components/payment";
 import OrderRefund from "./components/order-refund";
 import OrderDetailBoxHeader from "./components/header";
 import RefundProcessButton from "./components/order-refund-process-button";
-import {
-  CancelledOrderPackage,
-  OrderPackages,
-  RefundedOrderPackage,
-  UnfullfilledOrderPackage,
-} from "./components/order-package";
+import { OrderPackages } from "./components/order-package";
 import Loading from "src/components/account/components/loading";
 import Header from "src/components/account/components/header";
 import Button from "src/components/components/button";
@@ -28,12 +23,8 @@ const OrderDetail = () => {
     isPending,
     isRefundProcess,
     order,
-    orderPackages,
-    unfullfilledItems,
-    cancelledItems,
     orderedAt,
     orderTransactions,
-    getOrders,
     toggleRefundProcess,
   } = useOrderDetail();
 
@@ -44,6 +35,7 @@ const OrderDetail = () => {
 
   if (isPending) return <Loading>{t(`orderDetail.loading`)}</Loading>;
   if (!order) return null;
+
   return (
     <div>
       <Header
@@ -65,18 +57,9 @@ const OrderDetail = () => {
               orderPackageStatus={order.orderPackageStatus}
               orderedAt={orderedAt}
             />
-            <CancelledOrderPackage
-              title={t(`orderDetail.cancelled`)}
-              orderLineItems={cancelledItems}
-            />
-            <UnfullfilledOrderPackage
-              title={t(`orderDetail.undelivered`)}
-              orderLineItems={unfullfilledItems}
-            />
-            <OrderPackages order={order} orderPackages={orderPackages} />
-            <RefundedOrderPackage
-              title={t(`orderDetail.refunds`)}
-              orderLineItems={order.refundedItems}
+            <OrderPackages
+              order={order}
+              orderPackages={order.displayedPackages}
             />
             <RefundProcessButton
               disabled={!order.refundableItems.length}
