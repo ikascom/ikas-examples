@@ -310,58 +310,58 @@
     graphql "^15.3.0"
     lodash "^4.17.20"
 
-"@ikas/storefront-api@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.4.0-beta.1.tgz#cd657eb7c132c675d963da114f5de5db7e1ae4fd"
-  integrity sha512-FK7AXwEWI6phsH944sVkFD7anziZxfv5+yA/X2YecOCiEW5ugEeMCPSUiAwNhxBqD3oj3r3bmTtctPyfmFnbSA==
+"@ikas/storefront-api@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-api/-/storefront-api-4.4.0-beta.3.tgz#a6ec9ea99162d7e11a221d17c9c79c10623507d9"
+  integrity sha512-c121ZGQ3t7DrgzExtjrINmVEkhEhua43N4u7CAwPnKjlGXs5caay2salLNV6nNWFE2GhzvF1wvf5d/24ZIjihA==
 
-"@ikas/storefront-assets@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.4.0-beta.1.tgz#8b5a16692ff9d4ef7c03508fbf02be4420215300"
-  integrity sha512-UuDrNOm3jv/SOc1ucMZI8NrG4x8DUrb/Pv4PjkmJZVPN/B+tdrAliG98+sh5gfn6mjp6z1Q3iNNbZGImoBYiQg==
+"@ikas/storefront-assets@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-assets/-/storefront-assets-4.4.0-beta.3.tgz#9c8d29fd3cd66eaf19d87230f3b916b0e8f4f0cb"
+  integrity sha512-nXxvdlVRj3fZF68fgCYEBZWpuH9VDv6DZ0pE2KcrPJhEUK9nkFnhDP0dkMp1Xe/Y8yGsay2T3odvqdmZa9yYTg==
 
-"@ikas/storefront-cmd@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.4.0-beta.1.tgz#48fa80d5a5d492e53b432929bf4fb315cc615d2f"
-  integrity sha512-uwh6RiDKM9igEKYgAj6KI4/X/S275hTtuhRxpQ3lt63wXLXnf4lYj+Fgb/wHp/+93u/iQO7JW3IdbM4RO1OLjQ==
+"@ikas/storefront-cmd@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-cmd/-/storefront-cmd-4.4.0-beta.3.tgz#48e642066f6978e603255bfae938cefb182bdc4e"
+  integrity sha512-o+WMs3Df+bSHa3uGg4Dze+b1InOEPIU7/ytHvgbr1K0b5Q1M+4OawqDUBqFRO2XYDGkNjCzSb8sOZDb/ejGpBw==
   dependencies:
     command-line-args "^5.2.0"
 
-"@ikas/storefront-config@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.4.0-beta.1.tgz#23cf1d182ace9bc24b5cd9b1ccdfaeb0602e8657"
-  integrity sha512-o3kcf9XdPLp04d0ERq6lMTff/oN82jwrnym9jbZ6ZLyZ6mttGY5VFgArToFX01PzYPE6NQfV8SRsIYnEPm/bwg==
+"@ikas/storefront-config@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-config/-/storefront-config-4.4.0-beta.3.tgz#4f2aa3b3f0e1de54a0f136e0dadf8acd29d1c356"
+  integrity sha512-zPb9fvzyd7qDBlMDZBfHpIJqQGEmD0T8fiOfHz2NLC0zYYgs7FgmJqzbT6fwj0nXMxz8GppeJ2A5ef2rbeavEA==
 
-"@ikas/storefront-model-functions@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.4.0-beta.1.tgz#fb209b36f4bad2ef129ebe93576eae68a4dcd834"
-  integrity sha512-BmJ+Eu163Cz7F8CXC7Dk57oILTj3pUbA1TnCGa70lIOBZdyDMmNV8gAq6nx6OS9tOAQHUunaAZmlBJAB5+baCw==
+"@ikas/storefront-model-functions@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-model-functions/-/storefront-model-functions-4.4.0-beta.3.tgz#64d6143a3267e2870a08895db2aab67b53963347"
+  integrity sha512-yticbLte195BnMSdeGBhCMe+fzJ1KgsbFeQ71agECp6af2hq5swVlppS/u3ezE8N/AcD8XmRmItrbVUMCj3/jw==
 
-"@ikas/storefront-models@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.4.0-beta.1.tgz#52b3553461128d05b629eb2e02a45fd118a1eaaa"
-  integrity sha512-2GK2wmb4Y0+aoDtlHf651EgWzjhFWA7oYQ5DZo7l/HfqzJFizrFCg1mUQKMd/Ouy/gqipc7W4Bom8iq0tcM5qQ==
+"@ikas/storefront-models@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-models/-/storefront-models-4.4.0-beta.3.tgz#75bc1659e9b0b2ebdfdad91c1362ef3b0ca0f369"
+  integrity sha512-oEJIrhnP3MAk0cxYUVqVUkmyhcQh5Hl5DTiCScoFLmG+uH004MWzaYypbEIlgr/9WVnwGwo40oHhiybxEum9mQ==
 
-"@ikas/storefront-next@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.4.0-beta.1.tgz#13055a1e100760b13542535766fdaf1d942943b2"
-  integrity sha512-v+OyBhP0QlwMsWHXg81bZvUi0J3ZZ6qYHkPOPHkdRAGrFtfUPH2MX6xZ2swUV08cEYSegs1IXSujrPB9XrkTdw==
+"@ikas/storefront-next@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-next/-/storefront-next-4.4.0-beta.3.tgz#0ec6b7759f1a098ccc29eb19b56d0913358c8a79"
+  integrity sha512-J63puFBP/rJ1bpwhqxgOXhv/3C4NWgdBywBw40i6/QkPdyA+ofuCqM2iGf95h9jvcXdCGjkUHajNqwYHWNkLng==
 
-"@ikas/storefront-peer-deps@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.4.0-beta.1.tgz#b7e212976e9530cc0c2643d7ec7ecc87a634f724"
-  integrity sha512-hzK9eBQZpAMOr7C/mPxoC7QZxi0PmHD3NUIVTWln/BIJwQPNmJWmf1a5rpLSVEGlM5XUumWz5pJQpg6J9h3lFw==
+"@ikas/storefront-peer-deps@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-peer-deps/-/storefront-peer-deps-4.4.0-beta.3.tgz#c5b5925016aaf55d2feefacbe8d95f5eac0475ff"
+  integrity sha512-YcAfCFtAMiJpB6DNixhbbmGVo/Cirur/tq2MqIrW6Zj8CDmTWd3RVETV7QS1UFLT4cTFBRfjUeBXsk6xo6m+eQ==
   dependencies:
     "@adyen/adyen-web" "^5.28.2"
     "@ikas/fe-api-client" "^1.0.16"
-    "@ikas/storefront-api" "^4.4.0-beta.1"
-    "@ikas/storefront-assets" "^4.4.0-beta.1"
-    "@ikas/storefront-cmd" "^4.4.0-beta.1"
-    "@ikas/storefront-config" "^4.4.0-beta.1"
-    "@ikas/storefront-model-functions" "^4.4.0-beta.1"
-    "@ikas/storefront-models" "^4.4.0-beta.1"
-    "@ikas/storefront-next" "^4.4.0-beta.1"
-    "@ikas/storefront-providers" "^4.4.0-beta.1"
+    "@ikas/storefront-api" "^4.4.0-beta.3"
+    "@ikas/storefront-assets" "^4.4.0-beta.3"
+    "@ikas/storefront-cmd" "^4.4.0-beta.3"
+    "@ikas/storefront-config" "^4.4.0-beta.3"
+    "@ikas/storefront-model-functions" "^4.4.0-beta.3"
+    "@ikas/storefront-models" "^4.4.0-beta.3"
+    "@ikas/storefront-next" "^4.4.0-beta.3"
+    "@ikas/storefront-providers" "^4.4.0-beta.3"
     "@stripe/react-stripe-js" "^1.10.0"
     "@stripe/stripe-js" "^1.29.0"
     "@types/archiver" "^5.1.0"
@@ -399,15 +399,15 @@
     ts-essentials "^7.0.1"
     typescript "^4.5.2"
 
-"@ikas/storefront-providers@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.4.0-beta.1.tgz#f19d43390c9ea03093c69f93cfc24918887f1cc9"
-  integrity sha512-lluEz0lnbKIuVpZWBsqc8Ugc6NABJ7V2Cy+qfZPmttaTCLhGujL1Psi8OfrgDwfbnnm0dFOUX1wCr2r87AhAfA==
+"@ikas/storefront-providers@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront-providers/-/storefront-providers-4.4.0-beta.3.tgz#7894d69f20c748075806de34589835876f5e56ee"
+  integrity sha512-QLjK1gVG1fxgae8bXH7cry0RKwmw5ZyARWtQUM2z62CevULhdWqtEujy/Krb+y+K15R6siVnXO+eKiHfGb1o6w==
 
-"@ikas/storefront@^4.4.0-beta.1":
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.4.0-beta.1.tgz#58de0a4dd0588337b3ef0643da028a4319660899"
-  integrity sha512-oQ8g39qR6m/7olPj4h67Cq1h/WHiWx+6GMYE6U/pMHFLN/X2SDiZO2Aq5CkVQF6jDtV1GOADwQhl9ndZZsT+IA==
+"@ikas/storefront@^4.4.0-beta.3":
+  version "4.4.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@ikas/storefront/-/storefront-4.4.0-beta.3.tgz#268aaeea969f5483ab129c70b80d3c52afc58286"
+  integrity sha512-JF4P5tdJTwwgh1J1E0YfndBLgtuWsOwDNG6zsEcsXFzuFl2LgKvX8wmCk2OGmAJjd0mDb4oAU/2EUG2Q29MSJg==
 
 "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.2"
