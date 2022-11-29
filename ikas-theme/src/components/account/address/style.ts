@@ -1,5 +1,6 @@
-import breakpoints from "src/styles/breakpoints";
 import styled from "styled-components";
+
+import breakpoints from "src/styles/breakpoints";
 
 export const AddressBoxes = styled.ul<{ $visible: boolean }>`
   display: ${({ $visible }) => ($visible ? "grid" : "none")};

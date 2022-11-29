@@ -9,12 +9,12 @@ import useAddress from "./useAddress";
 import AlertComponent from "src/components/components/alert";
 import Button from "src/components/components/button";
 import CloseIcon from "src/components/svg/close";
+import Header from "../components/header";
+import { useScreen } from "src/utils/hooks/useScreen";
 
 import { NS } from "../";
 
 import * as S from "./style";
-import Header from "../components/header";
-import { useScreen } from "src/utils/hooks/useScreen";
 
 const Address = () => {
   const store = useStore();

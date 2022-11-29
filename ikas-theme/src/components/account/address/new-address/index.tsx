@@ -1,19 +1,27 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react-lite";
-import { AddressForm, useTranslation } from "@ikas/storefront";
+import {
+  IkasAddressForm,
+  useTranslation,
+  AddressFormItem,
+} from "@ikas/storefront";
 
 import Button from "src/components/components/button";
 import Input from "src/components/components/input";
 import Select from "src/components/components/select";
 import Form from "src/components/components/form";
-import FormItem from "src/components/components/form/form-item";
+import FormItem, {
+  FormItemStatus,
+} from "src/components/components/form/form-item";
+import Row from "src/components/components/grid/row";
+import Col, { ColumnProps } from "src/components/components/grid/col";
+import Loading from "../../components/loading";
+import { Loading as LoadingSVG } from "src/components/components/button/index";
 
 import { NS } from "src/components/account";
-import Row from "src/components/components/grid/row";
-import Col from "src/components/components/grid/col";
 
 type Props = {
-  addressForm: AddressForm;
+  addressForm: IkasAddressForm;
   onSave: () => Promise<void>;
 };
 
@@ -27,150 +35,123 @@ const NewAddress = ({ addressForm, ...props }: Props) => {
     setPending(false);
   };
 
-  return (
-    <Form onSubmit={onSubmit}>
-      <FormItem
-        label={t(`${NS}:address.form.title`)}
-        help={addressForm.results.title.errorMessage}
-        status={addressForm.results.title.status}
-      >
-        <Input
-          required
-          placeholder={t(`${NS}:address.form.titlePlaceholder`)}
-          status={addressForm.results.title.status}
-          value={addressForm.address.title || ""}
-          onChange={(event) => addressForm.onTitleChange(event.target.value)}
-        />
-      </FormItem>
-      <Row gutter={24}>
-        <Col span={12}>
-          <FormItem
-            label={t(`${NS}:address.form.firstName`)}
-            help={addressForm.results.firstName.errorMessage}
-            status={addressForm.results.firstName.status}
-          >
-            <Input
-              required
-              placeholder={t(`${NS}:address.form.firstName`)}
-              status={addressForm.results.firstName.status}
-              value={addressForm.address.firstName || ""}
-              onChange={(event) =>
-                addressForm.onFirstNameChange(event.target.value)
-              }
-            />
-          </FormItem>
-        </Col>
-        <Col span={12}>
-          <FormItem
-            label={t(`${NS}:address.form.lastName`)}
-            help={addressForm.results.lastName.errorMessage}
-            status={addressForm.results.lastName.status}
-          >
-            <Input
-              required
-              placeholder={t(`${NS}:address.form.lastName`)}
-              status={addressForm.results.lastName.status}
-              value={addressForm.address.lastName || ""}
-              onChange={(event) =>
-                addressForm.onLastNameChange(event.target.value)
-              }
-            />
-          </FormItem>
-        </Col>
-      </Row>
-      <FormItem
-        label={t(`${NS}:address.form.addressLine1`)}
-        help={addressForm.results.addressLine1.errorMessage}
-        status={addressForm.results.addressLine1.status}
-      >
-        <Input
-          required
-          placeholder={t(`${NS}:address.form.addressLine1`)}
-          status={addressForm.results.addressLine1.status}
-          value={addressForm.address.addressLine1 || ""}
-          onChange={(event) =>
-            addressForm.onAddressLine1Change(event?.target.value)
-          }
-        />
-      </FormItem>
-      <FormItem label={t(`${NS}:address.form.addressLine2`)}>
-        <Input
-          placeholder={t(`${NS}:address.form.addressLine2`)}
-          value={addressForm.address.addressLine2 || ""}
-          onChange={(event) =>
-            addressForm.onAddressLine2Change(event.target.value)
-          }
-        />
-      </FormItem>
-      <FormItem label={t(`${NS}:address.form.postalCode`)}>
-        <Input
-          placeholder={t(`${NS}:address.form.postalCode`)}
-          value={addressForm.address.postalCode || ""}
-          onChange={(event) =>
-            addressForm.onAddressPostalCodeChange(event.target.value)
-          }
-        />
-      </FormItem>
-      <Row gutter={[24, 0]}>
-        <Col span={12}>
-          <FormItem
-            label={t(`${NS}:address.form.country`)}
-            help={addressForm.results.country.errorMessage}
-            status={addressForm.results.country.status}
-          >
-            <Select
-              required
-              placeholder={t(`${NS}:address.form.country`)}
-              disabled={addressForm.isCountriesPending}
-              status={addressForm.results.country.status}
-              value={addressForm.address.country?.id || ""}
-              options={addressForm.countryOptions}
-              onChange={(value) => addressForm.onCountryChange(value as string)}
-            />
-          </FormItem>
-        </Col>
-        {addressForm.hasState && (
-          <Col span={12}>
-            <FormItem
-              label={t(`${NS}:address.form.state`)}
-              help={addressForm.results.state.errorMessage}
-              status={addressForm.results.state.status}
-            >
-              <Select
-                required
-                placeholder={t(`${NS}:address.form.state`)}
-                disabled={addressForm.isStatesPending}
-                status={addressForm.results.state.status}
-                value={addressForm.address.state?.id || ""}
-                options={addressForm.stateOptions}
-                onChange={(value) => addressForm.onStateChange(value as string)}
-              />
-            </FormItem>
-          </Col>
-        )}
-        <Col span={12}>
-          <FormItem
-            label={t(`${NS}:address.form.city`)}
-            help={addressForm.results.city.errorMessage}
-            status={addressForm.results.city.status}
-          >
-            <Select
-              required
-              placeholder={t(`${NS}:address.form.city`)}
-              disabled={addressForm.isCitiesPending}
-              status={addressForm.results.city.status}
-              value={addressForm.address.city?.id || ""}
-              options={addressForm.cityOptions}
-              onChange={(value) => addressForm.onCityChange(value as string)}
-            />
-          </FormItem>
-        </Col>
+  if (!addressForm.isLoaded) {
+    return (
+      <Loading>
+        <LoadingSVG />
+      </Loading>
+    );
+  }
 
-        <Col span={12}>
-          {addressForm.districtOptions.length ? (
-            <FormItem label={t(`${NS}:address.form.district`)}>
+  const titleLabel = `*${t(`${NS}:address.form.title`)}`;
+  const titleStatus = addressForm.validationResult?.title.hasError
+    ? "error"
+    : undefined;
+
+  const renderFormItem = (item: AddressFormItem) => {
+    const required = !!(addressForm?.fieldSettings || {})[item]?.required;
+
+    const placeholder =
+      (addressForm?.fieldLabels || {})[item]?.placeholder ||
+      t(`${NS}:address.form.placeholder.${item}`);
+
+    const status: FormItemStatus | undefined =
+      ((addressForm?.validationResult as any) || {})[item]?.hasError
+        ? "error"
+        : undefined;
+
+    let children: React.ReactNode;
+    switch (item) {
+      case AddressFormItem.ADDRESS_LINE_1: {
+        children = (
+          <Input
+            required={required}
+            placeholder={placeholder}
+            status={status}
+            value={addressForm.address.addressLine1 || ""}
+            onChange={(event) =>
+              addressForm.onAddressLine1Change(event?.target.value)
+            }
+          />
+        );
+        break;
+      }
+      case AddressFormItem.ADDRESS_LINE_2: {
+        children = (
+          <Input
+            required={required}
+            placeholder={placeholder}
+            status={status}
+            value={addressForm.address.addressLine2 || ""}
+            onChange={(event) =>
+              addressForm.onAddressLine2Change(event?.target.value)
+            }
+          />
+        );
+        break;
+      }
+      case AddressFormItem.CITY: {
+        children = (
+          <>
+            {addressForm.isFreeTextCity && (
+              <Input
+                required={required}
+                placeholder={placeholder}
+                status={status}
+                value={addressForm.address.city?.name || ""}
+                onChange={(event) =>
+                  addressForm.onCityInputChange(event?.target.value)
+                }
+              />
+            )}
+            {!addressForm.isFreeTextCity && (
               <Select
-                placeholder={t(`${NS}:address.form.district`)}
+                required={required}
+                placeholder={placeholder}
+                disabled={addressForm.isCitiesPending}
+                status={status}
+                value={addressForm.address.city?.id || ""}
+                options={addressForm.cityOptions}
+                onChange={(value) => addressForm.onCityChange(value as string)}
+              />
+            )}
+          </>
+        );
+        break;
+      }
+      case AddressFormItem.COUNTRY: {
+        children = (
+          <Select
+            required={required}
+            placeholder={placeholder}
+            disabled={addressForm.isCountriesPending}
+            status={status}
+            value={addressForm.address.country?.id || ""}
+            options={addressForm.countryOptions}
+            onChange={(value) => addressForm.onCountryChange(value as string)}
+          />
+        );
+        break;
+      }
+      case AddressFormItem.DISTRICT: {
+        children = (
+          <>
+            {addressForm.isFreeTextDistrict && (
+              <Input
+                required={required}
+                placeholder={placeholder}
+                status={status}
+                value={addressForm.address.district?.name || ""}
+                onChange={(event) =>
+                  addressForm.onDistrictInputChange(event.target.value)
+                }
+              />
+            )}
+            {!addressForm.isFreeTextDistrict && (
+              <Select
+                required={required}
+                status={status}
+                placeholder={placeholder}
                 disabled={addressForm.isDistrictsPending}
                 value={addressForm.address.district?.id || ""}
                 options={addressForm.districtOptions}
@@ -178,32 +159,132 @@ const NewAddress = ({ addressForm, ...props }: Props) => {
                   addressForm.onDistrictChange(value as string)
                 }
               />
-            </FormItem>
-          ) : (
-            <FormItem label={t(`${NS}:address.form.district`)}>
-              <Input
-                placeholder={t(`${NS}:address.form.district`)}
-                value={addressForm.address.district?.name || ""}
-                onChange={(event) =>
-                  addressForm.onDistrictInputChange(event.target.value)
-                }
-              />
-            </FormItem>
-          )}
-        </Col>
-      </Row>
+            )}
+          </>
+        );
+        break;
+      }
+      case AddressFormItem.FIRSTNAME: {
+        children = (
+          <Input
+            required={required}
+            placeholder={placeholder}
+            status={status}
+            value={addressForm.address.firstName || ""}
+            onChange={(event) =>
+              addressForm.onFirstNameChange(event.target.value)
+            }
+          />
+        );
+        break;
+      }
+      case AddressFormItem.LASTNAME: {
+        children = (
+          <Input
+            required={required}
+            placeholder={placeholder}
+            status={status}
+            value={addressForm.address.lastName || ""}
+            onChange={(event) =>
+              addressForm.onLastNameChange(event.target.value)
+            }
+          />
+        );
+        break;
+      }
+      case AddressFormItem.PHONE: {
+        children = (
+          <Input
+            required={required}
+            placeholder={placeholder}
+            status={status}
+            value={addressForm.address.phone || ""}
+            onChange={(event) => addressForm.onPhoneChange(event.target.value)}
+          />
+        );
+        break;
+      }
+
+      case AddressFormItem.POSTAL_CODE: {
+        children = (
+          <Input
+            required={required}
+            status={status}
+            placeholder={placeholder}
+            value={addressForm.address.postalCode || ""}
+            onChange={(event) =>
+              addressForm.onAddressPostalCodeChange(event.target.value)
+            }
+          />
+        );
+        break;
+      }
+      case AddressFormItem.STATE: {
+        children = (
+          <Select
+            required={required}
+            placeholder={placeholder}
+            disabled={addressForm.isStatesPending}
+            status={status}
+            value={addressForm.address.state?.id || ""}
+            options={addressForm.stateOptions}
+            onChange={(value) => addressForm.onStateChange(value as string)}
+          />
+        );
+        break;
+      }
+    }
+
+    const formItemLabel =
+      (addressForm.fieldLabels || {})[item]?.label ||
+      t(`${NS}:address.form.${item}`);
+    const formItemHelp = ((addressForm?.validationResult as any) || {})[item]
+      ?.message;
+    return (
       <FormItem
-        label={t(`${NS}:address.form.phone`)}
-        help={addressForm.results?.phone?.errorMessage}
-        status={addressForm.results?.phone?.status}
+        label={(required ? "*" : "") + formItemLabel}
+        help={formItemHelp}
+        status={status}
+      >
+        {children}
+      </FormItem>
+    );
+  };
+
+  const renderFormRow = (formRow: AddressFormItem[], index: number) => {
+    const grid = formRow.length;
+    if (!formRow.length) return null;
+    return (
+      <Row key={index} gutter={24}>
+        {formRow.map((formRow, formRowIndex) => (
+          <Col
+            key={formRowIndex}
+            sm={24}
+            span={(24 / grid) as ColumnProps["span"]}
+          >
+            {renderFormItem(formRow)}
+          </Col>
+        ))}
+      </Row>
+    );
+  };
+
+  return (
+    <Form onSubmit={onSubmit}>
+      <FormItem
+        label={titleLabel}
+        help={addressForm.validationResult?.title.message}
+        status={titleStatus}
       >
         <Input
-          placeholder={t(`${NS}:address.form.phone`)}
-          status={addressForm.results?.phone?.status}
-          value={addressForm.address.phone || ""}
-          onChange={(event) => addressForm.onPhoneChange(event.target.value)}
+          required
+          placeholder={t(`${NS}:address.form.placeholder.title`)}
+          status={titleStatus}
+          value={addressForm.address.title || ""}
+          onChange={(event) => addressForm.onTitleChange(event.target.value)}
         />
       </FormItem>
+      {addressForm.addressFormat?.map(renderFormRow)}
       <div>
         <Button loading={isPending} onClick={onSubmit}>
           {t(`${NS}:address.save`)}
