@@ -90,6 +90,8 @@ function getOrderPackageTitle(status: IkasOrderPackageFullfillStatus) {
       return text("fulfilled");
     case IkasOrderPackageFullfillStatus.UNFULFILLED:
       return text("unfulfilled");
+    case IkasOrderPackageFullfillStatus.CANCELLED:
+      return text("cancelled");
     default:
       return "";
   }
