@@ -13,17 +13,17 @@ import OrderPackageTrackingInfo from "./components/tracking-info";
 
 import * as S from "./style";
 
-type OrderPackageSectionProps = {
+type OrderPackageProps = {
   title: React.ReactNode;
   orderLineItems?: IkasOrderLineItem[];
   trackingInfo?: IkasTrackingInfo | null;
 };
 
-const OrderPackageSection = ({
+const OrderPackage = ({
   title,
   orderLineItems,
   trackingInfo,
-}: OrderPackageSectionProps) => {
+}: OrderPackageProps) => {
   if (!orderLineItems || !orderLineItems.length) return null;
 
   const quantity = orderLineItems.reduce(
@@ -48,9 +48,6 @@ const OrderPackageSection = ({
   );
 };
 
-/**
- * REST ORDER PACKAGES; NOT CANCELLED, NOT UNFULFILLED, NOT REFUNDED
- */
 export const OrderPackages = ({
   orderPackages,
   order,
@@ -60,12 +57,12 @@ export const OrderPackages = ({
 }) => (
   <>
     {orderPackages?.map((orderPackage) => {
-      const orderLineItems = order.orderLineItems.filter((o) =>
-        orderPackage.orderLineItemIds.includes(o.id)
+      const orderLineItems = orderPackage.getOrderLineItems(order);
+      const title = getOrderPackageTitle(
+        orderPackage.orderPackageFulfillStatus
       );
-      const title = orderPackageTitle(orderPackage.orderPackageFulfillStatus);
       return (
-        <OrderPackageSection
+        <OrderPackage
           key={orderPackage.id}
           title={title}
           trackingInfo={orderPackage.trackingInfo}
@@ -76,33 +73,7 @@ export const OrderPackages = ({
   </>
 );
 
-type OrderPackageProps = {
-  orderLineItems?: IkasOrderLineItem[];
-  title: React.ReactNode;
-};
-
-export const CancelledOrderPackage = ({
-  orderLineItems,
-  title,
-}: OrderPackageProps) => (
-  <OrderPackageSection title={title} orderLineItems={orderLineItems} />
-);
-
-export const UnfullfilledOrderPackage = ({
-  orderLineItems,
-  title,
-}: OrderPackageProps) => (
-  <OrderPackageSection title={title} orderLineItems={orderLineItems} />
-);
-
-export const RefundedOrderPackage = ({
-  orderLineItems,
-  title,
-}: OrderPackageProps) => (
-  <OrderPackageSection title={title} orderLineItems={orderLineItems} />
-);
-
-function orderPackageTitle(status: IkasOrderPackageFullfillStatus) {
+function getOrderPackageTitle(status: IkasOrderPackageFullfillStatus) {
   const { t } = useTranslation();
   const text = (key: string) => t(`orderPackageStatus.${key}`);
 
@@ -111,10 +82,16 @@ function orderPackageTitle(status: IkasOrderPackageFullfillStatus) {
       return text("delivered");
     case IkasOrderPackageFullfillStatus.READY_FOR_SHIPMENT:
       return text("readyForShipment");
+    case IkasOrderPackageFullfillStatus.READY_FOR_PICK_UP:
+      return text("readyForPickUp");
     case IkasOrderPackageFullfillStatus.REFUNDED:
       return text("refunded");
     case IkasOrderPackageFullfillStatus.FULFILLED:
       return text("fulfilled");
+    case IkasOrderPackageFullfillStatus.UNFULFILLED:
+      return text("unfulfilled");
+    case IkasOrderPackageFullfillStatus.CANCELLED:
+      return text("cancelled");
     default:
       return "";
   }

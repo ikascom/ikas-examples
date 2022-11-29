@@ -1,0 +1,489 @@
+{
+  "id": "11a01efa-7da3-48ac-ae3a-058b4786c33d",
+  "createdAt": 1669646598210,
+  "updatedAt": 1669646598210,
+  "deleted": false,
+  "name": "",
+  "components": [
+    {
+      "id": "checkout",
+      "dir": "",
+      "displayName": "",
+      "description": "",
+      "props": [
+        {
+          "id": "57a6bcc4-9772-49d5-8812-d0dbd1831f9b",
+          "name": "showTax",
+          "displayName": "",
+          "description": "",
+          "type": "BOOLEAN",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "fad69951-1957-4e19-9742-a3291554e5c7",
+          "name": "buttonBgColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "f0f47cab-3e1b-4c9d-9987-483ab303d01e",
+          "name": "buttonTextColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "f0b117d0-f943-431d-a071-fe728c0e5be3",
+          "name": "buttonDisabledBgColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "130724ce-6c34-4b59-9f1e-07c2de4ac519",
+          "name": "buttonDisabledTextColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "a4d54720-71fe-46af-baea-d5792255c43c",
+          "name": "primaryTextColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "7ecdd17d-90f0-4f23-8384-10b70e1b637e",
+          "name": "secondaryTextColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "52534210-1af2-4304-8536-a53306c55a33",
+          "name": "primaryBgColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "7b7cdf80-49db-4678-ab5e-3d7e475ca15a",
+          "name": "secondaryBgColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "63ab6401-dd72-4d65-b488-6c2cb6721df1",
+          "name": "borderColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "60bd5f3e-ad1d-4ed2-95d7-9057a65404fc",
+          "name": "cardBgColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "d64c58a0-4e20-4589-afc9-6af784ed0aa6",
+          "name": "errorColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "d1551dc4-35f4-4597-b6c1-38d1632d5df7",
+          "name": "errorLightColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "c02d4c27-dfe1-4b8f-ba8d-ace9e565a359",
+          "name": "warningColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "ad1b68bf-7f68-4c51-8c38-39d6f66321bc",
+          "name": "warningLightColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "5794a654-a242-4b20-a40b-0c23cbe1f24a",
+          "name": "successColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        },
+        {
+          "id": "30274993-f0f3-4b76-b52b-748795236b8d",
+          "name": "successLightColor",
+          "displayName": "",
+          "description": "",
+          "type": "COLOR",
+          "isRequired": false,
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        }
+      ],
+      "isHeader": false,
+      "isFooter": false,
+      "translations": {},
+      "defaultPropValuesTranslations": {}
+    },
+    {
+      "id": "28626d46-97f8-45e7-9c25-dcb16d618676",
+      "dir": "start",
+      "displayName": "Start",
+      "description": "",
+      "props": [],
+      "isHeader": false,
+      "isFooter": false,
+      "translations": {},
+      "defaultPropValuesTranslations": {}
+    },
+    {
+      "id": "056cfd20-f6a3-4b70-9b68-17b3b3bca719",
+      "dir": "slider",
+      "displayName": "Slider",
+      "description": "",
+      "props": [
+        {
+          "id": "9ecf0a42-c37c-429d-bbdd-ed004a392a72",
+          "name": "slides",
+          "displayName": "Slides",
+          "description": "",
+          "type": "CUSTOM",
+          "isRequired": false,
+          "customDataId": "537fe3ea-097c-4242-807c-df06a45be408",
+          "sliderData": {},
+          "groupId": "",
+          "translations": {}
+        }
+      ],
+      "isHeader": false,
+      "isFooter": false,
+      "translations": {},
+      "defaultPropValuesTranslations": {}
+    }
+  ],
+  "pages": [
+    {
+      "id": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+      "name": "",
+      "type": "INDEX",
+      "components": [
+        {
+          "id": "9a5f5275-9c6d-42fd-98f6-902ab2a2cd72",
+          "componentId": "056cfd20-f6a3-4b70-9b68-17b3b3bca719",
+          "propValues": {
+            "slides": [
+              {
+                "image": {
+                  "id": "theme-images/fafdec3a-6665-4f7f-9ca7-86305a2ad911",
+                  "altText": null
+                },
+                "title": "This is the title",
+                "buttonLink": {
+                  "id": "100b874f-b39a-455a-8e38-2f6adaddacf4",
+                  "linkType": "PAGE",
+                  "label": "Home Page Link",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                "position": "LEFT"
+              },
+              {
+                "image": {
+                  "id": "theme-images/427b2b4d-7b8f-48c8-88a6-0e1227ef58f8",
+                  "altText": null
+                },
+                "title": "This is the second title",
+                "buttonLink": {
+                  "id": "e43e095e-cd8d-4219-a344-960ae4af3ef6",
+                  "linkType": "PAGE",
+                  "label": "Home Page",
+                  "pageId": "4257a355-ef05-4387-9cd1-3c4a0ac53f89",
+                  "pageType": "INDEX",
+                  "subLinks": []
+                },
+                "position": "RIGHT"
+              }
+            ]
+          }
+        }
+      ],
+      "slug": null,
+      "pageTitle": null,
+      "description": null,
+      "specifications": [],
+      "disableIndex": false,
+      "canonicals": null
+    },
+    {
+      "id": "aa9daf62-60d3-458b-ad91-e09b069bc63c",
+      "name": "",
+      "type": "PRODUCT",
+      "components": [],
+      "slug": null,
+      "pageTitle": null,
+      "description": null,
+      "specifications": [],
+      "disableIndex": false,
+      "canonicals": null
+    },
+    {
+      "id": "checkout",
+      "name": "",
+      "type": "CHECKOUT",
+      "components": [
+        {
+          "id": "67673ce6-f309-4e2b-8d42-9eff9afa8029",
+          "componentId": "checkout",
+          "propValues": {
+            "showTax": true,
+            "buttonBgColor": "#272727",
+            "buttonTextColor": "#FFFFFF",
+            "buttonDisabledBgColor": "#F7F7F9",
+            "buttonDisabledTextColor": "#8A8B94",
+            "primaryTextColor": "#272727",
+            "secondaryTextColor": "#8A8B94",
+            "primaryBgColor": "#FFFFFF",
+            "secondaryBgColor": "#F7F7F9",
+            "borderColor": "#E5E4E9",
+            "cardBgColor": "#F7F7F9",
+            "errorColor": "#FB4E4E",
+            "errorLightColor": "#FCF3F4",
+            "warningColor": "#FFBC1F",
+            "warningLightColor": "#FFFAEE",
+            "successColor": "#2DCA73",
+            "successLightColor": "#F6FFED"
+          }
+        }
+      ],
+      "slug": null,
+      "pageTitle": null,
+      "description": null,
+      "specifications": [],
+      "disableIndex": false,
+      "canonicals": null
+    }
+  ],
+  "settings": {
+    "colors": [],
+    "favicon": {
+      "id": null
+    },
+    "stockPreference": "SHOW_ALL",
+    "fontFamily": {
+      "name": null,
+      "variants": null
+    }
+  },
+  "customData": [
+    {
+      "id": "6bc82cbf-91a4-4a5f-a9e1-d50fb6476495",
+      "name": "Position",
+      "typescriptName": "Position",
+      "description": null,
+      "translations": {},
+      "type": "ENUM",
+      "isRequired": true,
+      "key": null,
+      "nestedData": null,
+      "enumOptions": [
+        {
+          "id": "1c93f5ba-d3aa-4365-a06b-0f1a6d3ec865",
+          "displayName": "Left",
+          "value": "LEFT",
+          "translations": {}
+        },
+        {
+          "id": "84308165-55a1-4e0c-a022-0bef562951ef",
+          "displayName": "Center",
+          "value": "CENTER",
+          "translations": {}
+        },
+        {
+          "id": "c878e67f-3402-491d-87fa-f335dafbe93b",
+          "displayName": "Right",
+          "value": "RIGHT",
+          "translations": {}
+        }
+      ],
+      "sliderData": {},
+      "groupId": "",
+      "isRoot": true,
+      "level": 0
+    },
+    {
+      "id": "537fe3ea-097c-4242-807c-df06a45be408",
+      "name": "Slides",
+      "typescriptName": null,
+      "description": null,
+      "translations": {},
+      "type": "DYNAMIC_LIST",
+      "isRequired": true,
+      "key": null,
+      "nestedData": [
+        {
+          "id": "76f4449c-27f3-46ce-94c9-cf2c50c4b20f",
+          "name": "Slide",
+          "typescriptName": "Slide",
+          "description": null,
+          "translations": {},
+          "type": "OBJECT",
+          "isRequired": true,
+          "key": null,
+          "nestedData": [
+            {
+              "id": "0aa37c47-7007-4572-99f4-17b942006869",
+              "name": "Image",
+              "typescriptName": null,
+              "description": null,
+              "translations": {},
+              "type": "IMAGE",
+              "isRequired": true,
+              "key": "image",
+              "nestedData": null,
+              "sliderData": {},
+              "groupId": "",
+              "isRoot": false,
+              "level": 2
+            },
+            {
+              "id": "c2046c6c-4dfb-4e75-b8dc-bb6d94f1ba02",
+              "name": "Title",
+              "typescriptName": null,
+              "description": null,
+              "translations": {},
+              "type": "TEXT",
+              "isRequired": false,
+              "key": "title",
+              "nestedData": null,
+              "sliderData": {},
+              "groupId": "",
+              "isRoot": false,
+              "level": 2
+            },
+            {
+              "id": "27c345c0-b090-47c5-8190-2658b50eec78",
+              "name": "Button Link",
+              "typescriptName": null,
+              "description": null,
+              "translations": {},
+              "type": "LINK",
+              "isRequired": false,
+              "key": "buttonLink",
+              "nestedData": null,
+              "sliderData": {},
+              "groupId": "",
+              "isRoot": false,
+              "level": 2
+            },
+            {
+              "id": "2eb1b062-28ca-42c4-82de-77fc7e18d7e5",
+              "name": "Items Position",
+              "typescriptName": null,
+              "description": null,
+              "translations": {},
+              "type": "CUSTOM",
+              "isRequired": false,
+              "key": "position",
+              "nestedData": null,
+              "customDataId": "6bc82cbf-91a4-4a5f-a9e1-d50fb6476495",
+              "sliderData": {},
+              "groupId": "",
+              "isRoot": false,
+              "level": 2
+            }
+          ],
+          "sliderData": {},
+          "groupId": "",
+          "isRoot": false,
+          "level": 1
+        }
+      ],
+      "sliderData": {},
+      "groupId": "",
+      "isRoot": true,
+      "level": 0
+    }
+  ],
+  "groups": [],
+  "languages": []
+}
