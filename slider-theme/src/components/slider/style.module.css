@@ -1,0 +1,103 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  color: #fff;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.positionLeft {
+  align-items: flex-start;
+}
+
+.positionCenter {
+  align-items: center;
+}
+
+.positionRight {
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 90px;
+  border-radius: 35px;
+  line-height: 1.4;
+  padding: 15px 20px;
+  border: 2px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+.slideButton {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 4;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+}
+
+.nextButton {
+  right: 25px;
+}
+
+.prevButton {
+  left: 25px;
+}
