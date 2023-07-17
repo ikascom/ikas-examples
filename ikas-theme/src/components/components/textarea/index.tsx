@@ -3,7 +3,7 @@ import { FormItemStatus } from "../form/form-item";
 import * as S from "./style";
 
 type Props = {
-  status: FormItemStatus;
+  status?: FormItemStatus;
 } & JSX.IntrinsicElements["textarea"];
 
 const Textarea = (props: Props) => {
