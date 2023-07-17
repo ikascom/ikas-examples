@@ -11,6 +11,7 @@ export type FormAlertType = {
 type AlertComponentProps = FormAlertType & {
   closable?: boolean;
   onClose?: () => void;
+  style?: React.CSSProperties;
 };
 
 const AlertComponent = (props: AlertComponentProps) => {
@@ -24,7 +25,7 @@ const AlertComponent = (props: AlertComponentProps) => {
 
   if (!isVisible) return null;
   return (
-    <S.AlertWrapper $status={props.status}>
+    <S.AlertWrapper $status={props.status} style={props.style}>
       {props.title && <S.AlertTitle>{props.title}</S.AlertTitle>}
       <S.AlertText>{props.text}</S.AlertText>
       {props.closable && <S.CloseButton onClick={onClose}>x</S.CloseButton>}
