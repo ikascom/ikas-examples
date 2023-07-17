@@ -15,6 +15,9 @@ import TextArea from "src/components/components/textarea";
 import Button from "src/components/components/button";
 import Stars from "../stars";
 
+// Namespace for translation (i18n)
+import { NS } from "src/components/product-reviews";
+
 // Styles
 import * as S from "./style";
 
@@ -22,11 +25,9 @@ const REVIEW_TITLE_MAX_LENGTH = 64;
 const REVIEW_COMMENT_MAX_LENGTH = 256;
 
 function ReviewForm({
-  namespace,
   product,
   onSubmitSuccess,
 }: {
-  namespace: string;
   product: IkasProduct;
   onSubmitSuccess: () => void;
 }) {
@@ -40,7 +41,7 @@ function ReviewForm({
   const [form] = useState<CustomerReviewForm>(
     new CustomerReviewForm({
       productId: product.id,
-      message: { starRule: t(`${namespace}:form.requiredRule`) },
+      message: { starRule: t(`${NS}:form.requiredRule`) },
     })
   );
 
@@ -69,13 +70,10 @@ function ReviewForm({
   return (
     <S.ReviewForm>
       <S.Wrapper>
-        <S.Title>{t(`${namespace}:formTitle`)}</S.Title>
+        <S.Title>{t(`${NS}:formTitle`)}</S.Title>
 
         {responseStatus === "success" && (
-          <AlertComponent
-            status="success"
-            text={t(`${namespace}:form.successText`)}
-          />
+          <AlertComponent status="success" text={t(`${NS}:form.successText`)} />
         )}
 
         {responseStatus !== "success" && (
@@ -83,7 +81,7 @@ function ReviewForm({
             {responseStatus === "error" && (
               <AlertComponent
                 status="error"
-                text={t(`${namespace}:form.errorText`)}
+                text={t(`${NS}:form.errorText`)}
                 style={{
                   marginBottom: "1rem",
                 }}
@@ -94,14 +92,14 @@ function ReviewForm({
               <FormItem
                 status={form.starErrorMessage ? "error" : undefined}
                 help={form.starErrorMessage}
-                label={t(`${namespace}:form.reviewStarts`)}
+                label={t(`${NS}:form.reviewStarts`)}
               >
                 <Stars
                   star={form.star as 1 | 2 | 3 | 4 | 5}
                   onClick={(star) => form.onStarChange(star)}
                 />
               </FormItem>
-              <FormItem label={t(`${namespace}:form.reviewTitle`)}>
+              <FormItem label={t(`${NS}:form.reviewTitle`)}>
                 <Input
                   maxLength={REVIEW_TITLE_MAX_LENGTH}
                   value={form.title}
@@ -113,7 +111,7 @@ function ReviewForm({
                   }}
                 />
               </FormItem>
-              <FormItem label={t(`${namespace}:form.bodyOfReview`)}>
+              <FormItem label={t(`${NS}:form.bodyOfReview`)}>
                 <TextArea
                   maxLength={REVIEW_COMMENT_MAX_LENGTH}
                   value={form.comment}
@@ -129,7 +127,7 @@ function ReviewForm({
                 />
               </FormItem>
               <Button size="small" loading={isPending} disabled={isPending}>
-                {t(`${namespace}:form.submitReview`)}
+                {t(`${NS}:form.submitReview`)}
               </Button>
             </Form>
           </>

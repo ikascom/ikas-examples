@@ -1,11 +1,5 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { observer } from "mobx-react-lite";
-import {
-  IkasBaseStore,
-  IkasCustomerReviewList,
-  useTranslation,
-} from "@ikas/storefront";
-import { useRouter } from "next/router";
 
 // Types
 import { ProductReviewsProps } from "../__generated__/types";
@@ -18,77 +12,33 @@ import ReviewForm from "./review-form";
 import Review from "./review";
 import Stars, { type StarType } from "./stars";
 
-// Utils
-import urls from "src/utils/urls";
+// Hooks
+import useProductReviews from "./hooks/useProductReviews";
 
 // Styles
 import * as S from "./style";
 
+export const NS = "product-reviews"; // for translation (i18n)
+
 const ProductReviews = (props: ProductReviewsProps) => {
   const { productDetail } = props;
 
-  const { t } = useTranslation();
-  const store = IkasBaseStore.getInstance();
-  const router = useRouter();
-  const namespace = "product-reviews";
-
-  // States
-  const [isFormVisible, setFormVisible] = useState(false);
-  const [isWriteReviewButtonHidden, setHiddenWriteReviewButton] =
-    useState(false);
-  const [customerReviewList, setCustomerReviewList] =
-    useState<IkasCustomerReviewList | null>(null);
-
-  // Refs
-  const productReviewRef = useRef<HTMLDivElement>(null);
-
-  const getCustomerReviews = async () => {
-    try {
-      const result = await productDetail.getCustomerReviews({ limit: 6 });
-      setCustomerReviewList(result);
-    } catch (error) {
-      console.log("error", error);
-    }
-  };
-
-  const onWriteReviewButtonClick = () => {
-    if (
-      productDetail.isCustomerReviewLoginRequired &&
-      !store.customerStore.customer
-    ) {
-      const route = decodeURIComponent(
-        urls.login + "?redirect=" + productDetail.href
-      );
-
-      router.push(route);
-    } else {
-      setFormVisible((prev) => !prev);
-    }
-  };
-
-  const onReviewFormSubmitSuccess = () => {
-    setHiddenWriteReviewButton(true);
-  };
-
-  const onPageChange = async (page: number) => {
-    await customerReviewList?.getPage(page);
-
-    window.scrollTo({
-      top: productReviewRef.current?.offsetTop ?? 0,
-      behavior: "smooth",
-    });
-  };
-
-  React.useEffect(() => {
-    setFormVisible(false);
-    getCustomerReviews();
-  }, [productDetail]);
+  const {
+    t,
+    isFormVisible,
+    isWriteReviewButtonHidden,
+    setHiddenWriteReviewButton,
+    customerReviewList,
+    productReviewRef,
+    onWriteReviewButtonClick,
+    onPageChange,
+  } = useProductReviews({ productDetail });
 
   return (
     <S.ProductReviews ref={productReviewRef}>
       <Container>
         <S.Wrapper>
-          <S.Title>{t(`${namespace}:title`)}</S.Title>
+          <S.Title>{t(`${NS}:title`)}</S.Title>
 
           <S.ReviewsSummary>
             {customerReviewList && (
@@ -96,7 +46,7 @@ const ProductReviews = (props: ProductReviewsProps) => {
                 {customerReviewList && customerReviewList.data?.length ? (
                   <S.Preview>
                     <Stars
-                      title={t(`${namespace}:xStar`, {
+                      title={t(`${NS}:xStar`, {
                         x: productDetail.averageRating || "0",
                       })}
                       editable={false}
@@ -105,14 +55,14 @@ const ProductReviews = (props: ProductReviewsProps) => {
                     />
 
                     <S.PreviewDesciption>
-                      {t(`${namespace}:basedOnXReviews`, {
+                      {t(`${NS}:basedOnXReviews`, {
                         x: productDetail.reviewCount || "0",
                       })}
                     </S.PreviewDesciption>
                   </S.Preview>
                 ) : (
                   <S.PreviewDesciption>
-                    {t(`${namespace}:emptyReview`)}
+                    {t(`${NS}:emptyReview`)}
                   </S.PreviewDesciption>
                 )}
               </>
@@ -121,8 +71,8 @@ const ProductReviews = (props: ProductReviewsProps) => {
               productDetail.isCustomerReviewEnabled && (
                 <Button onClick={onWriteReviewButtonClick}>
                   {isFormVisible
-                    ? t(`${namespace}:closeReviewForm`)
-                    : t(`${namespace}:writeAReview`)}
+                    ? t(`${NS}:closeReviewForm`)
+                    : t(`${NS}:writeAReview`)}
                 </Button>
               )}
           </S.ReviewsSummary>
@@ -130,9 +80,8 @@ const ProductReviews = (props: ProductReviewsProps) => {
           <div>
             {isFormVisible && (
               <ReviewForm
-                namespace={namespace}
                 product={productDetail}
-                onSubmitSuccess={onReviewFormSubmitSuccess}
+                onSubmitSuccess={() => setHiddenWriteReviewButton(true)}
               />
             )}
             {customerReviewList && customerReviewList.data?.length > 0 && (
@@ -140,7 +89,7 @@ const ProductReviews = (props: ProductReviewsProps) => {
                 {customerReviewList.data.map((review, index) => (
                   <Review
                     key={review.id + review.createdAt + index}
-                    noCommentText={t(`${namespace}:noComment`)}
+                    noCommentText={t(`${NS}:noComment`)}
                     review={review}
                   />
                 ))}
