@@ -10,205 +10,329 @@
       "dir": "",
       "displayName": "",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
-          "id": "b22ef221-5248-4c65-832f-b7055e6384b2",
+          "id": "7c58acf8-f863-482f-a9d8-a99db53e2219",
+          "name": "logo",
+          "displayName": "",
+          "description": "",
+          "type": "IMAGE",
+          "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
+          "sliderData": {},
+          "translations": {},
+          "groupId": "",
+          "excludedFields": []
+        },
+        {
+          "id": "0b2b945d-157b-4278-b661-0554128ece37",
           "name": "showTax",
           "displayName": "",
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "bd6727b8-59e0-4545-abb2-39dd636754e1",
+          "id": "5a998057-50f1-4ca5-82e5-a8b970250374",
           "name": "buttonBgColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "61a74bed-b3a3-49dd-9675-c20a63bee55d",
+          "id": "c6af4314-84d7-45f6-a5b0-999c84f5acb0",
           "name": "buttonTextColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "5543bde0-1b2e-4225-88a9-b38e839b6bd2",
+          "id": "091599b5-4eb3-4a6e-8e3d-6e260b084bbb",
           "name": "buttonDisabledBgColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "3370ed7a-f04f-4817-ae7a-ea2add200433",
+          "id": "f1ed754c-40e8-4940-8262-3f7bde242294",
           "name": "buttonDisabledTextColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "bcdd87cd-da9b-456a-98f8-5c8c040d0f71",
+          "id": "143ad1a7-554a-4686-8932-c4c49c0c7066",
           "name": "primaryTextColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "f43b1f6e-3c2e-453f-969e-60270f93bee3",
+          "id": "37176146-cbd5-409a-b7a4-5ba22ff26d70",
           "name": "secondaryTextColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "4543916f-e3d5-4e06-ba16-6bd8318bde58",
+          "id": "802e93f2-c103-45ad-bed5-d9c00931cd3c",
           "name": "primaryBgColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "9dbb05d6-6618-4990-92c6-f7dc81c1732e",
+          "id": "f4217870-6de7-48a1-aa2f-a2c40e9cfdb8",
           "name": "secondaryBgColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "bfc9c026-a520-4531-a434-469ebc5c1025",
+          "id": "36be7f8a-c0b1-4a71-9b10-4b863f189976",
           "name": "borderColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "0bea5b8b-2f38-46b8-beea-178841e4394e",
+          "id": "59249eb9-723d-4a7d-b6d3-b176b23b772b",
           "name": "cardBgColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "8c64fd1f-e2d9-47bf-b91e-6c44b7160fd0",
+          "id": "755bf564-4e52-4964-8ff5-561d607ce53d",
           "name": "errorColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "321e30f7-57a9-4665-be07-6938800d4426",
+          "id": "82187044-1ec6-42d8-a10a-20a2ab599003",
           "name": "errorLightColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "c23a253c-294f-4afc-a702-e563609d219d",
+          "id": "0d93b094-8d19-406c-be3e-435e04dc61a8",
           "name": "warningColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "b3b7a50e-af80-4d30-a304-cc23e47f512e",
+          "id": "aa894033-9d16-4f4e-b322-3cae4a2f2dd7",
           "name": "warningLightColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "b0937228-1d25-423a-b0ef-4e63212d0c5f",
+          "id": "a7945ae7-348a-413e-8a22-c79b1a88f309",
           "name": "successColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
-          "id": "a9d4df60-e5b4-46d6-9625-29efdf6c71ad",
+          "id": "675bbdda-1432-457e-975e-fd02ef4d1ca5",
           "name": "successLightColor",
           "displayName": "",
           "description": "",
           "type": "COLOR",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "8b5d6278-a490-4f0a-8308-00bf888b79b0",
       "dir": "hero-banner",
       "displayName": "Hero Banner",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "33c4121d-4043-4378-8318-c48f9f75fa8d",
@@ -217,9 +341,15 @@
           "description": "",
           "type": "IMAGE",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "989d63ec-3600-4ff2-a2f8-850280a85ec6",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "37f2cdad-9476-45de-82f3-f74ae0ef9275",
@@ -229,9 +359,14 @@
           "type": "CUSTOM",
           "isRequired": true,
           "customDataId": "9016510f-ff18-4938-b928-e3ead886291a",
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "989d63ec-3600-4ff2-a2f8-850280a85ec6",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "a446d01e-4c5e-46a3-bcbc-8267c757b8e9",
@@ -240,9 +375,15 @@
           "description": "",
           "type": "TEXT",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "5e0acaa4-c493-4a21-98af-6c2b5d6b31bc",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "bbc73d73-9441-4137-9021-750d1b97d516",
@@ -251,9 +392,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "5e0acaa4-c493-4a21-98af-6c2b5d6b31bc",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "79a83fb3-2a3e-45aa-8dab-d58d03e1037c",
@@ -262,10 +409,15 @@
           "description": "",
           "type": "LINK",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "bbc73d73-9441-4137-9021-750d1b97d516",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "5e0acaa4-c493-4a21-98af-6c2b5d6b31bc",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "dbf99581-3a4f-485d-9200-5d1b0dea0eb7",
@@ -274,10 +426,15 @@
           "description": "",
           "type": "COLOR",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "bbc73d73-9441-4137-9021-750d1b97d516",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "5e0acaa4-c493-4a21-98af-6c2b5d6b31bc",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "d97c1b1a-3bab-4ec8-a710-1a487fa29136",
@@ -286,10 +443,15 @@
           "description": "",
           "type": "COLOR",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "bbc73d73-9441-4137-9021-750d1b97d516",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "5e0acaa4-c493-4a21-98af-6c2b5d6b31bc",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -307,6 +469,8 @@
       "dir": "header",
       "displayName": "Header",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "6c470897-d079-4023-a0d3-f95ef23bb223",
@@ -315,9 +479,15 @@
           "description": "",
           "type": "IMAGE",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "766c9ac1-9ecc-4f1a-a406-d26630c07db3",
@@ -326,9 +496,15 @@
           "description": "",
           "type": "LIST_OF_LINK",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "23f250ee-0016-4ced-896a-6ad6cc5c3edc",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "a7fd1fbb-9797-4651-91c9-83f16a5d5529",
@@ -337,9 +513,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "dd9bc787-912f-4f75-beba-d1d57551500c",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "11eac07e-7c8f-43c9-be75-2fe716e16d8b",
@@ -349,10 +531,14 @@
           "type": "CUSTOM",
           "isRequired": true,
           "customDataId": "499f75b4-f6e6-40b0-9d28-2dd8944fac7c",
+          "attributeTypes": null,
           "requiredPropId": "a7fd1fbb-9797-4651-91c9-83f16a5d5529",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "dd9bc787-912f-4f75-beba-d1d57551500c",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "5769823c-2c85-4265-920f-9b3409c53b91",
@@ -361,14 +547,20 @@
           "description": "Maximum Width should between 150~250px",
           "type": "SLIDER",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {
             "min": 150,
             "max": 250,
             "interval": 1,
             "unit": "px"
           },
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "1fcbbe63-98a0-45ae-be18-d615cf368f77",
@@ -377,14 +569,20 @@
           "description": "Maximum height should between 40~100px",
           "type": "SLIDER",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {
             "min": 40,
             "max": 100,
             "interval": 1,
             "unit": "px"
           },
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "d141aea4-8818-4f03-82ab-09c7e7897d86",
@@ -393,9 +591,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "2fdfd01e-5227-4ead-815c-b51c4442bec0",
@@ -404,15 +608,20 @@
           "description": "Maximum Width should between 150~250px",
           "type": "SLIDER",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "d141aea4-8818-4f03-82ab-09c7e7897d86",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {
             "min": 150,
             "max": 250,
             "interval": 1,
             "unit": "px"
           },
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "7532bb3a-89b6-45bb-bbb3-0dc973dcc05d",
@@ -421,15 +630,20 @@
           "description": "",
           "type": "SLIDER",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "d141aea4-8818-4f03-82ab-09c7e7897d86",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {
             "min": 40,
             "max": 100,
             "interval": 1,
             "unit": "px"
           },
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": true,
@@ -584,6 +798,8 @@
       "dir": "footer",
       "displayName": "Footer",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "4c3934c7-d501-4989-bbe2-54e8ed9e91b6",
@@ -592,9 +808,15 @@
           "description": "",
           "type": "IMAGE",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "2d2d6255-0047-48cd-ac43-6e8e96768765",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "733b5d16-44b2-40c6-bf5b-379a0929cfec",
@@ -603,9 +825,15 @@
           "description": "",
           "type": "LIST_OF_LINK",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "f7af64cf-d716-4df4-aa7a-01519d085807",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "b8c2f801-a258-4183-ab2b-3a36c241ab98",
@@ -615,9 +843,14 @@
           "type": "CUSTOM",
           "isRequired": false,
           "customDataId": "80586315-470d-4da7-8b4a-5c4422139bb5",
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "0b1bf933-70fc-4f70-a412-392795de2aae",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -734,6 +967,8 @@
       "dir": "product-detail",
       "displayName": "Product Detail",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "7fd32997-6354-4a6d-9cde-59aa183df41d",
@@ -742,9 +977,15 @@
           "description": "",
           "type": "PRODUCT_DETAIL",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "d89e1f5b-8edb-48af-ade5-e931cb8ccd04",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "1818e62e-8a02-4e39-a67c-9470bb5d819b",
@@ -754,9 +995,14 @@
           "type": "CUSTOM",
           "isRequired": true,
           "customDataId": "9016510f-ff18-4938-b928-e3ead886291a",
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -778,17 +1024,22 @@
       "dir": "login",
       "displayName": "Login",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "2b6b4787-34f6-482e-a7ba-ba1401644295",
       "dir": "register",
       "displayName": "Register",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
@@ -797,9 +1048,15 @@
           "description": "The customer selects the marketing emails preference.",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "c3c36a93-00f6-4969-9570-c04b587604a5",
@@ -808,10 +1065,15 @@
           "description": "",
           "type": "TEXT",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "9cc31938-848c-4646-9a4b-229022e436c1",
@@ -820,10 +1082,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "fa95ce69-43cb-4900-b4f1-a5851dfc772e",
@@ -832,10 +1099,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
           "requiredPropId": "1f9def6b-4fc7-490b-9f6d-187d9ec5f3b0",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "579279ca-1202-4dac-9e54-5ef321f3829e",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -851,28 +1123,36 @@
       "dir": "forgot-password",
       "displayName": "Forgot Password",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "4018269a-2cae-44fb-8747-978ee92e1bdb",
       "dir": "recover-password",
       "displayName": "Recover Password",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "c8853ae6-208e-4937-93a5-36a025cb44e3",
       "dir": "page-brand",
       "displayName": "Brand",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "6d99ca71-d1b4-4be6-ac9f-25c33113f11a",
@@ -881,9 +1161,15 @@
           "description": "",
           "type": "BRAND",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "45be3b02-b48e-4987-bd87-c9de2f1c28b3",
@@ -892,9 +1178,15 @@
           "description": "",
           "type": "PRODUCT_LIST",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -919,6 +1211,8 @@
       "dir": "page-category",
       "displayName": "Category",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "a0c4b705-ea8e-4325-935e-2936e965f5ae",
@@ -927,9 +1221,15 @@
           "description": "",
           "type": "CATEGORY",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "3bf0a257-e2a4-4872-9f2d-ccef8d690c9c",
@@ -938,9 +1238,15 @@
           "description": "",
           "type": "PRODUCT_LIST",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -965,6 +1271,8 @@
       "dir": "page-search",
       "displayName": "Search",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "365857e8-0e48-4837-86d8-477dcf5ce921",
@@ -973,9 +1281,15 @@
           "description": "",
           "type": "PRODUCT_LIST",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -997,17 +1311,22 @@
       "dir": "account",
       "displayName": "Account",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "d1d2ba23-1e0d-4708-926b-bc3210bca6b1",
       "dir": "cart",
       "displayName": "Cart",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "0639dc46-0d4a-4855-b916-0d1b3380a50b",
@@ -1016,32 +1335,44 @@
           "description": "e.g. Free shipping for $100 or more",
           "type": "TEXT",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "db6ef045-291c-4e06-92a8-61f6644d8f2c",
       "dir": "page-404",
       "displayName": "404 Page",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [],
       "isHeader": false,
       "isFooter": false,
       "translations": {},
-      "defaultPropValuesTranslations": {}
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": null
     },
     {
       "id": "df5b16c2-f104-41f8-b1a2-7c4d7147b8e8",
       "dir": "page-blogs",
       "displayName": "Blogs",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "2e249b65-aafd-471a-9584-ef22900123dd",
@@ -1050,9 +1381,15 @@
           "description": "",
           "type": "TEXT",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "56a67693-295c-4f20-80af-3d09246edd67",
@@ -1061,9 +1398,15 @@
           "description": "",
           "type": "BLOG_LIST",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "319a5e94-e56c-452e-85e0-40a66a0cced1",
@@ -1072,9 +1415,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "e15dc3ee-b37f-4b65-b69d-d871475da9ed",
@@ -1083,9 +1432,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "8a39dc09-f560-4644-a2a4-592b6dc540ba",
@@ -1094,9 +1449,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "5d0a84f3-8d4d-471c-a9d6-81d45e651544",
@@ -1105,9 +1466,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "d665c366-3578-497b-8de6-d3a2ea07c445",
@@ -1117,9 +1484,14 @@
           "type": "CUSTOM",
           "isRequired": true,
           "customDataId": "9016510f-ff18-4938-b928-e3ead886291a",
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -1151,6 +1523,8 @@
       "dir": "page-blog",
       "displayName": "Blog",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "9bf8bd81-984a-47c6-afe8-bc80d069cfcc",
@@ -1159,9 +1533,15 @@
           "description": "",
           "type": "BLOG",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "4dacd6b8-b7b5-4a57-8fe6-6a5dc6348583",
@@ -1170,9 +1550,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "989d63ec-3600-4ff2-a2f8-850280a85ec6",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "0aa5870d-acde-4e43-8b2f-88d11fbd1aa1",
@@ -1182,10 +1568,14 @@
           "type": "CUSTOM",
           "isRequired": true,
           "customDataId": "9016510f-ff18-4938-b928-e3ead886291a",
+          "attributeTypes": null,
           "requiredPropId": "4dacd6b8-b7b5-4a57-8fe6-6a5dc6348583",
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "989d63ec-3600-4ff2-a2f8-850280a85ec6",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -1213,6 +1603,8 @@
       "dir": "page-blog-category",
       "displayName": "Blog Category",
       "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
       "props": [
         {
           "id": "0d7ab8ea-4b0a-4d7a-92f2-996e0907d1ba",
@@ -1221,9 +1613,15 @@
           "description": "",
           "type": "BLOG_LIST",
           "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "82ba8f21-f495-4452-9861-486574234b28",
@@ -1232,9 +1630,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "ec09837d-2f53-4236-adb8-d6ab6a9292e7",
@@ -1243,9 +1647,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "4d2ebaf5-a204-44e3-87ad-59fcf122c9c9",
@@ -1254,9 +1664,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "5252d3da-3007-4b15-9e5e-c81c363e5551",
@@ -1265,9 +1681,15 @@
           "description": "",
           "type": "BOOLEAN",
           "isRequired": false,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         },
         {
           "id": "6b69d809-1058-496f-b256-b781b413c183",
@@ -1277,9 +1699,14 @@
           "type": "CUSTOM",
           "isRequired": true,
           "customDataId": "9016510f-ff18-4938-b928-e3ead886291a",
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
           "sliderData": {},
+          "translations": {},
           "groupId": "cafa7630-e6ff-4b13-a48e-c6992a930ca7",
-          "translations": {}
+          "excludedFields": []
         }
       ],
       "isHeader": false,
@@ -1298,6 +1725,44 @@
         "showCategory": true,
         "showPublishedDate": true,
         "imageAspectRatio": "16_9"
+      }
+    },
+    {
+      "id": "4fb4f19d-5889-4ef3-84c3-a0871eab784d",
+      "dir": "product-reviews",
+      "displayName": "Product Reviews",
+      "description": "",
+      "type": "COMPONENT",
+      "componentJson": null,
+      "props": [
+        {
+          "id": "555e748f-1b5c-4c4a-adf2-3d25e438fbf9",
+          "name": "productDetail",
+          "displayName": "Product Detail",
+          "description": "",
+          "type": "PRODUCT_DETAIL",
+          "isRequired": true,
+          "customDataId": null,
+          "attributeTypes": null,
+          "requiredPropId": null,
+          "requiredEnumOptionId": null,
+          "requiredEnumOptionValue": null,
+          "sliderData": {},
+          "translations": {},
+          "groupId": "",
+          "excludedFields": []
+        }
+      ],
+      "isHeader": false,
+      "isFooter": false,
+      "translations": {},
+      "defaultPropValuesTranslations": {},
+      "defaultPropValues": {
+        "productDetail": {
+          "productId": null,
+          "variantId": null,
+          "usePageData": true
+        }
       }
     }
   ],
@@ -4319,6 +4784,17 @@
             },
             "imageAspectRatio": "1_1"
           }
+        },
+        {
+          "id": "0820450e-c43d-4f1b-b349-9f0da23b6442",
+          "componentId": "4fb4f19d-5889-4ef3-84c3-a0871eab784d",
+          "propValues": {
+            "productDetail": {
+              "productId": null,
+              "variantId": null,
+              "usePageData": true
+            }
+          }
         }
       ],
       "slug": null,
@@ -4337,6 +4813,7 @@
           "id": "67673ce6-f309-4e2b-8d42-9eff9afa8029",
           "componentId": "checkout",
           "propValues": {
+            "logo": null,
             "showTax": true,
             "buttonBgColor": "#272727",
             "buttonTextColor": "#FFFFFF",
@@ -12790,6 +13267,8 @@
       "isRequired": true,
       "key": null,
       "nestedData": null,
+      "itemCount": null,
+      "attributeTypes": null,
       "enumOptions": [
         {
           "id": "1db4ca2d-9ac8-4047-88e1-cb333b4fed77",
@@ -12822,6 +13301,7 @@
           "translations": {}
         }
       ],
+      "customDataId": null,
       "sliderData": {},
       "groupId": "",
       "isRoot": true,
@@ -12847,6 +13327,10 @@
           "isRequired": false,
           "key": "facebook",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "407799b2-ff7e-4c67-ba26-b4ed480a2255",
           "isRoot": false,
@@ -12862,6 +13346,10 @@
           "isRequired": false,
           "key": "instagram",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "aec8e1e1-9745-4634-a7fe-b14f58ab4a1c",
           "isRoot": false,
@@ -12877,6 +13365,10 @@
           "isRequired": false,
           "key": "twitter",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "af962b85-00e3-4e1c-8a02-0a6092b6cee2",
           "isRoot": false,
@@ -12892,12 +13384,20 @@
           "isRequired": false,
           "key": "pinterest",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "b7ce8c27-93e5-4f0b-afec-5f9b18bbad4c",
           "isRoot": false,
           "level": 1
         }
       ],
+      "itemCount": null,
+      "attributeTypes": null,
+      "enumOptions": null,
+      "customDataId": null,
       "sliderData": {},
       "groupId": "",
       "isRoot": true,
@@ -12923,6 +13423,10 @@
           "isRequired": true,
           "key": "text",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "",
           "isRoot": false,
@@ -12938,6 +13442,10 @@
           "isRequired": true,
           "key": "buttonText",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "",
           "isRoot": false,
@@ -12953,6 +13461,10 @@
           "isRequired": true,
           "key": "backgroundColor",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "",
           "isRoot": false,
@@ -12968,12 +13480,20 @@
           "isRequired": true,
           "key": "color",
           "nestedData": null,
+          "itemCount": null,
+          "attributeTypes": null,
+          "enumOptions": null,
+          "customDataId": null,
           "sliderData": {},
           "groupId": "",
           "isRoot": false,
           "level": 1
         }
       ],
+      "itemCount": null,
+      "attributeTypes": null,
+      "enumOptions": null,
+      "customDataId": null,
       "sliderData": {},
       "groupId": "",
       "isRoot": true,

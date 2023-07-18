@@ -115,3 +115,7 @@ export type PageBlogCategoryProps = {
 	imageAspectRatio: ImageAspectRatio;
 };
 
+export type ProductReviewsProps = {
+	productDetail: IkasProduct;
+};
+

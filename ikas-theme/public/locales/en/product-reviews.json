@@ -1,0 +1,24 @@
+{
+  "title": "Customer Reviews",
+  "writeAReview": "Write a review",
+  "closeReviewForm": "Close review form",
+  "emptyReview": "No reviews for this product",
+  "formTitle": "Write a review",
+  "basedOnXReviews": "Based on {{x}} reviews",
+  "xStar": "{{x}} star",
+  "purchased": "Purchased",
+  "noComment": "No comment",
+  "xReview": "{{x}} Review",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "rating": "Rating",
+    "reviewStarts": "Raiting",
+    "reviewTitle": "Review Title",
+    "bodyOfReview": "Body of Review",
+    "requiredRule": "This field is required",
+    "submitReview": "Submit Review",
+    "successText": "Thank you for submitting a review!",
+    "errorText": "An error occurred on submiting. Please try again"
+  }
+}
