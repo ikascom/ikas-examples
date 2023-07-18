@@ -6,7 +6,6 @@ import {
   CustomerReviewForm,
 } from "@ikas/storefront";
 
-// Compontents
 import AlertComponent from "src/components/components/alert";
 import FormItem from "src/components/components/form/form-item";
 import Form from "src/components/components/form";
@@ -15,10 +14,8 @@ import TextArea from "src/components/components/textarea";
 import Button from "src/components/components/button";
 import Stars from "../stars";
 
-// Namespace for translation (i18n)
 import { NS } from "src/components/product-reviews";
 
-// Styles
 import * as S from "./style";
 
 const REVIEW_TITLE_MAX_LENGTH = 64;
@@ -81,7 +78,9 @@ const ReviewForm = (props: Props) => {
     }
   }, [visible]);
 
-  return visible ? (
+  if (!visible) return null;
+
+  return (
     <S.ReviewForm>
       <S.Wrapper>
         <S.Title>{t(`${NS}:formTitle`)}</S.Title>
@@ -148,7 +147,7 @@ const ReviewForm = (props: Props) => {
         )}
       </S.Wrapper>
     </S.ReviewForm>
-  ) : null;
+  );
 };
 
 export default observer(ReviewForm);

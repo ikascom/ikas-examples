@@ -2,16 +2,12 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import { IkasCustomerReview, useTranslation } from "@ikas/storefront";
 
-// Components
 import Stars from "src/components/product-reviews/detail/stars";
 
-// Utils
-import getMonthName from "src/utils/getMonthName";
-
-// Namespace
 import { NS } from "src/components/product-reviews";
 
-// Styles
+import getMonthName from "src/utils/getMonthName";
+
 import * as S from "./style";
 
 type Props = {

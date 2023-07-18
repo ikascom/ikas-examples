@@ -23,13 +23,12 @@ export const Header = styled.header`
 `;
 
 export const Title = styled.h3`
-  font-size: 1.125rem;
+  font-size: ${(props) => props.theme.fontSize.lg};
   line-height: 1.75rem;
   font-weight: 700;
 
   @media (min-width: ${breakpoints.md}) {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: ${(props) => props.theme.fontSize.xl};
   }
 `;
 

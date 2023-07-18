@@ -25,12 +25,12 @@ export const Preview = styled.div`
 
 export const PreviewDesciption = styled.div`
   color: ${(props) => props.theme.color.secondaryText};
-  font-size: 1rem;
+  font-size: ${(props) => props.theme.fontSize.base};
   line-height: 1.5rem;
 `;
 
 export const PreviewEmpty = styled.div`
   color: ${(props) => props.theme.color.secondaryText};
-  font-size: 1rem;
+  font-size: ${(props) => props.theme.fontSize.base};
   line-height: 1.5rem;
 `;

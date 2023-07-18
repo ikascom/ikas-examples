@@ -1,15 +1,12 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
 
-// Types
 import { ProductReviewsProps } from "src/components/__generated__/types";
 
-// Components
 import Reviews from "./reviews";
 import ReviewsSummary from "./review-summary";
 import Pagination from "src/components/components/pagination";
 
-// Hooks
 import useProductReviews from "../useProductReviews";
 
 const Detail = (props: ProductReviewsProps) => {

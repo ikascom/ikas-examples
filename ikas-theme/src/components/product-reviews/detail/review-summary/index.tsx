@@ -1,22 +1,16 @@
 import React, { useState } from "react";
 import { observer } from "mobx-react-lite";
 import { useTranslation } from "@ikas/storefront";
-
-// Types
 import { ProductReviewsProps } from "src/components/__generated__/types";
 
-// Components
 import ReviewForm from "../review-form";
 import Stars, { type StarType } from "../stars";
 import Button from "src/components/components/button";
 
-// Hooks
 import useProductReviews from "src/components/product-reviews/useProductReviews";
 
-// Namespace
-import { NS } from "../../";
+import { NS } from "src/components/product-reviews";
 
-// Styles
 import * as S from "./style";
 
 // prettier-ignore
@@ -42,15 +36,17 @@ const ReviewsSummary = (props: Props) => {
   const isWriteReviewButtonVisible =
     !isWriteReviewButtonHidden && productDetail.isCustomerReviewEnabled;
 
+  const isPreviewVisible =
+    customerReviewList && customerReviewList.data?.length > 0;
+
   return (
     <S.ReviewsSummary>
       <S.ReviewsHeader>
-        {customerReviewList && customerReviewList.data?.length ? (
+        {isPreviewVisible ? (
           <S.Preview>
             <Stars
               title={t(`${NS}:xStar`, {
-                x: productDetail.averageRating || "0",
-              })}
+                x: productDetail.averageRating || "0" })}
               editable={false}
               size="24px"
               star={(productDetail.averageRating as StarType) || 0}
@@ -58,8 +54,7 @@ const ReviewsSummary = (props: Props) => {
 
             <S.PreviewDesciption>
               {t(`${NS}:basedOnXReviews`, {
-                x: productDetail.reviewCount || "0",
-              })}
+                x: productDetail.reviewCount || "0" })}
             </S.PreviewDesciption>
           </S.Preview>
         ) : (

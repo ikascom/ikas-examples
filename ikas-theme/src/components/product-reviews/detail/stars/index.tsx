@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 
-// Components
 import ImStarEmpty from "src/components/svg/im-star-empty";
 import ImStarFull from "src/components/svg/im-star-full";
 
-// Styles
 import * as S from "./style";
 
 export type StarType = 0 | 1 | 2 | 3 | 4 | 5;
