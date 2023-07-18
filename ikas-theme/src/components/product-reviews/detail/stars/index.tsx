@@ -17,13 +17,10 @@ type StarsProps = {
   onClick?: (star: 1 | 2 | 3 | 4 | 5) => void;
 };
 
-function Stars({
-  star = 0,
-  size = "24px",
-  editable = true,
-  ...props
-}: StarsProps) {
+const Stars = (props: StarsProps) => {
+  const { star = 0, size = "24px", editable = true } = props;
   const [hoveredStar, setHoveredStar] = useState(0);
+
   const onStarClick = (star: 1 | 2 | 3 | 4 | 5) => {
     props.onClick && props.onClick(star);
   };
@@ -31,9 +28,11 @@ function Stars({
   const onMouseLeave = () => {
     setHoveredStar(0);
   };
+
   const onMouseOver = (star: 1 | 2 | 3 | 4 | 5) => {
     setHoveredStar(star);
   };
+
   return (
     <S.StarsWrapper title={props.title}>
       <Star
@@ -78,7 +77,7 @@ function Stars({
       />
     </S.StarsWrapper>
   );
-}
+};
 
 export default Stars;
 
@@ -91,14 +90,9 @@ type StarProps = {
   onClick?: () => void;
 };
 
-function Star({
-  type,
-  size,
-  isHovered,
-  onClick,
-  onMouseLeave,
-  onMouseOver,
-}: StarProps) {
+const Star = (props: StarProps) => {
+  const { size, type, isHovered, onClick, onMouseLeave, onMouseOver } = props;
+
   return (
     <S.Star
       style={{
@@ -122,4 +116,4 @@ function Star({
       )}
     </S.Star>
   );
-}
+};

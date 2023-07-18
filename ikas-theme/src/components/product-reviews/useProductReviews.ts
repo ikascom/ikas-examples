@@ -8,19 +8,16 @@ import {
 } from "@ikas/storefront";
 
 function useProductReviews({ productDetail }: { productDetail: IkasProduct }) {
-  const { t } = useTranslation();
   const store = IkasBaseStore.getInstance();
   const router = useRouter();
 
   // States
   const [isFormVisible, setFormVisible] = useState(false);
-  const [isWriteReviewButtonHidden, setHiddenWriteReviewButton] =
-    useState(false);
   const [customerReviewList, setCustomerReviewList] =
     useState<IkasCustomerReviewList | null>(null);
 
   // Refs
-  const productReviewRef = useRef<HTMLDivElement>(null);
+  const reviewsElementRef = useRef<HTMLDivElement>(null);
 
   const onWriteReviewButtonClick = () => {
     if (
@@ -50,7 +47,7 @@ function useProductReviews({ productDetail }: { productDetail: IkasProduct }) {
     await customerReviewList?.getPage(page);
 
     window.scrollTo({
-      top: productReviewRef.current?.offsetTop ?? 0,
+      top: reviewsElementRef.current?.offsetTop ?? 0,
       behavior: "smooth",
     });
   };
@@ -61,12 +58,9 @@ function useProductReviews({ productDetail }: { productDetail: IkasProduct }) {
   }, [productDetail]);
 
   return {
-    t,
     isFormVisible,
-    isWriteReviewButtonHidden,
-    setHiddenWriteReviewButton,
     customerReviewList,
-    productReviewRef,
+    reviewsElementRef,
     onWriteReviewButtonClick,
     onPageChange,
   };

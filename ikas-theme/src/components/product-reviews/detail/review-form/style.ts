@@ -3,6 +3,7 @@ import styled from "styled-components";
 import breakpoints from "src/styles/breakpoints";
 
 export const ReviewForm = styled.div`
+  margin-top: 1rem;
   padding-block: 2rem;
   border-top: 1px solid ${(props) => props.theme.color.border};
 `;

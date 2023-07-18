@@ -6,6 +6,7 @@
   "formTitle": "Write a review",
   "basedOnXReviews": "Based on {{x}} reviews",
   "xStar": "{{x}} star",
+  "purchased": "Purchased",
   "noComment": "No comment",
   "xReview": "{{x}} Review",
   "form": {

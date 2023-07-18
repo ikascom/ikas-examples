@@ -3,21 +3,23 @@ import { observer } from "mobx-react-lite";
 import { IkasCustomerReview, useTranslation } from "@ikas/storefront";
 
 // Components
-import Stars from "../stars";
+import Stars from "src/components/product-reviews/detail/stars";
 
 // Utils
 import getMonthName from "src/utils/getMonthName";
 
+// Namespace
+import { NS } from "src/components/product-reviews";
+
 // Styles
 import * as S from "./style";
 
-function Review({
-  review,
-  noCommentText,
-}: {
+type Props = {
   review: IkasCustomerReview;
-  noCommentText: string;
-}) {
+};
+
+const Review = (props: Props) => {
+  const { review } = props;
   const { t } = useTranslation();
 
   const createdAt = React.useMemo(() => {
@@ -39,7 +41,7 @@ function Review({
         />
         <S.Title>{review.title}</S.Title>
         {!!review.orderId && (
-          <S.Description>{t("common:purchased")}</S.Description>
+          <S.Description>{t(`${NS}:purchased`)}</S.Description>
         )}
         {!!review.firstName && !!review.lastName && (
           <S.Description>
@@ -49,10 +51,10 @@ function Review({
         <S.Description $bigger>{createdAt}</S.Description>
       </S.Header>
       <S.Comment aria-label="content" $noComment={!!!review.comment}>
-        {review.comment || noCommentText}
+        {review.comment || t(`${NS}:noComment`)}
       </S.Comment>
     </S.Review>
   );
-}
+};
 
 export default observer(Review);

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { observer } from "mobx-react-lite";
 import {
   IkasProduct,
@@ -24,13 +24,14 @@ import * as S from "./style";
 const REVIEW_TITLE_MAX_LENGTH = 64;
 const REVIEW_COMMENT_MAX_LENGTH = 256;
 
-function ReviewForm({
-  product,
-  onSubmitSuccess,
-}: {
+type Props = {
   product: IkasProduct;
   onSubmitSuccess: () => void;
-}) {
+  visible: boolean;
+};
+
+const ReviewForm = (props: Props) => {
+  const { product, onSubmitSuccess, visible } = props;
   const { t } = useTranslation();
 
   // States
@@ -38,7 +39,7 @@ function ReviewForm({
     "success" | "error" | undefined
   >();
   const [isPending, setPending] = useState(false);
-  const [form] = useState<CustomerReviewForm>(
+  const [form, setForm] = useState<CustomerReviewForm>(
     new CustomerReviewForm({
       productId: product.id,
       message: { starRule: t(`${NS}:form.requiredRule`) },
@@ -67,7 +68,20 @@ function ReviewForm({
     }
   };
 
-  return (
+  useEffect(() => {
+    if (visible) {
+      setPending(false);
+      setResponseStatus(undefined);
+      setForm(
+        new CustomerReviewForm({
+          productId: product.id,
+          message: { starRule: t(`${NS}:form.requiredRule`) },
+        })
+      );
+    }
+  }, [visible]);
+
+  return visible ? (
     <S.ReviewForm>
       <S.Wrapper>
         <S.Title>{t(`${NS}:formTitle`)}</S.Title>
@@ -134,7 +148,7 @@ function ReviewForm({
         )}
       </S.Wrapper>
     </S.ReviewForm>
-  );
-}
+  ) : null;
+};
 
 export default observer(ReviewForm);
